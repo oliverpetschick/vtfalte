@@ -68,3 +68,13 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+### TODO
+- [ ] VT Falte Link zu Info
+- [ ] Dashed Linien weg bei Galerie
+- [ ] Atlas Info / Galerie Info: Schwarze Umrandung weg
+- [ ] Atlas Info: Bild als Galerie mit Pfeilen
+- [ ] Atlas Info: Text weiter unten
+- [ ] Atlas: Kartenlayout?
+- [ ] Galerie: Link von Bild direkt zum Atlas?

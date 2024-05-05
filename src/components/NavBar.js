@@ -1,6 +1,7 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
 import { Nav, NavMenu, NavLink } from "./NavBarElements";
+import { StyleSheet } from "react-native-web";
 import { KarrikRegular } from "./Fonts";
 
 const menuItems = [
@@ -20,12 +21,11 @@ const NavBar = () => {
                 <NavLink
                     key={item.path}
                     to={item.path}
-                    activeStyle={{ color: "red" }}
-                    onMouseOver={(e) => e.target.style.color = "red"}
-                    onMouseOut={(e) => e.target.style.color = "black"}
+                    style={location.pathname === item.path ? styles.activeText : styles.text}
                 >
-                    <KarrikRegular style={{ fontSize: 40, color: 'black' }}>{item.label}</KarrikRegular>
+                    <KarrikRegular>{item.label}</KarrikRegular>
                 </NavLink>
+
             );
         });
     };
@@ -38,5 +38,17 @@ const NavBar = () => {
         </Nav>
     );
 }
+
+const styles = StyleSheet.create({
+    text: {
+        fontSize: 40,
+    },
+    activeText: {
+        borderBottom: "4px solid blue",
+        fontSize: 40,
+        color: "blue",
+    },
+});
+
 
 export default NavBar;

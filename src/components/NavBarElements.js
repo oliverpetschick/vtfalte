@@ -21,7 +21,12 @@ export const NavLink = styled(Link)`
     width: 100%;
     cursor: pointer;
     text-decoration: none;
+    color: black;
     flex: 1;
+    &:hover{
+        border-bottom: 4px solid blue;
+        color: blue;
+    }
 `;
 
 export const Text = styled.span`
@@ -29,12 +34,3 @@ export const Text = styled.span`
     font-size: 2rem;
 `;
 
-// export const ActiveText = styled(Text)`
-//     color: black;
-//     font-family: 'Jersey 20';
-//     transform: scale(1.5);
-// `;
-
-// export const InactiveText = styled(Text)`
-//     color: black;
-// `;

@@ -2,12 +2,15 @@ import React from 'react';
 import { StyleSheet, View } from 'react-native-web';
 import NavBar from './NavBar';
 import { KarrikRegular } from './Fonts';
+import { NavLink } from './NavBarElements';
 
 const Topbar = () => {
     return (
         <View style={styles.topbar}>
             <View style={styles.titleContainer}>
-                <KarrikRegular style={styles.title}>VT FALTE</KarrikRegular>
+                <NavLink to="/info">
+                    <KarrikRegular style={styles.title}>VT FALTE</KarrikRegular>
+                </NavLink>
             </View>
             <View style={styles.navContainer}>
                 <NavBar />
@@ -15,6 +18,7 @@ const Topbar = () => {
         </View>
     );
 }
+
 
 const styles = StyleSheet.create({
     topbar: {

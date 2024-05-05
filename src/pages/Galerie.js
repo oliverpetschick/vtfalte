@@ -21,10 +21,16 @@ const Galerie = () => {
         return () => Dimensions.removeEventListener('change', handleResize);
     }, []);
 
-    const onImageClick = (image) => {
+    const onImageClick = (images) => {
         setInfoState({
             showInfo: true,
-            selectedFeature: data.features.find(feature => feature.properties.image === image),
+            selectedFeature: {
+                ...data.features.find(feature => feature.properties.images === images),
+                properties: {
+                    ...data.features.find(feature => feature.properties.images === images).properties,
+                    image: images[0] // Displaying only the first image
+                }
+            },
         });
         toggleScrollLock(true);
     };
@@ -50,8 +56,8 @@ const Galerie = () => {
             <ScrollView>
                 <View style={styles.galerie}>
                     {data.features.map((feature, index) => (
-                        <Pressable key={index} onPress={() => onImageClick(feature.properties.image)}>
-                            <Image source={require('../images/' + feature.properties.image)} style={[styles.image, { width: setImageWidth() }]} />
+                        <Pressable key={index} onPress={() => onImageClick(feature.properties.images)}>
+                            <Image source={require('../images/' + feature.properties.images[0])} style={[styles.image, { width: setImageWidth() }]} />
                         </Pressable>
                     ))}
                 </View>
@@ -71,7 +77,6 @@ const styles = StyleSheet.create({
         flexWrap: 'wrap',
         flex: 1,
         flexDirection: 'row',
-        border: '1px dashed black',
         justifyContent: 'center',
         rowGap: 10,
         columnGap: 10,
@@ -82,7 +87,6 @@ const styles = StyleSheet.create({
         margin: 10,
         padding: 10,
         zIndex: 1,
-        border: '1px dashed black',
     },
     overlay: {
         position: 'absolute',

@@ -52,6 +52,7 @@ const Galerie = () => {
     return (
         <View style={styles.container}>
             {infoState.showInfo && <InfoPanel feature={infoState.selectedFeature} onClose={onClose} />}
+            {console.log(infoState.selectedFeature)}
             {infoState.showInfo && <View style={styles.overlay} onClick={onOverlayClick} />}
             <ScrollView>
                 <View style={styles.galerie}>

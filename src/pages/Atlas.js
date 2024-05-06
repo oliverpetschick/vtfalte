@@ -108,11 +108,18 @@ const Atlas = () => {
 
             map.current.on('click', 'unclustered-point', (e) => {
                 const feature = e.features[0];
-                setSelectedFeature(feature);
-                console.log(feature)
+                const selectedFeatureWithArray = {
+                    ...feature,
+                    properties: {
+                        ...feature.properties,
+                        images: JSON.parse(feature.properties.images), // Convert string to array
+                    },
+                };
+                setSelectedFeature(selectedFeatureWithArray);
                 setShowInfo(true);
             });
             // TODO: Close info panel on map click?
+
 
         });
     }, []);

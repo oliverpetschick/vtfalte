@@ -71,7 +71,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 
 ### TODO
-- [ ] Atlas Info: Bild als Galerie mit Pfeilen
 - [ ] Atlas Info: Text weiter unten
 - [ ] Atlas: Kartenlayout?
 - [ ] Galerie: Link von Bild direkt zum Atlas?

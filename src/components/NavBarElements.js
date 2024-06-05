@@ -24,7 +24,6 @@ export const NavLink = styled(Link)`
     color: black;
     flex: 1;
     &:hover{
-        border-bottom: 4px solid blue;
         color: blue;
     }
 `;

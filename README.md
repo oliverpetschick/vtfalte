@@ -71,6 +71,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 
 ### TODO
-- [ ] Atlas Info: Text weiter unten
-- [ ] Atlas: Kartenlayout?
-- [ ] Galerie: Link von Bild direkt zum Atlas?
+* Restructure JSON data to map images with their creators
+* Link in Galery Image to Atlas position
+* Make images load faster (lazy loading)

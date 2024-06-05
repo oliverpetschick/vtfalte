@@ -6,9 +6,7 @@ const InfoPanel = ({ feature, onClose }) => {
     const windowHeight = Dimensions.get('window').height;
     const height = windowHeight * 0.6;
 
-
     return (
-        console.log(feature),
         <View style={[styles.info, { height }]}>
             <ScrollView style={styles.infoContent}>
                 <InfoContent feature={feature} />
@@ -23,7 +21,6 @@ const InfoPanel = ({ feature, onClose }) => {
 const InfoContent = ({ feature }) => {
     return (
         <View style={styles.infoContent}>
-            {/* <Image source={require('../images/' + feature.properties.image)} style={styles.infoImage} /> */}
             <InfoGallery feature={feature} />
             <Text style={{ fontSize: 20 }}>ADRESSE</Text>
             <Text>{feature.properties.address}</Text>
@@ -40,49 +37,35 @@ const InfoContent = ({ feature }) => {
             <Text style={{ fontSize: 20 }}>HINTERGRÜNDE</Text>
             <Text>{feature.properties.background}</Text>
             <Text style={{ fontSize: 20 }}>LINKS</Text>
-            {Array.isArray(feature.properties.links) ? (
-                feature.properties.links.map((link, index) => (
-                    <Text key={index}>
-                        <a href={link.url}>{link.title}</a>
-                    </Text>
-                ))
-            ) : (
-                JSON.parse(feature.properties.links).map((link, index) => (
-                    <Text key={index}>
-                        <a href={link.url}>{link.title}</a>
-                    </Text>
-                ))
-            )}
+            {feature.properties.links && feature.properties.links.map((link, index) => (
+                <Text key={index}>
+                    <a href={link.url}>{link.title}</a>
+                </Text>
+            ))}
         </View>
     );
 }
+
 const InfoGallery = ({ feature }) => {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
     const images = feature.properties.images;
+    const n_images = Object.keys(images).length - 1;
 
-    const handlePrevImage = () => {
-        setCurrentImageIndex((prevIndex) => (prevIndex === 0 ? images.length - 1 : prevIndex - 1));
-    };
-
-    const handleNextImage = () => {
-        setCurrentImageIndex((prevIndex) => (prevIndex === images.length - 1 ? 0 : prevIndex + 1));
+    const handleImageClick = (direction) => {
+        if (direction === 'prev') {
+            setCurrentImageIndex((prevIndex) => (prevIndex === 0 ? n_images : prevIndex - 1));
+        } else {
+            setCurrentImageIndex((prevIndex) => (prevIndex === n_images ? 0 : prevIndex + 1));
+        }
     };
 
     return (
         <View style={styles.infoContent}>
             <View style={styles.imageContainer}>
-                <Image source={require('../images/' + images[currentImageIndex])} style={styles.image} />
+                <Image source={require('../' + images[`image_${currentImageIndex}`].src)} style={styles.image} />
+                < Pressable style={styles.leftOverlay} onPress={() => handleImageClick('prev')} />
+                <Pressable style={styles.rightOverlay} onPress={() => handleImageClick('next')} />
             </View>
-            {images.length > 1 && (
-                <>
-                    <Pressable style={[styles.prevButton, { display: currentImageIndex === 0 ? 'none' : 'flex' }]} onPress={handlePrevImage}>
-                        <Text style={styles.buttonText}>{'<'}</Text>
-                    </Pressable>
-                    <Pressable style={[styles.nextButton, { display: currentImageIndex === images.length - 1 ? 'none' : 'flex' }]} onPress={handleNextImage}>
-                        <Text style={styles.buttonText}>{'>'}</Text>
-                    </Pressable>
-                </>
-            )}
         </View>
     );
 };
@@ -92,24 +75,16 @@ const styles = StyleSheet.create(
         info: {
             position: 'fixed',
             top: '25vh',
-            left: '20vw',
+            left: '35vw',
             width: '30vw',
             height: '60vh',
             backgroundColor: 'white',
-            // borderColor: 'black',
-            // borderWidth: 1,
-            // borderRadius: 10,
             zIndex: 3,
         },
         infoContent: {
             flex: 1,
             width: '100%',
             padding: 10,
-        },
-        infoImage: {
-            aspectRatio: 1,
-            resizeMode: 'contain',
-            margin: 10,
         },
         closeButton: {
             position: 'absolute',
@@ -132,28 +107,20 @@ const styles = StyleSheet.create(
             resizeMode: 'contain',
             width: '100%',
         },
-        prevButton: {
+        leftOverlay: {
             position: 'absolute',
-            top: '50%',
-            left: 10,
-            transform: [{ translateY: -20 }],
-            backgroundColor: 'rgba(255, 255, 255, 0.5)',
-            padding: 10,
-            borderRadius: 5,
+            top: 0,
+            left: 0,
+            bottom: 0,
+            right: '50%',
         },
-        nextButton: {
+        rightOverlay: {
             position: 'absolute',
-            top: '50%',
-            right: 10,
-            transform: [{ translateY: -20 }],
-            backgroundColor: 'rgba(255, 255, 255, 0.5)',
-            padding: 10,
-            borderRadius: 5,
+            top: 0,
+            left: '50%',
+            bottom: 0,
+            right: 0,
         },
-        buttonText: {
-            fontSize: 20,
-        },
-
     }
 )
 

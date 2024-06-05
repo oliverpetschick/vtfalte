@@ -11,29 +11,25 @@
                 ]
             },
             "properties": {
-                "id": "0",
-                "images": [
-                    "0.jpg",
-                    "1.jpg",
-                    "2.jpg"
-                ],
-                "address": "Beispielstra\u00dfe 123, 12345 Beispielstadt",
-                "type": "Beispieltyp",
-                "year": "1234",
-                "urbanism": "Beispielurbanismus",
-                "useage": "Beispielnutzung",
-                "condition": "Beispielzustand",
-                "background": "Beispielhintergrund",
-                "links": [
-                    {
-                        "title": "Wikipedia",
-                        "url": "https://de.wikipedia.org/wiki/Beispiel"
-                    },
-                    {
-                        "title": "Google Maps",
-                        "url": "https://www.google.com/maps/place/51.30472315339297,12.267122877821295"
+                "id": 1,
+                "images": {
+                    "image_0": {
+                        "src": "images/placeholder.jpg",
+                        "author": "Johanna Knigge"
                     }
-                ]
+                },
+                "address": "Pfaffensteinstra\u00dfe 14, 04207 Leipzig",
+                "abbreviation": "",
+                "type": "SPH-N-18x36-VT-Falte",
+                "year": "",
+                "urbanism": "St\u00e4dtebauliches Ensemble (Neben 100.Schule)",
+                "useage": "Sporthalle 100. Schule",
+                "height": "II",
+                "owner": "",
+                "former_useage": "--",
+                "condition": "Sanierung",
+                "background": "",
+                "links": null
             }
         },
         {
@@ -41,34 +37,46 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    12.268556142442163,
+                    12.268556142442165,
                     51.30831908256469
                 ]
             },
             "properties": {
-                "id": "1",
-                "images": [
-                    "1.jpg",
-                    "2.jpg",
-                    "3.jpg"
-                ],
-                "address": "Beispielstra\u00dfe 123, 12345 Beispielstadt",
-                "type": "Beispieltyp",
-                "year": "1234",
-                "urbanism": "Beispielurbanismus",
-                "useage": "Beispielnutzung",
-                "condition": "Beispielzustand",
-                "background": "Beispielhintergrund",
-                "links": [
-                    {
-                        "title": "Wikipedia",
-                        "url": "https://de.wikipedia.org/wiki/Beispiel"
+                "id": 2,
+                "images": {
+                    "image_0": {
+                        "src": "images/folds/fold_2/2_1.jpg",
+                        "author": "Johanna Knigge"
                     },
-                    {
-                        "title": "Google Maps",
-                        "url": "https://www.google.com/maps/place/51.30831908256469,12.268556142442163"
+                    "image_1": {
+                        "src": "images/folds/fold_2/2_2.jpg",
+                        "author": "Johanna Knigge"
+                    },
+                    "image_2": {
+                        "src": "images/folds/fold_2/2_3.jpg",
+                        "author": "Johanna Knigge"
+                    },
+                    "image_3": {
+                        "src": "images/folds/fold_2/2_4.jpg",
+                        "author": "Johanna Knigge"
+                    },
+                    "image_4": {
+                        "src": "images/folds/fold_2/2_5.jpg",
+                        "author": "Johanna Knigge"
                     }
-                ]
+                },
+                "address": "An d. Kotsche 13a, 04207 Leipzig",
+                "abbreviation": "",
+                "type": "Umformerstation - VT18",
+                "year": "",
+                "urbanism": "St\u00e4dtebauliches Ensemble",
+                "useage": "Papier und Textilaufkauf, Garagen/ ehemalig. Umformerstation",
+                "height": "II",
+                "owner": "Leipziger Stadtwerke",
+                "former_useage": "Umformerstation",
+                "condition": "",
+                "background": "Kachelfenster, umfahrbar",
+                "links": null
             }
         },
         {
@@ -81,29 +89,25 @@
                 ]
             },
             "properties": {
-                "id": "2",
-                "images": [
-                    "2.jpg",
-                    "3.jpg",
-                    "4.jpg"
-                ],
-                "address": "Beispielstra\u00dfe 123, 12345 Beispielstadt",
-                "type": "Beispieltyp",
-                "year": "1234",
-                "urbanism": "Beispielurbanismus",
-                "useage": "Beispielnutzung",
-                "condition": "Beispielzustand",
-                "background": "Beispielhintergrund",
-                "links": [
-                    {
-                        "title": "Wikipedia",
-                        "url": "https://de.wikipedia.org/wiki/Beispiel"
-                    },
-                    {
-                        "title": "Google Maps",
-                        "url": "https://www.google.com/maps/place/51.3090967310507,12.265916455385002"
+                "id": 3,
+                "images": {
+                    "image_0": {
+                        "src": "images/placeholder.jpg",
+                        "author": "Johanna Knigge"
                     }
-                ]
+                },
+                "address": "An d. Kotsche 39, 04207 Leipzig",
+                "abbreviation": "",
+                "type": "SPH-N-18x36-VT-Falte",
+                "year": "",
+                "urbanism": "St\u00e4dtebauliches Ensemble (Schule 78.Schule)",
+                "useage": "Sporthalle an der Kotsche",
+                "height": "II",
+                "owner": "",
+                "former_useage": "--",
+                "condition": "",
+                "background": "",
+                "links": null
             }
         },
         {
@@ -116,29 +120,25 @@
                 ]
             },
             "properties": {
-                "id": "3",
-                "images": [
-                    "3.jpg",
-                    "4.jpg",
-                    "5.jpg"
-                ],
-                "address": "Beispielstra\u00dfe 123, 12345 Beispielstadt",
-                "type": "Beispieltyp",
-                "year": "1234",
-                "urbanism": "Beispielurbanismus",
-                "useage": "Beispielnutzung",
-                "condition": "Beispielzustand",
-                "background": "Beispielhintergrund",
-                "links": [
-                    {
-                        "title": "Wikipedia",
-                        "url": "https://de.wikipedia.org/wiki/Beispiel"
-                    },
-                    {
-                        "title": "Google Maps",
-                        "url": "https://www.google.com/maps/place/51.31604096943994,12.268220447764714"
+                "id": 4,
+                "images": {
+                    "image_0": {
+                        "src": "images/placeholder.jpg",
+                        "author": "Johanna Knigge"
                     }
-                ]
+                },
+                "address": "Miltitzer Allee 42e, 04205 Leipzig",
+                "abbreviation": "",
+                "type": "Umformerstation - VT18",
+                "year": "",
+                "urbanism": "St\u00e4dtebauliches Ensemble (Garagenanlage)",
+                "useage": "-",
+                "height": "II",
+                "owner": "Leipziger Stadtwerke",
+                "former_useage": "",
+                "condition": "",
+                "background": "Kachelfenster, umfahrbar",
+                "links": null
             }
         },
         {
@@ -151,29 +151,25 @@
                 ]
             },
             "properties": {
-                "id": "4",
-                "images": [
-                    "4.jpg",
-                    "5.jpg",
-                    "6.jpg"
-                ],
-                "address": "Beispielstra\u00dfe 123, 12345 Beispielstadt",
-                "type": "Beispieltyp",
-                "year": "1234",
-                "urbanism": "Beispielurbanismus",
-                "useage": "Beispielnutzung",
-                "condition": "Beispielzustand",
-                "background": "Beispielhintergrund",
-                "links": [
-                    {
-                        "title": "Wikipedia",
-                        "url": "https://de.wikipedia.org/wiki/Beispiel"
-                    },
-                    {
-                        "title": "Google Maps",
-                        "url": "https://www.google.com/maps/place/51.317501719512485,12.267105133807352"
+                "id": 5,
+                "images": {
+                    "image_0": {
+                        "src": "images/placeholder.jpg",
+                        "author": "Johanna Knigge"
                     }
-                ]
+                },
+                "address": "L\u00fctzner Str. 540, 04205 Leipzig",
+                "abbreviation": "",
+                "type": "Kaufhalle",
+                "year": "",
+                "urbanism": "",
+                "useage": "Netto",
+                "height": "II",
+                "owner": "",
+                "former_useage": "",
+                "condition": "Umbau, Sanierung",
+                "background": "VT Falte eingebaut",
+                "links": null
             }
         },
         {
@@ -181,34 +177,30 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    12.263560148866356,
+                    12.263560148866357,
                     51.321516597889776
                 ]
             },
             "properties": {
-                "id": "5",
-                "images": [
-                    "5.jpg",
-                    "6.jpg",
-                    "7.jpg"
-                ],
-                "address": "Beispielstra\u00dfe 123, 12345 Beispielstadt",
-                "type": "Beispieltyp",
-                "year": "1234",
-                "urbanism": "Beispielurbanismus",
-                "useage": "Beispielnutzung",
-                "condition": "Beispielzustand",
-                "background": "Beispielhintergrund",
-                "links": [
-                    {
-                        "title": "Wikipedia",
-                        "url": "https://de.wikipedia.org/wiki/Beispiel"
-                    },
-                    {
-                        "title": "Google Maps",
-                        "url": "https://www.google.com/maps/place/51.321516597889776,12.263560148866356"
+                "id": 6,
+                "images": {
+                    "image_0": {
+                        "src": "images/placeholder.jpg",
+                        "author": "Johanna Knigge"
                     }
-                ]
+                },
+                "address": "Miltitzer Weg 8, 04205 Leipzig",
+                "abbreviation": "",
+                "type": "Jugenclub ",
+                "year": "",
+                "urbanism": "St\u00e4dtebauliches Ensemble (Schule 94. Ober-Schule)",
+                "useage": "Fr\u00f6bel-Jugendfreizeittreff ARENA",
+                "height": "I",
+                "owner": "",
+                "former_useage": "",
+                "condition": "",
+                "background": "VT Falte, geflankt von 2 Flachbauten",
+                "links": null
             }
         },
         {
@@ -221,29 +213,25 @@
                 ]
             },
             "properties": {
-                "id": "6",
-                "images": [
-                    "6.jpg",
-                    "7.jpg",
-                    "8.jpg"
-                ],
-                "address": "Beispielstra\u00dfe 123, 12345 Beispielstadt",
-                "type": "Beispieltyp",
-                "year": "1234",
-                "urbanism": "Beispielurbanismus",
-                "useage": "Beispielnutzung",
-                "condition": "Beispielzustand",
-                "background": "Beispielhintergrund",
-                "links": [
-                    {
-                        "title": "Wikipedia",
-                        "url": "https://de.wikipedia.org/wiki/Beispiel"
-                    },
-                    {
-                        "title": "Google Maps",
-                        "url": "https://www.google.com/maps/place/51.322085876542126,12.26691213023168"
+                "id": 7,
+                "images": {
+                    "image_0": {
+                        "src": "images/placeholder.jpg",
+                        "author": "Johanna Knigge"
                     }
-                ]
+                },
+                "address": "Miltitzer Weg 2a, 04205 Leipzig",
+                "abbreviation": "",
+                "type": "SPH-N-18x36-VT-Falte ",
+                "year": "",
+                "urbanism": "St\u00e4dtebauliches Ensemble (Cormenius Schule L)",
+                "useage": "Sporthalle Cormenius Schule",
+                "height": "II",
+                "owner": "",
+                "former_useage": "",
+                "condition": "",
+                "background": "",
+                "links": null
             }
         },
         {
@@ -252,33 +240,29 @@
                 "type": "Point",
                 "coordinates": [
                     12.286903035193085,
-                    51.32144004725743
+                    51.321440047257425
                 ]
             },
             "properties": {
-                "id": "7",
-                "images": [
-                    "7.jpg",
-                    "8.jpg",
-                    "9.jpg"
-                ],
-                "address": "Beispielstra\u00dfe 123, 12345 Beispielstadt",
-                "type": "Beispieltyp",
-                "year": "1234",
-                "urbanism": "Beispielurbanismus",
-                "useage": "Beispielnutzung",
-                "condition": "Beispielzustand",
-                "background": "Beispielhintergrund",
-                "links": [
-                    {
-                        "title": "Wikipedia",
-                        "url": "https://de.wikipedia.org/wiki/Beispiel"
-                    },
-                    {
-                        "title": "Google Maps",
-                        "url": "https://www.google.com/maps/place/51.32144004725743,12.286903035193085"
+                "id": 8,
+                "images": {
+                    "image_0": {
+                        "src": "images/placeholder.jpg",
+                        "author": "Johanna Knigge"
                     }
-                ]
+                },
+                "address": "Heidelberger Str. 1, 04209 Leipzig",
+                "abbreviation": "",
+                "type": "Umformerstation - VT24",
+                "year": "",
+                "urbanism": "Neben Wohnbauten (WBS70)",
+                "useage": "Fressnapf Leipzig",
+                "height": "II",
+                "owner": "Leipziger Stadtwerke",
+                "former_useage": "",
+                "condition": "",
+                "background": "Kachefenster einseitig, umfahrbar",
+                "links": null
             }
         },
         {
@@ -291,29 +275,25 @@
                 ]
             },
             "properties": {
-                "id": "8",
-                "images": [
-                    "8.jpg",
-                    "9.jpg",
-                    "10.jpg"
-                ],
-                "address": "Beispielstra\u00dfe 123, 12345 Beispielstadt",
-                "type": "Beispieltyp",
-                "year": "1234",
-                "urbanism": "Beispielurbanismus",
-                "useage": "Beispielnutzung",
-                "condition": "Beispielzustand",
-                "background": "Beispielhintergrund",
-                "links": [
-                    {
-                        "title": "Wikipedia",
-                        "url": "https://de.wikipedia.org/wiki/Beispiel"
-                    },
-                    {
-                        "title": "Google Maps",
-                        "url": "https://www.google.com/maps/place/51.324880800574256,12.291314960393468"
+                "id": 9,
+                "images": {
+                    "image_0": {
+                        "src": "images/placeholder.jpg",
+                        "author": "Johanna Knigge"
                     }
-                ]
+                },
+                "address": "Sch\u00f6nauer Str. 235, 04205 Leipzig",
+                "abbreviation": "",
+                "type": "Mehrzweckhalle - VT18",
+                "year": "",
+                "urbanism": "Neben Wohnbauten (WBS70)",
+                "useage": "Freiwillige Feuerwehr Gr\u00fcnau: Notallrettung & Krankentransport",
+                "height": "I",
+                "owner": "",
+                "former_useage": "",
+                "condition": "",
+                "background": "Halle+ Flachbau Anbau",
+                "links": null
             }
         },
         {
@@ -326,29 +306,25 @@
                 ]
             },
             "properties": {
-                "id": "9",
-                "images": [
-                    "9.jpg",
-                    "10.jpg",
-                    "11.jpg"
-                ],
-                "address": "Beispielstra\u00dfe 123, 12345 Beispielstadt",
-                "type": "Beispieltyp",
-                "year": "1234",
-                "urbanism": "Beispielurbanismus",
-                "useage": "Beispielnutzung",
-                "condition": "Beispielzustand",
-                "background": "Beispielhintergrund",
-                "links": [
-                    {
-                        "title": "Wikipedia",
-                        "url": "https://de.wikipedia.org/wiki/Beispiel"
-                    },
-                    {
-                        "title": "Google Maps",
-                        "url": "https://www.google.com/maps/place/51.31801839502841,12.289041451889169"
+                "id": 10,
+                "images": {
+                    "image_0": {
+                        "src": "images/placeholder.jpg",
+                        "author": "Johanna Knigge"
                     }
-                ]
+                },
+                "address": "Breisgaustra\u00dfe, 04209 Leipzig",
+                "abbreviation": "",
+                "type": "Umformerstation - VT18",
+                "year": "",
+                "urbanism": "Neben Wohnbauten (WBS70)",
+                "useage": "Eiergrosshandel, Vodafone, Garagen- und Hobbyr\u00e4ume",
+                "height": "II",
+                "owner": "Leipziger Stadtwerke",
+                "former_useage": "Umformerstation",
+                "condition": "",
+                "background": "Kachefenster einseitig, umfahrbar",
+                "links": null
             }
         },
         {
@@ -361,29 +337,25 @@
                 ]
             },
             "properties": {
-                "id": "10",
-                "images": [
-                    "10.jpg",
-                    "11.jpg",
-                    "12.jpg"
-                ],
-                "address": "Beispielstra\u00dfe 123, 12345 Beispielstadt",
-                "type": "Beispieltyp",
-                "year": "1234",
-                "urbanism": "Beispielurbanismus",
-                "useage": "Beispielnutzung",
-                "condition": "Beispielzustand",
-                "background": "Beispielhintergrund",
-                "links": [
-                    {
-                        "title": "Wikipedia",
-                        "url": "https://de.wikipedia.org/wiki/Beispiel"
-                    },
-                    {
-                        "title": "Google Maps",
-                        "url": "https://www.google.com/maps/place/51.31280095738443,12.290320350834309"
+                "id": 11,
+                "images": {
+                    "image_0": {
+                        "src": "images/placeholder.jpg",
+                        "author": "Johanna Knigge"
                     }
-                ]
+                },
+                "address": "Katzelstra\u00dfe 155, 04207 Leipzig",
+                "abbreviation": "",
+                "type": "Unterwerk - VT18",
+                "year": "",
+                "urbanism": "Nachverdichtung",
+                "useage": "",
+                "height": "I",
+                "owner": "Netz Leipzig",
+                "former_useage": "",
+                "condition": "",
+                "background": "",
+                "links": null
             }
         },
         {
@@ -396,29 +368,25 @@
                 ]
             },
             "properties": {
-                "id": "11",
-                "images": [
-                    "11.jpg",
-                    "12.jpg",
-                    "13.jpg"
-                ],
-                "address": "Beispielstra\u00dfe 123, 12345 Beispielstadt",
-                "type": "Beispieltyp",
-                "year": "1234",
-                "urbanism": "Beispielurbanismus",
-                "useage": "Beispielnutzung",
-                "condition": "Beispielzustand",
-                "background": "Beispielhintergrund",
-                "links": [
-                    {
-                        "title": "Wikipedia",
-                        "url": "https://de.wikipedia.org/wiki/Beispiel"
-                    },
-                    {
-                        "title": "Google Maps",
-                        "url": "https://www.google.com/maps/place/51.31249416195688,12.29426168886093"
+                "id": 12,
+                "images": {
+                    "image_0": {
+                        "src": "images/placeholder.jpg",
+                        "author": "Johanna Knigge"
                     }
-                ]
+                },
+                "address": "Gr\u00fcnau-Siedlung, 04207 Leipzig",
+                "abbreviation": "",
+                "type": "Systembau - VT24",
+                "year": "",
+                "urbanism": "Ensemble (Senior*innenzentrum)",
+                "useage": "",
+                "height": "I",
+                "owner": "",
+                "former_useage": "",
+                "condition": "",
+                "background": "Verbindungsbau",
+                "links": null
             }
         },
         {
@@ -426,34 +394,30 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    12.29533407707962,
+                    12.295334077079621,
                     51.31220228630109
                 ]
             },
             "properties": {
-                "id": "12",
-                "images": [
-                    "12.jpg",
-                    "13.jpg",
-                    "14.jpg"
-                ],
-                "address": "Beispielstra\u00dfe 123, 12345 Beispielstadt",
-                "type": "Beispieltyp",
-                "year": "1234",
-                "urbanism": "Beispielurbanismus",
-                "useage": "Beispielnutzung",
-                "condition": "Beispielzustand",
-                "background": "Beispielhintergrund",
-                "links": [
-                    {
-                        "title": "Wikipedia",
-                        "url": "https://de.wikipedia.org/wiki/Beispiel"
-                    },
-                    {
-                        "title": "Google Maps",
-                        "url": "https://www.google.com/maps/place/51.31220228630109,12.29533407707962"
+                "id": 13,
+                "images": {
+                    "image_0": {
+                        "src": "images/placeholder.jpg",
+                        "author": "Johanna Knigge"
                     }
-                ]
+                },
+                "address": "Berkaer Weg 18, 04207 Leipzig",
+                "abbreviation": "",
+                "type": "Umformerstation - VT24",
+                "year": "",
+                "urbanism": "Neben Wohnbauten (WBS70)",
+                "useage": "",
+                "height": "II",
+                "owner": "Leipziger Stadtwerke",
+                "former_useage": "Fernw\u00e4rmeversorgung",
+                "condition": "Sanierung",
+                "background": "Kachelfenster, umfahrbar",
+                "links": null
             }
         },
         {
@@ -466,29 +430,41 @@
                 ]
             },
             "properties": {
-                "id": "13",
-                "images": [
-                    "13.jpg",
-                    "14.jpg",
-                    "15.jpg"
-                ],
-                "address": "Beispielstra\u00dfe 123, 12345 Beispielstadt",
-                "type": "Beispieltyp",
-                "year": "1234",
-                "urbanism": "Beispielurbanismus",
-                "useage": "Beispielnutzung",
-                "condition": "Beispielzustand",
-                "background": "Beispielhintergrund",
-                "links": [
-                    {
-                        "title": "Wikipedia",
-                        "url": "https://de.wikipedia.org/wiki/Beispiel"
+                "id": 14,
+                "images": {
+                    "image_0": {
+                        "src": "images/folds/fold_14/14_1.jpg",
+                        "author": "Johanna Knigge"
                     },
-                    {
-                        "title": "Google Maps",
-                        "url": "https://www.google.com/maps/place/51.32047906906656,12.29918280829756"
+                    "image_1": {
+                        "src": "images/folds/fold_14/14_2.jpg",
+                        "author": "Johanna Knigge"
+                    },
+                    "image_2": {
+                        "src": "images/folds/fold_14/14_3.jpg",
+                        "author": "Johanna Knigge"
+                    },
+                    "image_3": {
+                        "src": "images/folds/fold_14/14_4.jpg",
+                        "author": "Johanna Knigge"
+                    },
+                    "image_4": {
+                        "src": "images/folds/fold_14/14_5.jpg",
+                        "author": "Johanna Knigge"
                     }
-                ]
+                },
+                "address": "Alte Salzstra\u00dfe 63, 04209 Leipzig",
+                "abbreviation": "",
+                "type": "Umformerstation - VT24",
+                "year": "",
+                "urbanism": "St\u00e4dtebauliches Ensemble (Montessori Schule)",
+                "useage": "Heizhaus, gemeinn\u00fctziger Kulturverein",
+                "height": "II",
+                "owner": "Leipziger Stadtwerke",
+                "former_useage": "Umformerstation",
+                "condition": "Umbau 2007",
+                "background": "Kachelfenster, umfahrbar",
+                "links": null
             }
         },
         {
@@ -497,33 +473,29 @@
                 "type": "Point",
                 "coordinates": [
                     12.308849515279162,
-                    51.32297099130098
+                    51.322970991300984
                 ]
             },
             "properties": {
-                "id": "14",
-                "images": [
-                    "14.jpg",
-                    "15.jpg",
-                    "16.jpg"
-                ],
-                "address": "Beispielstra\u00dfe 123, 12345 Beispielstadt",
-                "type": "Beispieltyp",
-                "year": "1234",
-                "urbanism": "Beispielurbanismus",
-                "useage": "Beispielnutzung",
-                "condition": "Beispielzustand",
-                "background": "Beispielhintergrund",
-                "links": [
-                    {
-                        "title": "Wikipedia",
-                        "url": "https://de.wikipedia.org/wiki/Beispiel"
-                    },
-                    {
-                        "title": "Google Maps",
-                        "url": "https://www.google.com/maps/place/51.32297099130098,12.308849515279162"
+                "id": 15,
+                "images": {
+                    "image_0": {
+                        "src": "images/placeholder.jpg",
+                        "author": "Johanna Knigge"
                     }
-                ]
+                },
+                "address": "Br\u00fcnner Str. 8d, 04209 Leipzig",
+                "abbreviation": "",
+                "type": "Mehrzweckhalle - VT24",
+                "year": "",
+                "urbanism": "Nachverdichtung",
+                "useage": "T\u00dcV S\u00fcd",
+                "height": "II",
+                "owner": "",
+                "former_useage": "",
+                "condition": "",
+                "background": "",
+                "links": null
             }
         },
         {
@@ -531,34 +503,34 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    12.31602254113132,
+                    12.316022541131321,
                     51.31560638974766
                 ]
             },
             "properties": {
-                "id": "15",
-                "images": [
-                    "15.jpg",
-                    "16.jpg",
-                    "17.jpg"
-                ],
-                "address": "Beispielstra\u00dfe 123, 12345 Beispielstadt",
-                "type": "Beispieltyp",
-                "year": "1234",
-                "urbanism": "Beispielurbanismus",
-                "useage": "Beispielnutzung",
-                "condition": "Beispielzustand",
-                "background": "Beispielhintergrund",
-                "links": [
-                    {
-                        "title": "Wikipedia",
-                        "url": "https://de.wikipedia.org/wiki/Beispiel"
+                "id": 16,
+                "images": {
+                    "image_0": {
+                        "src": "images/folds/fold_16/16_1.jpg",
+                        "author": "Johanna Knigge"
                     },
-                    {
-                        "title": "Google Maps",
-                        "url": "https://www.google.com/maps/place/51.31560638974766,12.31602254113132"
+                    "image_1": {
+                        "src": "images/folds/fold_16/16_2.jpg",
+                        "author": "Johanna Knigge"
                     }
-                ]
+                },
+                "address": "Diezmannstra\u00dfe 22, 04207 Leipzig",
+                "abbreviation": "",
+                "type": "Mehrzweckhalle - 2xVT24",
+                "year": "",
+                "urbanism": "Nachverdichtung - Gemeinsames Ensemble ",
+                "useage": "Unterschiedliche Gewerbe",
+                "height": "",
+                "owner": "",
+                "former_useage": "",
+                "condition": "",
+                "background": "Hohe Halllen / 3 geschossig",
+                "links": null
             }
         },
         {
@@ -567,33 +539,29 @@
                 "type": "Point",
                 "coordinates": [
                     12.316559759388028,
-                    51.31606704093792
+                    51.316067040937924
                 ]
             },
             "properties": {
-                "id": "16",
-                "images": [
-                    "16.jpg",
-                    "17.jpg",
-                    "18.jpg"
-                ],
-                "address": "Beispielstra\u00dfe 123, 12345 Beispielstadt",
-                "type": "Beispieltyp",
-                "year": "1234",
-                "urbanism": "Beispielurbanismus",
-                "useage": "Beispielnutzung",
-                "condition": "Beispielzustand",
-                "background": "Beispielhintergrund",
-                "links": [
-                    {
-                        "title": "Wikipedia",
-                        "url": "https://de.wikipedia.org/wiki/Beispiel"
-                    },
-                    {
-                        "title": "Google Maps",
-                        "url": "https://www.google.com/maps/place/51.31606704093792,12.316559759388028"
+                "id": 17,
+                "images": {
+                    "image_0": {
+                        "src": "images/folds/fold_17/17.jpg",
+                        "author": "Johanna Knigge"
                     }
-                ]
+                },
+                "address": "Diezmannstra\u00dfe 22, 04207 Leipzig",
+                "abbreviation": "",
+                "type": "Sonderbau",
+                "year": "",
+                "urbanism": "Nachverdichtung --",
+                "useage": "Weltenbummlerhaus, Betonkiste",
+                "height": "III",
+                "owner": "",
+                "former_useage": "",
+                "condition": "",
+                "background": "Hohe Halllen / 3 geschossig",
+                "links": null
             }
         },
         {
@@ -606,29 +574,29 @@
                 ]
             },
             "properties": {
-                "id": "17",
-                "images": [
-                    "17.jpg",
-                    "18.jpg",
-                    "19.jpg"
-                ],
-                "address": "Beispielstra\u00dfe 123, 12345 Beispielstadt",
-                "type": "Beispieltyp",
-                "year": "1234",
-                "urbanism": "Beispielurbanismus",
-                "useage": "Beispielnutzung",
-                "condition": "Beispielzustand",
-                "background": "Beispielhintergrund",
-                "links": [
-                    {
-                        "title": "Wikipedia",
-                        "url": "https://de.wikipedia.org/wiki/Beispiel"
+                "id": 18,
+                "images": {
+                    "image_0": {
+                        "src": "images/folds/fold_18/18_1.jpg",
+                        "author": "Johanna Knigge"
                     },
-                    {
-                        "title": "Google Maps",
-                        "url": "https://www.google.com/maps/place/51.31808456570086,12.318135739119256"
+                    "image_1": {
+                        "src": "images/folds/fold_18/18_2.jpg",
+                        "author": "Johanna Knigge"
                     }
-                ]
+                },
+                "address": "Diezmannstra\u00dfe 77, 04207 Leipzig",
+                "abbreviation": "",
+                "type": "Tragwerk - VT18",
+                "year": "",
+                "urbanism": "Nachverdichtung - Gemeinsames Ensemble ",
+                "useage": "cetrac GmbH - gebrauchte Ger\u00fcste und Schalungen, Lager",
+                "height": "II",
+                "owner": "",
+                "former_useage": "",
+                "condition": "",
+                "background": "Skelettbau + Dach (Offener Unterstand)",
+                "links": null
             }
         },
         {
@@ -641,29 +609,25 @@
                 ]
             },
             "properties": {
-                "id": "18",
-                "images": [
-                    "18.jpg",
-                    "19.jpg",
-                    "20.jpg"
-                ],
-                "address": "Beispielstra\u00dfe 123, 12345 Beispielstadt",
-                "type": "Beispieltyp",
-                "year": "1234",
-                "urbanism": "Beispielurbanismus",
-                "useage": "Beispielnutzung",
-                "condition": "Beispielzustand",
-                "background": "Beispielhintergrund",
-                "links": [
-                    {
-                        "title": "Wikipedia",
-                        "url": "https://de.wikipedia.org/wiki/Beispiel"
-                    },
-                    {
-                        "title": "Google Maps",
-                        "url": "https://www.google.com/maps/place/51.31708822680676,12.317871264899711"
+                "id": 19,
+                "images": {
+                    "image_0": {
+                        "src": "images/placeholder.jpg",
+                        "author": "Johanna Knigge"
                     }
-                ]
+                },
+                "address": "Diezmannstra\u00dfe, 04207 Leipzig",
+                "abbreviation": "",
+                "type": "Mehrzweckhalle VT18+VT24",
+                "year": "",
+                "urbanism": "Nachverdichtung --",
+                "useage": "Firma Fiedler - Rasenm\u00e4herFachhandel",
+                "height": "II",
+                "owner": "",
+                "former_useage": "",
+                "condition": "",
+                "background": "",
+                "links": null
             }
         },
         {
@@ -676,29 +640,25 @@
                 ]
             },
             "properties": {
-                "id": "19",
-                "images": [
-                    "19.jpg",
-                    "20.jpg",
-                    "21.jpg"
-                ],
-                "address": "Beispielstra\u00dfe 123, 12345 Beispielstadt",
-                "type": "Beispieltyp",
-                "year": "1234",
-                "urbanism": "Beispielurbanismus",
-                "useage": "Beispielnutzung",
-                "condition": "Beispielzustand",
-                "background": "Beispielhintergrund",
-                "links": [
-                    {
-                        "title": "Wikipedia",
-                        "url": "https://de.wikipedia.org/wiki/Beispiel"
-                    },
-                    {
-                        "title": "Google Maps",
-                        "url": "https://www.google.com/maps/place/51.30450370490118,12.3111816102501"
+                "id": 20,
+                "images": {
+                    "image_0": {
+                        "src": "images/placeholder.jpg",
+                        "author": "Johanna Knigge"
                     }
-                ]
+                },
+                "address": "Rippachtalstra\u00dfe 10, 04249 Leipzig",
+                "abbreviation": "",
+                "type": "Mehrzweckhalle - VT24",
+                "year": "",
+                "urbanism": "Nachverdichtung",
+                "useage": "BBG Bodenbearbeitungsger\u00e4te, Landwirtschaft",
+                "height": "II",
+                "owner": "",
+                "former_useage": "",
+                "condition": "",
+                "background": "",
+                "links": null
             }
         },
         {
@@ -706,34 +666,30 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    12.312176237319704,
+                    12.312176237319703,
                     51.32901839407146
                 ]
             },
             "properties": {
-                "id": "20",
-                "images": [
-                    "20.jpg",
-                    "21.jpg",
-                    "22.jpg"
-                ],
-                "address": "Beispielstra\u00dfe 123, 12345 Beispielstadt",
-                "type": "Beispieltyp",
-                "year": "1234",
-                "urbanism": "Beispielurbanismus",
-                "useage": "Beispielnutzung",
-                "condition": "Beispielzustand",
-                "background": "Beispielhintergrund",
-                "links": [
-                    {
-                        "title": "Wikipedia",
-                        "url": "https://de.wikipedia.org/wiki/Beispiel"
-                    },
-                    {
-                        "title": "Google Maps",
-                        "url": "https://www.google.com/maps/place/51.32901839407146,12.312176237319704"
+                "id": 21,
+                "images": {
+                    "image_0": {
+                        "src": "images/placeholder.jpg",
+                        "author": "Johanna Knigge"
                     }
-                ]
+                },
+                "address": "L\u00fctzner Str. 171, 04179 Leipzig",
+                "abbreviation": "",
+                "type": "Unterwerk - VT12",
+                "year": "",
+                "urbanism": "Nachverdichtung",
+                "useage": "Unterwerk",
+                "height": "I",
+                "owner": "Netz Leipzig",
+                "former_useage": "--",
+                "condition": "Sanierung",
+                "background": "",
+                "links": null
             }
         },
         {
@@ -746,29 +702,25 @@
                 ]
             },
             "properties": {
-                "id": "21",
-                "images": [
-                    "21.jpg",
-                    "22.jpg",
-                    "23.jpg"
-                ],
-                "address": "Beispielstra\u00dfe 123, 12345 Beispielstadt",
-                "type": "Beispieltyp",
-                "year": "1234",
-                "urbanism": "Beispielurbanismus",
-                "useage": "Beispielnutzung",
-                "condition": "Beispielzustand",
-                "background": "Beispielhintergrund",
-                "links": [
-                    {
-                        "title": "Wikipedia",
-                        "url": "https://de.wikipedia.org/wiki/Beispiel"
-                    },
-                    {
-                        "title": "Google Maps",
-                        "url": "https://www.google.com/maps/place/51.328773785512354,12.313372746267822"
+                "id": 22,
+                "images": {
+                    "image_0": {
+                        "src": "images/placeholder.jpg",
+                        "author": "Johanna Knigge"
                     }
-                ]
+                },
+                "address": "L\u00fctzner Str. 162, 04179 Leipzig",
+                "abbreviation": "",
+                "type": "Mehrzweckhalle - VT14",
+                "year": "",
+                "urbanism": "Nachverdichtung - neben Garagenanlage",
+                "useage": "",
+                "height": "II",
+                "owner": "",
+                "former_useage": "",
+                "condition": "",
+                "background": "",
+                "links": null
             }
         },
         {
@@ -781,29 +733,25 @@
                 ]
             },
             "properties": {
-                "id": "22",
-                "images": [
-                    "22.jpg",
-                    "23.jpg",
-                    "24.jpg"
-                ],
-                "address": "Beispielstra\u00dfe 123, 12345 Beispielstadt",
-                "type": "Beispieltyp",
-                "year": "1234",
-                "urbanism": "Beispielurbanismus",
-                "useage": "Beispielnutzung",
-                "condition": "Beispielzustand",
-                "background": "Beispielhintergrund",
-                "links": [
-                    {
-                        "title": "Wikipedia",
-                        "url": "https://de.wikipedia.org/wiki/Beispiel"
-                    },
-                    {
-                        "title": "Google Maps",
-                        "url": "https://www.google.com/maps/place/51.333323521075,12.29809542264866"
+                "id": 23,
+                "images": {
+                    "image_0": {
+                        "src": "images/placeholder.jpg",
+                        "author": "Johanna Knigge"
                     }
-                ]
+                },
+                "address": "",
+                "abbreviation": "",
+                "type": "Mehrzweckhalle - VT24",
+                "year": "",
+                "urbanism": "Nachverdichtung - Gemeinsames Ensemble ",
+                "useage": "Feuerwehr / \u00dcbungsplatz Polizei Leipzig",
+                "height": "II",
+                "owner": "",
+                "former_useage": "",
+                "condition": "",
+                "background": "",
+                "links": null
             }
         },
         {
@@ -816,29 +764,25 @@
                 ]
             },
             "properties": {
-                "id": "23",
-                "images": [
-                    "23.jpg",
-                    "24.jpg",
-                    "25.jpg"
-                ],
-                "address": "Beispielstra\u00dfe 123, 12345 Beispielstadt",
-                "type": "Beispieltyp",
-                "year": "1234",
-                "urbanism": "Beispielurbanismus",
-                "useage": "Beispielnutzung",
-                "condition": "Beispielzustand",
-                "background": "Beispielhintergrund",
-                "links": [
-                    {
-                        "title": "Wikipedia",
-                        "url": "https://de.wikipedia.org/wiki/Beispiel"
-                    },
-                    {
-                        "title": "Google Maps",
-                        "url": "https://www.google.com/maps/place/51.332944146362536,12.297405114111292"
+                "id": 24,
+                "images": {
+                    "image_0": {
+                        "src": "images/placeholder.jpg",
+                        "author": "Johanna Knigge"
                     }
-                ]
+                },
+                "address": "",
+                "abbreviation": "",
+                "type": "Mehrzweckhalle - VT24",
+                "year": "",
+                "urbanism": "Nachverdichtung -- ",
+                "useage": "Feuerwehr / \u00dcbungsplatz Polizei Leipzig",
+                "height": "II",
+                "owner": "",
+                "former_useage": "",
+                "condition": "",
+                "background": "",
+                "links": null
             }
         },
         {
@@ -851,29 +795,25 @@
                 ]
             },
             "properties": {
-                "id": "24",
-                "images": [
-                    "24.jpg",
-                    "25.jpg",
-                    "26.jpg"
-                ],
-                "address": "Beispielstra\u00dfe 123, 12345 Beispielstadt",
-                "type": "Beispieltyp",
-                "year": "1234",
-                "urbanism": "Beispielurbanismus",
-                "useage": "Beispielnutzung",
-                "condition": "Beispielzustand",
-                "background": "Beispielhintergrund",
-                "links": [
-                    {
-                        "title": "Wikipedia",
-                        "url": "https://de.wikipedia.org/wiki/Beispiel"
-                    },
-                    {
-                        "title": "Google Maps",
-                        "url": "https://www.google.com/maps/place/51.33251225716993,12.299251945518668"
+                "id": 25,
+                "images": {
+                    "image_0": {
+                        "src": "images/placeholder.jpg",
+                        "author": "Johanna Knigge"
                     }
-                ]
+                },
+                "address": "",
+                "abbreviation": "",
+                "type": "Mehrzweckhalle - VT24",
+                "year": "",
+                "urbanism": "Nachverdichtung --",
+                "useage": "Feuerwehr / \u00dcbungsplatz Polizei Leipzig",
+                "height": "II",
+                "owner": "",
+                "former_useage": "",
+                "condition": "",
+                "background": "",
+                "links": null
             }
         },
         {
@@ -881,34 +821,30 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    12.296783819034223,
+                    12.296783819034225,
                     51.339940314512745
                 ]
             },
             "properties": {
-                "id": "25",
-                "images": [
-                    "25.jpg",
-                    "26.jpg",
-                    "27.jpg"
-                ],
-                "address": "Beispielstra\u00dfe 123, 12345 Beispielstadt",
-                "type": "Beispieltyp",
-                "year": "1234",
-                "urbanism": "Beispielurbanismus",
-                "useage": "Beispielnutzung",
-                "condition": "Beispielzustand",
-                "background": "Beispielhintergrund",
-                "links": [
-                    {
-                        "title": "Wikipedia",
-                        "url": "https://de.wikipedia.org/wiki/Beispiel"
-                    },
-                    {
-                        "title": "Google Maps",
-                        "url": "https://www.google.com/maps/place/51.339940314512745,12.296783819034223"
+                "id": 26,
+                "images": {
+                    "image_0": {
+                        "src": "images/placeholder.jpg",
+                        "author": "Johanna Knigge"
                     }
-                ]
+                },
+                "address": "Plautstra\u00dfe 52, 04179 Leipzig",
+                "abbreviation": "",
+                "type": "Mehrzweckhalle - VT14",
+                "year": "",
+                "urbanism": "Nachverdichtung - Gemeinsames Ensemble ",
+                "useage": "KANN- Beton",
+                "height": "II",
+                "owner": "",
+                "former_useage": "",
+                "condition": "",
+                "background": "",
+                "links": null
             }
         },
         {
@@ -916,34 +852,30 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    12.297320446222209,
+                    12.297320446222207,
                     51.339718983400886
                 ]
             },
             "properties": {
-                "id": "26",
-                "images": [
-                    "26.jpg",
-                    "27.jpg",
-                    "28.jpg"
-                ],
-                "address": "Beispielstra\u00dfe 123, 12345 Beispielstadt",
-                "type": "Beispieltyp",
-                "year": "1234",
-                "urbanism": "Beispielurbanismus",
-                "useage": "Beispielnutzung",
-                "condition": "Beispielzustand",
-                "background": "Beispielhintergrund",
-                "links": [
-                    {
-                        "title": "Wikipedia",
-                        "url": "https://de.wikipedia.org/wiki/Beispiel"
-                    },
-                    {
-                        "title": "Google Maps",
-                        "url": "https://www.google.com/maps/place/51.339718983400886,12.297320446222209"
+                "id": 27,
+                "images": {
+                    "image_0": {
+                        "src": "images/placeholder.jpg",
+                        "author": "Johanna Knigge"
                     }
-                ]
+                },
+                "address": "Plautstra\u00dfe 52, 04179 Leipzig",
+                "abbreviation": "",
+                "type": "Mehrzweckhalle - VT14",
+                "year": "",
+                "urbanism": "Nachverdichtung --",
+                "useage": "KANN- Beton",
+                "height": "II",
+                "owner": "",
+                "former_useage": "",
+                "condition": "",
+                "background": "",
+                "links": null
             }
         },
         {
@@ -951,34 +883,30 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    12.306882281844585,
+                    12.306882281844583,
                     51.34572672109371
                 ]
             },
             "properties": {
-                "id": "27",
-                "images": [
-                    "27.jpg",
-                    "28.jpg",
-                    "29.jpg"
-                ],
-                "address": "Beispielstra\u00dfe 123, 12345 Beispielstadt",
-                "type": "Beispieltyp",
-                "year": "1234",
-                "urbanism": "Beispielurbanismus",
-                "useage": "Beispielnutzung",
-                "condition": "Beispielzustand",
-                "background": "Beispielhintergrund",
-                "links": [
-                    {
-                        "title": "Wikipedia",
-                        "url": "https://de.wikipedia.org/wiki/Beispiel"
-                    },
-                    {
-                        "title": "Google Maps",
-                        "url": "https://www.google.com/maps/place/51.34572672109371,12.306882281844585"
+                "id": 28,
+                "images": {
+                    "image_0": {
+                        "src": "images/placeholder.jpg",
+                        "author": "Johanna Knigge"
                     }
-                ]
+                },
+                "address": "Franz-Flemming-Stra\u00dfe 27, 04179 Leipzig",
+                "abbreviation": "",
+                "type": "Mehrzweckhalle - VT18",
+                "year": "",
+                "urbanism": "Nachverdichtung",
+                "useage": "Mischnutzung",
+                "height": "II",
+                "owner": "",
+                "former_useage": "",
+                "condition": "",
+                "background": "Dach teilweise \u00fcberbaut/ saniert",
+                "links": null
             }
         },
         {
@@ -987,33 +915,29 @@
                 "type": "Point",
                 "coordinates": [
                     12.307435319792862,
-                    51.34563481763861
+                    51.345634817638604
                 ]
             },
             "properties": {
-                "id": "28",
-                "images": [
-                    "28.jpg",
-                    "29.jpg",
-                    "30.jpg"
-                ],
-                "address": "Beispielstra\u00dfe 123, 12345 Beispielstadt",
-                "type": "Beispieltyp",
-                "year": "1234",
-                "urbanism": "Beispielurbanismus",
-                "useage": "Beispielnutzung",
-                "condition": "Beispielzustand",
-                "background": "Beispielhintergrund",
-                "links": [
-                    {
-                        "title": "Wikipedia",
-                        "url": "https://de.wikipedia.org/wiki/Beispiel"
-                    },
-                    {
-                        "title": "Google Maps",
-                        "url": "https://www.google.com/maps/place/51.34563481763861,12.307435319792862"
+                "id": 29,
+                "images": {
+                    "image_0": {
+                        "src": "images/placeholder.jpg",
+                        "author": "Johanna Knigge"
                     }
-                ]
+                },
+                "address": "Franz-Flemming-Stra\u00dfe 27, 04179 Leipzig",
+                "abbreviation": "",
+                "type": "Mehrzweckhalle - VT18",
+                "year": "",
+                "urbanism": "Nachverdichtung",
+                "useage": "Cross Fit/ Autoservice",
+                "height": "I",
+                "owner": "",
+                "former_useage": "",
+                "condition": "",
+                "background": "Kachelfenster, einseitig anfahrbar",
+                "links": null
             }
         },
         {
@@ -1026,29 +950,25 @@
                 ]
             },
             "properties": {
-                "id": "29",
-                "images": [
-                    "29.jpg",
-                    "30.jpg",
-                    "31.jpg"
-                ],
-                "address": "Beispielstra\u00dfe 123, 12345 Beispielstadt",
-                "type": "Beispieltyp",
-                "year": "1234",
-                "urbanism": "Beispielurbanismus",
-                "useage": "Beispielnutzung",
-                "condition": "Beispielzustand",
-                "background": "Beispielhintergrund",
-                "links": [
-                    {
-                        "title": "Wikipedia",
-                        "url": "https://de.wikipedia.org/wiki/Beispiel"
-                    },
-                    {
-                        "title": "Google Maps",
-                        "url": "https://www.google.com/maps/place/51.345769423226,12.309355964787253"
+                "id": 30,
+                "images": {
+                    "image_0": {
+                        "src": "images/placeholder.jpg",
+                        "author": "Johanna Knigge"
                     }
-                ]
+                },
+                "address": "Franz-Flemming-Stra\u00dfe 20, 04179 Leipzig",
+                "abbreviation": "",
+                "type": "Mehrzweckhalle - VT24",
+                "year": "",
+                "urbanism": "Nachverdichtung ",
+                "useage": "Trailer Center Koppe",
+                "height": "II",
+                "owner": "",
+                "former_useage": "",
+                "condition": "",
+                "background": "Kachelfenster, umfahrbar, 2 aneinandergesetzte Bauk\u00f6rper, Bahnanlage (ehemaliges Bahngel\u00e4nde?)",
+                "links": null
             }
         },
         {
@@ -1061,29 +981,25 @@
                 ]
             },
             "properties": {
-                "id": "30",
-                "images": [
-                    "30.jpg",
-                    "31.jpg",
-                    "32.jpg"
-                ],
-                "address": "Beispielstra\u00dfe 123, 12345 Beispielstadt",
-                "type": "Beispieltyp",
-                "year": "1234",
-                "urbanism": "Beispielurbanismus",
-                "useage": "Beispielnutzung",
-                "condition": "Beispielzustand",
-                "background": "Beispielhintergrund",
-                "links": [
-                    {
-                        "title": "Wikipedia",
-                        "url": "https://de.wikipedia.org/wiki/Beispiel"
-                    },
-                    {
-                        "title": "Google Maps",
-                        "url": "https://www.google.com/maps/place/51.35246950286587,12.324441912687384"
+                "id": 31,
+                "images": {
+                    "image_0": {
+                        "src": "images/placeholder.jpg",
+                        "author": "Johanna Knigge"
                     }
-                ]
+                },
+                "address": "Otto-Schmiedt-Stra\u00dfe, 04179 Leipzig",
+                "abbreviation": "",
+                "type": "Mehrzweckhalle - VT12",
+                "year": "",
+                "urbanism": "Nachverdichtung - Gemeinsames Ensemble ",
+                "useage": "",
+                "height": "I",
+                "owner": "",
+                "former_useage": "",
+                "condition": "",
+                "background": "",
+                "links": null
             }
         },
         {
@@ -1091,34 +1007,30 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    12.32479598842438,
-                    51.35235750199472
+                    12.324795988424379,
+                    51.352357501994724
                 ]
             },
             "properties": {
-                "id": "31",
-                "images": [
-                    "31.jpg",
-                    "32.jpg",
-                    "33.jpg"
-                ],
-                "address": "Beispielstra\u00dfe 123, 12345 Beispielstadt",
-                "type": "Beispieltyp",
-                "year": "1234",
-                "urbanism": "Beispielurbanismus",
-                "useage": "Beispielnutzung",
-                "condition": "Beispielzustand",
-                "background": "Beispielhintergrund",
-                "links": [
-                    {
-                        "title": "Wikipedia",
-                        "url": "https://de.wikipedia.org/wiki/Beispiel"
-                    },
-                    {
-                        "title": "Google Maps",
-                        "url": "https://www.google.com/maps/place/51.35235750199472,12.32479598842438"
+                "id": 32,
+                "images": {
+                    "image_0": {
+                        "src": "images/placeholder.jpg",
+                        "author": "Johanna Knigge"
                     }
-                ]
+                },
+                "address": "Otto-Schmiedt-Stra\u00dfe, 04179 Leipzig",
+                "abbreviation": "",
+                "type": "Mehrzweckhalle - VT10",
+                "year": "",
+                "urbanism": "Nachverdichtung --",
+                "useage": "",
+                "height": "I",
+                "owner": "",
+                "former_useage": "",
+                "condition": "",
+                "background": "",
+                "links": null
             }
         },
         {
@@ -1131,29 +1043,25 @@
                 ]
             },
             "properties": {
-                "id": "32",
-                "images": [
-                    "32.jpg",
-                    "33.jpg",
-                    "34.jpg"
-                ],
-                "address": "Beispielstra\u00dfe 123, 12345 Beispielstadt",
-                "type": "Beispieltyp",
-                "year": "1234",
-                "urbanism": "Beispielurbanismus",
-                "useage": "Beispielnutzung",
-                "condition": "Beispielzustand",
-                "background": "Beispielhintergrund",
-                "links": [
-                    {
-                        "title": "Wikipedia",
-                        "url": "https://de.wikipedia.org/wiki/Beispiel"
-                    },
-                    {
-                        "title": "Google Maps",
-                        "url": "https://www.google.com/maps/place/51.3371632837322,12.333377789784416"
+                "id": 33,
+                "images": {
+                    "image_0": {
+                        "src": "images/placeholder.jpg",
+                        "author": "Johanna Knigge"
                     }
-                ]
+                },
+                "address": "Lindenauer Markt Aufgang B, 04177 Leipzig",
+                "abbreviation": "",
+                "type": "Unterwerk - VT14",
+                "year": "",
+                "urbanism": "Nachverdichtung ",
+                "useage": "",
+                "height": "I",
+                "owner": "Netz Leipzig",
+                "former_useage": "",
+                "condition": "",
+                "background": "freies Gel\u00e4ne zwischen Pekar und Markt - ABRISS? ",
+                "links": null
             }
         },
         {
@@ -1161,34 +1069,30 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    12.353674731166665,
+                    12.353674731166663,
                     51.33639973196578
                 ]
             },
             "properties": {
-                "id": "33",
-                "images": [
-                    "33.jpg",
-                    "34.jpg",
-                    "35.jpg"
-                ],
-                "address": "Beispielstra\u00dfe 123, 12345 Beispielstadt",
-                "type": "Beispieltyp",
-                "year": "1234",
-                "urbanism": "Beispielurbanismus",
-                "useage": "Beispielnutzung",
-                "condition": "Beispielzustand",
-                "background": "Beispielhintergrund",
-                "links": [
-                    {
-                        "title": "Wikipedia",
-                        "url": "https://de.wikipedia.org/wiki/Beispiel"
-                    },
-                    {
-                        "title": "Google Maps",
-                        "url": "https://www.google.com/maps/place/51.33639973196578,12.353674731166665"
+                "id": 34,
+                "images": {
+                    "image_0": {
+                        "src": "images/placeholder.jpg",
+                        "author": "Johanna Knigge"
                     }
-                ]
+                },
+                "address": "Mainzer Str. 4, 04109 Leipzig",
+                "abbreviation": "",
+                "type": "Springerturm - VT24",
+                "year": "",
+                "urbanism": "Sport Uni Campus Ensemble",
+                "useage": "Schwimmer- Sprunghalle Uni Leipzig",
+                "height": "II",
+                "owner": "",
+                "former_useage": "",
+                "condition": "Sanierung 2014 - 2019",
+                "background": "Hohe Halle",
+                "links": null
             }
         },
         {
@@ -1196,34 +1100,30 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    12.355957022227075,
+                    12.355957022227077,
                     51.339033086216425
                 ]
             },
             "properties": {
-                "id": "34",
-                "images": [
-                    "34.jpg",
-                    "35.jpg",
-                    "36.jpg"
-                ],
-                "address": "Beispielstra\u00dfe 123, 12345 Beispielstadt",
-                "type": "Beispieltyp",
-                "year": "1234",
-                "urbanism": "Beispielurbanismus",
-                "useage": "Beispielnutzung",
-                "condition": "Beispielzustand",
-                "background": "Beispielhintergrund",
-                "links": [
-                    {
-                        "title": "Wikipedia",
-                        "url": "https://de.wikipedia.org/wiki/Beispiel"
-                    },
-                    {
-                        "title": "Google Maps",
-                        "url": "https://www.google.com/maps/place/51.339033086216425,12.355957022227075"
+                "id": 35,
+                "images": {
+                    "image_0": {
+                        "src": "images/placeholder.jpg",
+                        "author": "Johanna Knigge"
                     }
-                ]
+                },
+                "address": "Marschnerstra\u00dfe 30, 04109 Leipzig",
+                "abbreviation": "",
+                "type": "Sporthalle 2xVT16",
+                "year": "",
+                "urbanism": "St\u00e4dtebauliches Ensemble (Landesgymnasium f\u00fcr Sport)",
+                "useage": "",
+                "height": "I",
+                "owner": "",
+                "former_useage": "",
+                "condition": "",
+                "background": "",
+                "links": null
             }
         },
         {
@@ -1236,29 +1136,25 @@
                 ]
             },
             "properties": {
-                "id": "35",
-                "images": [
-                    "35.jpg",
-                    "36.jpg",
-                    "37.jpg"
-                ],
-                "address": "Beispielstra\u00dfe 123, 12345 Beispielstadt",
-                "type": "Beispieltyp",
-                "year": "1234",
-                "urbanism": "Beispielurbanismus",
-                "useage": "Beispielnutzung",
-                "condition": "Beispielzustand",
-                "background": "Beispielhintergrund",
-                "links": [
-                    {
-                        "title": "Wikipedia",
-                        "url": "https://de.wikipedia.org/wiki/Beispiel"
-                    },
-                    {
-                        "title": "Google Maps",
-                        "url": "https://www.google.com/maps/place/51.33598101751903,12.36481766839186"
+                "id": 36,
+                "images": {
+                    "image_0": {
+                        "src": "images/placeholder.jpg",
+                        "author": "Johanna Knigge"
                     }
-                ]
+                },
+                "address": "Gustav-Mahler-Stra\u00dfe 1-3, 04109 Leipzig",
+                "abbreviation": "",
+                "type": "Anbau an Halle - VT 14",
+                "year": "",
+                "urbanism": "Nachverdichtung",
+                "useage": "Kinder und Jugen\u00e4rztlicher Dienst",
+                "height": "II",
+                "owner": "",
+                "former_useage": "",
+                "condition": "",
+                "background": "",
+                "links": null
             }
         },
         {
@@ -1266,34 +1162,30 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    12.366502226018609,
+                    12.366502226018607,
                     51.3368307788784
                 ]
             },
             "properties": {
-                "id": "36",
-                "images": [
-                    "36.jpg",
-                    "37.jpg",
-                    "38.jpg"
-                ],
-                "address": "Beispielstra\u00dfe 123, 12345 Beispielstadt",
-                "type": "Beispieltyp",
-                "year": "1234",
-                "urbanism": "Beispielurbanismus",
-                "useage": "Beispielnutzung",
-                "condition": "Beispielzustand",
-                "background": "Beispielhintergrund",
-                "links": [
-                    {
-                        "title": "Wikipedia",
-                        "url": "https://de.wikipedia.org/wiki/Beispiel"
-                    },
-                    {
-                        "title": "Google Maps",
-                        "url": "https://www.google.com/maps/place/51.3368307788784,12.366502226018609"
+                "id": 37,
+                "images": {
+                    "image_0": {
+                        "src": "images/placeholder.jpg",
+                        "author": "Johanna Knigge"
                     }
-                ]
+                },
+                "address": "Reichelstra\u00dfe 12, 04109 Leipzig",
+                "abbreviation": "",
+                "type": "SH 15x30, EG 12, WBS 70 / BR 85-VT-Falte",
+                "year": "",
+                "urbanism": "St\u00e4dtebauliches Ensemble (Schule Anna Magdalena Bach)",
+                "useage": "Sporthalle Anna-Magdalena-Bach-Grundschule",
+                "height": "I",
+                "owner": "",
+                "former_useage": "",
+                "condition": "",
+                "background": "https://tischtennis-leipzig.de/",
+                "links": null
             }
         },
         {
@@ -1306,29 +1198,25 @@
                 ]
             },
             "properties": {
-                "id": "37",
-                "images": [
-                    "37.jpg",
-                    "38.jpg",
-                    "39.jpg"
-                ],
-                "address": "Beispielstra\u00dfe 123, 12345 Beispielstadt",
-                "type": "Beispieltyp",
-                "year": "1234",
-                "urbanism": "Beispielurbanismus",
-                "useage": "Beispielnutzung",
-                "condition": "Beispielzustand",
-                "background": "Beispielhintergrund",
-                "links": [
-                    {
-                        "title": "Wikipedia",
-                        "url": "https://de.wikipedia.org/wiki/Beispiel"
-                    },
-                    {
-                        "title": "Google Maps",
-                        "url": "https://www.google.com/maps/place/51.33890991027192,12.36763158254053"
+                "id": 38,
+                "images": {
+                    "image_0": {
+                        "src": "images/placeholder.jpg",
+                        "author": "Johanna Knigge"
                     }
-                ]
+                },
+                "address": "Elsterstra\u00dfe, 04109 Leipzig",
+                "abbreviation": "",
+                "type": "Umformerstation - VT18",
+                "year": "",
+                "urbanism": "Nachverdichtung",
+                "useage": "",
+                "height": "II",
+                "owner": "",
+                "former_useage": "",
+                "condition": "",
+                "background": "zweigeschossig, Fensterb\u00e4nder, blaues Grafitti",
+                "links": null
             }
         },
         {
@@ -1341,29 +1229,25 @@
                 ]
             },
             "properties": {
-                "id": "38",
-                "images": [
-                    "38.jpg",
-                    "39.jpg",
-                    "40.jpg"
-                ],
-                "address": "Beispielstra\u00dfe 123, 12345 Beispielstadt",
-                "type": "Beispieltyp",
-                "year": "1234",
-                "urbanism": "Beispielurbanismus",
-                "useage": "Beispielnutzung",
-                "condition": "Beispielzustand",
-                "background": "Beispielhintergrund",
-                "links": [
-                    {
-                        "title": "Wikipedia",
-                        "url": "https://de.wikipedia.org/wiki/Beispiel"
-                    },
-                    {
-                        "title": "Google Maps",
-                        "url": "https://www.google.com/maps/place/51.33294303781748,12.37636697123183"
+                "id": 39,
+                "images": {
+                    "image_0": {
+                        "src": "images/placeholder.jpg",
+                        "author": "Johanna Knigge"
                     }
-                ]
+                },
+                "address": "H\u00e4rtelstra\u00dfe 6, 04107 Leipzig",
+                "abbreviation": "",
+                "type": "Unterwerk - VT13",
+                "year": "",
+                "urbanism": "Nachverdichtung",
+                "useage": "",
+                "height": "I",
+                "owner": "Netz Leipzig",
+                "former_useage": "",
+                "condition": "Sanierung",
+                "background": "'\u00dcberspanngefahr', Kachelfenster",
+                "links": null
             }
         },
         {
@@ -1376,29 +1260,25 @@
                 ]
             },
             "properties": {
-                "id": "39",
-                "images": [
-                    "39.jpg",
-                    "40.jpg",
-                    "41.jpg"
-                ],
-                "address": "Beispielstra\u00dfe 123, 12345 Beispielstadt",
-                "type": "Beispieltyp",
-                "year": "1234",
-                "urbanism": "Beispielurbanismus",
-                "useage": "Beispielnutzung",
-                "condition": "Beispielzustand",
-                "background": "Beispielhintergrund",
-                "links": [
-                    {
-                        "title": "Wikipedia",
-                        "url": "https://de.wikipedia.org/wiki/Beispiel"
-                    },
-                    {
-                        "title": "Google Maps",
-                        "url": "https://www.google.com/maps/place/51.33439096069012,12.380971180261188"
+                "id": 40,
+                "images": {
+                    "image_0": {
+                        "src": "images/placeholder.jpg",
+                        "author": "Johanna Knigge"
                     }
-                ]
+                },
+                "address": "Leplaystra\u00dfe 13, 04103 Leipzig",
+                "abbreviation": "",
+                "type": "Sporthalle 2xVT18",
+                "year": "",
+                "urbanism": "Nachverdichtung",
+                "useage": "Turn- und Gymnastikclub Leipzig e.V.",
+                "height": "II",
+                "owner": "",
+                "former_useage": "--",
+                "condition": "",
+                "background": "Clubgr\u00fcndung 1963, mehrfache DDR Meister",
+                "links": null
             }
         },
         {
@@ -1411,29 +1291,25 @@
                 ]
             },
             "properties": {
-                "id": "40",
-                "images": [
-                    "40.jpg",
-                    "41.jpg",
-                    "42.jpg"
-                ],
-                "address": "Beispielstra\u00dfe 123, 12345 Beispielstadt",
-                "type": "Beispieltyp",
-                "year": "1234",
-                "urbanism": "Beispielurbanismus",
-                "useage": "Beispielnutzung",
-                "condition": "Beispielzustand",
-                "background": "Beispielhintergrund",
-                "links": [
-                    {
-                        "title": "Wikipedia",
-                        "url": "https://de.wikipedia.org/wiki/Beispiel"
-                    },
-                    {
-                        "title": "Google Maps",
-                        "url": "https://www.google.com/maps/place/51.33475844883784,12.387191341640166"
+                "id": 41,
+                "images": {
+                    "image_0": {
+                        "src": "images/placeholder.jpg",
+                        "author": "Johanna Knigge"
                     }
-                ]
+                },
+                "address": "Seeburgstra\u00dfe 51a, 04103 Leipzig",
+                "abbreviation": "",
+                "type": "Mehrzweckhalle - VT 14",
+                "year": "",
+                "urbanism": "Nachverdichtung / Hinterhofbebauung neben Garagen",
+                "useage": "",
+                "height": "II",
+                "owner": "",
+                "former_useage": "",
+                "condition": "In Sanierung (Stand Jan.2024)",
+                "background": "",
+                "links": null
             }
         },
         {
@@ -1446,29 +1322,25 @@
                 ]
             },
             "properties": {
-                "id": "41",
-                "images": [
-                    "41.jpg",
-                    "42.jpg",
-                    "43.jpg"
-                ],
-                "address": "Beispielstra\u00dfe 123, 12345 Beispielstadt",
-                "type": "Beispieltyp",
-                "year": "1234",
-                "urbanism": "Beispielurbanismus",
-                "useage": "Beispielnutzung",
-                "condition": "Beispielzustand",
-                "background": "Beispielhintergrund",
-                "links": [
-                    {
-                        "title": "Wikipedia",
-                        "url": "https://de.wikipedia.org/wiki/Beispiel"
-                    },
-                    {
-                        "title": "Google Maps",
-                        "url": "https://www.google.com/maps/place/51.33746508683114,12.396200865113828"
+                "id": 42,
+                "images": {
+                    "image_0": {
+                        "src": "images/placeholder.jpg",
+                        "author": "Johanna Knigge"
                     }
-                ]
+                },
+                "address": "Perthesstra\u00dfe 2c, 04317 Leipzig",
+                "abbreviation": "",
+                "type": "Mehrzweckhalle - VT16",
+                "year": "",
+                "urbanism": "Nachverdichtung - neben Garagenanlage",
+                "useage": "",
+                "height": "I",
+                "owner": "",
+                "former_useage": "",
+                "condition": "Einseitig Saniert",
+                "background": "Kachelfenster",
+                "links": null
             }
         },
         {
@@ -1481,29 +1353,25 @@
                 ]
             },
             "properties": {
-                "id": "42",
-                "images": [
-                    "42.jpg",
-                    "43.jpg",
-                    "44.jpg"
-                ],
-                "address": "Beispielstra\u00dfe 123, 12345 Beispielstadt",
-                "type": "Beispieltyp",
-                "year": "1234",
-                "urbanism": "Beispielurbanismus",
-                "useage": "Beispielnutzung",
-                "condition": "Beispielzustand",
-                "background": "Beispielhintergrund",
-                "links": [
-                    {
-                        "title": "Wikipedia",
-                        "url": "https://de.wikipedia.org/wiki/Beispiel"
-                    },
-                    {
-                        "title": "Google Maps",
-                        "url": "https://www.google.com/maps/place/51.341642615108526,12.398538071382305"
+                "id": 43,
+                "images": {
+                    "image_0": {
+                        "src": "images/placeholder.jpg",
+                        "author": "Johanna Knigge"
                     }
-                ]
+                },
+                "address": "Klasingstra\u00dfe 44C, 04315 Leipzig",
+                "abbreviation": "",
+                "type": "Mehrzweckhalle - VT13",
+                "year": "",
+                "urbanism": "Nachverdichtung",
+                "useage": "",
+                "height": "II",
+                "owner": "Leipziger Stadtwerke",
+                "former_useage": "",
+                "condition": "",
+                "background": "",
+                "links": null
             }
         },
         {
@@ -1512,33 +1380,29 @@
                 "type": "Point",
                 "coordinates": [
                     12.399373271836357,
-                    51.34207766449261
+                    51.342077664492614
                 ]
             },
             "properties": {
-                "id": "43",
-                "images": [
-                    "43.jpg",
-                    "44.jpg",
-                    "45.jpg"
-                ],
-                "address": "Beispielstra\u00dfe 123, 12345 Beispielstadt",
-                "type": "Beispieltyp",
-                "year": "1234",
-                "urbanism": "Beispielurbanismus",
-                "useage": "Beispielnutzung",
-                "condition": "Beispielzustand",
-                "background": "Beispielhintergrund",
-                "links": [
-                    {
-                        "title": "Wikipedia",
-                        "url": "https://de.wikipedia.org/wiki/Beispiel"
-                    },
-                    {
-                        "title": "Google Maps",
-                        "url": "https://www.google.com/maps/place/51.34207766449261,12.399373271836357"
+                "id": 44,
+                "images": {
+                    "image_0": {
+                        "src": "images/placeholder.jpg",
+                        "author": "Johanna Knigge"
                     }
-                ]
+                },
+                "address": "Kohlgartenstra\u00dfe 36, 04315 Leipzig",
+                "abbreviation": "",
+                "type": "SH 15x30, EG 12, WBS 70 / BR 85-VT-Falte",
+                "year": "",
+                "urbanism": "Nachverdichtung",
+                "useage": "Sporthalle August Bebel Schule",
+                "height": "II",
+                "owner": "",
+                "former_useage": "",
+                "condition": "sanierungsbed\u00fcrftig ",
+                "background": "",
+                "links": null
             }
         },
         {
@@ -1547,33 +1411,29 @@
                 "type": "Point",
                 "coordinates": [
                     12.38611396144499,
-                    51.34132857241252
+                    51.341328572412515
                 ]
             },
             "properties": {
-                "id": "44",
-                "images": [
-                    "44.jpg",
-                    "45.jpg",
-                    "46.jpg"
-                ],
-                "address": "Beispielstra\u00dfe 123, 12345 Beispielstadt",
-                "type": "Beispieltyp",
-                "year": "1234",
-                "urbanism": "Beispielurbanismus",
-                "useage": "Beispielnutzung",
-                "condition": "Beispielzustand",
-                "background": "Beispielhintergrund",
-                "links": [
-                    {
-                        "title": "Wikipedia",
-                        "url": "https://de.wikipedia.org/wiki/Beispiel"
-                    },
-                    {
-                        "title": "Google Maps",
-                        "url": "https://www.google.com/maps/place/51.34132857241252,12.38611396144499"
+                "id": 45,
+                "images": {
+                    "image_0": {
+                        "src": "images/placeholder.jpg",
+                        "author": "Johanna Knigge"
                     }
-                ]
+                },
+                "address": "D\u00f6rrienstra\u00dfe 3, 04103 Leipzig",
+                "abbreviation": "",
+                "type": "Unterwerk - VT14",
+                "year": "",
+                "urbanism": "Nachverdichtung",
+                "useage": "",
+                "height": "I",
+                "owner": "Netz Leipzig",
+                "former_useage": "",
+                "condition": "Sanierung",
+                "background": "Kachelfenster, eingez\u00e4unt '\u00dcberspanngefahr'",
+                "links": null
             }
         },
         {
@@ -1581,34 +1441,30 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    12.40356370167416,
+                    12.403563701674159,
                     51.34458132367844
                 ]
             },
             "properties": {
-                "id": "45",
-                "images": [
-                    "45.jpg",
-                    "46.jpg",
-                    "47.jpg"
-                ],
-                "address": "Beispielstra\u00dfe 123, 12345 Beispielstadt",
-                "type": "Beispieltyp",
-                "year": "1234",
-                "urbanism": "Beispielurbanismus",
-                "useage": "Beispielnutzung",
-                "condition": "Beispielzustand",
-                "background": "Beispielhintergrund",
-                "links": [
-                    {
-                        "title": "Wikipedia",
-                        "url": "https://de.wikipedia.org/wiki/Beispiel"
-                    },
-                    {
-                        "title": "Google Maps",
-                        "url": "https://www.google.com/maps/place/51.34458132367844,12.40356370167416"
+                "id": 46,
+                "images": {
+                    "image_0": {
+                        "src": "images/placeholder.jpg",
+                        "author": "Johanna Knigge"
                     }
-                ]
+                },
+                "address": "Konradstra\u00dfe 26, 04315 Leipzig",
+                "abbreviation": "",
+                "type": "SH 15x30, EG 12, WBS 70 / BR 85-VT-Falte",
+                "year": "",
+                "urbanism": "St\u00e4dtbauliches Ensemble (Park)",
+                "useage": "Sporthalle Rabet",
+                "height": "I / II",
+                "owner": "",
+                "former_useage": "Leerstand",
+                "condition": "Leerstand",
+                "background": "",
+                "links": null
             }
         },
         {
@@ -1621,29 +1477,25 @@
                 ]
             },
             "properties": {
-                "id": "46",
-                "images": [
-                    "46.jpg",
-                    "47.jpg",
-                    "48.jpg"
-                ],
-                "address": "Beispielstra\u00dfe 123, 12345 Beispielstadt",
-                "type": "Beispieltyp",
-                "year": "1234",
-                "urbanism": "Beispielurbanismus",
-                "useage": "Beispielnutzung",
-                "condition": "Beispielzustand",
-                "background": "Beispielhintergrund",
-                "links": [
-                    {
-                        "title": "Wikipedia",
-                        "url": "https://de.wikipedia.org/wiki/Beispiel"
-                    },
-                    {
-                        "title": "Google Maps",
-                        "url": "https://www.google.com/maps/place/51.34411922494742,12.40347299161282"
+                "id": 47,
+                "images": {
+                    "image_0": {
+                        "src": "images/placeholder.jpg",
+                        "author": "Johanna Knigge"
                     }
-                ]
+                },
+                "address": "Eisenbahnstra\u00dfe 54, 04315 Leipzig",
+                "abbreviation": "",
+                "type": "Jugendclub ",
+                "year": "",
+                "urbanism": "St\u00e4dtbauliches Ensemble (Park)",
+                "useage": "OFT 'Rabet', Offener Freizeittreff",
+                "height": "I / II",
+                "owner": "Stadt Leipzig",
+                "former_useage": "",
+                "condition": "",
+                "background": "",
+                "links": null
             }
         },
         {
@@ -1651,34 +1503,30 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    12.406664758835475,
+                    12.406664758835477,
                     51.34241493488315
                 ]
             },
             "properties": {
-                "id": "47",
-                "images": [
-                    "47.jpg",
-                    "48.jpg",
-                    "49.jpg"
-                ],
-                "address": "Beispielstra\u00dfe 123, 12345 Beispielstadt",
-                "type": "Beispieltyp",
-                "year": "1234",
-                "urbanism": "Beispielurbanismus",
-                "useage": "Beispielnutzung",
-                "condition": "Beispielzustand",
-                "background": "Beispielhintergrund",
-                "links": [
-                    {
-                        "title": "Wikipedia",
-                        "url": "https://de.wikipedia.org/wiki/Beispiel"
-                    },
-                    {
-                        "title": "Google Maps",
-                        "url": "https://www.google.com/maps/place/51.34241493488315,12.406664758835475"
+                "id": 48,
+                "images": {
+                    "image_0": {
+                        "src": "images/placeholder.jpg",
+                        "author": "Johanna Knigge"
                     }
-                ]
+                },
+                "address": "Hildegardstra\u00dfe 1, 04315 Leipzig",
+                "abbreviation": "",
+                "type": "Umformerstation - VT13",
+                "year": "",
+                "urbanism": "Nachverdichtung",
+                "useage": "Blockheizkraftwerk",
+                "height": "II",
+                "owner": "Leipziger Stadtwerke",
+                "former_useage": "Umformerstation",
+                "condition": "",
+                "background": "",
+                "links": null
             }
         },
         {
@@ -1691,29 +1539,25 @@
                 ]
             },
             "properties": {
-                "id": "48",
-                "images": [
-                    "48.jpg",
-                    "49.jpg",
-                    "50.jpg"
-                ],
-                "address": "Beispielstra\u00dfe 123, 12345 Beispielstadt",
-                "type": "Beispieltyp",
-                "year": "1234",
-                "urbanism": "Beispielurbanismus",
-                "useage": "Beispielnutzung",
-                "condition": "Beispielzustand",
-                "background": "Beispielhintergrund",
-                "links": [
-                    {
-                        "title": "Wikipedia",
-                        "url": "https://de.wikipedia.org/wiki/Beispiel"
-                    },
-                    {
-                        "title": "Google Maps",
-                        "url": "https://www.google.com/maps/place/51.34525137399716,12.42782292945404"
+                "id": 49,
+                "images": {
+                    "image_0": {
+                        "src": "images/placeholder.jpg",
+                        "author": "Johanna Knigge"
                     }
-                ]
+                },
+                "address": "P\u00fcchauer Str. 4, 04318 Leipzig",
+                "abbreviation": "",
+                "type": "Jugenclub ",
+                "year": "",
+                "urbanism": "Nachverdichtung",
+                "useage": "Offener Jugenclub Sellerhausen (Kindervereinigung e.V.)",
+                "height": "I / II",
+                "owner": "",
+                "former_useage": "",
+                "condition": "",
+                "background": "",
+                "links": null
             }
         },
         {
@@ -1726,29 +1570,25 @@
                 ]
             },
             "properties": {
-                "id": "49",
-                "images": [
-                    "49.jpg",
-                    "50.jpg",
-                    "51.jpg"
-                ],
-                "address": "Beispielstra\u00dfe 123, 12345 Beispielstadt",
-                "type": "Beispieltyp",
-                "year": "1234",
-                "urbanism": "Beispielurbanismus",
-                "useage": "Beispielnutzung",
-                "condition": "Beispielzustand",
-                "background": "Beispielhintergrund",
-                "links": [
-                    {
-                        "title": "Wikipedia",
-                        "url": "https://de.wikipedia.org/wiki/Beispiel"
-                    },
-                    {
-                        "title": "Google Maps",
-                        "url": "https://www.google.com/maps/place/51.35444386420673,12.422607786426966"
+                "id": 50,
+                "images": {
+                    "image_0": {
+                        "src": "images/placeholder.jpg",
+                        "author": "Johanna Knigge"
                     }
-                ]
+                },
+                "address": "B\u00e4stleinstra\u00dfe 2, 04347 Leipzig",
+                "abbreviation": "",
+                "type": "Mehrzweckhalle - VT24",
+                "year": 1976.0,
+                "urbanism": "St\u00e4dtbauliches Ensemble (Rahmenplan 1976)",
+                "useage": "Fernw\u00e4rme",
+                "height": "II",
+                "owner": "Leipziger Stadtwerke",
+                "former_useage": "Umformerstation",
+                "condition": "",
+                "background": "Kachelfenster, neben Umspannwerk Nordost",
+                "links": null
             }
         },
         {
@@ -1761,29 +1601,25 @@
                 ]
             },
             "properties": {
-                "id": "50",
-                "images": [
-                    "50.jpg",
-                    "51.jpg",
-                    "52.jpg"
-                ],
-                "address": "Beispielstra\u00dfe 123, 12345 Beispielstadt",
-                "type": "Beispieltyp",
-                "year": "1234",
-                "urbanism": "Beispielurbanismus",
-                "useage": "Beispielnutzung",
-                "condition": "Beispielzustand",
-                "background": "Beispielhintergrund",
-                "links": [
-                    {
-                        "title": "Wikipedia",
-                        "url": "https://de.wikipedia.org/wiki/Beispiel"
-                    },
-                    {
-                        "title": "Google Maps",
-                        "url": "https://www.google.com/maps/place/51.34993500292091,12.459028363170928"
+                "id": 51,
+                "images": {
+                    "image_0": {
+                        "src": "images/folds/fold_51/51.jpg",
+                        "author": "Johanna Knigge"
                     }
-                ]
+                },
+                "address": "Lehdenweg 40, 04328 Leipzig",
+                "abbreviation": "",
+                "type": "Mehrzweckhalle - VT13",
+                "year": "",
+                "urbanism": "Nachverdichtung - Gemeinsames Ensemble ",
+                "useage": "Fernw\u00e4rme",
+                "height": "II",
+                "owner": "Leipziger Stadtwerke",
+                "former_useage": "Umformerstation",
+                "condition": "Sanierung",
+                "background": "Fensterband",
+                "links": null
             }
         },
         {
@@ -1791,34 +1627,30 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    12.459292345723544,
+                    12.459292345723545,
                     51.35012964487513
                 ]
             },
             "properties": {
-                "id": "51",
-                "images": [
-                    "51.jpg",
-                    "52.jpg",
-                    "53.jpg"
-                ],
-                "address": "Beispielstra\u00dfe 123, 12345 Beispielstadt",
-                "type": "Beispieltyp",
-                "year": "1234",
-                "urbanism": "Beispielurbanismus",
-                "useage": "Beispielnutzung",
-                "condition": "Beispielzustand",
-                "background": "Beispielhintergrund",
-                "links": [
-                    {
-                        "title": "Wikipedia",
-                        "url": "https://de.wikipedia.org/wiki/Beispiel"
-                    },
-                    {
-                        "title": "Google Maps",
-                        "url": "https://www.google.com/maps/place/51.35012964487513,12.459292345723544"
+                "id": 52,
+                "images": {
+                    "image_0": {
+                        "src": "images/folds/fold_52/52.jpg",
+                        "author": "Johanna Knigge"
                     }
-                ]
+                },
+                "address": "Lehdenweg 40, 04328 Leipzig",
+                "abbreviation": "",
+                "type": "Mehrzweckhalle - VT13",
+                "year": "",
+                "urbanism": "Nachverdichtung --",
+                "useage": "Fernw\u00e4rme",
+                "height": "II",
+                "owner": "Leipziger Stadtwerke",
+                "former_useage": "Umformerstation",
+                "condition": "",
+                "background": "Fensterband",
+                "links": null
             }
         },
         {
@@ -1831,29 +1663,25 @@
                 ]
             },
             "properties": {
-                "id": "52",
-                "images": [
-                    "52.jpg",
-                    "53.jpg",
-                    "54.jpg"
-                ],
-                "address": "Beispielstra\u00dfe 123, 12345 Beispielstadt",
-                "type": "Beispieltyp",
-                "year": "1234",
-                "urbanism": "Beispielurbanismus",
-                "useage": "Beispielnutzung",
-                "condition": "Beispielzustand",
-                "background": "Beispielhintergrund",
-                "links": [
-                    {
-                        "title": "Wikipedia",
-                        "url": "https://de.wikipedia.org/wiki/Beispiel"
-                    },
-                    {
-                        "title": "Google Maps",
-                        "url": "https://www.google.com/maps/place/51.35257082787227,12.459878758614634"
+                "id": 53,
+                "images": {
+                    "image_0": {
+                        "src": "images/placeholder.jpg",
+                        "author": "Johanna Knigge"
                     }
-                ]
+                },
+                "address": "Waldzieststra\u00dfe 1, 04329 Leipzig",
+                "abbreviation": "",
+                "type": "Kaufhalle VT -18/22",
+                "year": "",
+                "urbanism": "St\u00e4dtebauliches Ensemble",
+                "useage": "Konsum",
+                "height": "I",
+                "owner": "",
+                "former_useage": "",
+                "condition": "",
+                "background": "",
+                "links": null
             }
         },
         {
@@ -1861,34 +1689,30 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    12.466323897663845,
+                    12.466323897663843,
                     51.35338564298118
                 ]
             },
             "properties": {
-                "id": "53",
-                "images": [
-                    "53.jpg",
-                    "54.jpg",
-                    "55.jpg"
-                ],
-                "address": "Beispielstra\u00dfe 123, 12345 Beispielstadt",
-                "type": "Beispieltyp",
-                "year": "1234",
-                "urbanism": "Beispielurbanismus",
-                "useage": "Beispielnutzung",
-                "condition": "Beispielzustand",
-                "background": "Beispielhintergrund",
-                "links": [
-                    {
-                        "title": "Wikipedia",
-                        "url": "https://de.wikipedia.org/wiki/Beispiel"
-                    },
-                    {
-                        "title": "Google Maps",
-                        "url": "https://www.google.com/maps/place/51.35338564298118,12.466323897663845"
+                "id": 54,
+                "images": {
+                    "image_0": {
+                        "src": "images/placeholder.jpg",
+                        "author": "Johanna Knigge"
                     }
-                ]
+                },
+                "address": "Zum W\u00e4ldchen 6a, 04329 Leipzig",
+                "abbreviation": "",
+                "type": "Sporthalle SH 18x36 + G WBS 70- VT- Falte",
+                "year": "",
+                "urbanism": "St\u00e4dtebauliches Ensemble (Schule Paunsdorf)",
+                "useage": "",
+                "height": "II",
+                "owner": "",
+                "former_useage": "",
+                "condition": "",
+                "background": "",
+                "links": null
             }
         },
         {
@@ -1901,29 +1725,25 @@
                 ]
             },
             "properties": {
-                "id": "54",
-                "images": [
-                    "54.jpg",
-                    "55.jpg",
-                    "56.jpg"
-                ],
-                "address": "Beispielstra\u00dfe 123, 12345 Beispielstadt",
-                "type": "Beispieltyp",
-                "year": "1234",
-                "urbanism": "Beispielurbanismus",
-                "useage": "Beispielnutzung",
-                "condition": "Beispielzustand",
-                "background": "Beispielhintergrund",
-                "links": [
-                    {
-                        "title": "Wikipedia",
-                        "url": "https://de.wikipedia.org/wiki/Beispiel"
-                    },
-                    {
-                        "title": "Google Maps",
-                        "url": "https://www.google.com/maps/place/51.353034264815726,12.46677879980482"
+                "id": 55,
+                "images": {
+                    "image_0": {
+                        "src": "images/placeholder.jpg",
+                        "author": "Johanna Knigge"
                     }
-                ]
+                },
+                "address": "Zum W\u00e4ldchen 6, 04329 Leipzig",
+                "abbreviation": "",
+                "type": "Jugendclub",
+                "year": "",
+                "urbanism": "St\u00e4dtebauliches Ensemble (Schule Paunsdorf)",
+                "useage": "OFT 'Crazy', Offener Freizeittreff",
+                "height": "I",
+                "owner": "Stadt Leipzig",
+                "former_useage": "",
+                "condition": "Sanierung durch KO/OK Architekten (Neue Fassadengestaltung)",
+                "background": "",
+                "links": null
             }
         },
         {
@@ -1932,33 +1752,29 @@
                 "type": "Point",
                 "coordinates": [
                     12.456505774068942,
-                    51.35524291744586
+                    51.355242917445864
                 ]
             },
             "properties": {
-                "id": "55",
-                "images": [
-                    "55.jpg",
-                    "56.jpg",
-                    "57.jpg"
-                ],
-                "address": "Beispielstra\u00dfe 123, 12345 Beispielstadt",
-                "type": "Beispieltyp",
-                "year": "1234",
-                "urbanism": "Beispielurbanismus",
-                "useage": "Beispielnutzung",
-                "condition": "Beispielzustand",
-                "background": "Beispielhintergrund",
-                "links": [
-                    {
-                        "title": "Wikipedia",
-                        "url": "https://de.wikipedia.org/wiki/Beispiel"
-                    },
-                    {
-                        "title": "Google Maps",
-                        "url": "https://www.google.com/maps/place/51.35524291744586,12.456505774068942"
+                "id": 56,
+                "images": {
+                    "image_0": {
+                        "src": "images/placeholder.jpg",
+                        "author": "Johanna Knigge"
                     }
-                ]
+                },
+                "address": "Goldsternstra\u00dfe 25, 04329 Leipzig",
+                "abbreviation": "",
+                "type": "SPH-N-18x36-VT-Falte",
+                "year": "",
+                "urbanism": "St\u00e4dtebauliches Ensemble (Br\u00fcder Grimm Schule )",
+                "useage": "Turnhalle, Br\u00fcder Grimm Schule",
+                "height": "II",
+                "owner": "",
+                "former_useage": "",
+                "condition": "",
+                "background": "",
+                "links": null
             }
         },
         {
@@ -1971,29 +1787,25 @@
                 ]
             },
             "properties": {
-                "id": "56",
-                "images": [
-                    "56.jpg",
-                    "57.jpg",
-                    "58.jpg"
-                ],
-                "address": "Beispielstra\u00dfe 123, 12345 Beispielstadt",
-                "type": "Beispieltyp",
-                "year": "1234",
-                "urbanism": "Beispielurbanismus",
-                "useage": "Beispielnutzung",
-                "condition": "Beispielzustand",
-                "background": "Beispielhintergrund",
-                "links": [
-                    {
-                        "title": "Wikipedia",
-                        "url": "https://de.wikipedia.org/wiki/Beispiel"
-                    },
-                    {
-                        "title": "Google Maps",
-                        "url": "https://www.google.com/maps/place/51.37345719550073,12.435728753081015"
+                "id": 57,
+                "images": {
+                    "image_0": {
+                        "src": "images/placeholder.jpg",
+                        "author": "Johanna Knigge"
                     }
-                ]
+                },
+                "address": "Oelsnitzer Str. 2, 04349 Leipzig",
+                "abbreviation": "",
+                "type": "Mehrzweckhalle - VT24",
+                "year": "",
+                "urbanism": "Ensemble (Senior*innenzentrum)",
+                "useage": "",
+                "height": "I",
+                "owner": "",
+                "former_useage": "",
+                "condition": "",
+                "background": "Verbindungsbau",
+                "links": null
             }
         },
         {
@@ -2006,29 +1818,25 @@
                 ]
             },
             "properties": {
-                "id": "57",
-                "images": [
-                    "57.jpg",
-                    "58.jpg",
-                    "59.jpg"
-                ],
-                "address": "Beispielstra\u00dfe 123, 12345 Beispielstadt",
-                "type": "Beispieltyp",
-                "year": "1234",
-                "urbanism": "Beispielurbanismus",
-                "useage": "Beispielnutzung",
-                "condition": "Beispielzustand",
-                "background": "Beispielhintergrund",
-                "links": [
-                    {
-                        "title": "Wikipedia",
-                        "url": "https://de.wikipedia.org/wiki/Beispiel"
-                    },
-                    {
-                        "title": "Google Maps",
-                        "url": "https://www.google.com/maps/place/51.373424205562166,12.431221051684002"
+                "id": 58,
+                "images": {
+                    "image_0": {
+                        "src": "images/placeholder.jpg",
+                        "author": "Johanna Knigge"
                     }
-                ]
+                },
+                "address": "Zschopauer Str. 2, 04349 Leipzig",
+                "abbreviation": "",
+                "type": "Mehrzweckhalle - VT18",
+                "year": "",
+                "urbanism": "Nachverdichtung - neben Garagenanlage",
+                "useage": "Elektrotechnik Lehmann GmbH ",
+                "height": "II",
+                "owner": "",
+                "former_useage": "",
+                "condition": "",
+                "background": "Fensterb\u00e4nder",
+                "links": null
             }
         },
         {
@@ -2036,34 +1844,30 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    12.413609954510196,
+                    12.413609954510195,
                     51.378464438849214
                 ]
             },
             "properties": {
-                "id": "58",
-                "images": [
-                    "58.jpg",
-                    "59.jpg",
-                    "60.jpg"
-                ],
-                "address": "Beispielstra\u00dfe 123, 12345 Beispielstadt",
-                "type": "Beispieltyp",
-                "year": "1234",
-                "urbanism": "Beispielurbanismus",
-                "useage": "Beispielnutzung",
-                "condition": "Beispielzustand",
-                "background": "Beispielhintergrund",
-                "links": [
-                    {
-                        "title": "Wikipedia",
-                        "url": "https://de.wikipedia.org/wiki/Beispiel"
-                    },
-                    {
-                        "title": "Google Maps",
-                        "url": "https://www.google.com/maps/place/51.378464438849214,12.413609954510196"
+                "id": 59,
+                "images": {
+                    "image_0": {
+                        "src": "images/placeholder.jpg",
+                        "author": "Johanna Knigge"
                     }
-                ]
+                },
+                "address": "Tschernyschewskistra\u00dfe 36, 04357 Leipzig",
+                "abbreviation": "",
+                "type": "Mehrzweckhalle - VT24",
+                "year": "",
+                "urbanism": "Nachverdichtung",
+                "useage": "Garage",
+                "height": "II",
+                "owner": "",
+                "former_useage": "",
+                "condition": "",
+                "background": "Fensterb\u00e4nder",
+                "links": null
             }
         },
         {
@@ -2071,34 +1875,42 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    12.402628937691505,
+                    12.402628937691503,
                     51.377309210872895
                 ]
             },
             "properties": {
-                "id": "59",
-                "images": [
-                    "59.jpg",
-                    "60.jpg",
-                    "61.jpg"
-                ],
-                "address": "Beispielstra\u00dfe 123, 12345 Beispielstadt",
-                "type": "Beispieltyp",
-                "year": "1234",
-                "urbanism": "Beispielurbanismus",
-                "useage": "Beispielnutzung",
-                "condition": "Beispielzustand",
-                "background": "Beispielhintergrund",
-                "links": [
-                    {
-                        "title": "Wikipedia",
-                        "url": "https://de.wikipedia.org/wiki/Beispiel"
+                "id": 60,
+                "images": {
+                    "image_0": {
+                        "src": "images/folds/fold_60/60.jpg",
+                        "author": "Johanna Knigge"
                     },
-                    {
-                        "title": "Google Maps",
-                        "url": "https://www.google.com/maps/place/51.377309210872895,12.402628937691505"
+                    "image_1": {
+                        "src": "images/folds/fold_60/60_2.jpg",
+                        "author": "Johanna Knigge"
+                    },
+                    "image_2": {
+                        "src": "images/folds/fold_60/60_3.jpg",
+                        "author": "Johanna Knigge"
+                    },
+                    "image_3": {
+                        "src": "images/folds/fold_60/60_4.jpg",
+                        "author": "Johanna Knigge"
                     }
-                ]
+                },
+                "address": "Rosenowstra\u00dfe 30A, 04357 Leipzig",
+                "abbreviation": "",
+                "type": "Umformerstation - VT13",
+                "year": "",
+                "urbanism": "St\u00e4dtebauliches Ensemble / Nachverdichtung",
+                "useage": "Leerstand",
+                "height": "II",
+                "owner": "Leipziger Stadtwerke",
+                "former_useage": "Getr\u00e4nkelieferant, Stadtwerke",
+                "condition": "'Umbau",
+                "background": " Neue Fassade/ Fenster'",
+                "links": null
             }
         },
         {
@@ -2106,34 +1918,30 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    12.392403257387665,
+                    12.392403257387663,
                     51.38104268887767
                 ]
             },
             "properties": {
-                "id": "60",
-                "images": [
-                    "60.jpg",
-                    "61.jpg",
-                    "62.jpg"
-                ],
-                "address": "Beispielstra\u00dfe 123, 12345 Beispielstadt",
-                "type": "Beispieltyp",
-                "year": "1234",
-                "urbanism": "Beispielurbanismus",
-                "useage": "Beispielnutzung",
-                "condition": "Beispielzustand",
-                "background": "Beispielhintergrund",
-                "links": [
-                    {
-                        "title": "Wikipedia",
-                        "url": "https://de.wikipedia.org/wiki/Beispiel"
-                    },
-                    {
-                        "title": "Google Maps",
-                        "url": "https://www.google.com/maps/place/51.38104268887767,12.392403257387665"
+                "id": 61,
+                "images": {
+                    "image_0": {
+                        "src": "images/placeholder.jpg",
+                        "author": "Johanna Knigge"
                     }
-                ]
+                },
+                "address": "Zschortauer Str 85-79, 04129 Leipzig",
+                "abbreviation": "",
+                "type": "Mehrzweckhalle - VT16",
+                "year": "",
+                "urbanism": "Nachverdichtung",
+                "useage": "Gewerbe / Lager",
+                "height": "I",
+                "owner": "",
+                "former_useage": "",
+                "condition": "",
+                "background": "Kachelfenster",
+                "links": null
             }
         },
         {
@@ -2146,29 +1954,25 @@
                 ]
             },
             "properties": {
-                "id": "61",
-                "images": [
-                    "61.jpg",
-                    "62.jpg",
-                    "63.jpg"
-                ],
-                "address": "Beispielstra\u00dfe 123, 12345 Beispielstadt",
-                "type": "Beispieltyp",
-                "year": "1234",
-                "urbanism": "Beispielurbanismus",
-                "useage": "Beispielnutzung",
-                "condition": "Beispielzustand",
-                "background": "Beispielhintergrund",
-                "links": [
-                    {
-                        "title": "Wikipedia",
-                        "url": "https://de.wikipedia.org/wiki/Beispiel"
-                    },
-                    {
-                        "title": "Google Maps",
-                        "url": "https://www.google.com/maps/place/51.38042449783165,12.39266422660641"
+                "id": 62,
+                "images": {
+                    "image_0": {
+                        "src": "images/placeholder.jpg",
+                        "author": "Johanna Knigge"
                     }
-                ]
+                },
+                "address": "Zschortauer Str 75, 04129 Leipzig",
+                "abbreviation": "",
+                "type": "Mehrzweckhalle - VT16",
+                "year": "",
+                "urbanism": "Nachverdichtung",
+                "useage": "Gewerbe / Lager",
+                "height": "II",
+                "owner": "",
+                "former_useage": "",
+                "condition": "",
+                "background": "Keine Fenster",
+                "links": null
             }
         },
         {
@@ -2181,29 +1985,25 @@
                 ]
             },
             "properties": {
-                "id": "62",
-                "images": [
-                    "62.jpg",
-                    "63.jpg",
-                    "64.jpg"
-                ],
-                "address": "Beispielstra\u00dfe 123, 12345 Beispielstadt",
-                "type": "Beispieltyp",
-                "year": "1234",
-                "urbanism": "Beispielurbanismus",
-                "useage": "Beispielnutzung",
-                "condition": "Beispielzustand",
-                "background": "Beispielhintergrund",
-                "links": [
-                    {
-                        "title": "Wikipedia",
-                        "url": "https://de.wikipedia.org/wiki/Beispiel"
-                    },
-                    {
-                        "title": "Google Maps",
-                        "url": "https://www.google.com/maps/place/51.3745670340068,12.392976362759406"
+                "id": 63,
+                "images": {
+                    "image_0": {
+                        "src": "images/placeholder.jpg",
+                        "author": "Johanna Knigge"
                     }
-                ]
+                },
+                "address": "Essener Str. 32, 04129 Leipzig",
+                "abbreviation": "",
+                "type": "Mehrzweckhalle - 2xVT24",
+                "year": "",
+                "urbanism": "",
+                "useage": "Gewerbe / Lager",
+                "height": "II",
+                "owner": "",
+                "former_useage": "",
+                "condition": "",
+                "background": "Gro\u00dfe Einfahrten, in unmittelbarer N\u00e4he zu vergelichbaren Hallen mit HP Schalendach",
+                "links": null
             }
         },
         {
@@ -2216,29 +2016,25 @@
                 ]
             },
             "properties": {
-                "id": "63",
-                "images": [
-                    "63.jpg",
-                    "64.jpg",
-                    "65.jpg"
-                ],
-                "address": "Beispielstra\u00dfe 123, 12345 Beispielstadt",
-                "type": "Beispieltyp",
-                "year": "1234",
-                "urbanism": "Beispielurbanismus",
-                "useage": "Beispielnutzung",
-                "condition": "Beispielzustand",
-                "background": "Beispielhintergrund",
-                "links": [
-                    {
-                        "title": "Wikipedia",
-                        "url": "https://de.wikipedia.org/wiki/Beispiel"
-                    },
-                    {
-                        "title": "Google Maps",
-                        "url": "https://www.google.com/maps/place/51.37182752816865,12.396011427904003"
+                "id": 64,
+                "images": {
+                    "image_0": {
+                        "src": "images/placeholder.jpg",
+                        "author": "Johanna Knigge"
                     }
-                ]
+                },
+                "address": "Zschortauer Str 1, 04129 Leipzig",
+                "abbreviation": "",
+                "type": "Mehrzweckhalle - 2xVT18",
+                "year": "",
+                "urbanism": "Nachverdichtung - Gemeinsames Ensemble ",
+                "useage": "Varile, Baufachhandel",
+                "height": "II",
+                "owner": "",
+                "former_useage": "",
+                "condition": "",
+                "background": "Solaranlage auf Dach",
+                "links": null
             }
         },
         {
@@ -2251,29 +2047,25 @@
                 ]
             },
             "properties": {
-                "id": "64",
-                "images": [
-                    "64.jpg",
-                    "65.jpg",
-                    "66.jpg"
-                ],
-                "address": "Beispielstra\u00dfe 123, 12345 Beispielstadt",
-                "type": "Beispieltyp",
-                "year": "1234",
-                "urbanism": "Beispielurbanismus",
-                "useage": "Beispielnutzung",
-                "condition": "Beispielzustand",
-                "background": "Beispielhintergrund",
-                "links": [
-                    {
-                        "title": "Wikipedia",
-                        "url": "https://de.wikipedia.org/wiki/Beispiel"
-                    },
-                    {
-                        "title": "Google Maps",
-                        "url": "https://www.google.com/maps/place/51.37179521481068,12.395393730798038"
+                "id": 65,
+                "images": {
+                    "image_0": {
+                        "src": "images/placeholder.jpg",
+                        "author": "Johanna Knigge"
                     }
-                ]
+                },
+                "address": "Zschortauer Str 3, 04129 Leipzig",
+                "abbreviation": "",
+                "type": "Mehrzweckhalle - 2xVT18",
+                "year": "",
+                "urbanism": "Nachverdichtung --",
+                "useage": "Rust- Impex Teeladen",
+                "height": "II",
+                "owner": "",
+                "former_useage": "",
+                "condition": "",
+                "background": "Solaranlage auf Dach, wei\u00dfe Blechfassade",
+                "links": null
             }
         },
         {
@@ -2286,29 +2078,25 @@
                 ]
             },
             "properties": {
-                "id": "65",
-                "images": [
-                    "65.jpg",
-                    "66.jpg",
-                    "67.jpg"
-                ],
-                "address": "Beispielstra\u00dfe 123, 12345 Beispielstadt",
-                "type": "Beispieltyp",
-                "year": "1234",
-                "urbanism": "Beispielurbanismus",
-                "useage": "Beispielnutzung",
-                "condition": "Beispielzustand",
-                "background": "Beispielhintergrund",
-                "links": [
-                    {
-                        "title": "Wikipedia",
-                        "url": "https://de.wikipedia.org/wiki/Beispiel"
-                    },
-                    {
-                        "title": "Google Maps",
-                        "url": "https://www.google.com/maps/place/51.379889277175096,12.361806964153484"
+                "id": 66,
+                "images": {
+                    "image_0": {
+                        "src": "images/placeholder.jpg",
+                        "author": "Johanna Knigge"
                     }
-                ]
+                },
+                "address": "J\u00f6rgen-Schmidtchen-Weg 8, 04157 Leipzig",
+                "abbreviation": "",
+                "type": "SH 15x30, EG 12, WBS 70 / BR 85-VT-Falte",
+                "year": "",
+                "urbanism": "St\u00e4dtebauliches Ensemble (Hans Kroch Schule)",
+                "useage": "Sporthalle Hans Kroch Schule",
+                "height": "II",
+                "owner": "",
+                "former_useage": "",
+                "condition": "",
+                "background": "",
+                "links": null
             }
         },
         {
@@ -2317,33 +2105,29 @@
                 "type": "Point",
                 "coordinates": [
                     12.359570766437605,
-                    51.37965065758437
+                    51.379650657584364
                 ]
             },
             "properties": {
-                "id": "66",
-                "images": [
-                    "66.jpg",
-                    "67.jpg",
-                    "68.jpg"
-                ],
-                "address": "Beispielstra\u00dfe 123, 12345 Beispielstadt",
-                "type": "Beispieltyp",
-                "year": "1234",
-                "urbanism": "Beispielurbanismus",
-                "useage": "Beispielnutzung",
-                "condition": "Beispielzustand",
-                "background": "Beispielhintergrund",
-                "links": [
-                    {
-                        "title": "Wikipedia",
-                        "url": "https://de.wikipedia.org/wiki/Beispiel"
-                    },
-                    {
-                        "title": "Google Maps",
-                        "url": "https://www.google.com/maps/place/51.37965065758437,12.359570766437605"
+                "id": 67,
+                "images": {
+                    "image_0": {
+                        "src": "images/placeholder.jpg",
+                        "author": "Johanna Knigge"
                     }
-                ]
+                },
+                "address": "J\u00f6rgen-Schmidtchen-Weg 2, 04157 Leipzig",
+                "abbreviation": "",
+                "type": "Kaufhalle",
+                "year": "",
+                "urbanism": "St\u00e4dtebauliches Ensemble (Neben Wohnplatten)",
+                "useage": "Konsum Leipzig",
+                "height": "I",
+                "owner": "",
+                "former_useage": "",
+                "condition": "",
+                "background": "sehr niedrige Deckenh\u00f6he",
+                "links": null
             }
         },
         {
@@ -2351,34 +2135,30 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    12.399431110354396,
+                    12.399431110354397,
                     51.3575752478414
                 ]
             },
             "properties": {
-                "id": "67",
-                "images": [
-                    "67.jpg",
-                    "68.jpg",
-                    "69.jpg"
-                ],
-                "address": "Beispielstra\u00dfe 123, 12345 Beispielstadt",
-                "type": "Beispieltyp",
-                "year": "1234",
-                "urbanism": "Beispielurbanismus",
-                "useage": "Beispielnutzung",
-                "condition": "Beispielzustand",
-                "background": "Beispielhintergrund",
-                "links": [
-                    {
-                        "title": "Wikipedia",
-                        "url": "https://de.wikipedia.org/wiki/Beispiel"
-                    },
-                    {
-                        "title": "Google Maps",
-                        "url": "https://www.google.com/maps/place/51.3575752478414,12.399431110354396"
+                "id": 68,
+                "images": {
+                    "image_0": {
+                        "src": "images/placeholder.jpg",
+                        "author": "Johanna Knigge"
                     }
-                ]
+                },
+                "address": "Rackwitzer Str. 50-52, 04347 Leipzig",
+                "abbreviation": "",
+                "type": "Mehrzweckhalle - VT14",
+                "year": "",
+                "urbanism": "Nachverdichtung - Gemeinsames Ensemble ",
+                "useage": "Autoverwertung Richter",
+                "height": "II",
+                "owner": "",
+                "former_useage": "",
+                "condition": "",
+                "background": "",
+                "links": null
             }
         },
         {
@@ -2391,29 +2171,25 @@
                 ]
             },
             "properties": {
-                "id": "68",
-                "images": [
-                    "68.jpg",
-                    "69.jpg",
-                    "70.jpg"
-                ],
-                "address": "Beispielstra\u00dfe 123, 12345 Beispielstadt",
-                "type": "Beispieltyp",
-                "year": "1234",
-                "urbanism": "Beispielurbanismus",
-                "useage": "Beispielnutzung",
-                "condition": "Beispielzustand",
-                "background": "Beispielhintergrund",
-                "links": [
-                    {
-                        "title": "Wikipedia",
-                        "url": "https://de.wikipedia.org/wiki/Beispiel"
-                    },
-                    {
-                        "title": "Google Maps",
-                        "url": "https://www.google.com/maps/place/51.35724156498065,12.398960476447932"
+                "id": 69,
+                "images": {
+                    "image_0": {
+                        "src": "images/placeholder.jpg",
+                        "author": "Johanna Knigge"
                     }
-                ]
+                },
+                "address": "Rackwitzer Str. 50-52, 04347 Leipzig",
+                "abbreviation": "",
+                "type": "Mehrzweckhalle - VT14+VT18 ",
+                "year": "",
+                "urbanism": "Nachverdichtung --",
+                "useage": "Autoverwertung Richter",
+                "height": "II",
+                "owner": "",
+                "former_useage": "",
+                "condition": "",
+                "background": "'3 Teilig",
+                "links": null
             }
         },
         {
@@ -2421,34 +2197,30 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    12.392995759122376,
-                    51.35225084354381
+                    12.392995759122375,
+                    51.352250843543814
                 ]
             },
             "properties": {
-                "id": "69",
-                "images": [
-                    "69.jpg",
-                    "70.jpg",
-                    "71.jpg"
-                ],
-                "address": "Beispielstra\u00dfe 123, 12345 Beispielstadt",
-                "type": "Beispieltyp",
-                "year": "1234",
-                "urbanism": "Beispielurbanismus",
-                "useage": "Beispielnutzung",
-                "condition": "Beispielzustand",
-                "background": "Beispielhintergrund",
-                "links": [
-                    {
-                        "title": "Wikipedia",
-                        "url": "https://de.wikipedia.org/wiki/Beispiel"
-                    },
-                    {
-                        "title": "Google Maps",
-                        "url": "https://www.google.com/maps/place/51.35225084354381,12.392995759122376"
+                "id": 70,
+                "images": {
+                    "image_0": {
+                        "src": "images/placeholder.jpg",
+                        "author": "Johanna Knigge"
                     }
-                ]
+                },
+                "address": "Rackwitzer Str. 12, 04347 Leipzig",
+                "abbreviation": "",
+                "type": "Mehrzweckhalle - VT18",
+                "year": "",
+                "urbanism": "Nachverdichtung",
+                "useage": "Konkursverwertung Pakendorf,  Lager",
+                "height": "II",
+                "owner": "",
+                "former_useage": "",
+                "condition": "",
+                "background": "Konglomerat an Bestandshallen (aneinandergereiht), neben Garagen",
+                "links": null
             }
         },
         {
@@ -2461,29 +2233,25 @@
                 ]
             },
             "properties": {
-                "id": "70",
-                "images": [
-                    "70.jpg",
-                    "71.jpg",
-                    "72.jpg"
-                ],
-                "address": "Beispielstra\u00dfe 123, 12345 Beispielstadt",
-                "type": "Beispieltyp",
-                "year": "1234",
-                "urbanism": "Beispielurbanismus",
-                "useage": "Beispielnutzung",
-                "condition": "Beispielzustand",
-                "background": "Beispielhintergrund",
-                "links": [
-                    {
-                        "title": "Wikipedia",
-                        "url": "https://de.wikipedia.org/wiki/Beispiel"
-                    },
-                    {
-                        "title": "Google Maps",
-                        "url": "https://www.google.com/maps/place/51.32905374021099,12.397676584918212"
+                "id": 71,
+                "images": {
+                    "image_0": {
+                        "src": "images/placeholder.jpg",
+                        "author": "Johanna Knigge"
                     }
-                ]
+                },
+                "address": "Karl-Siegismund-Stra\u00dfe 2a, 04317 Leipzig",
+                "abbreviation": "",
+                "type": "Umformersation - VT14",
+                "year": "",
+                "urbanism": "Nachverdichtung",
+                "useage": "Blockheizkraftwerk",
+                "height": "II",
+                "owner": "Leipziger Stadtwerke",
+                "former_useage": "Umformerstation",
+                "condition": "",
+                "background": "mit Schornstein ",
+                "links": null
             }
         },
         {
@@ -2496,29 +2264,25 @@
                 ]
             },
             "properties": {
-                "id": "71",
-                "images": [
-                    "71.jpg",
-                    "72.jpg",
-                    "73.jpg"
-                ],
-                "address": "Beispielstra\u00dfe 123, 12345 Beispielstadt",
-                "type": "Beispieltyp",
-                "year": "1234",
-                "urbanism": "Beispielurbanismus",
-                "useage": "Beispielnutzung",
-                "condition": "Beispielzustand",
-                "background": "Beispielhintergrund",
-                "links": [
-                    {
-                        "title": "Wikipedia",
-                        "url": "https://de.wikipedia.org/wiki/Beispiel"
-                    },
-                    {
-                        "title": "Google Maps",
-                        "url": "https://www.google.com/maps/place/51.32865647925259,12.41723840328343"
+                "id": 72,
+                "images": {
+                    "image_0": {
+                        "src": "images/placeholder.jpg",
+                        "author": "Johanna Knigge"
                     }
-                ]
+                },
+                "address": "Oststra\u00dfe 118, 04299 Leipzig",
+                "abbreviation": "",
+                "type": "Mehrzweckhalle - VT24",
+                "year": "",
+                "urbanism": "Nachverdichtung",
+                "useage": "IW-Truckstyling GmbH, Fachgesch\u00e4ft f\u00fcr Lkw-Zubeh\u00f6r",
+                "height": "II",
+                "owner": "",
+                "former_useage": "",
+                "condition": "",
+                "background": "Fenster, angebautes H\u00e4nge-Dach",
+                "links": null
             }
         },
         {
@@ -2526,34 +2290,30 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    12.429418987216977,
+                    12.429418987216975,
                     51.331624670107885
                 ]
             },
             "properties": {
-                "id": "72",
-                "images": [
-                    "72.jpg",
-                    "73.jpg",
-                    "74.jpg"
-                ],
-                "address": "Beispielstra\u00dfe 123, 12345 Beispielstadt",
-                "type": "Beispieltyp",
-                "year": "1234",
-                "urbanism": "Beispielurbanismus",
-                "useage": "Beispielnutzung",
-                "condition": "Beispielzustand",
-                "background": "Beispielhintergrund",
-                "links": [
-                    {
-                        "title": "Wikipedia",
-                        "url": "https://de.wikipedia.org/wiki/Beispiel"
-                    },
-                    {
-                        "title": "Google Maps",
-                        "url": "https://www.google.com/maps/place/51.331624670107885,12.429418987216977"
+                "id": 73,
+                "images": {
+                    "image_0": {
+                        "src": "images/folds/fold_73/73.jpg",
+                        "author": "Johanna Knigge"
                     }
-                ]
+                },
+                "address": "Zweinaundorfer Str. 99, 04318 Leipzig",
+                "abbreviation": "",
+                "type": "Mehrzweckhalle - VT18",
+                "year": "",
+                "urbanism": "Nachverdichtung",
+                "useage": "DLRG Bezrik Leipzig e.V.: Wasserrettung Katastrophenschutz",
+                "height": "I",
+                "owner": "",
+                "former_useage": "",
+                "condition": "",
+                "background": "'1xKachfenster, 3xTor",
+                "links": null
             }
         },
         {
@@ -2561,34 +2321,30 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    12.434320809397027,
+                    12.434320809397029,
                     51.32849692967025
                 ]
             },
             "properties": {
-                "id": "73",
-                "images": [
-                    "73.jpg",
-                    "74.jpg",
-                    "75.jpg"
-                ],
-                "address": "Beispielstra\u00dfe 123, 12345 Beispielstadt",
-                "type": "Beispieltyp",
-                "year": "1234",
-                "urbanism": "Beispielurbanismus",
-                "useage": "Beispielnutzung",
-                "condition": "Beispielzustand",
-                "background": "Beispielhintergrund",
-                "links": [
-                    {
-                        "title": "Wikipedia",
-                        "url": "https://de.wikipedia.org/wiki/Beispiel"
-                    },
-                    {
-                        "title": "Google Maps",
-                        "url": "https://www.google.com/maps/place/51.32849692967025,12.434320809397027"
+                "id": 74,
+                "images": {
+                    "image_0": {
+                        "src": "images/folds/fold_74/74.jpg",
+                        "author": "Johanna Knigge"
                     }
-                ]
+                },
+                "address": "Zweinaundorfer Str. 126, 04316 Leipzig",
+                "abbreviation": "",
+                "type": "Mehrzweckhalle - 2xVT24",
+                "year": "",
+                "urbanism": "Nachverdichtung - Gemeinsames Ensemble ",
+                "useage": "Lano KFZ Service, Autowerkstatt /Selbsthilfewerkstatt",
+                "height": "II",
+                "owner": "",
+                "former_useage": "Lagerhallenkomplex Kampfgruppenst\u00fctzpunkt",
+                "condition": "",
+                "background": "Kachefenster, Rolltor",
+                "links": null
             }
         },
         {
@@ -2601,29 +2357,25 @@
                 ]
             },
             "properties": {
-                "id": "74",
-                "images": [
-                    "74.jpg",
-                    "75.jpg",
-                    "76.jpg"
-                ],
-                "address": "Beispielstra\u00dfe 123, 12345 Beispielstadt",
-                "type": "Beispieltyp",
-                "year": "1234",
-                "urbanism": "Beispielurbanismus",
-                "useage": "Beispielnutzung",
-                "condition": "Beispielzustand",
-                "background": "Beispielhintergrund",
-                "links": [
-                    {
-                        "title": "Wikipedia",
-                        "url": "https://de.wikipedia.org/wiki/Beispiel"
-                    },
-                    {
-                        "title": "Google Maps",
-                        "url": "https://www.google.com/maps/place/51.32818659786461,12.43525593562136"
+                "id": 75,
+                "images": {
+                    "image_0": {
+                        "src": "images/folds/fold_75/75.jpg",
+                        "author": "Johanna Knigge"
                     }
-                ]
+                },
+                "address": "Zweinaundorfer Str. 126a, 04316 Leipzig",
+                "abbreviation": "",
+                "type": "Mehrzweckhalle - VT10",
+                "year": "",
+                "urbanism": "Nachverdichtung --",
+                "useage": "Lano KFZ Service, Lager",
+                "height": "I",
+                "owner": "",
+                "former_useage": "Lagerhallenkomplex Kampfgruppenst\u00fctzpunkt",
+                "condition": "",
+                "background": "Eingbaut in neuere Hallen",
+                "links": null
             }
         },
         {
@@ -2636,29 +2388,25 @@
                 ]
             },
             "properties": {
-                "id": "75",
-                "images": [
-                    "75.jpg",
-                    "76.jpg",
-                    "77.jpg"
-                ],
-                "address": "Beispielstra\u00dfe 123, 12345 Beispielstadt",
-                "type": "Beispieltyp",
-                "year": "1234",
-                "urbanism": "Beispielurbanismus",
-                "useage": "Beispielnutzung",
-                "condition": "Beispielzustand",
-                "background": "Beispielhintergrund",
-                "links": [
-                    {
-                        "title": "Wikipedia",
-                        "url": "https://de.wikipedia.org/wiki/Beispiel"
-                    },
-                    {
-                        "title": "Google Maps",
-                        "url": "https://www.google.com/maps/place/51.32604998934656,12.433704299083193"
+                "id": 76,
+                "images": {
+                    "image_0": {
+                        "src": "images/placeholder.jpg",
+                        "author": "Johanna Knigge"
                     }
-                ]
+                },
+                "address": "Sommerfelder Str. 73, 04316 Leipzig",
+                "abbreviation": "",
+                "type": "Mehrzweckhalle - 2x 2xVT24",
+                "year": "",
+                "urbanism": "Nachverdichtung",
+                "useage": "Lager, LKW Anlieferung",
+                "height": "II",
+                "owner": "",
+                "former_useage": "",
+                "condition": "",
+                "background": "Blechfassade, LKW Anlieferungstore",
+                "links": null
             }
         },
         {
@@ -2671,29 +2419,25 @@
                 ]
             },
             "properties": {
-                "id": "76",
-                "images": [
-                    "76.jpg",
-                    "77.jpg",
-                    "78.jpg"
-                ],
-                "address": "Beispielstra\u00dfe 123, 12345 Beispielstadt",
-                "type": "Beispieltyp",
-                "year": "1234",
-                "urbanism": "Beispielurbanismus",
-                "useage": "Beispielnutzung",
-                "condition": "Beispielzustand",
-                "background": "Beispielhintergrund",
-                "links": [
-                    {
-                        "title": "Wikipedia",
-                        "url": "https://de.wikipedia.org/wiki/Beispiel"
-                    },
-                    {
-                        "title": "Google Maps",
-                        "url": "https://www.google.com/maps/place/51.305529930382974,12.393062441577529"
+                "id": 77,
+                "images": {
+                    "image_0": {
+                        "src": "images/folds/fold_77/77.jpg",
+                        "author": "Johanna Knigge"
                     }
-                ]
+                },
+                "address": "An d. M\u00e4rchenwiese 3, 04277 Leipzig",
+                "abbreviation": "",
+                "type": "Sonderbau",
+                "year": "",
+                "urbanism": "Ensemble (Albert Schweitzer Schule)",
+                "useage": "Albert Schweizer Schule",
+                "height": "",
+                "owner": "",
+                "former_useage": "",
+                "condition": "",
+                "background": "'Schulkomplex mit unterschiedlichen Baukr\u00f6pern (3 davon mit VT-Falten",
+                "links": null
             }
         },
         {
@@ -2702,33 +2446,29 @@
                 "type": "Point",
                 "coordinates": [
                     12.400618662820666,
-                    51.30185842140944
+                    51.301858421409435
                 ]
             },
             "properties": {
-                "id": "77",
-                "images": [
-                    "77.jpg",
-                    "78.jpg",
-                    "79.jpg"
-                ],
-                "address": "Beispielstra\u00dfe 123, 12345 Beispielstadt",
-                "type": "Beispieltyp",
-                "year": "1234",
-                "urbanism": "Beispielurbanismus",
-                "useage": "Beispielnutzung",
-                "condition": "Beispielzustand",
-                "background": "Beispielhintergrund",
-                "links": [
-                    {
-                        "title": "Wikipedia",
-                        "url": "https://de.wikipedia.org/wiki/Beispiel"
-                    },
-                    {
-                        "title": "Google Maps",
-                        "url": "https://www.google.com/maps/place/51.30185842140944,12.400618662820666"
+                "id": 78,
+                "images": {
+                    "image_0": {
+                        "src": "images/folds/fold_78/78.jpg",
+                        "author": "Johanna Knigge"
                     }
-                ]
+                },
+                "address": "Willi-Bredel-Stra\u00dfe 10, 04279 Leipzig",
+                "abbreviation": "",
+                "type": "Mehrzweckhalle - VT18+VT8",
+                "year": "",
+                "urbanism": "Nachverdichtung - neben Garagenanlage/Wohnbauten",
+                "useage": "Wertstoffhof",
+                "height": "II",
+                "owner": "",
+                "former_useage": "",
+                "condition": "",
+                "background": "Kachelfenster, VT18 + VT8 Falte, Dachneigung au\u00dfen h\u00f6her, Abflusslinie an F\u00fcgungslinie",
+                "links": null
             }
         },
         {
@@ -2736,34 +2476,30 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    12.398578306343904,
-                    51.30092511774672
+                    12.398578306343905,
+                    51.300925117746715
                 ]
             },
             "properties": {
-                "id": "78",
-                "images": [
-                    "78.jpg",
-                    "79.jpg",
-                    "80.jpg"
-                ],
-                "address": "Beispielstra\u00dfe 123, 12345 Beispielstadt",
-                "type": "Beispieltyp",
-                "year": "1234",
-                "urbanism": "Beispielurbanismus",
-                "useage": "Beispielnutzung",
-                "condition": "Beispielzustand",
-                "background": "Beispielhintergrund",
-                "links": [
-                    {
-                        "title": "Wikipedia",
-                        "url": "https://de.wikipedia.org/wiki/Beispiel"
-                    },
-                    {
-                        "title": "Google Maps",
-                        "url": "https://www.google.com/maps/place/51.30092511774672,12.398578306343904"
+                "id": 79,
+                "images": {
+                    "image_0": {
+                        "src": "images/folds/fold_79/79.jpg",
+                        "author": "Johanna Knigge"
                     }
-                ]
+                },
+                "address": "Johannes-R.-Becher-Stra\u00dfe 12, 04279 Leipzig",
+                "abbreviation": "I",
+                "type": " Versorgungsbau zwischen Wohnreihen'",
+                "year": "",
+                "urbanism": "'St\u00e4tebauliches Ensemble",
+                "useage": "",
+                "height": "Mehrzweckhalle - VT18",
+                "owner": "",
+                "former_useage": "Haedi-Flor Meisterbetrieb, Blumengesch\u00e4ft",
+                "condition": "-",
+                "background": "",
+                "links": null
             }
         },
         {
@@ -2776,29 +2512,25 @@
                 ]
             },
             "properties": {
-                "id": "79",
-                "images": [
-                    "79.jpg",
-                    "80.jpg",
-                    "81.jpg"
-                ],
-                "address": "Beispielstra\u00dfe 123, 12345 Beispielstadt",
-                "type": "Beispieltyp",
-                "year": "1234",
-                "urbanism": "Beispielurbanismus",
-                "useage": "Beispielnutzung",
-                "condition": "Beispielzustand",
-                "background": "Beispielhintergrund",
-                "links": [
-                    {
-                        "title": "Wikipedia",
-                        "url": "https://de.wikipedia.org/wiki/Beispiel"
-                    },
-                    {
-                        "title": "Google Maps",
-                        "url": "https://www.google.com/maps/place/51.300923531289605,12.399958820235998"
+                "id": 80,
+                "images": {
+                    "image_0": {
+                        "src": "images/folds/fold_80/80.jpg",
+                        "author": "Johanna Knigge"
                     }
-                ]
+                },
+                "address": "Johannes-R.-Becher-Stra\u00dfe 22, 04279 Leipzig",
+                "abbreviation": "I",
+                "type": " Versorgungsbau zwischen Wohnreihen'",
+                "year": "",
+                "urbanism": "'St\u00e4tebauliches Ensemble",
+                "useage": "",
+                "height": "Mehrzweckhalle - VT18",
+                "owner": "",
+                "former_useage": "Leipziger Tanztheater E.V., Tanzschule",
+                "condition": "-",
+                "background": "",
+                "links": null
             }
         },
         {
@@ -2811,29 +2543,25 @@
                 ]
             },
             "properties": {
-                "id": "80",
-                "images": [
-                    "80.jpg",
-                    "81.jpg",
-                    "82.jpg"
-                ],
-                "address": "Beispielstra\u00dfe 123, 12345 Beispielstadt",
-                "type": "Beispieltyp",
-                "year": "1234",
-                "urbanism": "Beispielurbanismus",
-                "useage": "Beispielnutzung",
-                "condition": "Beispielzustand",
-                "background": "Beispielhintergrund",
-                "links": [
-                    {
-                        "title": "Wikipedia",
-                        "url": "https://de.wikipedia.org/wiki/Beispiel"
-                    },
-                    {
-                        "title": "Google Maps",
-                        "url": "https://www.google.com/maps/place/51.32781639474284,12.348126390016992"
+                "id": 81,
+                "images": {
+                    "image_0": {
+                        "src": "images/placeholder.jpg",
+                        "author": "Johanna Knigge"
                     }
-                ]
+                },
+                "address": "Nonnenweg, 04229 Leipzig",
+                "abbreviation": "",
+                "type": "Mehrzweckhalle - VT18",
+                "year": "",
+                "urbanism": "Nachverdichtung",
+                "useage": "",
+                "height": "II",
+                "owner": "",
+                "former_useage": "",
+                "condition": "",
+                "background": "Kachelfenster, in Umbau",
+                "links": null
             }
         },
         {
@@ -2846,29 +2574,25 @@
                 ]
             },
             "properties": {
-                "id": "81",
-                "images": [
-                    "81.jpg",
-                    "82.jpg",
-                    "83.jpg"
-                ],
-                "address": "Beispielstra\u00dfe 123, 12345 Beispielstadt",
-                "type": "Beispieltyp",
-                "year": "1234",
-                "urbanism": "Beispielurbanismus",
-                "useage": "Beispielnutzung",
-                "condition": "Beispielzustand",
-                "background": "Beispielhintergrund",
-                "links": [
-                    {
-                        "title": "Wikipedia",
-                        "url": "https://de.wikipedia.org/wiki/Beispiel"
-                    },
-                    {
-                        "title": "Google Maps",
-                        "url": "https://www.google.com/maps/place/51.32097125615858,12.371808425111544"
+                "id": 82,
+                "images": {
+                    "image_0": {
+                        "src": "images/placeholder.jpg",
+                        "author": "Johanna Knigge"
                     }
-                ]
+                },
+                "address": "Kochstra\u00dfe 29a, 04275 Leipzig",
+                "abbreviation": "",
+                "type": "Unterwerk - VT13",
+                "year": "",
+                "urbanism": "Nachverdichtung",
+                "useage": "",
+                "height": "I",
+                "owner": "Netz Leipzig",
+                "former_useage": "",
+                "condition": "In Sanierung (Stand 05/24)",
+                "background": "Kachelfenster, grau",
+                "links": null
             }
         },
         {
@@ -2877,33 +2601,29 @@
                 "type": "Point",
                 "coordinates": [
                     12.489121707838118,
-                    51.34298052190128
+                    51.342980521901275
                 ]
             },
             "properties": {
-                "id": "82",
-                "images": [
-                    "82.jpg",
-                    "83.jpg",
-                    "84.jpg"
-                ],
-                "address": "Beispielstra\u00dfe 123, 12345 Beispielstadt",
-                "type": "Beispieltyp",
-                "year": "1234",
-                "urbanism": "Beispielurbanismus",
-                "useage": "Beispielnutzung",
-                "condition": "Beispielzustand",
-                "background": "Beispielhintergrund",
-                "links": [
-                    {
-                        "title": "Wikipedia",
-                        "url": "https://de.wikipedia.org/wiki/Beispiel"
-                    },
-                    {
-                        "title": "Google Maps",
-                        "url": "https://www.google.com/maps/place/51.34298052190128,12.489121707838118"
+                "id": 83,
+                "images": {
+                    "image_0": {
+                        "src": "images/placeholder.jpg",
+                        "author": "Johanna Knigge"
                     }
-                ]
+                },
+                "address": "Engelsdorfer Str. 396, 04319 Leipzig",
+                "abbreviation": "",
+                "type": "Mehrzweckhalle - VT16",
+                "year": "",
+                "urbanism": "In Kombination mit Wohnhaus",
+                "useage": "Haus Engelsdorf, DB Netze, Niederlassung Leipzig S\u00fcdost",
+                "height": "II",
+                "owner": "",
+                "former_useage": "",
+                "condition": "",
+                "background": "Garagentore, verglaste Fassade, an/vor Wohnhaus gebaut",
+                "links": null
             }
         },
         {
@@ -2916,29 +2636,25 @@
                 ]
             },
             "properties": {
-                "id": "83",
-                "images": [
-                    "83.jpg",
-                    "84.jpg",
-                    "85.jpg"
-                ],
-                "address": "Beispielstra\u00dfe 123, 12345 Beispielstadt",
-                "type": "Beispieltyp",
-                "year": "1234",
-                "urbanism": "Beispielurbanismus",
-                "useage": "Beispielnutzung",
-                "condition": "Beispielzustand",
-                "background": "Beispielhintergrund",
-                "links": [
-                    {
-                        "title": "Wikipedia",
-                        "url": "https://de.wikipedia.org/wiki/Beispiel"
-                    },
-                    {
-                        "title": "Google Maps",
-                        "url": "https://www.google.com/maps/place/51.31772092162771,12.27936323399903"
+                "id": 84,
+                "images": {
+                    "image_0": {
+                        "src": "images/placeholder.jpg",
+                        "author": "Johanna Knigge"
                     }
-                ]
+                },
+                "address": "Am Kirschberg 49, 04209 Leipzig",
+                "abbreviation": "",
+                "type": "SH 15x30, EG 12, WBS 70 / BR 85-VT-Falte",
+                "year": "",
+                "urbanism": "St\u00e4debauliches Ensemble (F\u00f6rderschule f\u00fcr Sehbehinderte)",
+                "useage": "Sporthalle ",
+                "height": "II",
+                "owner": "",
+                "former_useage": "",
+                "condition": "",
+                "background": "",
+                "links": null
             }
         },
         {
@@ -2946,34 +2662,30 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    12.405984096127735,
+                    12.405984096127737,
                     51.32688493987007
                 ]
             },
             "properties": {
-                "id": "84",
-                "images": [
-                    "84.jpg",
-                    "83.jpg",
-                    "82.jpg"
-                ],
-                "address": "Beispielstra\u00dfe 123, 12345 Beispielstadt",
-                "type": "Beispieltyp",
-                "year": "1234",
-                "urbanism": "Beispielurbanismus",
-                "useage": "Beispielnutzung",
-                "condition": "Beispielzustand",
-                "background": "Beispielhintergrund",
-                "links": [
-                    {
-                        "title": "Wikipedia",
-                        "url": "https://de.wikipedia.org/wiki/Beispiel"
-                    },
-                    {
-                        "title": "Google Maps",
-                        "url": "https://www.google.com/maps/place/51.32688493987007,12.405984096127735"
+                "id": 85,
+                "images": {
+                    "image_0": {
+                        "src": "images/placeholder.jpg",
+                        "author": "Johanna Knigge"
                     }
-                ]
+                },
+                "address": "St\u00f6tteritzer Str. 43, 04317 Leipzig",
+                "abbreviation": "",
+                "type": "Sporthalle SH 18x36 + G WBS 70- VT- Falte",
+                "year": "",
+                "urbanism": "St\u00e4debauliches Ensemble (Schule)",
+                "useage": "Turnhalle Humboldtschule",
+                "height": "II",
+                "owner": "",
+                "former_useage": "",
+                "condition": "",
+                "background": "",
+                "links": null
             }
         },
         {
@@ -2986,29 +2698,490 @@
                 ]
             },
             "properties": {
-                "id": "85",
-                "images": [
-                    "85.jpg",
-                    "84.jpg",
-                    "83.jpg"
-                ],
-                "address": "Beispielstra\u00dfe 123, 12345 Beispielstadt",
-                "type": "Beispieltyp",
-                "year": "1234",
-                "urbanism": "Beispielurbanismus",
-                "useage": "Beispielnutzung",
-                "condition": "Beispielzustand",
-                "background": "Beispielhintergrund",
-                "links": [
-                    {
-                        "title": "Wikipedia",
-                        "url": "https://de.wikipedia.org/wiki/Beispiel"
-                    },
-                    {
-                        "title": "Google Maps",
-                        "url": "https://www.google.com/maps/place/51.31631137360096,12.4458639739796"
+                "id": 86,
+                "images": {
+                    "image_0": {
+                        "src": "images/placeholder.jpg",
+                        "author": "Johanna Knigge"
                     }
+                },
+                "address": "K\u00e4rrnerstra\u00dfe 68, 04288 Leipzig",
+                "abbreviation": "",
+                "type": "Mehrzweckhalle - VT18",
+                "year": "",
+                "urbanism": "Nachverdichtung",
+                "useage": "Deutscher Wetterdienst, Wettervorhersage",
+                "height": "II",
+                "owner": "",
+                "former_useage": "",
+                "condition": "",
+                "background": "Blaues Dachband, 70m lang",
+                "links": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.392918341997557,
+                    51.338079449135925
                 ]
+            },
+            "properties": {
+                "id": 87,
+                "images": {
+                    "image_0": {
+                        "src": "images/placeholder.jpg",
+                        "author": "Johanna Knigge"
+                    }
+                },
+                "address": "Spohrstra\u00dfe 3, 04103 Leipzig",
+                "abbreviation": "",
+                "type": "Umformerstation - VT13",
+                "year": "",
+                "urbanism": "Nachverdichtung / neben Wohnbauten",
+                "useage": "Blockheizkraftwerk",
+                "height": "II",
+                "owner": "Leipziger Stadtwerke",
+                "former_useage": "Umformerstation",
+                "condition": "",
+                "background": "",
+                "links": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.2899756630223,
+                    51.35694016575606
+                ]
+            },
+            "properties": {
+                "id": 88,
+                "images": {
+                    "image_0": {
+                        "src": "images/placeholder.jpg",
+                        "author": "Johanna Knigge"
+                    }
+                },
+                "address": "Heinrich-Heine-Stra\u00dfe 64, 04178 Leipzig",
+                "abbreviation": "",
+                "type": "Sporthalle SH 18x36 + G WBS 70- VT- Falte",
+                "year": "",
+                "urbanism": "St\u00e4debauliches Ensemble (Heinrich-Pestalozzi-Schule)",
+                "useage": "",
+                "height": "II",
+                "owner": "Amt f\u00fcr Schule",
+                "former_useage": "",
+                "condition": "",
+                "background": "",
+                "links": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.410795741655111,
+                    51.34632919573846
+                ]
+            },
+            "properties": {
+                "id": 89,
+                "images": {
+                    "image_0": {
+                        "src": "images/placeholder.jpg",
+                        "author": "Johanna Knigge"
+                    }
+                },
+                "address": "Idastra\u00dfe 37, 04315 Leipzig",
+                "abbreviation": "",
+                "type": "Mehrzweckhalle - VT13",
+                "year": "",
+                "urbanism": "Nachverdichtung / neben Wohnbauten",
+                "useage": "",
+                "height": "I",
+                "owner": "",
+                "former_useage": "",
+                "condition": "",
+                "background": "Hinterhofbebaaung / Blockf\u00fcller",
+                "links": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.260433795673524,
+                    51.30632430701953
+                ]
+            },
+            "properties": {
+                "id": 90,
+                "images": {
+                    "image_0": {
+                        "src": "images/placeholder.jpg",
+                        "author": "Johanna Knigge"
+                    }
+                },
+                "address": "Lausener Str. 1, 04207 Leipzig",
+                "abbreviation": "",
+                "type": "Unterwerk - VT18",
+                "year": "",
+                "urbanism": "Nachverdichtung",
+                "useage": "",
+                "height": "I",
+                "owner": "Netz Leipzig",
+                "former_useage": "",
+                "condition": "",
+                "background": "Kachelfenster, grau",
+                "links": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.276700443040264,
+                    51.31917715835675
+                ]
+            },
+            "properties": {
+                "id": 91,
+                "images": {
+                    "image_0": {
+                        "src": "images/placeholder.jpg",
+                        "author": "Johanna Knigge"
+                    }
+                },
+                "address": "Titaniaweg 2, 04205 Leipzig",
+                "abbreviation": "",
+                "type": "Unterwerk - VT13",
+                "year": "",
+                "urbanism": "Nachverdichtung",
+                "useage": "",
+                "height": "I",
+                "owner": "Netz Leipzig",
+                "former_useage": "",
+                "condition": "",
+                "background": "Kachelfenster",
+                "links": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.377754991926382,
+                    51.305153589500705
+                ]
+            },
+            "properties": {
+                "id": 92,
+                "images": {
+                    "image_0": {
+                        "src": "images/placeholder.jpg",
+                        "author": "Johanna Knigge"
+                    }
+                },
+                "address": "Meusdorfer Str. 38, 04277 Leipzig",
+                "abbreviation": "",
+                "type": "Umformerstation - VT13",
+                "year": "",
+                "urbanism": "Nachverdichtung",
+                "useage": "",
+                "height": "II",
+                "owner": "Leipziger Stadtwerke",
+                "former_useage": "Umformerstation",
+                "condition": "",
+                "background": "",
+                "links": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.425270716011847,
+                    51.35100565435828
+                ]
+            },
+            "properties": {
+                "id": 93,
+                "images": {
+                    "image_0": {
+                        "src": "images/placeholder.jpg",
+                        "author": "Johanna Knigge"
+                    }
+                },
+                "address": "Torgauer Str. 106A, 04318 Leipzig",
+                "abbreviation": "",
+                "type": "Unterwerk - VT14",
+                "year": "",
+                "urbanism": "Nachverdichtung",
+                "useage": "",
+                "height": "I",
+                "owner": "Netz Leipzig",
+                "former_useage": "",
+                "condition": "",
+                "background": "",
+                "links": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.301409037109327,
+                    51.32483515870092
+                ]
+            },
+            "properties": {
+                "id": 94,
+                "images": {
+                    "image_0": {
+                        "src": "images/placeholder.jpg",
+                        "author": "Johanna Knigge"
+                    }
+                },
+                "address": "Gr\u00fcnauer Allee 61, 04209 Leipzig",
+                "abbreviation": "",
+                "type": "Mehrzweckhalle -VT24",
+                "year": "",
+                "urbanism": "St\u00e4dtebauliches Ensemble",
+                "useage": "Seniorinnenwohnheim: DRK Alten- und Pflegeheim ",
+                "height": "I",
+                "owner": "",
+                "former_useage": "",
+                "condition": "",
+                "background": "",
+                "links": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.401915938831147,
+                    51.30111102559859
+                ]
+            },
+            "properties": {
+                "id": 95,
+                "images": {
+                    "image_0": {
+                        "src": "images/placeholder.jpg",
+                        "author": "Johanna Knigge"
+                    }
+                },
+                "address": "Willi-Bredel-Stra\u00dfe 9, 04279 Leipzig",
+                "abbreviation": "",
+                "type": "",
+                "year": "",
+                "urbanism": "",
+                "useage": "",
+                "height": "",
+                "owner": "",
+                "former_useage": "",
+                "condition": "ABRISS",
+                "background": "",
+                "links": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.397225015935797,
+                    51.2986172434427
+                ]
+            },
+            "properties": {
+                "id": 96,
+                "images": {
+                    "image_0": {
+                        "src": "images/placeholder.jpg",
+                        "author": "Johanna Knigge"
+                    }
+                },
+                "address": "Zwickauer Str. 131A, 04279 Leipzig",
+                "abbreviation": "",
+                "type": "",
+                "year": "",
+                "urbanism": "",
+                "useage": "",
+                "height": "",
+                "owner": "",
+                "former_useage": "",
+                "condition": "ABRISS",
+                "background": "",
+                "links": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.395819965779541,
+                    51.34136172836201
+                ]
+            },
+            "properties": {
+                "id": 97,
+                "images": {
+                    "image_0": {
+                        "src": "images/placeholder.jpg",
+                        "author": "Johanna Knigge"
+                    }
+                },
+                "address": "Kreuzstra\u00dfe 31, 04315 Leipzig",
+                "abbreviation": "",
+                "type": "",
+                "year": "",
+                "urbanism": "",
+                "useage": "",
+                "height": "",
+                "owner": "",
+                "former_useage": "",
+                "condition": "ABRISS",
+                "background": "",
+                "links": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.3943,
+                    51.3422
+                ]
+            },
+            "properties": {
+                "id": 98,
+                "images": {
+                    "image_0": {
+                        "src": "images/placeholder.jpg",
+                        "author": "Johanna Knigge"
+                    }
+                },
+                "address": "",
+                "abbreviation": "",
+                "type": "",
+                "year": "",
+                "urbanism": "",
+                "useage": "",
+                "height": "",
+                "owner": "",
+                "former_useage": "",
+                "condition": "ABRISS",
+                "background": "",
+                "links": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.429608576815367,
+                    51.35800792777303
+                ]
+            },
+            "properties": {
+                "id": 99,
+                "images": {
+                    "image_0": {
+                        "src": "images/placeholder.jpg",
+                        "author": "Johanna Knigge"
+                    }
+                },
+                "address": "",
+                "abbreviation": "",
+                "type": "",
+                "year": "",
+                "urbanism": "",
+                "useage": "",
+                "height": "",
+                "owner": "",
+                "former_useage": "",
+                "condition": "ABRISS",
+                "background": "",
+                "links": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.4381,
+                    51.3415
+                ]
+            },
+            "properties": {
+                "id": 100,
+                "images": {
+                    "image_0": {
+                        "src": "images/placeholder.jpg",
+                        "author": "Johanna Knigge"
+                    }
+                },
+                "address": "Geithainer Stra\u00dfe, 04328 Leipzig",
+                "abbreviation": "",
+                "type": "",
+                "year": "",
+                "urbanism": "",
+                "useage": "",
+                "height": "",
+                "owner": "",
+                "former_useage": "",
+                "condition": "Leerstand/ Verwahrlosung",
+                "background": "",
+                "links": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.459002991622182,
+                    51.35673099113005
+                ]
+            },
+            "properties": {
+                "id": 101,
+                "images": {
+                    "image_0": {
+                        "src": "images/placeholder.jpg",
+                        "author": "Johanna Knigge"
+                    }
+                },
+                "address": "Goldsternstra\u00dfe 58, 04329 Leipzig",
+                "abbreviation": "",
+                "type": "",
+                "year": "",
+                "urbanism": "",
+                "useage": "Kaufhalle",
+                "height": "",
+                "owner": "",
+                "former_useage": "",
+                "condition": "Abriss - Neubau ALDI",
+                "background": "",
+                "links": null
             }
         }
     ]

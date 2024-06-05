@@ -28,7 +28,7 @@ const Galerie = () => {
                 ...data.features.find(feature => feature.properties.images === images),
                 properties: {
                     ...data.features.find(feature => feature.properties.images === images).properties,
-                    image: images[0] // Displaying only the first image
+                    image: images.image_0.src // Using the first image source
                 }
             },
         });
@@ -49,16 +49,19 @@ const Galerie = () => {
         document.body.style.overflow = lock ? 'hidden' : 'auto';
     };
 
+    const showInfo = infoState.showInfo;
+
     return (
         <View style={styles.container}>
-            {infoState.showInfo && <InfoPanel feature={infoState.selectedFeature} onClose={onClose} />}
-            {console.log(infoState.selectedFeature)}
-            {infoState.showInfo && <View style={styles.overlay} onClick={onOverlayClick} />}
+            {showInfo && <InfoPanel feature={infoState.selectedFeature} onClose={onClose} />}
+            {showInfo && <View style={styles.overlay} onClick={onOverlayClick} />}
             <ScrollView>
                 <View style={styles.galerie}>
                     {data.features.map((feature, index) => (
                         <Pressable key={index} onPress={() => onImageClick(feature.properties.images)}>
-                            <Image source={require('../images/' + feature.properties.images[0])} style={[styles.image, { width: setImageWidth() }]} />
+                            <Image source={require('../' + feature.properties.images.image_0.src)
+                            } style={[styles.image,
+                            { width: setImageWidth() }]} />
                         </Pressable>
                     ))}
                 </View>
@@ -79,8 +82,8 @@ const styles = StyleSheet.create({
         flex: 1,
         flexDirection: 'row',
         justifyContent: 'center',
-        rowGap: 10,
-        columnGap: 10,
+        rowGap: 15,
+        columnGap: 15,
     },
     image: {
         aspectRatio: 1,

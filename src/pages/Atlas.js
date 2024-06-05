@@ -118,8 +118,6 @@ const Atlas = () => {
                 setSelectedFeature(selectedFeatureWithArray);
                 setShowInfo(true);
             });
-            // TODO: Close info panel on map click?
-
 
         });
     }, []);
@@ -152,13 +150,10 @@ const styles = StyleSheet.create({
     info: {
         position: 'fixed',
         top: '25vh',
-        left: '20vw',
+        left: '35vw',
         width: '30vw',
         height: '60vh',
         backgroundColor: 'white',
-        // borderColor: 'black',
-        // borderWidth: 1,
-        // borderRadius: 10,
         zIndex: 3,
     },
 });

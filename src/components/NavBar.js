@@ -1,8 +1,8 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
 import { Nav, NavMenu, NavLink } from "./NavBarElements";
-import { StyleSheet } from "react-native-web";
-import { KarrikRegular } from "./Fonts";
+import { StyleSheet, Text } from "react-native-web";
+import { ArialText } from "./Fonts";
 
 const menuItems = [
     { path: "/info", label: "INFO" },
@@ -23,7 +23,7 @@ const NavBar = () => {
                     to={item.path}
                     style={location.pathname === item.path ? styles.activeText : styles.text}
                 >
-                    <KarrikRegular>{item.label}</KarrikRegular>
+                    <ArialText>{item.label}</ArialText>
                 </NavLink>
 
             );
@@ -41,11 +41,11 @@ const NavBar = () => {
 
 const styles = StyleSheet.create({
     text: {
-        fontSize: 40,
+        fontSize: 25,
     },
     activeText: {
         borderBottom: "4px solid blue",
-        fontSize: 40,
+        fontSize: 25,
         color: "blue",
     },
 });

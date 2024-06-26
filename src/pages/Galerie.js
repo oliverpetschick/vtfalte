@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback, useRef } from "react";
 import { View, StyleSheet, Image, Dimensions, ScrollView, Pressable } from "react-native-web";
 import InfoPanel from "../components/InfoPanel";
 
@@ -9,59 +9,62 @@ const Galerie = () => {
         showInfo: false,
         selectedFeature: null,
     });
+    const [imageWidth, setImageWidth] = useState(Dimensions.get('window').width / 5.5);
 
-    const setImageWidth = () => Dimensions.get('window').width / 5.5;
+    const dimensionsRef = useRef();
 
     useEffect(() => {
         const handleResize = () => {
-            setImageWidth();
+            setImageWidth(Dimensions.get('window').width / 5.5);
         };
 
-        Dimensions.addEventListener('change', handleResize);
-        return () => Dimensions.removeEventListener('change', handleResize);
+        dimensionsRef.current = Dimensions.addEventListener('change', handleResize);
+        return () => {
+            if (dimensionsRef.current) {
+                dimensionsRef.current.remove();
+            }
+        };
     }, []);
 
-    const onImageClick = (images) => {
+    const onImageClick = useCallback((images) => {
+        const selectedFeature = data.features.find(feature => feature.properties.images === images);
         setInfoState({
             showInfo: true,
             selectedFeature: {
-                ...data.features.find(feature => feature.properties.images === images),
+                ...selectedFeature,
                 properties: {
-                    ...data.features.find(feature => feature.properties.images === images).properties,
-                    image: images.image_0.src // Using the first image source
-                }
+                    ...selectedFeature.properties,
+                    image: images.image_0.src, // Using the first image source
+                },
             },
         });
         toggleScrollLock(true);
-    };
+    }, []);
 
-    const onClose = () => {
+    const onClose = useCallback(() => {
         setInfoState({
             showInfo: false,
             selectedFeature: null,
         });
         toggleScrollLock(false);
-    };
-
-    const onOverlayClick = onClose;
+    }, []);
 
     const toggleScrollLock = (lock) => {
         document.body.style.overflow = lock ? 'hidden' : 'auto';
     };
 
-    const showInfo = infoState.showInfo;
-
     return (
         <View style={styles.container}>
-            {showInfo && <InfoPanel feature={infoState.selectedFeature} onClose={onClose} />}
-            {showInfo && <View style={styles.overlay} onClick={onOverlayClick} />}
+            {infoState.showInfo && <InfoPanel feature={infoState.selectedFeature} onClose={onClose} />}
+            {infoState.showInfo && <View style={styles.overlay} onClick={onClose} />}
             <ScrollView>
                 <View style={styles.galerie}>
                     {data.features.map((feature, index) => (
                         <Pressable key={index} onPress={() => onImageClick(feature.properties.images)}>
-                            <Image source={require('../' + feature.properties.images.image_0.src)
-                            } style={[styles.image,
-                            { width: setImageWidth() }]} />
+                            <Image
+                                source={require('../' + feature.properties.images.image_0.src)}
+                                style={[styles.image, { width: imageWidth }]}
+                            />
                         </Pressable>
                     ))}
                 </View>
@@ -76,6 +79,9 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         height: '100%',
         width: '100%',
+        position: 'relative',
+        zIndex: 1,
+        justifyContent: 'center',
     },
     galerie: {
         flexWrap: 'wrap',
@@ -89,7 +95,6 @@ const styles = StyleSheet.create({
         aspectRatio: 1,
         resizeMode: 'contain',
         margin: 10,
-        padding: 10,
         zIndex: 1,
     },
     overlay: {
@@ -98,7 +103,6 @@ const styles = StyleSheet.create({
         left: 0,
         bottom: 0,
         right: 0,
-        backgroundColor: 'rgba(219, 237, 113, 0.2)',
         zIndex: 2,
     },
 });

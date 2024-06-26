@@ -12,24 +12,20 @@
             },
             "properties": {
                 "id": 1,
+                "category_id": 1,
                 "images": {
                     "image_0": {
                         "src": "images/placeholder.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     }
                 },
                 "address": "Pfaffensteinstra\u00dfe 14, 04207 Leipzig",
-                "abbreviation": "",
                 "type": "SPH-N-18x36-VT-Falte",
-                "year": "",
-                "urbanism": "St\u00e4dtebauliches Ensemble (Neben 100.Schule)",
                 "useage": "Sporthalle 100. Schule",
-                "height": "II",
-                "owner": "",
-                "former_useage": "--",
+                "former_useage": "",
                 "condition": "Sanierung",
-                "background": "",
-                "links": null
+                "links": "[]"
             }
         },
         {
@@ -43,40 +39,40 @@
             },
             "properties": {
                 "id": 2,
+                "category_id": 6,
                 "images": {
                     "image_0": {
                         "src": "images/folds/fold_2/2_1.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     },
                     "image_1": {
                         "src": "images/folds/fold_2/2_2.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     },
                     "image_2": {
                         "src": "images/folds/fold_2/2_3.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     },
                     "image_3": {
                         "src": "images/folds/fold_2/2_4.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     },
                     "image_4": {
                         "src": "images/folds/fold_2/2_5.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     }
                 },
                 "address": "An d. Kotsche 13a, 04207 Leipzig",
-                "abbreviation": "",
-                "type": "Umformerstation - VT18",
-                "year": "",
-                "urbanism": "St\u00e4dtebauliches Ensemble",
+                "type": "Umformerstation",
                 "useage": "Papier und Textilaufkauf, Garagen/ ehemalig. Umformerstation",
-                "height": "II",
-                "owner": "Leipziger Stadtwerke",
                 "former_useage": "Umformerstation",
                 "condition": "",
-                "background": "Kachelfenster, umfahrbar",
-                "links": null
+                "links": "[]"
             }
         },
         {
@@ -90,24 +86,20 @@
             },
             "properties": {
                 "id": 3,
+                "category_id": 1,
                 "images": {
                     "image_0": {
                         "src": "images/placeholder.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     }
                 },
                 "address": "An d. Kotsche 39, 04207 Leipzig",
-                "abbreviation": "",
                 "type": "SPH-N-18x36-VT-Falte",
-                "year": "",
-                "urbanism": "St\u00e4dtebauliches Ensemble (Schule 78.Schule)",
                 "useage": "Sporthalle an der Kotsche",
-                "height": "II",
-                "owner": "",
-                "former_useage": "--",
+                "former_useage": "",
                 "condition": "",
-                "background": "",
-                "links": null
+                "links": "[\"https://www.leipzig.de/freizeit-kultur-und-tourismus/sport/sportstaettenbelegung/detailseite/detailseite/sporthalle-an-der-kotsche\"]"
             }
         },
         {
@@ -121,24 +113,20 @@
             },
             "properties": {
                 "id": 4,
+                "category_id": 6,
                 "images": {
                     "image_0": {
                         "src": "images/placeholder.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     }
                 },
-                "address": "Miltitzer Allee 42e, 04205 Leipzig",
-                "abbreviation": "",
-                "type": "Umformerstation - VT18",
-                "year": "",
-                "urbanism": "St\u00e4dtebauliches Ensemble (Garagenanlage)",
-                "useage": "-",
-                "height": "II",
-                "owner": "Leipziger Stadtwerke",
+                "address": "L\u00fctzner Str. 540, 04205 Leipzig",
+                "type": "Umformerstation G7- U2",
+                "useage": "",
                 "former_useage": "",
                 "condition": "",
-                "background": "Kachelfenster, umfahrbar",
-                "links": null
+                "links": "[]"
             }
         },
         {
@@ -152,24 +140,20 @@
             },
             "properties": {
                 "id": 5,
+                "category_id": 4,
                 "images": {
                     "image_0": {
                         "src": "images/placeholder.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     }
                 },
-                "address": "L\u00fctzner Str. 540, 04205 Leipzig",
-                "abbreviation": "",
+                "address": "",
                 "type": "Kaufhalle",
-                "year": "",
-                "urbanism": "",
                 "useage": "Netto",
-                "height": "II",
-                "owner": "",
                 "former_useage": "",
                 "condition": "Umbau, Sanierung",
-                "background": "VT Falte eingebaut",
-                "links": null
+                "links": "[]"
             }
         },
         {
@@ -183,24 +167,22 @@
             },
             "properties": {
                 "id": 6,
+                "category_id": 2,
                 "images": {
                     "image_0": {
                         "src": "images/placeholder.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     }
                 },
                 "address": "Miltitzer Weg 8, 04205 Leipzig",
-                "abbreviation": "",
                 "type": "Jugenclub ",
-                "year": "",
-                "urbanism": "St\u00e4dtebauliches Ensemble (Schule 94. Ober-Schule)",
                 "useage": "Fr\u00f6bel-Jugendfreizeittreff ARENA",
-                "height": "I",
-                "owner": "",
                 "former_useage": "",
                 "condition": "",
-                "background": "VT Falte, geflankt von 2 Flachbauten",
-                "links": null
+                "links": {
+                    "Arena Froebel": "https://arena.froebel.info/"
+                }
             }
         },
         {
@@ -214,24 +196,20 @@
             },
             "properties": {
                 "id": 7,
+                "category_id": 1,
                 "images": {
                     "image_0": {
                         "src": "images/placeholder.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     }
                 },
                 "address": "Miltitzer Weg 2a, 04205 Leipzig",
-                "abbreviation": "",
                 "type": "SPH-N-18x36-VT-Falte ",
-                "year": "",
-                "urbanism": "St\u00e4dtebauliches Ensemble (Cormenius Schule L)",
                 "useage": "Sporthalle Cormenius Schule",
-                "height": "II",
-                "owner": "",
                 "former_useage": "",
                 "condition": "",
-                "background": "",
-                "links": null
+                "links": "[]"
             }
         },
         {
@@ -245,24 +223,20 @@
             },
             "properties": {
                 "id": 8,
+                "category_id": 6,
                 "images": {
                     "image_0": {
                         "src": "images/placeholder.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     }
                 },
                 "address": "Heidelberger Str. 1, 04209 Leipzig",
-                "abbreviation": "",
-                "type": "Umformerstation - VT24",
-                "year": "",
-                "urbanism": "Neben Wohnbauten (WBS70)",
+                "type": "Umformerstation",
                 "useage": "Fressnapf Leipzig",
-                "height": "II",
-                "owner": "Leipziger Stadtwerke",
                 "former_useage": "",
                 "condition": "",
-                "background": "Kachefenster einseitig, umfahrbar",
-                "links": null
+                "links": "[]"
             }
         },
         {
@@ -276,24 +250,20 @@
             },
             "properties": {
                 "id": 9,
+                "category_id": 7,
                 "images": {
                     "image_0": {
                         "src": "images/placeholder.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     }
                 },
                 "address": "Sch\u00f6nauer Str. 235, 04205 Leipzig",
-                "abbreviation": "",
-                "type": "Mehrzweckhalle - VT18",
-                "year": "",
-                "urbanism": "Neben Wohnbauten (WBS70)",
+                "type": "Mehrzweckhalle",
                 "useage": "Freiwillige Feuerwehr Gr\u00fcnau: Notallrettung & Krankentransport",
-                "height": "I",
-                "owner": "",
                 "former_useage": "",
                 "condition": "",
-                "background": "Halle+ Flachbau Anbau",
-                "links": null
+                "links": "[]"
             }
         },
         {
@@ -307,24 +277,20 @@
             },
             "properties": {
                 "id": 10,
+                "category_id": 6,
                 "images": {
                     "image_0": {
                         "src": "images/placeholder.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     }
                 },
                 "address": "Breisgaustra\u00dfe, 04209 Leipzig",
-                "abbreviation": "",
-                "type": "Umformerstation - VT18",
-                "year": "",
-                "urbanism": "Neben Wohnbauten (WBS70)",
+                "type": "Umformerstation G4- U2",
                 "useage": "Eiergrosshandel, Vodafone, Garagen- und Hobbyr\u00e4ume",
-                "height": "II",
-                "owner": "Leipziger Stadtwerke",
                 "former_useage": "Umformerstation",
                 "condition": "",
-                "background": "Kachefenster einseitig, umfahrbar",
-                "links": null
+                "links": "[]"
             }
         },
         {
@@ -338,24 +304,20 @@
             },
             "properties": {
                 "id": 11,
+                "category_id": 5,
                 "images": {
                     "image_0": {
                         "src": "images/placeholder.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     }
                 },
-                "address": "Katzelstra\u00dfe 155, 04207 Leipzig",
-                "abbreviation": "",
-                "type": "Unterwerk - VT18",
-                "year": "",
-                "urbanism": "Nachverdichtung",
+                "address": "Ratzelstra\u00dfe 155, 04207 Leipzig",
+                "type": "Unterwerk",
                 "useage": "",
-                "height": "I",
-                "owner": "Netz Leipzig",
                 "former_useage": "",
                 "condition": "",
-                "background": "",
-                "links": null
+                "links": "[]"
             }
         },
         {
@@ -369,24 +331,20 @@
             },
             "properties": {
                 "id": 12,
+                "category_id": 3,
                 "images": {
                     "image_0": {
                         "src": "images/placeholder.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     }
                 },
                 "address": "Gr\u00fcnau-Siedlung, 04207 Leipzig",
-                "abbreviation": "",
-                "type": "Systembau - VT24",
-                "year": "",
-                "urbanism": "Ensemble (Senior*innenzentrum)",
-                "useage": "",
-                "height": "I",
-                "owner": "",
+                "type": "Systembau",
+                "useage": "Senior*innenzentrum",
                 "former_useage": "",
                 "condition": "",
-                "background": "Verbindungsbau",
-                "links": null
+                "links": "[]"
             }
         },
         {
@@ -400,24 +358,20 @@
             },
             "properties": {
                 "id": 13,
+                "category_id": 6,
                 "images": {
                     "image_0": {
                         "src": "images/placeholder.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     }
                 },
                 "address": "Berkaer Weg 18, 04207 Leipzig",
-                "abbreviation": "",
-                "type": "Umformerstation - VT24",
-                "year": "",
-                "urbanism": "Neben Wohnbauten (WBS70)",
+                "type": "Umformerstation",
                 "useage": "",
-                "height": "II",
-                "owner": "Leipziger Stadtwerke",
                 "former_useage": "Fernw\u00e4rmeversorgung",
                 "condition": "Sanierung",
-                "background": "Kachelfenster, umfahrbar",
-                "links": null
+                "links": "[]"
             }
         },
         {
@@ -431,40 +385,40 @@
             },
             "properties": {
                 "id": 14,
+                "category_id": 6,
                 "images": {
                     "image_0": {
                         "src": "images/folds/fold_14/14_1.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     },
                     "image_1": {
                         "src": "images/folds/fold_14/14_2.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     },
                     "image_2": {
                         "src": "images/folds/fold_14/14_3.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     },
                     "image_3": {
                         "src": "images/folds/fold_14/14_4.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     },
                     "image_4": {
                         "src": "images/folds/fold_14/14_5.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     }
                 },
                 "address": "Alte Salzstra\u00dfe 63, 04209 Leipzig",
-                "abbreviation": "",
-                "type": "Umformerstation - VT24",
-                "year": "",
-                "urbanism": "St\u00e4dtebauliches Ensemble (Montessori Schule)",
+                "type": "Umformerstation",
                 "useage": "Heizhaus, gemeinn\u00fctziger Kulturverein",
-                "height": "II",
-                "owner": "Leipziger Stadtwerke",
                 "former_useage": "Umformerstation",
                 "condition": "Umbau 2007",
-                "background": "Kachelfenster, umfahrbar",
-                "links": null
+                "links": "[\"https://heizhaus-leipzig.de\"]"
             }
         },
         {
@@ -478,24 +432,20 @@
             },
             "properties": {
                 "id": 15,
+                "category_id": 7,
                 "images": {
                     "image_0": {
                         "src": "images/placeholder.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     }
                 },
                 "address": "Br\u00fcnner Str. 8d, 04209 Leipzig",
-                "abbreviation": "",
-                "type": "Mehrzweckhalle - VT24",
-                "year": "",
-                "urbanism": "Nachverdichtung",
+                "type": "Mehrzweckhalle",
                 "useage": "T\u00dcV S\u00fcd",
-                "height": "II",
-                "owner": "",
                 "former_useage": "",
                 "condition": "",
-                "background": "",
-                "links": null
+                "links": "[\"https://www.tuvsud.com/de-de/standorte/europe/germany/leipzig-gruenau/bruenner-str-8d?utm_medium=search&utm_source=google&utm_campaign=a-on_uberall_de_de_mo_aut_pti_ts&utm_content=standortseite-Leipzig_Gr%C3%BCnau_Br%C3%BCnner_Str.8d\"]"
             }
         },
         {
@@ -509,28 +459,25 @@
             },
             "properties": {
                 "id": 16,
+                "category_id": 7,
                 "images": {
                     "image_0": {
                         "src": "images/folds/fold_16/16_1.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     },
                     "image_1": {
                         "src": "images/folds/fold_16/16_2.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     }
                 },
                 "address": "Diezmannstra\u00dfe 22, 04207 Leipzig",
-                "abbreviation": "",
-                "type": "Mehrzweckhalle - 2xVT24",
-                "year": "",
-                "urbanism": "Nachverdichtung - Gemeinsames Ensemble ",
+                "type": "Mehrzweckhalle",
                 "useage": "Unterschiedliche Gewerbe",
-                "height": "",
-                "owner": "",
                 "former_useage": "",
                 "condition": "",
-                "background": "Hohe Halllen / 3 geschossig",
-                "links": null
+                "links": "[]"
             }
         },
         {
@@ -544,24 +491,20 @@
             },
             "properties": {
                 "id": 17,
+                "category_id": 7,
                 "images": {
                     "image_0": {
                         "src": "images/folds/fold_17/17.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     }
                 },
                 "address": "Diezmannstra\u00dfe 22, 04207 Leipzig",
-                "abbreviation": "",
-                "type": "Sonderbau",
-                "year": "",
-                "urbanism": "Nachverdichtung --",
+                "type": "Individualbau",
                 "useage": "Weltenbummlerhaus, Betonkiste",
-                "height": "III",
-                "owner": "",
                 "former_useage": "",
                 "condition": "",
-                "background": "Hohe Halllen / 3 geschossig",
-                "links": null
+                "links": "[]"
             }
         },
         {
@@ -575,28 +518,25 @@
             },
             "properties": {
                 "id": 18,
+                "category_id": 7,
                 "images": {
                     "image_0": {
                         "src": "images/folds/fold_18/18_1.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     },
                     "image_1": {
                         "src": "images/folds/fold_18/18_2.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     }
                 },
                 "address": "Diezmannstra\u00dfe 77, 04207 Leipzig",
-                "abbreviation": "",
-                "type": "Tragwerk - VT18",
-                "year": "",
-                "urbanism": "Nachverdichtung - Gemeinsames Ensemble ",
+                "type": "Rohbau",
                 "useage": "cetrac GmbH - gebrauchte Ger\u00fcste und Schalungen, Lager",
-                "height": "II",
-                "owner": "",
                 "former_useage": "",
                 "condition": "",
-                "background": "Skelettbau + Dach (Offener Unterstand)",
-                "links": null
+                "links": "[]"
             }
         },
         {
@@ -610,24 +550,20 @@
             },
             "properties": {
                 "id": 19,
+                "category_id": 7,
                 "images": {
                     "image_0": {
                         "src": "images/placeholder.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     }
                 },
                 "address": "Diezmannstra\u00dfe, 04207 Leipzig",
-                "abbreviation": "",
-                "type": "Mehrzweckhalle VT18+VT24",
-                "year": "",
-                "urbanism": "Nachverdichtung --",
+                "type": "Mehrzweckhalle",
                 "useage": "Firma Fiedler - Rasenm\u00e4herFachhandel",
-                "height": "II",
-                "owner": "",
                 "former_useage": "",
                 "condition": "",
-                "background": "",
-                "links": null
+                "links": "[]"
             }
         },
         {
@@ -641,24 +577,20 @@
             },
             "properties": {
                 "id": 20,
+                "category_id": 7,
                 "images": {
                     "image_0": {
                         "src": "images/placeholder.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     }
                 },
                 "address": "Rippachtalstra\u00dfe 10, 04249 Leipzig",
-                "abbreviation": "",
-                "type": "Mehrzweckhalle - VT24",
-                "year": "",
-                "urbanism": "Nachverdichtung",
+                "type": "Mehrzweckhalle",
                 "useage": "BBG Bodenbearbeitungsger\u00e4te, Landwirtschaft",
-                "height": "II",
-                "owner": "",
                 "former_useage": "",
                 "condition": "",
-                "background": "",
-                "links": null
+                "links": "[]"
             }
         },
         {
@@ -672,24 +604,20 @@
             },
             "properties": {
                 "id": 21,
+                "category_id": 5,
                 "images": {
                     "image_0": {
                         "src": "images/placeholder.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     }
                 },
                 "address": "L\u00fctzner Str. 171, 04179 Leipzig",
-                "abbreviation": "",
-                "type": "Unterwerk - VT12",
-                "year": "",
-                "urbanism": "Nachverdichtung",
+                "type": "Unterwerk",
                 "useage": "Unterwerk",
-                "height": "I",
-                "owner": "Netz Leipzig",
-                "former_useage": "--",
+                "former_useage": "",
                 "condition": "Sanierung",
-                "background": "",
-                "links": null
+                "links": "[]"
             }
         },
         {
@@ -703,24 +631,20 @@
             },
             "properties": {
                 "id": 22,
+                "category_id": 7,
                 "images": {
                     "image_0": {
                         "src": "images/placeholder.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     }
                 },
                 "address": "L\u00fctzner Str. 162, 04179 Leipzig",
-                "abbreviation": "",
-                "type": "Mehrzweckhalle - VT14",
-                "year": "",
-                "urbanism": "Nachverdichtung - neben Garagenanlage",
+                "type": "Mehrzweckhalle",
                 "useage": "",
-                "height": "II",
-                "owner": "",
                 "former_useage": "",
                 "condition": "",
-                "background": "",
-                "links": null
+                "links": "[]"
             }
         },
         {
@@ -734,24 +658,20 @@
             },
             "properties": {
                 "id": 23,
+                "category_id": 7,
                 "images": {
                     "image_0": {
                         "src": "images/placeholder.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     }
                 },
                 "address": "",
-                "abbreviation": "",
-                "type": "Mehrzweckhalle - VT24",
-                "year": "",
-                "urbanism": "Nachverdichtung - Gemeinsames Ensemble ",
+                "type": "Mehrzweckhalle",
                 "useage": "Feuerwehr / \u00dcbungsplatz Polizei Leipzig",
-                "height": "II",
-                "owner": "",
                 "former_useage": "",
                 "condition": "",
-                "background": "",
-                "links": null
+                "links": "[]"
             }
         },
         {
@@ -765,24 +685,20 @@
             },
             "properties": {
                 "id": 24,
+                "category_id": 7,
                 "images": {
                     "image_0": {
                         "src": "images/placeholder.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     }
                 },
                 "address": "",
-                "abbreviation": "",
-                "type": "Mehrzweckhalle - VT24",
-                "year": "",
-                "urbanism": "Nachverdichtung -- ",
+                "type": "Mehrzweckhalle",
                 "useage": "Feuerwehr / \u00dcbungsplatz Polizei Leipzig",
-                "height": "II",
-                "owner": "",
                 "former_useage": "",
                 "condition": "",
-                "background": "",
-                "links": null
+                "links": "[]"
             }
         },
         {
@@ -796,24 +712,20 @@
             },
             "properties": {
                 "id": 25,
+                "category_id": 7,
                 "images": {
                     "image_0": {
                         "src": "images/placeholder.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     }
                 },
                 "address": "",
-                "abbreviation": "",
-                "type": "Mehrzweckhalle - VT24",
-                "year": "",
-                "urbanism": "Nachverdichtung --",
+                "type": "Mehrzweckhalle",
                 "useage": "Feuerwehr / \u00dcbungsplatz Polizei Leipzig",
-                "height": "II",
-                "owner": "",
                 "former_useage": "",
                 "condition": "",
-                "background": "",
-                "links": null
+                "links": "[]"
             }
         },
         {
@@ -827,24 +739,20 @@
             },
             "properties": {
                 "id": 26,
+                "category_id": 7,
                 "images": {
                     "image_0": {
                         "src": "images/placeholder.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     }
                 },
                 "address": "Plautstra\u00dfe 52, 04179 Leipzig",
-                "abbreviation": "",
-                "type": "Mehrzweckhalle - VT14",
-                "year": "",
-                "urbanism": "Nachverdichtung - Gemeinsames Ensemble ",
-                "useage": "KANN- Beton",
-                "height": "II",
-                "owner": "",
-                "former_useage": "",
+                "type": "Mehrzweckhalle",
+                "useage": "Werk Zuber, KANN- Beton",
+                "former_useage": "Ehemaliger Produktionsstandort der VT-Falte in Leipzig",
                 "condition": "",
-                "background": "",
-                "links": null
+                "links": "[\"https://www.kann-beton.de/\"]"
             }
         },
         {
@@ -858,24 +766,20 @@
             },
             "properties": {
                 "id": 27,
+                "category_id": 7,
                 "images": {
                     "image_0": {
                         "src": "images/placeholder.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     }
                 },
                 "address": "Plautstra\u00dfe 52, 04179 Leipzig",
-                "abbreviation": "",
-                "type": "Mehrzweckhalle - VT14",
-                "year": "",
-                "urbanism": "Nachverdichtung --",
-                "useage": "KANN- Beton",
-                "height": "II",
-                "owner": "",
-                "former_useage": "",
+                "type": "Mehrzweckhalle",
+                "useage": "Werk Zuber, KANN- Beton",
+                "former_useage": "Ehemaliger Produktionsstandort der VT-Falte in Leipzig",
                 "condition": "",
-                "background": "",
-                "links": null
+                "links": "[\"https://www.kann-beton.de/\"]"
             }
         },
         {
@@ -889,24 +793,20 @@
             },
             "properties": {
                 "id": 28,
+                "category_id": 7,
                 "images": {
                     "image_0": {
                         "src": "images/placeholder.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     }
                 },
                 "address": "Franz-Flemming-Stra\u00dfe 27, 04179 Leipzig",
-                "abbreviation": "",
-                "type": "Mehrzweckhalle - VT18",
-                "year": "",
-                "urbanism": "Nachverdichtung",
+                "type": "Mehrzweckhalle",
                 "useage": "Mischnutzung",
-                "height": "II",
-                "owner": "",
                 "former_useage": "",
                 "condition": "",
-                "background": "Dach teilweise \u00fcberbaut/ saniert",
-                "links": null
+                "links": "[]"
             }
         },
         {
@@ -920,24 +820,20 @@
             },
             "properties": {
                 "id": 29,
+                "category_id": 7,
                 "images": {
                     "image_0": {
                         "src": "images/placeholder.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     }
                 },
                 "address": "Franz-Flemming-Stra\u00dfe 27, 04179 Leipzig",
-                "abbreviation": "",
-                "type": "Mehrzweckhalle - VT18",
-                "year": "",
-                "urbanism": "Nachverdichtung",
+                "type": "Mehrzweckhalle",
                 "useage": "Cross Fit/ Autoservice",
-                "height": "I",
-                "owner": "",
                 "former_useage": "",
                 "condition": "",
-                "background": "Kachelfenster, einseitig anfahrbar",
-                "links": null
+                "links": "[]"
             }
         },
         {
@@ -951,24 +847,20 @@
             },
             "properties": {
                 "id": 30,
+                "category_id": 7,
                 "images": {
                     "image_0": {
                         "src": "images/placeholder.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     }
                 },
                 "address": "Franz-Flemming-Stra\u00dfe 20, 04179 Leipzig",
-                "abbreviation": "",
-                "type": "Mehrzweckhalle - VT24",
-                "year": "",
-                "urbanism": "Nachverdichtung ",
+                "type": "Mehrzweckhalle",
                 "useage": "Trailer Center Koppe",
-                "height": "II",
-                "owner": "",
                 "former_useage": "",
                 "condition": "",
-                "background": "Kachelfenster, umfahrbar, 2 aneinandergesetzte Bauk\u00f6rper, Bahnanlage (ehemaliges Bahngel\u00e4nde?)",
-                "links": null
+                "links": "[]"
             }
         },
         {
@@ -982,24 +874,20 @@
             },
             "properties": {
                 "id": 31,
+                "category_id": 7,
                 "images": {
                     "image_0": {
                         "src": "images/placeholder.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     }
                 },
                 "address": "Otto-Schmiedt-Stra\u00dfe, 04179 Leipzig",
-                "abbreviation": "",
-                "type": "Mehrzweckhalle - VT12",
-                "year": "",
-                "urbanism": "Nachverdichtung - Gemeinsames Ensemble ",
+                "type": "Mehrzweckhalle",
                 "useage": "",
-                "height": "I",
-                "owner": "",
                 "former_useage": "",
                 "condition": "",
-                "background": "",
-                "links": null
+                "links": "[]"
             }
         },
         {
@@ -1013,24 +901,20 @@
             },
             "properties": {
                 "id": 32,
+                "category_id": 7,
                 "images": {
                     "image_0": {
                         "src": "images/placeholder.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     }
                 },
                 "address": "Otto-Schmiedt-Stra\u00dfe, 04179 Leipzig",
-                "abbreviation": "",
-                "type": "Mehrzweckhalle - VT10",
-                "year": "",
-                "urbanism": "Nachverdichtung --",
+                "type": "Mehrzweckhalle",
                 "useage": "",
-                "height": "I",
-                "owner": "",
                 "former_useage": "",
                 "condition": "",
-                "background": "",
-                "links": null
+                "links": "[]"
             }
         },
         {
@@ -1044,24 +928,20 @@
             },
             "properties": {
                 "id": 33,
+                "category_id": 5,
                 "images": {
                     "image_0": {
                         "src": "images/placeholder.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     }
                 },
                 "address": "Lindenauer Markt Aufgang B, 04177 Leipzig",
-                "abbreviation": "",
-                "type": "Unterwerk - VT14",
-                "year": "",
-                "urbanism": "Nachverdichtung ",
+                "type": "Unterwerk",
                 "useage": "",
-                "height": "I",
-                "owner": "Netz Leipzig",
                 "former_useage": "",
                 "condition": "",
-                "background": "freies Gel\u00e4ne zwischen Pekar und Markt - ABRISS? ",
-                "links": null
+                "links": "[]"
             }
         },
         {
@@ -1075,24 +955,20 @@
             },
             "properties": {
                 "id": 34,
+                "category_id": 7,
                 "images": {
                     "image_0": {
                         "src": "images/placeholder.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     }
                 },
                 "address": "Mainzer Str. 4, 04109 Leipzig",
-                "abbreviation": "",
-                "type": "Springerturm - VT24",
-                "year": "",
-                "urbanism": "Sport Uni Campus Ensemble",
+                "type": "Individualbau",
                 "useage": "Schwimmer- Sprunghalle Uni Leipzig",
-                "height": "II",
-                "owner": "",
                 "former_useage": "",
                 "condition": "Sanierung 2014 - 2019",
-                "background": "Hohe Halle",
-                "links": null
+                "links": "[\"https://www.leipzig.de/detailansicht-adresse/sprunghalle-der-universitaet-leipzig\", \"https://hartung-ludwig.de/snp/projekte/projekt/schwimm-und-sprunghalle-der-universitaet-leipzig-campus-jahnallee\"]"
             }
         },
         {
@@ -1106,24 +982,20 @@
             },
             "properties": {
                 "id": 35,
+                "category_id": 1,
                 "images": {
                     "image_0": {
                         "src": "images/placeholder.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     }
                 },
                 "address": "Marschnerstra\u00dfe 30, 04109 Leipzig",
-                "abbreviation": "",
-                "type": "Sporthalle 2xVT16",
-                "year": "",
-                "urbanism": "St\u00e4dtebauliches Ensemble (Landesgymnasium f\u00fcr Sport)",
+                "type": "Sporthalle",
                 "useage": "",
-                "height": "I",
-                "owner": "",
                 "former_useage": "",
                 "condition": "",
-                "background": "",
-                "links": null
+                "links": "[]"
             }
         },
         {
@@ -1137,24 +1009,20 @@
             },
             "properties": {
                 "id": 36,
+                "category_id": 7,
                 "images": {
                     "image_0": {
                         "src": "images/placeholder.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     }
                 },
                 "address": "Gustav-Mahler-Stra\u00dfe 1-3, 04109 Leipzig",
-                "abbreviation": "",
-                "type": "Anbau an Halle - VT 14",
-                "year": "",
-                "urbanism": "Nachverdichtung",
+                "type": "Individualbau",
                 "useage": "Kinder und Jugen\u00e4rztlicher Dienst",
-                "height": "II",
-                "owner": "",
                 "former_useage": "",
                 "condition": "",
-                "background": "",
-                "links": null
+                "links": "[]"
             }
         },
         {
@@ -1168,24 +1036,20 @@
             },
             "properties": {
                 "id": 37,
+                "category_id": 1,
                 "images": {
                     "image_0": {
                         "src": "images/placeholder.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     }
                 },
                 "address": "Reichelstra\u00dfe 12, 04109 Leipzig",
-                "abbreviation": "",
                 "type": "SH 15x30, EG 12, WBS 70 / BR 85-VT-Falte",
-                "year": "",
-                "urbanism": "St\u00e4dtebauliches Ensemble (Schule Anna Magdalena Bach)",
                 "useage": "Sporthalle Anna-Magdalena-Bach-Grundschule",
-                "height": "I",
-                "owner": "",
                 "former_useage": "",
                 "condition": "",
-                "background": "https://tischtennis-leipzig.de/",
-                "links": null
+                "links": "[]"
             }
         },
         {
@@ -1199,24 +1063,20 @@
             },
             "properties": {
                 "id": 38,
+                "category_id": 6,
                 "images": {
                     "image_0": {
                         "src": "images/placeholder.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     }
                 },
                 "address": "Elsterstra\u00dfe, 04109 Leipzig",
-                "abbreviation": "",
-                "type": "Umformerstation - VT18",
-                "year": "",
-                "urbanism": "Nachverdichtung",
+                "type": "Umformerstation",
                 "useage": "",
-                "height": "II",
-                "owner": "",
                 "former_useage": "",
                 "condition": "",
-                "background": "zweigeschossig, Fensterb\u00e4nder, blaues Grafitti",
-                "links": null
+                "links": "[]"
             }
         },
         {
@@ -1230,24 +1090,20 @@
             },
             "properties": {
                 "id": 39,
+                "category_id": 5,
                 "images": {
                     "image_0": {
                         "src": "images/placeholder.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     }
                 },
                 "address": "H\u00e4rtelstra\u00dfe 6, 04107 Leipzig",
-                "abbreviation": "",
-                "type": "Unterwerk - VT13",
-                "year": "",
-                "urbanism": "Nachverdichtung",
+                "type": "Unterwerk",
                 "useage": "",
-                "height": "I",
-                "owner": "Netz Leipzig",
                 "former_useage": "",
                 "condition": "Sanierung",
-                "background": "'\u00dcberspanngefahr', Kachelfenster",
-                "links": null
+                "links": "[]"
             }
         },
         {
@@ -1261,24 +1117,20 @@
             },
             "properties": {
                 "id": 40,
+                "category_id": 1,
                 "images": {
                     "image_0": {
                         "src": "images/placeholder.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     }
                 },
                 "address": "Leplaystra\u00dfe 13, 04103 Leipzig",
-                "abbreviation": "",
-                "type": "Sporthalle 2xVT18",
-                "year": "",
-                "urbanism": "Nachverdichtung",
+                "type": "Sporthalle",
                 "useage": "Turn- und Gymnastikclub Leipzig e.V.",
-                "height": "II",
-                "owner": "",
-                "former_useage": "--",
+                "former_useage": "",
                 "condition": "",
-                "background": "Clubgr\u00fcndung 1963, mehrfache DDR Meister",
-                "links": null
+                "links": "[\"https://www.tug-leipzig.de/\"]"
             }
         },
         {
@@ -1292,24 +1144,20 @@
             },
             "properties": {
                 "id": 41,
+                "category_id": 7,
                 "images": {
                     "image_0": {
                         "src": "images/placeholder.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     }
                 },
                 "address": "Seeburgstra\u00dfe 51a, 04103 Leipzig",
-                "abbreviation": "",
-                "type": "Mehrzweckhalle - VT 14",
-                "year": "",
-                "urbanism": "Nachverdichtung / Hinterhofbebauung neben Garagen",
+                "type": "Mehrzweckhalle",
                 "useage": "",
-                "height": "II",
-                "owner": "",
                 "former_useage": "",
                 "condition": "In Sanierung (Stand Jan.2024)",
-                "background": "",
-                "links": null
+                "links": "[]"
             }
         },
         {
@@ -1323,24 +1171,20 @@
             },
             "properties": {
                 "id": 42,
+                "category_id": 7,
                 "images": {
                     "image_0": {
                         "src": "images/placeholder.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     }
                 },
                 "address": "Perthesstra\u00dfe 2c, 04317 Leipzig",
-                "abbreviation": "",
-                "type": "Mehrzweckhalle - VT16",
-                "year": "",
-                "urbanism": "Nachverdichtung - neben Garagenanlage",
+                "type": "Mehrzweckhalle",
                 "useage": "",
-                "height": "I",
-                "owner": "",
                 "former_useage": "",
-                "condition": "Einseitig Saniert",
-                "background": "Kachelfenster",
-                "links": null
+                "condition": "Einseitige Sanierung",
+                "links": "[]"
             }
         },
         {
@@ -1354,24 +1198,20 @@
             },
             "properties": {
                 "id": 43,
+                "category_id": 6,
                 "images": {
                     "image_0": {
                         "src": "images/placeholder.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     }
                 },
                 "address": "Klasingstra\u00dfe 44C, 04315 Leipzig",
-                "abbreviation": "",
-                "type": "Mehrzweckhalle - VT13",
-                "year": "",
-                "urbanism": "Nachverdichtung",
+                "type": "Umformerstation",
                 "useage": "",
-                "height": "II",
-                "owner": "Leipziger Stadtwerke",
                 "former_useage": "",
                 "condition": "",
-                "background": "",
-                "links": null
+                "links": "[]"
             }
         },
         {
@@ -1385,24 +1225,20 @@
             },
             "properties": {
                 "id": 44,
+                "category_id": 1,
                 "images": {
                     "image_0": {
                         "src": "images/placeholder.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     }
                 },
                 "address": "Kohlgartenstra\u00dfe 36, 04315 Leipzig",
-                "abbreviation": "",
                 "type": "SH 15x30, EG 12, WBS 70 / BR 85-VT-Falte",
-                "year": "",
-                "urbanism": "Nachverdichtung",
                 "useage": "Sporthalle August Bebel Schule",
-                "height": "II",
-                "owner": "",
                 "former_useage": "",
                 "condition": "sanierungsbed\u00fcrftig ",
-                "background": "",
-                "links": null
+                "links": "[]"
             }
         },
         {
@@ -1416,24 +1252,20 @@
             },
             "properties": {
                 "id": 45,
+                "category_id": 5,
                 "images": {
                     "image_0": {
                         "src": "images/placeholder.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     }
                 },
                 "address": "D\u00f6rrienstra\u00dfe 3, 04103 Leipzig",
-                "abbreviation": "",
-                "type": "Unterwerk - VT14",
-                "year": "",
-                "urbanism": "Nachverdichtung",
+                "type": "Unterwerk",
                 "useage": "",
-                "height": "I",
-                "owner": "Netz Leipzig",
                 "former_useage": "",
                 "condition": "Sanierung",
-                "background": "Kachelfenster, eingez\u00e4unt '\u00dcberspanngefahr'",
-                "links": null
+                "links": "[]"
             }
         },
         {
@@ -1447,24 +1279,20 @@
             },
             "properties": {
                 "id": 46,
+                "category_id": 1,
                 "images": {
                     "image_0": {
                         "src": "images/placeholder.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     }
                 },
                 "address": "Konradstra\u00dfe 26, 04315 Leipzig",
-                "abbreviation": "",
                 "type": "SH 15x30, EG 12, WBS 70 / BR 85-VT-Falte",
-                "year": "",
-                "urbanism": "St\u00e4dtbauliches Ensemble (Park)",
                 "useage": "Sporthalle Rabet",
-                "height": "I / II",
-                "owner": "",
-                "former_useage": "Leerstand",
-                "condition": "Leerstand",
-                "background": "",
-                "links": null
+                "former_useage": "",
+                "condition": "",
+                "links": "[]"
             }
         },
         {
@@ -1478,24 +1306,20 @@
             },
             "properties": {
                 "id": 47,
+                "category_id": 2,
                 "images": {
                     "image_0": {
                         "src": "images/placeholder.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     }
                 },
                 "address": "Eisenbahnstra\u00dfe 54, 04315 Leipzig",
-                "abbreviation": "",
                 "type": "Jugendclub ",
-                "year": "",
-                "urbanism": "St\u00e4dtbauliches Ensemble (Park)",
-                "useage": "OFT 'Rabet', Offener Freizeittreff",
-                "height": "I / II",
-                "owner": "Stadt Leipzig",
+                "useage": "Offener Freizeittreff \"Rabet\"",
                 "former_useage": "",
                 "condition": "",
-                "background": "",
-                "links": null
+                "links": "[\"https://www.leipzig.de/detailansicht-adresse/oft-rabet\"]"
             }
         },
         {
@@ -1509,24 +1333,20 @@
             },
             "properties": {
                 "id": 48,
+                "category_id": 6,
                 "images": {
                     "image_0": {
                         "src": "images/placeholder.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     }
                 },
                 "address": "Hildegardstra\u00dfe 1, 04315 Leipzig",
-                "abbreviation": "",
-                "type": "Umformerstation - VT13",
-                "year": "",
-                "urbanism": "Nachverdichtung",
+                "type": "Umformerstation",
                 "useage": "Blockheizkraftwerk",
-                "height": "II",
-                "owner": "Leipziger Stadtwerke",
                 "former_useage": "Umformerstation",
                 "condition": "",
-                "background": "",
-                "links": null
+                "links": "[\"https://energiewelten.l.de/bhkw-volkmarsdorf/\"]"
             }
         },
         {
@@ -1540,24 +1360,20 @@
             },
             "properties": {
                 "id": 49,
+                "category_id": 2,
                 "images": {
                     "image_0": {
                         "src": "images/placeholder.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     }
                 },
                 "address": "P\u00fcchauer Str. 4, 04318 Leipzig",
-                "abbreviation": "",
-                "type": "Jugenclub ",
-                "year": "",
-                "urbanism": "Nachverdichtung",
+                "type": "Jugendclub ",
                 "useage": "Offener Jugenclub Sellerhausen (Kindervereinigung e.V.)",
-                "height": "I / II",
-                "owner": "",
                 "former_useage": "",
                 "condition": "",
-                "background": "",
-                "links": null
+                "links": "[\"https://kv-leipzig.de/\"]"
             }
         },
         {
@@ -1571,24 +1387,20 @@
             },
             "properties": {
                 "id": 50,
+                "category_id": 6,
                 "images": {
                     "image_0": {
                         "src": "images/placeholder.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     }
                 },
                 "address": "B\u00e4stleinstra\u00dfe 2, 04347 Leipzig",
-                "abbreviation": "",
-                "type": "Mehrzweckhalle - VT24",
-                "year": 1976.0,
-                "urbanism": "St\u00e4dtbauliches Ensemble (Rahmenplan 1976)",
+                "type": "Umformerstation",
                 "useage": "Fernw\u00e4rme",
-                "height": "II",
-                "owner": "Leipziger Stadtwerke",
                 "former_useage": "Umformerstation",
                 "condition": "",
-                "background": "Kachelfenster, neben Umspannwerk Nordost",
-                "links": null
+                "links": "[]"
             }
         },
         {
@@ -1602,24 +1414,20 @@
             },
             "properties": {
                 "id": 51,
+                "category_id": 6,
                 "images": {
                     "image_0": {
                         "src": "images/folds/fold_51/51.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     }
                 },
                 "address": "Lehdenweg 40, 04328 Leipzig",
-                "abbreviation": "",
-                "type": "Mehrzweckhalle - VT13",
-                "year": "",
-                "urbanism": "Nachverdichtung - Gemeinsames Ensemble ",
+                "type": "Umformerstation",
                 "useage": "Fernw\u00e4rme",
-                "height": "II",
-                "owner": "Leipziger Stadtwerke",
                 "former_useage": "Umformerstation",
                 "condition": "Sanierung",
-                "background": "Fensterband",
-                "links": null
+                "links": "[]"
             }
         },
         {
@@ -1633,24 +1441,20 @@
             },
             "properties": {
                 "id": 52,
+                "category_id": 6,
                 "images": {
                     "image_0": {
                         "src": "images/folds/fold_52/52.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     }
                 },
                 "address": "Lehdenweg 40, 04328 Leipzig",
-                "abbreviation": "",
-                "type": "Mehrzweckhalle - VT13",
-                "year": "",
-                "urbanism": "Nachverdichtung --",
+                "type": "Umformerstation",
                 "useage": "Fernw\u00e4rme",
-                "height": "II",
-                "owner": "Leipziger Stadtwerke",
                 "former_useage": "Umformerstation",
                 "condition": "",
-                "background": "Fensterband",
-                "links": null
+                "links": "[]"
             }
         },
         {
@@ -1664,24 +1468,20 @@
             },
             "properties": {
                 "id": 53,
+                "category_id": 4,
                 "images": {
                     "image_0": {
                         "src": "images/placeholder.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     }
                 },
                 "address": "Waldzieststra\u00dfe 1, 04329 Leipzig",
-                "abbreviation": "",
-                "type": "Kaufhalle VT -18/22",
-                "year": "",
-                "urbanism": "St\u00e4dtebauliches Ensemble",
+                "type": "Kaufhalle",
                 "useage": "Konsum",
-                "height": "I",
-                "owner": "",
                 "former_useage": "",
                 "condition": "",
-                "background": "",
-                "links": null
+                "links": "[]"
             }
         },
         {
@@ -1695,24 +1495,20 @@
             },
             "properties": {
                 "id": 54,
+                "category_id": 1,
                 "images": {
                     "image_0": {
                         "src": "images/placeholder.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     }
                 },
                 "address": "Zum W\u00e4ldchen 6a, 04329 Leipzig",
-                "abbreviation": "",
-                "type": "Sporthalle SH 18x36 + G WBS 70- VT- Falte",
-                "year": "",
-                "urbanism": "St\u00e4dtebauliches Ensemble (Schule Paunsdorf)",
-                "useage": "",
-                "height": "II",
-                "owner": "",
+                "type": "SH 18x36 + G WBS 70- VT- Falte",
+                "useage": "Sporthalle Schule Paundsdorf",
                 "former_useage": "",
                 "condition": "",
-                "background": "",
-                "links": null
+                "links": "[]"
             }
         },
         {
@@ -1726,24 +1522,20 @@
             },
             "properties": {
                 "id": 55,
+                "category_id": 2,
                 "images": {
                     "image_0": {
                         "src": "images/placeholder.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     }
                 },
                 "address": "Zum W\u00e4ldchen 6, 04329 Leipzig",
-                "abbreviation": "",
                 "type": "Jugendclub",
-                "year": "",
-                "urbanism": "St\u00e4dtebauliches Ensemble (Schule Paunsdorf)",
-                "useage": "OFT 'Crazy', Offener Freizeittreff",
-                "height": "I",
-                "owner": "Stadt Leipzig",
+                "useage": "Offener Freizeittreff \"Crazy\"",
                 "former_useage": "",
-                "condition": "Sanierung durch KO/OK Architekten (Neue Fassadengestaltung)",
-                "background": "",
-                "links": null
+                "condition": "Sanierung durch KO/OK Architekten ",
+                "links": "[\"https://www.leipzig.de/detailansicht-adresse/oft-crazy\", \"https://ko-ok.cc/crazy/\"]"
             }
         },
         {
@@ -1757,24 +1549,20 @@
             },
             "properties": {
                 "id": 56,
+                "category_id": 1,
                 "images": {
                     "image_0": {
                         "src": "images/placeholder.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     }
                 },
                 "address": "Goldsternstra\u00dfe 25, 04329 Leipzig",
-                "abbreviation": "",
                 "type": "SPH-N-18x36-VT-Falte",
-                "year": "",
-                "urbanism": "St\u00e4dtebauliches Ensemble (Br\u00fcder Grimm Schule )",
                 "useage": "Turnhalle, Br\u00fcder Grimm Schule",
-                "height": "II",
-                "owner": "",
                 "former_useage": "",
                 "condition": "",
-                "background": "",
-                "links": null
+                "links": "[\"https://www.leipzig.de/freizeit-kultur-und-tourismus/sport/sportstaettenbelegung/detailseite/detailseite/schulsporthalle-brueder-grimm-schule-grundschule\"]"
             }
         },
         {
@@ -1788,24 +1576,20 @@
             },
             "properties": {
                 "id": 57,
+                "category_id": 7,
                 "images": {
                     "image_0": {
                         "src": "images/placeholder.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     }
                 },
                 "address": "Oelsnitzer Str. 2, 04349 Leipzig",
-                "abbreviation": "",
-                "type": "Mehrzweckhalle - VT24",
-                "year": "",
-                "urbanism": "Ensemble (Senior*innenzentrum)",
-                "useage": "",
-                "height": "I",
-                "owner": "",
+                "type": "Mehrzweckhalle",
+                "useage": "Senior*innenzentrum",
                 "former_useage": "",
                 "condition": "",
-                "background": "Verbindungsbau",
-                "links": null
+                "links": "[]"
             }
         },
         {
@@ -1819,24 +1603,20 @@
             },
             "properties": {
                 "id": 58,
+                "category_id": 7,
                 "images": {
                     "image_0": {
                         "src": "images/placeholder.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     }
                 },
                 "address": "Zschopauer Str. 2, 04349 Leipzig",
-                "abbreviation": "",
-                "type": "Mehrzweckhalle - VT18",
-                "year": "",
-                "urbanism": "Nachverdichtung - neben Garagenanlage",
+                "type": "Mehrzweckhalle",
                 "useage": "Elektrotechnik Lehmann GmbH ",
-                "height": "II",
-                "owner": "",
                 "former_useage": "",
                 "condition": "",
-                "background": "Fensterb\u00e4nder",
-                "links": null
+                "links": "[]"
             }
         },
         {
@@ -1850,24 +1630,20 @@
             },
             "properties": {
                 "id": 59,
+                "category_id": 7,
                 "images": {
                     "image_0": {
                         "src": "images/placeholder.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     }
                 },
                 "address": "Tschernyschewskistra\u00dfe 36, 04357 Leipzig",
-                "abbreviation": "",
-                "type": "Mehrzweckhalle - VT24",
-                "year": "",
-                "urbanism": "Nachverdichtung",
+                "type": "Mehrzweckhalle",
                 "useage": "Garage",
-                "height": "II",
-                "owner": "",
                 "former_useage": "",
                 "condition": "",
-                "background": "Fensterb\u00e4nder",
-                "links": null
+                "links": "[]"
             }
         },
         {
@@ -1881,36 +1657,35 @@
             },
             "properties": {
                 "id": 60,
+                "category_id": 6,
                 "images": {
                     "image_0": {
                         "src": "images/folds/fold_60/60.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     },
                     "image_1": {
                         "src": "images/folds/fold_60/60_2.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     },
                     "image_2": {
                         "src": "images/folds/fold_60/60_3.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     },
                     "image_3": {
                         "src": "images/folds/fold_60/60_4.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     }
                 },
                 "address": "Rosenowstra\u00dfe 30A, 04357 Leipzig",
-                "abbreviation": "",
-                "type": "Umformerstation - VT13",
-                "year": "",
-                "urbanism": "St\u00e4dtebauliches Ensemble / Nachverdichtung",
+                "type": "Umformerstation",
                 "useage": "Leerstand",
-                "height": "II",
-                "owner": "Leipziger Stadtwerke",
-                "former_useage": "Getr\u00e4nkelieferant, Stadtwerke",
-                "condition": "'Umbau",
-                "background": " Neue Fassade/ Fenster'",
-                "links": null
+                "former_useage": "Getr\u00e4nkelieferant, Umformerstation",
+                "condition": "Umbau; Neue Fassade/ Fenster",
+                "links": "[]"
             }
         },
         {
@@ -1924,24 +1699,20 @@
             },
             "properties": {
                 "id": 61,
+                "category_id": 7,
                 "images": {
                     "image_0": {
                         "src": "images/placeholder.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     }
                 },
                 "address": "Zschortauer Str 85-79, 04129 Leipzig",
-                "abbreviation": "",
-                "type": "Mehrzweckhalle - VT16",
-                "year": "",
-                "urbanism": "Nachverdichtung",
+                "type": "Mehrzweckhalle",
                 "useage": "Gewerbe / Lager",
-                "height": "I",
-                "owner": "",
                 "former_useage": "",
                 "condition": "",
-                "background": "Kachelfenster",
-                "links": null
+                "links": "[]"
             }
         },
         {
@@ -1955,24 +1726,20 @@
             },
             "properties": {
                 "id": 62,
+                "category_id": 7,
                 "images": {
                     "image_0": {
                         "src": "images/placeholder.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     }
                 },
                 "address": "Zschortauer Str 75, 04129 Leipzig",
-                "abbreviation": "",
-                "type": "Mehrzweckhalle - VT16",
-                "year": "",
-                "urbanism": "Nachverdichtung",
+                "type": "Mehrzweckhalle",
                 "useage": "Gewerbe / Lager",
-                "height": "II",
-                "owner": "",
                 "former_useage": "",
                 "condition": "",
-                "background": "Keine Fenster",
-                "links": null
+                "links": "[]"
             }
         },
         {
@@ -1986,24 +1753,20 @@
             },
             "properties": {
                 "id": 63,
+                "category_id": 7,
                 "images": {
                     "image_0": {
                         "src": "images/placeholder.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     }
                 },
                 "address": "Essener Str. 32, 04129 Leipzig",
-                "abbreviation": "",
-                "type": "Mehrzweckhalle - 2xVT24",
-                "year": "",
-                "urbanism": "",
+                "type": "Mehrzweckhalle",
                 "useage": "Gewerbe / Lager",
-                "height": "II",
-                "owner": "",
                 "former_useage": "",
                 "condition": "",
-                "background": "Gro\u00dfe Einfahrten, in unmittelbarer N\u00e4he zu vergelichbaren Hallen mit HP Schalendach",
-                "links": null
+                "links": "[]"
             }
         },
         {
@@ -2017,24 +1780,20 @@
             },
             "properties": {
                 "id": 64,
+                "category_id": 7,
                 "images": {
                     "image_0": {
                         "src": "images/placeholder.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     }
                 },
                 "address": "Zschortauer Str 1, 04129 Leipzig",
-                "abbreviation": "",
-                "type": "Mehrzweckhalle - 2xVT18",
-                "year": "",
-                "urbanism": "Nachverdichtung - Gemeinsames Ensemble ",
+                "type": "Mehrzweckhalle",
                 "useage": "Varile, Baufachhandel",
-                "height": "II",
-                "owner": "",
                 "former_useage": "",
                 "condition": "",
-                "background": "Solaranlage auf Dach",
-                "links": null
+                "links": "[]"
             }
         },
         {
@@ -2048,24 +1807,20 @@
             },
             "properties": {
                 "id": 65,
+                "category_id": 7,
                 "images": {
                     "image_0": {
                         "src": "images/placeholder.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     }
                 },
                 "address": "Zschortauer Str 3, 04129 Leipzig",
-                "abbreviation": "",
-                "type": "Mehrzweckhalle - 2xVT18",
-                "year": "",
-                "urbanism": "Nachverdichtung --",
+                "type": "Mehrzweckhalle",
                 "useage": "Rust- Impex Teeladen",
-                "height": "II",
-                "owner": "",
                 "former_useage": "",
                 "condition": "",
-                "background": "Solaranlage auf Dach, wei\u00dfe Blechfassade",
-                "links": null
+                "links": "[]"
             }
         },
         {
@@ -2079,24 +1834,20 @@
             },
             "properties": {
                 "id": 66,
+                "category_id": 1,
                 "images": {
                     "image_0": {
                         "src": "images/placeholder.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     }
                 },
                 "address": "J\u00f6rgen-Schmidtchen-Weg 8, 04157 Leipzig",
-                "abbreviation": "",
                 "type": "SH 15x30, EG 12, WBS 70 / BR 85-VT-Falte",
-                "year": "",
-                "urbanism": "St\u00e4dtebauliches Ensemble (Hans Kroch Schule)",
                 "useage": "Sporthalle Hans Kroch Schule",
-                "height": "II",
-                "owner": "",
                 "former_useage": "",
                 "condition": "",
-                "background": "",
-                "links": null
+                "links": "[]"
             }
         },
         {
@@ -2110,24 +1861,20 @@
             },
             "properties": {
                 "id": 67,
+                "category_id": 4,
                 "images": {
                     "image_0": {
                         "src": "images/placeholder.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     }
                 },
                 "address": "J\u00f6rgen-Schmidtchen-Weg 2, 04157 Leipzig",
-                "abbreviation": "",
                 "type": "Kaufhalle",
-                "year": "",
-                "urbanism": "St\u00e4dtebauliches Ensemble (Neben Wohnplatten)",
                 "useage": "Konsum Leipzig",
-                "height": "I",
-                "owner": "",
                 "former_useage": "",
                 "condition": "",
-                "background": "sehr niedrige Deckenh\u00f6he",
-                "links": null
+                "links": "[]"
             }
         },
         {
@@ -2141,24 +1888,20 @@
             },
             "properties": {
                 "id": 68,
+                "category_id": 7,
                 "images": {
                     "image_0": {
                         "src": "images/placeholder.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     }
                 },
                 "address": "Rackwitzer Str. 50-52, 04347 Leipzig",
-                "abbreviation": "",
-                "type": "Mehrzweckhalle - VT14",
-                "year": "",
-                "urbanism": "Nachverdichtung - Gemeinsames Ensemble ",
+                "type": "Mehrzweckhalle",
                 "useage": "Autoverwertung Richter",
-                "height": "II",
-                "owner": "",
                 "former_useage": "",
                 "condition": "",
-                "background": "",
-                "links": null
+                "links": "[]"
             }
         },
         {
@@ -2172,24 +1915,20 @@
             },
             "properties": {
                 "id": 69,
+                "category_id": 7,
                 "images": {
                     "image_0": {
                         "src": "images/placeholder.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     }
                 },
                 "address": "Rackwitzer Str. 50-52, 04347 Leipzig",
-                "abbreviation": "",
-                "type": "Mehrzweckhalle - VT14+VT18 ",
-                "year": "",
-                "urbanism": "Nachverdichtung --",
+                "type": "Mehrzweckhalle",
                 "useage": "Autoverwertung Richter",
-                "height": "II",
-                "owner": "",
                 "former_useage": "",
                 "condition": "",
-                "background": "'3 Teilig",
-                "links": null
+                "links": "[]"
             }
         },
         {
@@ -2203,24 +1942,20 @@
             },
             "properties": {
                 "id": 70,
+                "category_id": 7,
                 "images": {
                     "image_0": {
                         "src": "images/placeholder.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     }
                 },
                 "address": "Rackwitzer Str. 12, 04347 Leipzig",
-                "abbreviation": "",
-                "type": "Mehrzweckhalle - VT18",
-                "year": "",
-                "urbanism": "Nachverdichtung",
+                "type": "Mehrzweckhalle",
                 "useage": "Konkursverwertung Pakendorf,  Lager",
-                "height": "II",
-                "owner": "",
                 "former_useage": "",
                 "condition": "",
-                "background": "Konglomerat an Bestandshallen (aneinandergereiht), neben Garagen",
-                "links": null
+                "links": "[]"
             }
         },
         {
@@ -2234,24 +1969,20 @@
             },
             "properties": {
                 "id": 71,
+                "category_id": 6,
                 "images": {
                     "image_0": {
                         "src": "images/placeholder.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     }
                 },
                 "address": "Karl-Siegismund-Stra\u00dfe 2a, 04317 Leipzig",
-                "abbreviation": "",
-                "type": "Umformersation - VT14",
-                "year": "",
-                "urbanism": "Nachverdichtung",
+                "type": "Umformerstation",
                 "useage": "Blockheizkraftwerk",
-                "height": "II",
-                "owner": "Leipziger Stadtwerke",
                 "former_useage": "Umformerstation",
                 "condition": "",
-                "background": "mit Schornstein ",
-                "links": null
+                "links": "[\"https://energiewelten.l.de/bhkw-reudnitz/\"]"
             }
         },
         {
@@ -2265,24 +1996,20 @@
             },
             "properties": {
                 "id": 72,
+                "category_id": 7,
                 "images": {
                     "image_0": {
                         "src": "images/placeholder.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     }
                 },
                 "address": "Oststra\u00dfe 118, 04299 Leipzig",
-                "abbreviation": "",
-                "type": "Mehrzweckhalle - VT24",
-                "year": "",
-                "urbanism": "Nachverdichtung",
+                "type": "Mehrzweckhalle",
                 "useage": "IW-Truckstyling GmbH, Fachgesch\u00e4ft f\u00fcr Lkw-Zubeh\u00f6r",
-                "height": "II",
-                "owner": "",
                 "former_useage": "",
                 "condition": "",
-                "background": "Fenster, angebautes H\u00e4nge-Dach",
-                "links": null
+                "links": "[]"
             }
         },
         {
@@ -2296,24 +2023,20 @@
             },
             "properties": {
                 "id": 73,
+                "category_id": 7,
                 "images": {
                     "image_0": {
                         "src": "images/folds/fold_73/73.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     }
                 },
                 "address": "Zweinaundorfer Str. 99, 04318 Leipzig",
-                "abbreviation": "",
-                "type": "Mehrzweckhalle - VT18",
-                "year": "",
-                "urbanism": "Nachverdichtung",
+                "type": "Mehrzweckhalle",
                 "useage": "DLRG Bezrik Leipzig e.V.: Wasserrettung Katastrophenschutz",
-                "height": "I",
-                "owner": "",
                 "former_useage": "",
                 "condition": "",
-                "background": "'1xKachfenster, 3xTor",
-                "links": null
+                "links": "[\"https://www.dlrg-leipzig.de/\"]"
             }
         },
         {
@@ -2327,24 +2050,20 @@
             },
             "properties": {
                 "id": 74,
+                "category_id": 7,
                 "images": {
                     "image_0": {
                         "src": "images/folds/fold_74/74.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     }
                 },
                 "address": "Zweinaundorfer Str. 126, 04316 Leipzig",
-                "abbreviation": "",
-                "type": "Mehrzweckhalle - 2xVT24",
-                "year": "",
-                "urbanism": "Nachverdichtung - Gemeinsames Ensemble ",
+                "type": "Mehrzweckhalle",
                 "useage": "Lano KFZ Service, Autowerkstatt /Selbsthilfewerkstatt",
-                "height": "II",
-                "owner": "",
                 "former_useage": "Lagerhallenkomplex Kampfgruppenst\u00fctzpunkt",
                 "condition": "",
-                "background": "Kachefenster, Rolltor",
-                "links": null
+                "links": "[]"
             }
         },
         {
@@ -2358,24 +2077,20 @@
             },
             "properties": {
                 "id": 75,
+                "category_id": 7,
                 "images": {
                     "image_0": {
                         "src": "images/folds/fold_75/75.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     }
                 },
                 "address": "Zweinaundorfer Str. 126a, 04316 Leipzig",
-                "abbreviation": "",
-                "type": "Mehrzweckhalle - VT10",
-                "year": "",
-                "urbanism": "Nachverdichtung --",
+                "type": "Mehrzweckhalle",
                 "useage": "Lano KFZ Service, Lager",
-                "height": "I",
-                "owner": "",
                 "former_useage": "Lagerhallenkomplex Kampfgruppenst\u00fctzpunkt",
                 "condition": "",
-                "background": "Eingbaut in neuere Hallen",
-                "links": null
+                "links": "[]"
             }
         },
         {
@@ -2389,24 +2104,20 @@
             },
             "properties": {
                 "id": 76,
+                "category_id": 7,
                 "images": {
                     "image_0": {
                         "src": "images/placeholder.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     }
                 },
                 "address": "Sommerfelder Str. 73, 04316 Leipzig",
-                "abbreviation": "",
-                "type": "Mehrzweckhalle - 2x 2xVT24",
-                "year": "",
-                "urbanism": "Nachverdichtung",
+                "type": "Mehrzweckhalle",
                 "useage": "Lager, LKW Anlieferung",
-                "height": "II",
-                "owner": "",
                 "former_useage": "",
                 "condition": "",
-                "background": "Blechfassade, LKW Anlieferungstore",
-                "links": null
+                "links": "[]"
             }
         },
         {
@@ -2420,24 +2131,20 @@
             },
             "properties": {
                 "id": 77,
+                "category_id": 7,
                 "images": {
                     "image_0": {
                         "src": "images/folds/fold_77/77.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     }
                 },
                 "address": "An d. M\u00e4rchenwiese 3, 04277 Leipzig",
-                "abbreviation": "",
-                "type": "Sonderbau",
-                "year": "",
-                "urbanism": "Ensemble (Albert Schweitzer Schule)",
+                "type": "Individualbau",
                 "useage": "Albert Schweizer Schule",
-                "height": "",
-                "owner": "",
                 "former_useage": "",
                 "condition": "",
-                "background": "'Schulkomplex mit unterschiedlichen Baukr\u00f6pern (3 davon mit VT-Falten",
-                "links": null
+                "links": "[\"https://www.albert-schweitzer-schu-le.de/aktu/index.html\"]"
             }
         },
         {
@@ -2451,24 +2158,20 @@
             },
             "properties": {
                 "id": 78,
+                "category_id": 7,
                 "images": {
                     "image_0": {
                         "src": "images/folds/fold_78/78.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     }
                 },
                 "address": "Willi-Bredel-Stra\u00dfe 10, 04279 Leipzig",
-                "abbreviation": "",
-                "type": "Mehrzweckhalle - VT18+VT8",
-                "year": "",
-                "urbanism": "Nachverdichtung - neben Garagenanlage/Wohnbauten",
+                "type": "Mehrzweckhalle",
                 "useage": "Wertstoffhof",
-                "height": "II",
-                "owner": "",
                 "former_useage": "",
                 "condition": "",
-                "background": "Kachelfenster, VT18 + VT8 Falte, Dachneigung au\u00dfen h\u00f6her, Abflusslinie an F\u00fcgungslinie",
-                "links": null
+                "links": "[]"
             }
         },
         {
@@ -2482,24 +2185,20 @@
             },
             "properties": {
                 "id": 79,
+                "category_id": 7,
                 "images": {
                     "image_0": {
                         "src": "images/folds/fold_79/79.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     }
                 },
                 "address": "Johannes-R.-Becher-Stra\u00dfe 12, 04279 Leipzig",
-                "abbreviation": "I",
-                "type": " Versorgungsbau zwischen Wohnreihen'",
-                "year": "",
-                "urbanism": "'St\u00e4tebauliches Ensemble",
-                "useage": "",
-                "height": "Mehrzweckhalle - VT18",
-                "owner": "",
-                "former_useage": "Haedi-Flor Meisterbetrieb, Blumengesch\u00e4ft",
-                "condition": "-",
-                "background": "",
-                "links": null
+                "type": "Mehrzweckhalle",
+                "useage": "Haedi-Flor Meisterbetrieb, Blumengesch\u00e4ft",
+                "former_useage": "",
+                "condition": "",
+                "links": "[]"
             }
         },
         {
@@ -2513,24 +2212,20 @@
             },
             "properties": {
                 "id": 80,
+                "category_id": 7,
                 "images": {
                     "image_0": {
                         "src": "images/folds/fold_80/80.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     }
                 },
                 "address": "Johannes-R.-Becher-Stra\u00dfe 22, 04279 Leipzig",
-                "abbreviation": "I",
-                "type": " Versorgungsbau zwischen Wohnreihen'",
-                "year": "",
-                "urbanism": "'St\u00e4tebauliches Ensemble",
-                "useage": "",
-                "height": "Mehrzweckhalle - VT18",
-                "owner": "",
-                "former_useage": "Leipziger Tanztheater E.V., Tanzschule",
-                "condition": "-",
-                "background": "",
-                "links": null
+                "type": "Mehrzweckhalle",
+                "useage": "Leipziger Tanztheater E.V., Tanzschule",
+                "former_useage": "",
+                "condition": "",
+                "links": "[]"
             }
         },
         {
@@ -2538,30 +2233,26 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    12.348126390016992,
-                    51.32781639474284
+                    12.348058372331419,
+                    51.32788558129191
                 ]
             },
             "properties": {
                 "id": 81,
+                "category_id": 7,
                 "images": {
                     "image_0": {
                         "src": "images/placeholder.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     }
                 },
                 "address": "Nonnenweg, 04229 Leipzig",
-                "abbreviation": "",
-                "type": "Mehrzweckhalle - VT18",
-                "year": "",
-                "urbanism": "Nachverdichtung",
+                "type": "Mehrzweckhalle",
                 "useage": "",
-                "height": "II",
-                "owner": "",
                 "former_useage": "",
                 "condition": "",
-                "background": "Kachelfenster, in Umbau",
-                "links": null
+                "links": "[]"
             }
         },
         {
@@ -2575,24 +2266,20 @@
             },
             "properties": {
                 "id": 82,
+                "category_id": 5,
                 "images": {
                     "image_0": {
                         "src": "images/placeholder.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     }
                 },
                 "address": "Kochstra\u00dfe 29a, 04275 Leipzig",
-                "abbreviation": "",
-                "type": "Unterwerk - VT13",
-                "year": "",
-                "urbanism": "Nachverdichtung",
+                "type": "Unterwerk",
                 "useage": "",
-                "height": "I",
-                "owner": "Netz Leipzig",
                 "former_useage": "",
                 "condition": "In Sanierung (Stand 05/24)",
-                "background": "Kachelfenster, grau",
-                "links": null
+                "links": "[]"
             }
         },
         {
@@ -2606,24 +2293,20 @@
             },
             "properties": {
                 "id": 83,
+                "category_id": 7,
                 "images": {
                     "image_0": {
                         "src": "images/placeholder.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     }
                 },
                 "address": "Engelsdorfer Str. 396, 04319 Leipzig",
-                "abbreviation": "",
-                "type": "Mehrzweckhalle - VT16",
-                "year": "",
-                "urbanism": "In Kombination mit Wohnhaus",
+                "type": "Mehrzweckhalle",
                 "useage": "Haus Engelsdorf, DB Netze, Niederlassung Leipzig S\u00fcdost",
-                "height": "II",
-                "owner": "",
                 "former_useage": "",
                 "condition": "",
-                "background": "Garagentore, verglaste Fassade, an/vor Wohnhaus gebaut",
-                "links": null
+                "links": "[]"
             }
         },
         {
@@ -2637,24 +2320,20 @@
             },
             "properties": {
                 "id": 84,
+                "category_id": 1,
                 "images": {
                     "image_0": {
                         "src": "images/placeholder.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     }
                 },
                 "address": "Am Kirschberg 49, 04209 Leipzig",
-                "abbreviation": "",
                 "type": "SH 15x30, EG 12, WBS 70 / BR 85-VT-Falte",
-                "year": "",
-                "urbanism": "St\u00e4debauliches Ensemble (F\u00f6rderschule f\u00fcr Sehbehinderte)",
                 "useage": "Sporthalle ",
-                "height": "II",
-                "owner": "",
                 "former_useage": "",
                 "condition": "",
-                "background": "",
-                "links": null
+                "links": "[]"
             }
         },
         {
@@ -2668,24 +2347,20 @@
             },
             "properties": {
                 "id": 85,
+                "category_id": 1,
                 "images": {
                     "image_0": {
                         "src": "images/placeholder.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     }
                 },
                 "address": "St\u00f6tteritzer Str. 43, 04317 Leipzig",
-                "abbreviation": "",
-                "type": "Sporthalle SH 18x36 + G WBS 70- VT- Falte",
-                "year": "",
-                "urbanism": "St\u00e4debauliches Ensemble (Schule)",
+                "type": "SH 18x36 + G WBS 70- VT- Falte",
                 "useage": "Turnhalle Humboldtschule",
-                "height": "II",
-                "owner": "",
                 "former_useage": "",
                 "condition": "",
-                "background": "",
-                "links": null
+                "links": "[]"
             }
         },
         {
@@ -2699,24 +2374,20 @@
             },
             "properties": {
                 "id": 86,
+                "category_id": 7,
                 "images": {
                     "image_0": {
                         "src": "images/placeholder.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     }
                 },
                 "address": "K\u00e4rrnerstra\u00dfe 68, 04288 Leipzig",
-                "abbreviation": "",
-                "type": "Mehrzweckhalle - VT18",
-                "year": "",
-                "urbanism": "Nachverdichtung",
+                "type": "Mehrzweckhalle",
                 "useage": "Deutscher Wetterdienst, Wettervorhersage",
-                "height": "II",
-                "owner": "",
                 "former_useage": "",
                 "condition": "",
-                "background": "Blaues Dachband, 70m lang",
-                "links": null
+                "links": "[]"
             }
         },
         {
@@ -2730,24 +2401,20 @@
             },
             "properties": {
                 "id": 87,
+                "category_id": 6,
                 "images": {
                     "image_0": {
                         "src": "images/placeholder.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     }
                 },
                 "address": "Spohrstra\u00dfe 3, 04103 Leipzig",
-                "abbreviation": "",
-                "type": "Umformerstation - VT13",
-                "year": "",
-                "urbanism": "Nachverdichtung / neben Wohnbauten",
+                "type": "Umformerstation",
                 "useage": "Blockheizkraftwerk",
-                "height": "II",
-                "owner": "Leipziger Stadtwerke",
                 "former_useage": "Umformerstation",
                 "condition": "",
-                "background": "",
-                "links": null
+                "links": "[]"
             }
         },
         {
@@ -2761,24 +2428,20 @@
             },
             "properties": {
                 "id": 88,
+                "category_id": 1,
                 "images": {
                     "image_0": {
                         "src": "images/placeholder.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     }
                 },
                 "address": "Heinrich-Heine-Stra\u00dfe 64, 04178 Leipzig",
-                "abbreviation": "",
-                "type": "Sporthalle SH 18x36 + G WBS 70- VT- Falte",
-                "year": "",
-                "urbanism": "St\u00e4debauliches Ensemble (Heinrich-Pestalozzi-Schule)",
+                "type": "SH 18x36 + G WBS 70- VT- Falte",
                 "useage": "",
-                "height": "II",
-                "owner": "Amt f\u00fcr Schule",
                 "former_useage": "",
                 "condition": "",
-                "background": "",
-                "links": null
+                "links": "[]"
             }
         },
         {
@@ -2792,24 +2455,20 @@
             },
             "properties": {
                 "id": 89,
+                "category_id": 7,
                 "images": {
                     "image_0": {
                         "src": "images/placeholder.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     }
                 },
                 "address": "Idastra\u00dfe 37, 04315 Leipzig",
-                "abbreviation": "",
-                "type": "Mehrzweckhalle - VT13",
-                "year": "",
-                "urbanism": "Nachverdichtung / neben Wohnbauten",
+                "type": "Mehrzweckhalle",
                 "useage": "",
-                "height": "I",
-                "owner": "",
                 "former_useage": "",
                 "condition": "",
-                "background": "Hinterhofbebaaung / Blockf\u00fcller",
-                "links": null
+                "links": "[]"
             }
         },
         {
@@ -2823,24 +2482,20 @@
             },
             "properties": {
                 "id": 90,
+                "category_id": 5,
                 "images": {
                     "image_0": {
                         "src": "images/placeholder.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     }
                 },
                 "address": "Lausener Str. 1, 04207 Leipzig",
-                "abbreviation": "",
-                "type": "Unterwerk - VT18",
-                "year": "",
-                "urbanism": "Nachverdichtung",
+                "type": "Unterwerk",
                 "useage": "",
-                "height": "I",
-                "owner": "Netz Leipzig",
                 "former_useage": "",
                 "condition": "",
-                "background": "Kachelfenster, grau",
-                "links": null
+                "links": "[]"
             }
         },
         {
@@ -2854,24 +2509,20 @@
             },
             "properties": {
                 "id": 91,
+                "category_id": 5,
                 "images": {
                     "image_0": {
                         "src": "images/placeholder.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     }
                 },
                 "address": "Titaniaweg 2, 04205 Leipzig",
-                "abbreviation": "",
-                "type": "Unterwerk - VT13",
-                "year": "",
-                "urbanism": "Nachverdichtung",
+                "type": "Unterwerk",
                 "useage": "",
-                "height": "I",
-                "owner": "Netz Leipzig",
                 "former_useage": "",
                 "condition": "",
-                "background": "Kachelfenster",
-                "links": null
+                "links": "[]"
             }
         },
         {
@@ -2885,24 +2536,20 @@
             },
             "properties": {
                 "id": 92,
+                "category_id": 6,
                 "images": {
                     "image_0": {
                         "src": "images/placeholder.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     }
                 },
                 "address": "Meusdorfer Str. 38, 04277 Leipzig",
-                "abbreviation": "",
-                "type": "Umformerstation - VT13",
-                "year": "",
-                "urbanism": "Nachverdichtung",
+                "type": "Umformerstation",
                 "useage": "",
-                "height": "II",
-                "owner": "Leipziger Stadtwerke",
                 "former_useage": "Umformerstation",
                 "condition": "",
-                "background": "",
-                "links": null
+                "links": "[]"
             }
         },
         {
@@ -2916,24 +2563,20 @@
             },
             "properties": {
                 "id": 93,
+                "category_id": 5,
                 "images": {
                     "image_0": {
                         "src": "images/placeholder.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     }
                 },
                 "address": "Torgauer Str. 106A, 04318 Leipzig",
-                "abbreviation": "",
-                "type": "Unterwerk - VT14",
-                "year": "",
-                "urbanism": "Nachverdichtung",
+                "type": "Unterwerk",
                 "useage": "",
-                "height": "I",
-                "owner": "Netz Leipzig",
                 "former_useage": "",
                 "condition": "",
-                "background": "",
-                "links": null
+                "links": "[]"
             }
         },
         {
@@ -2947,24 +2590,20 @@
             },
             "properties": {
                 "id": 94,
+                "category_id": 7,
                 "images": {
                     "image_0": {
                         "src": "images/placeholder.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     }
                 },
                 "address": "Gr\u00fcnauer Allee 61, 04209 Leipzig",
-                "abbreviation": "",
-                "type": "Mehrzweckhalle -VT24",
-                "year": "",
-                "urbanism": "St\u00e4dtebauliches Ensemble",
-                "useage": "Seniorinnenwohnheim: DRK Alten- und Pflegeheim ",
-                "height": "I",
-                "owner": "",
+                "type": "Mehrzweckhalle",
+                "useage": "DRK Alten- und Pflegeheim ",
                 "former_useage": "",
                 "condition": "",
-                "background": "",
-                "links": null
+                "links": "[]"
             }
         },
         {
@@ -2978,24 +2617,20 @@
             },
             "properties": {
                 "id": 95,
+                "category_id": 8,
                 "images": {
                     "image_0": {
                         "src": "images/placeholder.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     }
                 },
                 "address": "Willi-Bredel-Stra\u00dfe 9, 04279 Leipzig",
-                "abbreviation": "",
                 "type": "",
-                "year": "",
-                "urbanism": "",
                 "useage": "",
-                "height": "",
-                "owner": "",
                 "former_useage": "",
                 "condition": "ABRISS",
-                "background": "",
-                "links": null
+                "links": "[]"
             }
         },
         {
@@ -3009,24 +2644,20 @@
             },
             "properties": {
                 "id": 96,
+                "category_id": 8,
                 "images": {
                     "image_0": {
                         "src": "images/placeholder.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     }
                 },
                 "address": "Zwickauer Str. 131A, 04279 Leipzig",
-                "abbreviation": "",
                 "type": "",
-                "year": "",
-                "urbanism": "",
                 "useage": "",
-                "height": "",
-                "owner": "",
                 "former_useage": "",
                 "condition": "ABRISS",
-                "background": "",
-                "links": null
+                "links": "[]"
             }
         },
         {
@@ -3040,24 +2671,20 @@
             },
             "properties": {
                 "id": 97,
+                "category_id": 8,
                 "images": {
                     "image_0": {
                         "src": "images/placeholder.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     }
                 },
                 "address": "Kreuzstra\u00dfe 31, 04315 Leipzig",
-                "abbreviation": "",
                 "type": "",
-                "year": "",
-                "urbanism": "",
                 "useage": "",
-                "height": "",
-                "owner": "",
                 "former_useage": "",
                 "condition": "ABRISS",
-                "background": "",
-                "links": null
+                "links": "[]"
             }
         },
         {
@@ -3065,30 +2692,26 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    12.3943,
-                    51.3422
+                    12.394294545851071,
+                    51.34244789899441
                 ]
             },
             "properties": {
                 "id": 98,
+                "category_id": 8,
                 "images": {
                     "image_0": {
                         "src": "images/placeholder.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     }
                 },
                 "address": "",
-                "abbreviation": "",
                 "type": "",
-                "year": "",
-                "urbanism": "",
                 "useage": "",
-                "height": "",
-                "owner": "",
                 "former_useage": "",
                 "condition": "ABRISS",
-                "background": "",
-                "links": null
+                "links": "[]"
             }
         },
         {
@@ -3102,24 +2725,20 @@
             },
             "properties": {
                 "id": 99,
+                "category_id": 8,
                 "images": {
                     "image_0": {
                         "src": "images/placeholder.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     }
                 },
                 "address": "",
-                "abbreviation": "",
                 "type": "",
-                "year": "",
-                "urbanism": "",
                 "useage": "",
-                "height": "",
-                "owner": "",
                 "former_useage": "",
                 "condition": "ABRISS",
-                "background": "",
-                "links": null
+                "links": "[]"
             }
         },
         {
@@ -3127,30 +2746,26 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    12.4381,
-                    51.3415
+                    12.43811145429035,
+                    51.341481158639446
                 ]
             },
             "properties": {
                 "id": 100,
+                "category_id": 7,
                 "images": {
                     "image_0": {
                         "src": "images/placeholder.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     }
                 },
                 "address": "Geithainer Stra\u00dfe, 04328 Leipzig",
-                "abbreviation": "",
                 "type": "",
-                "year": "",
-                "urbanism": "",
                 "useage": "",
-                "height": "",
-                "owner": "",
                 "former_useage": "",
                 "condition": "Leerstand/ Verwahrlosung",
-                "background": "",
-                "links": null
+                "links": "[]"
             }
         },
         {
@@ -3164,24 +2779,20 @@
             },
             "properties": {
                 "id": 101,
+                "category_id": 8,
                 "images": {
                     "image_0": {
                         "src": "images/placeholder.jpg",
-                        "author": "Johanna Knigge"
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     }
                 },
                 "address": "Goldsternstra\u00dfe 58, 04329 Leipzig",
-                "abbreviation": "",
                 "type": "",
-                "year": "",
-                "urbanism": "",
                 "useage": "Kaufhalle",
-                "height": "",
-                "owner": "",
                 "former_useage": "",
                 "condition": "Abriss - Neubau ALDI",
-                "background": "",
-                "links": null
+                "links": "[]"
             }
         }
     ]

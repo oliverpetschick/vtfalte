@@ -40,20 +40,19 @@ const styles = StyleSheet.create({
         flex: 1,
         height: '100vh',
         width: '100%',
-        margin: 'auto',
     },
     header: {
-        flex: 1,
-        padding: 10,
-        margin: 10,
-        height: '15%',
+        diplay: 'flex',
+        height: '10%',
+        margin: 30,
     },
     content: {
-        flex: 6,
+        display: 'flex',
+        flex: 1,
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
-        padding: 10,
+        margin: 30,
     },
 });
 

@@ -19,13 +19,15 @@ export const NavLink = styled(Link)`
     padding: 0 1rem;
     height: 100%;
     width: 100%;
-    cursor: pointer;
     text-decoration: none;
     color: black;
     flex: 1;
     &:hover{
         color: blue;
+        cursor: default;
     }
+    color: black;
+    flex: 1;
 `;
 
 export const Text = styled.span`

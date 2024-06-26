@@ -1,15 +1,15 @@
 import React from 'react';
-import { StyleSheet, View } from 'react-native-web';
+import { StyleSheet, View, Text } from 'react-native-web';
 import NavBar from './NavBar';
-import { KarrikRegular } from './Fonts';
 import { NavLink } from './NavBarElements';
+import { ArialText } from './Fonts';
 
 const Topbar = () => {
     return (
         <View style={styles.topbar}>
             <View style={styles.titleContainer}>
                 <NavLink to="/info">
-                    <KarrikRegular style={styles.title}>VT FALTE</KarrikRegular>
+                    <ArialText style={styles.title}>UNFOLD</ArialText>
                 </NavLink>
             </View>
             <View style={styles.navContainer}>
@@ -26,13 +26,12 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         alignItems: 'baseline',
         justifyContent: 'space-between',
-        padding: 5,
     },
     titleContainer: {
         alignItems: 'flex-start',
     },
     title: {
-        fontSize: 80,
+        fontSize: 35,
     },
     navContainer: {
         alignItems: 'flex-end',

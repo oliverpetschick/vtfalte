@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from 'react';
+import React, { useRef, useEffect, useState, useCallback } from 'react';
 import { StyleSheet, View } from 'react-native-web';
 import maplibregl from 'maplibre-gl';
 import 'maplibre-gl/dist/maplibre-gl.css';
@@ -13,47 +13,6 @@ const Atlas = () => {
         selectedFeature: null,
     });
 
-    useEffect(() => {
-        const lng = parseFloat(new URLSearchParams(window.location.search).get('lng')) || 12.3619;
-        const lat = parseFloat(new URLSearchParams(window.location.search).get('lat')) || 51.3142;
-        const zoom = parseFloat(new URLSearchParams(window.location.search).get('zoom')) || 10.8;
-
-        const mapOptions = {
-            lng: lng,
-            lat: lat,
-            zoom: zoom,
-            API_KEY: 'tbJDDMch9VKtj6tMDmQM',
-        };
-        if (map.current) return;
-
-        map.current = new maplibregl.Map({
-            container: mapContainer.current,
-            style: `https://api.maptiler.com/maps/backdrop/style.json?key=${mapOptions.API_KEY}`,
-            center: [mapOptions.lng, mapOptions.lat],
-            zoom: mapOptions.zoom,
-            flex: 1,
-            height: '100%',
-            width: '100%',
-            zIndex: 2,
-        });
-
-        map.current.setStyle('https://api.maptiler.com/maps/bc0931e0-e1c3-4e7a-b93c-8101a09bcd9b/style.json?key=tbJDDMch9VKtj6tMDmQM');
-
-        map.current.on('load', () => {
-            addMapLayers();
-            addMapEvents();
-
-            const foldId = new URLSearchParams(window.location.search).get('fold') || null;
-            if (foldId) {
-                const feature = map.current.getSource('vt-falten-atlas')._data.features[foldId - 1];
-                map.current.easeTo({ center: feature.geometry.coordinates, zoom: 17 });
-            }
-
-        });
-    }, []);
-
-
-
     const onClose = () => {
         setInfoState({ showInfo: false, selectedFeature: null });
     };
@@ -63,6 +22,9 @@ const Atlas = () => {
             type: 'geojson',
             data: require('../data/data.json'),
             cluster: true,
+            clusterMaxZoom: 11,
+            clusterRadius: 40,
+            clusterMinPoints: 2,
         });
 
         const layers = [
@@ -100,8 +62,6 @@ const Atlas = () => {
                         '#000',
                     ],
                     'circle-radius': 10,
-                    'circle-stroke-width': 1,
-                    'circle-stroke-color': '#fff',
                 },
             },
         ];
@@ -109,12 +69,17 @@ const Atlas = () => {
         layers.forEach(layer => map.current.addLayer({ ...layer, source: 'vt-falten-atlas' }));
     };
 
-    const addMapEvents = () => {
+    const addMapEvents = useCallback(() => {
         map.current.on('click', 'clusters', async (e) => {
             const features = map.current.queryRenderedFeatures(e.point, { layers: ['clusters'] });
             const clusterId = features[0].properties.cluster_id;
             const zoom = await map.current.getSource('vt-falten-atlas').getClusterExpansionZoom(clusterId);
             map.current.easeTo({ center: features[0].geometry.coordinates, zoom });
+        });
+
+        // close the info panel when the user interacts with the map
+        map.current.on('click', () => {
+            onClose();
         });
 
         map.current.on('mouseenter', 'unclustered-point', () => {
@@ -125,7 +90,7 @@ const Atlas = () => {
             map.current.getCanvas().style.cursor = '';
         });
 
-        map.current.addControl(new maplibregl.NavigationControl(), 'top-right');
+        // map.current.addControl(new maplibregl.NavigationControl(), 'top-right');
 
         map.current.on('click', 'unclustered-point', (e) => {
             const feature = e.features[0];
@@ -139,7 +104,45 @@ const Atlas = () => {
             };
             setInfoState({ showInfo: true, selectedFeature: selectedFeatureWithArray });
         });
-    };
+    }, []);
+
+    useEffect(() => {
+        const lng = parseFloat(new URLSearchParams(window.location.search).get('lng')) || 12.3619;
+        const lat = parseFloat(new URLSearchParams(window.location.search).get('lat')) || 51.3142;
+        const zoom = parseFloat(new URLSearchParams(window.location.search).get('zoom')) || 10.8;
+
+        const mapOptions = {
+            lng: lng,
+            lat: lat,
+            zoom: zoom,
+            API_KEY: 'tbJDDMch9VKtj6tMDmQM',
+        };
+        if (map.current) return;
+
+        map.current = new maplibregl.Map({
+            container: mapContainer.current,
+            style: `https://api.maptiler.com/maps/backdrop/style.json?key=${mapOptions.API_KEY}`,
+            center: [mapOptions.lng, mapOptions.lat],
+            zoom: mapOptions.zoom,
+            flex: 1,
+            height: '100%',
+            width: '100%',
+            zIndex: 2,
+        });
+
+        map.current.setStyle('https://api.maptiler.com/maps/bc0931e0-e1c3-4e7a-b93c-8101a09bcd9b/style.json?key=tbJDDMch9VKtj6tMDmQM');
+
+        map.current.on('load', () => {
+            addMapLayers();
+            addMapEvents();
+
+            const foldId = new URLSearchParams(window.location.search).get('fold') || null;
+            if (foldId) {
+                const feature = map.current.getSource('vt-falten-atlas')._data.features[foldId - 1];
+                map.current.easeTo({ center: feature.geometry.coordinates, zoom: 17 });
+            }
+        });
+    }, [addMapEvents]);
 
     const { showInfo, selectedFeature } = infoState;
 
@@ -147,7 +150,7 @@ const Atlas = () => {
         <View style={styles.container}>
             <View style={styles.mapContainer} ref={mapContainer}></View>
             {showInfo && <InfoPanel feature={selectedFeature} onClose={onClose} />}
-            <Legend />
+            {!showInfo && <Legend />}
         </View>
     );
 };

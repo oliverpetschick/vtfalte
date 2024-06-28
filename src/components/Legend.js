@@ -31,7 +31,7 @@ const Legend = () => {
 const styles = StyleSheet.create({
     legendContainer: {
         position: 'absolute',
-        right: '50px',
+        left: '50px',
         top: '50px',
         padding: 10,
         zIndex: 3,

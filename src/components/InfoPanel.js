@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
 import { View, StyleSheet, Image, Pressable, Text } from 'react-native-web';
+import { Link } from 'react-router-dom';
 
-const InfoPanel = ({ feature, onClose }) => {
+const InfoPanel = ({ feature, onClose, showLink }) => {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
     const images = feature.properties.images || {};
     const n_images = Object.keys(images).length - 1;
     const panelWidth = '70vw';
-    const panelHeight = '75vh';
+    const panelHeight = '100%';
+
 
     const handleImageClick = (direction) => {
         if (direction === 'prev') {
@@ -18,6 +20,9 @@ const InfoPanel = ({ feature, onClose }) => {
 
     const overlayStyle = n_images > 0 ? styles.overlayClickable : styles.overlay;
     const currentImage = images[`image_${currentImageIndex}`]?.src;
+    const currentAuthor = images[`image_${currentImageIndex}`]?.author_firstname + ' ' + images[`image_${currentImageIndex}`]?.author_lastname;
+
+    const atlasLink = window.location.href.replace('galerie', 'atlas') + '?fold=' + feature.properties.id;
 
     const links = Array.isArray(feature.properties.links) ? feature.properties.links : [];
 
@@ -37,28 +42,31 @@ const InfoPanel = ({ feature, onClose }) => {
                 />
             </View>
             <View style={styles.infoContent}>
-                <Text style={styles.title}>ADRESSE</Text>
+                <Text style={styles.title}>Adresse</Text>
                 <Text>{feature.properties.address || ' - '}</Text>
-                <Text style={styles.title}>TYP</Text>
+                <Text style={styles.title}>Typ</Text>
                 <Text>{feature.properties.type || ' - '}</Text>
-                <Text style={styles.title}>NUTZUNG</Text>
+                <Text style={styles.title}>Nutzung</Text>
                 <Text>{feature.properties.useage || ' - '}</Text>
-                <Text style={styles.title}>ZUSTAND</Text>
+                <Text style={styles.title}>Zustand</Text>
                 <Text>{feature.properties.condition || ' - '}</Text>
-                <Text style={styles.title}>EHEMALIGE NUTZUNG</Text>
+                <Text style={styles.title}>Ehemalige Nutzung</Text>
                 <Text>{feature.properties.former_useage || ' - '}</Text>
-                <Text style={styles.title}>LINKS</Text>
-                {console.log(links)}
+                <Text style={styles.title}>Foto</Text>
+                <Text>{currentAuthor || ' - '}</Text>
+                <Text style={styles.title}>Links</Text>
                 {links.length > 0 ? links.map((link, index) => (
                     <Text key={index}>
                         <a href={link} target="_blank" rel="noopener noreferrer">{link}</a>
                     </Text>
                 )) : <Text> - </Text>}
+                {showLink && <Link to={atlasLink} style={{ textDecoration: 'none' }}>Atlas</Link>}
+
             </View>
             <Pressable style={styles.closeButton} onPress={onClose}>
                 <Image source={require('../images/X_close_button.png')} style={styles.closeIcon} />
             </Pressable>
-        </View>
+        </View >
     );
 }
 
@@ -109,8 +117,10 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
     },
     title: {
-        fontSize: 20,
         marginBottom: 5,
+        marginTop: 10,
+        fontWeight: 'bold',
+        fontSize: 16,
     },
     closeButton: {
         position: 'absolute',

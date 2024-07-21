@@ -11,6 +11,7 @@ const Atlas = () => {
     const [infoState, setInfoState] = useState({
         showInfo: false,
         selectedFeature: null,
+        showLink: false,
     });
 
     const onClose = () => {
@@ -22,9 +23,9 @@ const Atlas = () => {
             type: 'geojson',
             data: require('../data/data.json'),
             cluster: true,
-            clusterMaxZoom: 11,
+            clusterMaxZoom: 14,
             clusterRadius: 40,
-            clusterMinPoints: 2,
+            clusterMinPoints: 3,
         });
 
         const layers = [
@@ -33,8 +34,11 @@ const Atlas = () => {
                 type: 'circle',
                 filter: ['has', 'point_count'],
                 paint: {
-                    'circle-color': '#000',
+                    'circle-color': '#FFF' /* white */,
                     'circle-radius': ['step', ['get', 'point_count'], 20, 10, 30, 20, 40],
+                    // add a black border around the circle
+                    'circle-stroke-width': 1,
+                    'circle-stroke-color': '#000',
                 },
             },
             {
@@ -43,11 +47,11 @@ const Atlas = () => {
                 filter: ['has', 'point_count'],
                 layout: {
                     'text-field': '{point_count_abbreviated}',
-                    'text-font': ['DIN Offc Pro Medium', 'Arial Unicode MS Bold'],
+                    'text-font': ['Arial Unicode MS Bold'],
                     'text-size': 12,
                 },
                 paint: {
-                    'text-color': '#fff',
+                    'text-color': '#000', // black
                 },
             },
             {
@@ -94,15 +98,17 @@ const Atlas = () => {
 
         map.current.on('click', 'unclustered-point', (e) => {
             const feature = e.features[0];
+            console.log(feature);
             const selectedFeatureWithArray = {
                 ...feature,
                 properties: {
                     ...feature.properties,
                     images: JSON.parse(feature.properties.images),
-                    links: JSON.parse(feature.properties.links),
                 },
             };
+
             setInfoState({ showInfo: true, selectedFeature: selectedFeatureWithArray });
+
         });
     }, []);
 

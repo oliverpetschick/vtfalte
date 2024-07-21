@@ -4,8 +4,6 @@ import Topbar from './TopBar';
 import Info from '../pages/Info';
 import Atlas from '../pages/Atlas';
 import Galerie from '../pages/Galerie';
-import Typen from '../pages/Typen';
-import Arbeit from '../pages/Arbeit';
 import {
     BrowserRouter as Router,
     Routes,
@@ -26,8 +24,6 @@ const AppLayout = () => {
                         <Route path="/info" element={<Info />} />
                         <Route path="/atlas" element={<Atlas />} />
                         <Route path="/galerie" element={<Galerie />} />
-                        <Route path="/typen" element={<Typen />} />
-                        <Route path="/arbeit" element={<Arbeit />} />
                     </Routes>
                 </View>
             </View>
@@ -43,7 +39,7 @@ const styles = StyleSheet.create({
     },
     header: {
         diplay: 'flex',
-        height: '10%',
+        height: '3%',
         margin: 30,
     },
     content: {

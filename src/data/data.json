@@ -15,7 +15,7 @@
                 "category_id": 1,
                 "images": {
                     "image_0": {
-                        "src": "images/placeholder.jpg",
+                        "src": "images/folds/fold_1/1_1_Johanna-Knigge.jpg",
                         "author_lastname": "Knigge",
                         "author_firstname": "Johanna"
                     }
@@ -25,7 +25,7 @@
                 "useage": "Sporthalle 100. Schule",
                 "former_useage": "",
                 "condition": "Sanierung",
-                "links": "[]"
+                "links": null
             }
         },
         {
@@ -42,27 +42,27 @@
                 "category_id": 6,
                 "images": {
                     "image_0": {
-                        "src": "images/folds/fold_2/2_1.jpg",
+                        "src": "images/folds/fold_2/2_1_Johanna-Knigge.jpg",
                         "author_lastname": "Knigge",
                         "author_firstname": "Johanna"
                     },
                     "image_1": {
-                        "src": "images/folds/fold_2/2_2.jpg",
+                        "src": "images/folds/fold_2/2_2_Johanna-Knigge.jpg",
                         "author_lastname": "Knigge",
                         "author_firstname": "Johanna"
                     },
                     "image_2": {
-                        "src": "images/folds/fold_2/2_3.jpg",
+                        "src": "images/folds/fold_2/2_3_Johanna-Knigge.jpg",
                         "author_lastname": "Knigge",
                         "author_firstname": "Johanna"
                     },
                     "image_3": {
-                        "src": "images/folds/fold_2/2_4.jpg",
+                        "src": "images/folds/fold_2/2_4_Johanna-Knigge.jpg",
                         "author_lastname": "Knigge",
                         "author_firstname": "Johanna"
                     },
                     "image_4": {
-                        "src": "images/folds/fold_2/2_5.jpg",
+                        "src": "images/folds/fold_2/2_5_Johanna-Knigge.jpg",
                         "author_lastname": "Knigge",
                         "author_firstname": "Johanna"
                     }
@@ -72,7 +72,7 @@
                 "useage": "Papier und Textilaufkauf, Garagen/ ehemalig. Umformerstation",
                 "former_useage": "Umformerstation",
                 "condition": "",
-                "links": "[]"
+                "links": null
             }
         },
         {
@@ -89,7 +89,7 @@
                 "category_id": 1,
                 "images": {
                     "image_0": {
-                        "src": "images/placeholder.jpg",
+                        "src": "images/folds/fold_3/3_1_Johanna-Knigge.jpg",
                         "author_lastname": "Knigge",
                         "author_firstname": "Johanna"
                     }
@@ -99,7 +99,12 @@
                 "useage": "Sporthalle an der Kotsche",
                 "former_useage": "",
                 "condition": "",
-                "links": "[\"https://www.leipzig.de/freizeit-kultur-und-tourismus/sport/sportstaettenbelegung/detailseite/detailseite/sporthalle-an-der-kotsche\"]"
+                "links": {
+                    "link_0": {
+                        "title": "www",
+                        "url": "https://https://www.leipzig.de/freizeit-kultur-und-tourismus/sport/sportstaettenbelegung/detailseite/detailseite/sporthalle-an-der-kotsche"
+                    }
+                }
             }
         },
         {
@@ -116,7 +121,22 @@
                 "category_id": 6,
                 "images": {
                     "image_0": {
-                        "src": "images/placeholder.jpg",
+                        "src": "images/folds/fold_4/4_1_Johanna-Knigge.jpg",
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
+                    },
+                    "image_1": {
+                        "src": "images/folds/fold_4/4_2_Johanna-Knigge.jpg",
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
+                    },
+                    "image_2": {
+                        "src": "images/folds/fold_4/4_3_Johanna-Knigge.jpg",
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
+                    },
+                    "image_3": {
+                        "src": "images/folds/fold_4/4_4_Johanna-Knigge.jpg",
                         "author_lastname": "Knigge",
                         "author_firstname": "Johanna"
                     }
@@ -126,7 +146,7 @@
                 "useage": "",
                 "former_useage": "",
                 "condition": "",
-                "links": "[]"
+                "links": null
             }
         },
         {
@@ -143,7 +163,7 @@
                 "category_id": 4,
                 "images": {
                     "image_0": {
-                        "src": "images/placeholder.jpg",
+                        "src": "images/folds/fold_5/5_1_Johanna-Knigge.jpg",
                         "author_lastname": "Knigge",
                         "author_firstname": "Johanna"
                     }
@@ -153,7 +173,7 @@
                 "useage": "Netto",
                 "former_useage": "",
                 "condition": "Umbau, Sanierung",
-                "links": "[]"
+                "links": null
             }
         },
         {
@@ -181,7 +201,10 @@
                 "former_useage": "",
                 "condition": "",
                 "links": {
-                    "Arena Froebel": "https://arena.froebel.info/"
+                    "link_0": {
+                        "title": "arena",
+                        "url": "https://https://arena.froebel.info/"
+                    }
                 }
             }
         },
@@ -199,7 +222,17 @@
                 "category_id": 1,
                 "images": {
                     "image_0": {
-                        "src": "images/placeholder.jpg",
+                        "src": "images/folds/fold_7/7_1_Johanna-Knigge.jpg",
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
+                    },
+                    "image_1": {
+                        "src": "images/folds/fold_7/7_2_Johanna-Knigge.jpg",
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
+                    },
+                    "image_2": {
+                        "src": "images/folds/fold_7/7_3_Johanna-Knigge.jpg",
                         "author_lastname": "Knigge",
                         "author_firstname": "Johanna"
                     }
@@ -209,7 +242,7 @@
                 "useage": "Sporthalle Cormenius Schule",
                 "former_useage": "",
                 "condition": "",
-                "links": "[]"
+                "links": null
             }
         },
         {
@@ -226,7 +259,12 @@
                 "category_id": 6,
                 "images": {
                     "image_0": {
-                        "src": "images/placeholder.jpg",
+                        "src": "images/folds/fold_8/8_1_Johanna-Knigge.jpg",
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
+                    },
+                    "image_1": {
+                        "src": "images/folds/fold_8/8_2_Johanna-Knigge.jpg",
                         "author_lastname": "Knigge",
                         "author_firstname": "Johanna"
                     }
@@ -236,7 +274,7 @@
                 "useage": "Fressnapf Leipzig",
                 "former_useage": "",
                 "condition": "",
-                "links": "[]"
+                "links": null
             }
         },
         {
@@ -253,7 +291,7 @@
                 "category_id": 7,
                 "images": {
                     "image_0": {
-                        "src": "images/placeholder.jpg",
+                        "src": "images/folds/fold_9/9_1_Johanna-Knigge.jpg",
                         "author_lastname": "Knigge",
                         "author_firstname": "Johanna"
                     }
@@ -263,7 +301,7 @@
                 "useage": "Freiwillige Feuerwehr Gr\u00fcnau: Notallrettung & Krankentransport",
                 "former_useage": "",
                 "condition": "",
-                "links": "[]"
+                "links": null
             }
         },
         {
@@ -280,7 +318,12 @@
                 "category_id": 6,
                 "images": {
                     "image_0": {
-                        "src": "images/placeholder.jpg",
+                        "src": "images/folds/fold_10/10_1_Johanna-Knigge.jpg",
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
+                    },
+                    "image_1": {
+                        "src": "images/folds/fold_10/10_2_Johanna-Knigge.jpg",
                         "author_lastname": "Knigge",
                         "author_firstname": "Johanna"
                     }
@@ -290,7 +333,7 @@
                 "useage": "Eiergrosshandel, Vodafone, Garagen- und Hobbyr\u00e4ume",
                 "former_useage": "Umformerstation",
                 "condition": "",
-                "links": "[]"
+                "links": null
             }
         },
         {
@@ -307,7 +350,7 @@
                 "category_id": 5,
                 "images": {
                     "image_0": {
-                        "src": "images/placeholder.jpg",
+                        "src": "images/folds/fold_11/11_1_Johanna-Knigge.jpg",
                         "author_lastname": "Knigge",
                         "author_firstname": "Johanna"
                     }
@@ -317,7 +360,7 @@
                 "useage": "",
                 "former_useage": "",
                 "condition": "",
-                "links": "[]"
+                "links": null
             }
         },
         {
@@ -334,7 +377,12 @@
                 "category_id": 3,
                 "images": {
                     "image_0": {
-                        "src": "images/placeholder.jpg",
+                        "src": "images/folds/fold_12/12_1_Johanna-Knigge.jpg",
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
+                    },
+                    "image_1": {
+                        "src": "images/folds/fold_12/12_2_Johanna-Knigge.jpg",
                         "author_lastname": "Knigge",
                         "author_firstname": "Johanna"
                     }
@@ -344,7 +392,7 @@
                 "useage": "Senior*innenzentrum",
                 "former_useage": "",
                 "condition": "",
-                "links": "[]"
+                "links": null
             }
         },
         {
@@ -361,7 +409,12 @@
                 "category_id": 6,
                 "images": {
                     "image_0": {
-                        "src": "images/placeholder.jpg",
+                        "src": "images/folds/fold_13/13_1_Johanna-Knigge.jpg",
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
+                    },
+                    "image_1": {
+                        "src": "images/folds/fold_13/13_2_Johanna-Knigge.jpg",
                         "author_lastname": "Knigge",
                         "author_firstname": "Johanna"
                     }
@@ -371,7 +424,7 @@
                 "useage": "",
                 "former_useage": "Fernw\u00e4rmeversorgung",
                 "condition": "Sanierung",
-                "links": "[]"
+                "links": null
             }
         },
         {
@@ -388,27 +441,32 @@
                 "category_id": 6,
                 "images": {
                     "image_0": {
-                        "src": "images/folds/fold_14/14_1.jpg",
+                        "src": "images/folds/fold_14/14_1_Johanna-Knigge.jpg",
                         "author_lastname": "Knigge",
                         "author_firstname": "Johanna"
                     },
                     "image_1": {
-                        "src": "images/folds/fold_14/14_2.jpg",
+                        "src": "images/folds/fold_14/14_2_Johanna-Knigge.jpg",
                         "author_lastname": "Knigge",
                         "author_firstname": "Johanna"
                     },
                     "image_2": {
-                        "src": "images/folds/fold_14/14_3.jpg",
+                        "src": "images/folds/fold_14/14_3_Johanna-Knigge.jpg",
                         "author_lastname": "Knigge",
                         "author_firstname": "Johanna"
                     },
                     "image_3": {
-                        "src": "images/folds/fold_14/14_4.jpg",
+                        "src": "images/folds/fold_14/14_4_Johanna-Knigge.jpg",
                         "author_lastname": "Knigge",
                         "author_firstname": "Johanna"
                     },
                     "image_4": {
-                        "src": "images/folds/fold_14/14_5.jpg",
+                        "src": "images/folds/fold_14/14_5_Johanna-Knigge.jpg",
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
+                    },
+                    "image_5": {
+                        "src": "images/folds/fold_14/14_6_Johanna-Knigge.jpg",
                         "author_lastname": "Knigge",
                         "author_firstname": "Johanna"
                     }
@@ -418,7 +476,12 @@
                 "useage": "Heizhaus, gemeinn\u00fctziger Kulturverein",
                 "former_useage": "Umformerstation",
                 "condition": "Umbau 2007",
-                "links": "[\"https://heizhaus-leipzig.de\"]"
+                "links": {
+                    "link_0": {
+                        "title": "\ue80bheizhaus-leipzig",
+                        "url": "https://\ue80bheizhaus-leipzig.de"
+                    }
+                }
             }
         },
         {
@@ -445,7 +508,12 @@
                 "useage": "T\u00dcV S\u00fcd",
                 "former_useage": "",
                 "condition": "",
-                "links": "[\"https://www.tuvsud.com/de-de/standorte/europe/germany/leipzig-gruenau/bruenner-str-8d?utm_medium=search&utm_source=google&utm_campaign=a-on_uberall_de_de_mo_aut_pti_ts&utm_content=standortseite-Leipzig_Gr%C3%BCnau_Br%C3%BCnner_Str.8d\"]"
+                "links": {
+                    "link_0": {
+                        "title": "www",
+                        "url": "https://https://www.tuvsud.com/de-de/standorte/europe/germany/leipzig-gruenau/bruenner-str-8d?utm_medium=search&utm_source=google&utm_campaign=a-on_uberall_de_de_mo_aut_pti_ts&utm_content=standortseite-Leipzig_Gr%C3%BCnau_Br%C3%BCnner_Str.8d"
+                    }
+                }
             }
         },
         {
@@ -462,12 +530,12 @@
                 "category_id": 7,
                 "images": {
                     "image_0": {
-                        "src": "images/folds/fold_16/16_1.jpg",
+                        "src": "images/folds/fold_16/16_1_Johanna-Knigge.jpg",
                         "author_lastname": "Knigge",
                         "author_firstname": "Johanna"
                     },
                     "image_1": {
-                        "src": "images/folds/fold_16/16_2.jpg",
+                        "src": "images/folds/fold_16/16_2_Johanna-Knigge.jpg",
                         "author_lastname": "Knigge",
                         "author_firstname": "Johanna"
                     }
@@ -477,7 +545,7 @@
                 "useage": "Unterschiedliche Gewerbe",
                 "former_useage": "",
                 "condition": "",
-                "links": "[]"
+                "links": null
             }
         },
         {
@@ -494,7 +562,7 @@
                 "category_id": 7,
                 "images": {
                     "image_0": {
-                        "src": "images/folds/fold_17/17.jpg",
+                        "src": "images/folds/fold_17/17_1_Johanna-Knigge.jpg",
                         "author_lastname": "Knigge",
                         "author_firstname": "Johanna"
                     }
@@ -504,7 +572,7 @@
                 "useage": "Weltenbummlerhaus, Betonkiste",
                 "former_useage": "",
                 "condition": "",
-                "links": "[]"
+                "links": null
             }
         },
         {
@@ -521,12 +589,17 @@
                 "category_id": 7,
                 "images": {
                     "image_0": {
-                        "src": "images/folds/fold_18/18_1.jpg",
+                        "src": "images/folds/fold_18/18_1_Johanna-Knigge.jpg",
                         "author_lastname": "Knigge",
                         "author_firstname": "Johanna"
                     },
                     "image_1": {
-                        "src": "images/folds/fold_18/18_2.jpg",
+                        "src": "images/folds/fold_18/18_2_Johanna-Knigge.jpg",
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
+                    },
+                    "image_2": {
+                        "src": "images/folds/fold_18/18_3_Johanna-Knigge.jpg",
                         "author_lastname": "Knigge",
                         "author_firstname": "Johanna"
                     }
@@ -536,7 +609,7 @@
                 "useage": "cetrac GmbH - gebrauchte Ger\u00fcste und Schalungen, Lager",
                 "former_useage": "",
                 "condition": "",
-                "links": "[]"
+                "links": null
             }
         },
         {
@@ -563,7 +636,7 @@
                 "useage": "Firma Fiedler - Rasenm\u00e4herFachhandel",
                 "former_useage": "",
                 "condition": "",
-                "links": "[]"
+                "links": null
             }
         },
         {
@@ -590,7 +663,7 @@
                 "useage": "BBG Bodenbearbeitungsger\u00e4te, Landwirtschaft",
                 "former_useage": "",
                 "condition": "",
-                "links": "[]"
+                "links": null
             }
         },
         {
@@ -617,7 +690,7 @@
                 "useage": "Unterwerk",
                 "former_useage": "",
                 "condition": "Sanierung",
-                "links": "[]"
+                "links": null
             }
         },
         {
@@ -644,7 +717,7 @@
                 "useage": "",
                 "former_useage": "",
                 "condition": "",
-                "links": "[]"
+                "links": null
             }
         },
         {
@@ -661,7 +734,7 @@
                 "category_id": 7,
                 "images": {
                     "image_0": {
-                        "src": "images/placeholder.jpg",
+                        "src": "images/folds/fold_23/23_1_Johanna-Knigge.jpg",
                         "author_lastname": "Knigge",
                         "author_firstname": "Johanna"
                     }
@@ -671,7 +744,7 @@
                 "useage": "Feuerwehr / \u00dcbungsplatz Polizei Leipzig",
                 "former_useage": "",
                 "condition": "",
-                "links": "[]"
+                "links": null
             }
         },
         {
@@ -688,7 +761,7 @@
                 "category_id": 7,
                 "images": {
                     "image_0": {
-                        "src": "images/placeholder.jpg",
+                        "src": "images/folds/fold_24/24_1_Johanna-Knigge.jpg",
                         "author_lastname": "Knigge",
                         "author_firstname": "Johanna"
                     }
@@ -698,7 +771,7 @@
                 "useage": "Feuerwehr / \u00dcbungsplatz Polizei Leipzig",
                 "former_useage": "",
                 "condition": "",
-                "links": "[]"
+                "links": null
             }
         },
         {
@@ -715,7 +788,12 @@
                 "category_id": 7,
                 "images": {
                     "image_0": {
-                        "src": "images/placeholder.jpg",
+                        "src": "images/folds/fold_25/25_1_Johanna-Knigge.jpg",
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
+                    },
+                    "image_1": {
+                        "src": "images/folds/fold_25/25_2_Johanna-Knigge.jpg",
                         "author_lastname": "Knigge",
                         "author_firstname": "Johanna"
                     }
@@ -725,7 +803,7 @@
                 "useage": "Feuerwehr / \u00dcbungsplatz Polizei Leipzig",
                 "former_useage": "",
                 "condition": "",
-                "links": "[]"
+                "links": null
             }
         },
         {
@@ -742,7 +820,7 @@
                 "category_id": 7,
                 "images": {
                     "image_0": {
-                        "src": "images/placeholder.jpg",
+                        "src": "images/folds/fold_26/26_1_Johanna-Knigge.jpg",
                         "author_lastname": "Knigge",
                         "author_firstname": "Johanna"
                     }
@@ -752,7 +830,12 @@
                 "useage": "Werk Zuber, KANN- Beton",
                 "former_useage": "Ehemaliger Produktionsstandort der VT-Falte in Leipzig",
                 "condition": "",
-                "links": "[\"https://www.kann-beton.de/\"]"
+                "links": {
+                    "link_0": {
+                        "title": "www",
+                        "url": "https://https://www.kann-beton.de/"
+                    }
+                }
             }
         },
         {
@@ -769,7 +852,7 @@
                 "category_id": 7,
                 "images": {
                     "image_0": {
-                        "src": "images/placeholder.jpg",
+                        "src": "images/folds/fold_27/27_1_Johanna-Knigge.jpg",
                         "author_lastname": "Knigge",
                         "author_firstname": "Johanna"
                     }
@@ -779,7 +862,12 @@
                 "useage": "Werk Zuber, KANN- Beton",
                 "former_useage": "Ehemaliger Produktionsstandort der VT-Falte in Leipzig",
                 "condition": "",
-                "links": "[\"https://www.kann-beton.de/\"]"
+                "links": {
+                    "link_0": {
+                        "title": "www",
+                        "url": "https://https://www.kann-beton.de/"
+                    }
+                }
             }
         },
         {
@@ -796,9 +884,19 @@
                 "category_id": 7,
                 "images": {
                     "image_0": {
-                        "src": "images/placeholder.jpg",
-                        "author_lastname": "Knigge",
-                        "author_firstname": "Johanna"
+                        "src": "images/folds/fold_28/28_1_Florian-Marenbach.jpg",
+                        "author_lastname": "Marenbach",
+                        "author_firstname": "Florian"
+                    },
+                    "image_1": {
+                        "src": "images/folds/fold_28/28_2_Florian-Marenbach.jpg",
+                        "author_lastname": "Marenbach",
+                        "author_firstname": "Florian"
+                    },
+                    "image_2": {
+                        "src": "images/folds/fold_28/28_3_Florian-Marenbach.jpg",
+                        "author_lastname": "Marenbach",
+                        "author_firstname": "Florian"
                     }
                 },
                 "address": "Franz-Flemming-Stra\u00dfe 27, 04179 Leipzig",
@@ -806,7 +904,7 @@
                 "useage": "Mischnutzung",
                 "former_useage": "",
                 "condition": "",
-                "links": "[]"
+                "links": null
             }
         },
         {
@@ -823,9 +921,19 @@
                 "category_id": 7,
                 "images": {
                     "image_0": {
-                        "src": "images/placeholder.jpg",
-                        "author_lastname": "Knigge",
-                        "author_firstname": "Johanna"
+                        "src": "images/folds/fold_29/29_1_Florian-Marenbach.jpg",
+                        "author_lastname": "Marenbach",
+                        "author_firstname": "Florian"
+                    },
+                    "image_1": {
+                        "src": "images/folds/fold_29/29_2_Florian-Marenbach.jpg",
+                        "author_lastname": "Marenbach",
+                        "author_firstname": "Florian"
+                    },
+                    "image_2": {
+                        "src": "images/folds/fold_29/29_3_Florian-Marenbach.jpg",
+                        "author_lastname": "Marenbach",
+                        "author_firstname": "Florian"
                     }
                 },
                 "address": "Franz-Flemming-Stra\u00dfe 27, 04179 Leipzig",
@@ -833,7 +941,7 @@
                 "useage": "Cross Fit/ Autoservice",
                 "former_useage": "",
                 "condition": "",
-                "links": "[]"
+                "links": null
             }
         },
         {
@@ -850,9 +958,24 @@
                 "category_id": 7,
                 "images": {
                     "image_0": {
-                        "src": "images/placeholder.jpg",
-                        "author_lastname": "Knigge",
-                        "author_firstname": "Johanna"
+                        "src": "images/folds/fold_30/30_1_Florian-Marenbach.jpg",
+                        "author_lastname": "Marenbach",
+                        "author_firstname": "Florian"
+                    },
+                    "image_1": {
+                        "src": "images/folds/fold_30/30_2_Florian-Marenbach.jpg",
+                        "author_lastname": "Marenbach",
+                        "author_firstname": "Florian"
+                    },
+                    "image_2": {
+                        "src": "images/folds/fold_30/30_3_Florian-Marenbach.jpg",
+                        "author_lastname": "Marenbach",
+                        "author_firstname": "Florian"
+                    },
+                    "image_3": {
+                        "src": "images/folds/fold_30/30_4_Florian-Marenbach.jpg",
+                        "author_lastname": "Marenbach",
+                        "author_firstname": "Florian"
                     }
                 },
                 "address": "Franz-Flemming-Stra\u00dfe 20, 04179 Leipzig",
@@ -860,7 +983,7 @@
                 "useage": "Trailer Center Koppe",
                 "former_useage": "",
                 "condition": "",
-                "links": "[]"
+                "links": null
             }
         },
         {
@@ -887,7 +1010,7 @@
                 "useage": "",
                 "former_useage": "",
                 "condition": "",
-                "links": "[]"
+                "links": null
             }
         },
         {
@@ -914,7 +1037,7 @@
                 "useage": "",
                 "former_useage": "",
                 "condition": "",
-                "links": "[]"
+                "links": null
             }
         },
         {
@@ -941,7 +1064,7 @@
                 "useage": "",
                 "former_useage": "",
                 "condition": "",
-                "links": "[]"
+                "links": null
             }
         },
         {
@@ -968,7 +1091,16 @@
                 "useage": "Schwimmer- Sprunghalle Uni Leipzig",
                 "former_useage": "",
                 "condition": "Sanierung 2014 - 2019",
-                "links": "[\"https://www.leipzig.de/detailansicht-adresse/sprunghalle-der-universitaet-leipzig\", \"https://hartung-ludwig.de/snp/projekte/projekt/schwimm-und-sprunghalle-der-universitaet-leipzig-campus-jahnallee\"]"
+                "links": {
+                    "link_0": {
+                        "title": "www",
+                        "url": "https://https://www.leipzig.de/detailansicht-adresse/sprunghalle-der-universitaet-leipzig"
+                    },
+                    "link_1": {
+                        "title": "hartung-ludwig",
+                        "url": "https://https://hartung-ludwig.de/snp/projekte/projekt/schwimm-und-sprunghalle-der-universitaet-leipzig-campus-jahnallee"
+                    }
+                }
             }
         },
         {
@@ -995,7 +1127,7 @@
                 "useage": "",
                 "former_useage": "",
                 "condition": "",
-                "links": "[]"
+                "links": null
             }
         },
         {
@@ -1012,7 +1144,12 @@
                 "category_id": 7,
                 "images": {
                     "image_0": {
-                        "src": "images/placeholder.jpg",
+                        "src": "images/folds/fold_36/36_1_Johanna-Knigge.jpg",
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
+                    },
+                    "image_1": {
+                        "src": "images/folds/fold_36/36_2_Johanna-Knigge.jpg",
                         "author_lastname": "Knigge",
                         "author_firstname": "Johanna"
                     }
@@ -1022,7 +1159,7 @@
                 "useage": "Kinder und Jugen\u00e4rztlicher Dienst",
                 "former_useage": "",
                 "condition": "",
-                "links": "[]"
+                "links": null
             }
         },
         {
@@ -1039,7 +1176,7 @@
                 "category_id": 1,
                 "images": {
                     "image_0": {
-                        "src": "images/placeholder.jpg",
+                        "src": "images/folds/fold_37/37_1_Johanna-Knigge.jpg",
                         "author_lastname": "Knigge",
                         "author_firstname": "Johanna"
                     }
@@ -1049,7 +1186,7 @@
                 "useage": "Sporthalle Anna-Magdalena-Bach-Grundschule",
                 "former_useage": "",
                 "condition": "",
-                "links": "[]"
+                "links": null
             }
         },
         {
@@ -1076,7 +1213,7 @@
                 "useage": "",
                 "former_useage": "",
                 "condition": "",
-                "links": "[]"
+                "links": null
             }
         },
         {
@@ -1093,7 +1230,7 @@
                 "category_id": 5,
                 "images": {
                     "image_0": {
-                        "src": "images/placeholder.jpg",
+                        "src": "images/folds/fold_39/39_1_Johanna-Knigge.jpg",
                         "author_lastname": "Knigge",
                         "author_firstname": "Johanna"
                     }
@@ -1103,7 +1240,7 @@
                 "useage": "",
                 "former_useage": "",
                 "condition": "Sanierung",
-                "links": "[]"
+                "links": null
             }
         },
         {
@@ -1120,7 +1257,17 @@
                 "category_id": 1,
                 "images": {
                     "image_0": {
-                        "src": "images/placeholder.jpg",
+                        "src": "images/folds/fold_40/40_1_Johanna-Knigge.jpg",
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
+                    },
+                    "image_1": {
+                        "src": "images/folds/fold_40/40_2_Johanna-Knigge.jpg",
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
+                    },
+                    "image_2": {
+                        "src": "images/folds/fold_40/40_3_Johanna-Knigge.jpg",
                         "author_lastname": "Knigge",
                         "author_firstname": "Johanna"
                     }
@@ -1130,7 +1277,12 @@
                 "useage": "Turn- und Gymnastikclub Leipzig e.V.",
                 "former_useage": "",
                 "condition": "",
-                "links": "[\"https://www.tug-leipzig.de/\"]"
+                "links": {
+                    "link_0": {
+                        "title": "www",
+                        "url": "https://https://www.tug-leipzig.de/"
+                    }
+                }
             }
         },
         {
@@ -1147,7 +1299,12 @@
                 "category_id": 7,
                 "images": {
                     "image_0": {
-                        "src": "images/placeholder.jpg",
+                        "src": "images/folds/fold_41/41_1_Johanna-Knigge.jpg",
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
+                    },
+                    "image_1": {
+                        "src": "images/folds/fold_41/41_2_Johanna-Knigge.jpg",
                         "author_lastname": "Knigge",
                         "author_firstname": "Johanna"
                     }
@@ -1157,7 +1314,7 @@
                 "useage": "",
                 "former_useage": "",
                 "condition": "In Sanierung (Stand Jan.2024)",
-                "links": "[]"
+                "links": null
             }
         },
         {
@@ -1174,7 +1331,17 @@
                 "category_id": 7,
                 "images": {
                     "image_0": {
-                        "src": "images/placeholder.jpg",
+                        "src": "images/folds/fold_42/42_1_Johanna-Knigge.jpg",
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
+                    },
+                    "image_1": {
+                        "src": "images/folds/fold_42/42_2_Johanna-Knigge.jpg",
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
+                    },
+                    "image_2": {
+                        "src": "images/folds/fold_42/42_3_Johanna-Knigge.jpg",
                         "author_lastname": "Knigge",
                         "author_firstname": "Johanna"
                     }
@@ -1184,7 +1351,7 @@
                 "useage": "",
                 "former_useage": "",
                 "condition": "Einseitige Sanierung",
-                "links": "[]"
+                "links": null
             }
         },
         {
@@ -1201,7 +1368,17 @@
                 "category_id": 6,
                 "images": {
                     "image_0": {
-                        "src": "images/placeholder.jpg",
+                        "src": "images/folds/fold_43/43_1_Johanna-Knigge.jpg",
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
+                    },
+                    "image_1": {
+                        "src": "images/folds/fold_43/43_2_Johanna-Knigge.jpg",
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
+                    },
+                    "image_2": {
+                        "src": "images/folds/fold_43/43_3_Johanna-Knigge.jpg",
                         "author_lastname": "Knigge",
                         "author_firstname": "Johanna"
                     }
@@ -1211,7 +1388,7 @@
                 "useage": "",
                 "former_useage": "",
                 "condition": "",
-                "links": "[]"
+                "links": null
             }
         },
         {
@@ -1228,7 +1405,12 @@
                 "category_id": 1,
                 "images": {
                     "image_0": {
-                        "src": "images/placeholder.jpg",
+                        "src": "images/folds/fold_44/44_1_Johanna-Knigge.jpg",
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
+                    },
+                    "image_1": {
+                        "src": "images/folds/fold_44/44_2_Johanna-Knigge.jpg",
                         "author_lastname": "Knigge",
                         "author_firstname": "Johanna"
                     }
@@ -1238,7 +1420,7 @@
                 "useage": "Sporthalle August Bebel Schule",
                 "former_useage": "",
                 "condition": "sanierungsbed\u00fcrftig ",
-                "links": "[]"
+                "links": null
             }
         },
         {
@@ -1265,7 +1447,7 @@
                 "useage": "",
                 "former_useage": "",
                 "condition": "Sanierung",
-                "links": "[]"
+                "links": null
             }
         },
         {
@@ -1282,7 +1464,7 @@
                 "category_id": 1,
                 "images": {
                     "image_0": {
-                        "src": "images/placeholder.jpg",
+                        "src": "images/folds/fold_46/46_1_Johanna-Knigge.jpg",
                         "author_lastname": "Knigge",
                         "author_firstname": "Johanna"
                     }
@@ -1292,7 +1474,7 @@
                 "useage": "Sporthalle Rabet",
                 "former_useage": "",
                 "condition": "",
-                "links": "[]"
+                "links": null
             }
         },
         {
@@ -1309,7 +1491,12 @@
                 "category_id": 2,
                 "images": {
                     "image_0": {
-                        "src": "images/placeholder.jpg",
+                        "src": "images/folds/fold_47/47_1_Johanna-Knigge.jpg",
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
+                    },
+                    "image_1": {
+                        "src": "images/folds/fold_47/47_2_Johanna-Knigge.jpg",
                         "author_lastname": "Knigge",
                         "author_firstname": "Johanna"
                     }
@@ -1319,7 +1506,12 @@
                 "useage": "Offener Freizeittreff \"Rabet\"",
                 "former_useage": "",
                 "condition": "",
-                "links": "[\"https://www.leipzig.de/detailansicht-adresse/oft-rabet\"]"
+                "links": {
+                    "link_0": {
+                        "title": "www",
+                        "url": "https://https://www.leipzig.de/detailansicht-adresse/oft-rabet"
+                    }
+                }
             }
         },
         {
@@ -1346,7 +1538,12 @@
                 "useage": "Blockheizkraftwerk",
                 "former_useage": "Umformerstation",
                 "condition": "",
-                "links": "[\"https://energiewelten.l.de/bhkw-volkmarsdorf/\"]"
+                "links": {
+                    "link_0": {
+                        "title": "energiewelten",
+                        "url": "https://https://energiewelten.l.de/bhkw-volkmarsdorf/"
+                    }
+                }
             }
         },
         {
@@ -1363,7 +1560,7 @@
                 "category_id": 2,
                 "images": {
                     "image_0": {
-                        "src": "images/placeholder.jpg",
+                        "src": "images/folds/fold_49/49_1_Johanna-Knigge.jpg",
                         "author_lastname": "Knigge",
                         "author_firstname": "Johanna"
                     }
@@ -1373,7 +1570,12 @@
                 "useage": "Offener Jugenclub Sellerhausen (Kindervereinigung e.V.)",
                 "former_useage": "",
                 "condition": "",
-                "links": "[\"https://kv-leipzig.de/\"]"
+                "links": {
+                    "link_0": {
+                        "title": "kv-leipzig",
+                        "url": "https://https://kv-leipzig.de/"
+                    }
+                }
             }
         },
         {
@@ -1390,7 +1592,27 @@
                 "category_id": 6,
                 "images": {
                     "image_0": {
-                        "src": "images/placeholder.jpg",
+                        "src": "images/folds/fold_50/50_1_Johanna-Knigge.jpg",
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
+                    },
+                    "image_1": {
+                        "src": "images/folds/fold_50/50_2_Johanna-Knigge.jpg",
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
+                    },
+                    "image_2": {
+                        "src": "images/folds/fold_50/50_3_Johanna-Knigge.jpg",
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
+                    },
+                    "image_3": {
+                        "src": "images/folds/fold_50/50_4_Johanna-Knigge.jpg",
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
+                    },
+                    "image_4": {
+                        "src": "images/folds/fold_50/50_5_Johanna-Knigge.jpg",
                         "author_lastname": "Knigge",
                         "author_firstname": "Johanna"
                     }
@@ -1400,7 +1622,7 @@
                 "useage": "Fernw\u00e4rme",
                 "former_useage": "Umformerstation",
                 "condition": "",
-                "links": "[]"
+                "links": null
             }
         },
         {
@@ -1417,7 +1639,7 @@
                 "category_id": 6,
                 "images": {
                     "image_0": {
-                        "src": "images/folds/fold_51/51.jpg",
+                        "src": "images/folds/fold_51/51_1_Johanna-Knigge.jpg",
                         "author_lastname": "Knigge",
                         "author_firstname": "Johanna"
                     }
@@ -1427,7 +1649,7 @@
                 "useage": "Fernw\u00e4rme",
                 "former_useage": "Umformerstation",
                 "condition": "Sanierung",
-                "links": "[]"
+                "links": null
             }
         },
         {
@@ -1444,7 +1666,12 @@
                 "category_id": 6,
                 "images": {
                     "image_0": {
-                        "src": "images/folds/fold_52/52.jpg",
+                        "src": "images/folds/fold_52/52_1_Johanna-Knigge.jpg",
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
+                    },
+                    "image_1": {
+                        "src": "images/folds/fold_52/52_2_Johanna-Knigge.jpg",
                         "author_lastname": "Knigge",
                         "author_firstname": "Johanna"
                     }
@@ -1454,7 +1681,7 @@
                 "useage": "Fernw\u00e4rme",
                 "former_useage": "Umformerstation",
                 "condition": "",
-                "links": "[]"
+                "links": null
             }
         },
         {
@@ -1471,7 +1698,7 @@
                 "category_id": 4,
                 "images": {
                     "image_0": {
-                        "src": "images/placeholder.jpg",
+                        "src": "images/folds/fold_53/53_1_Johanna-Knigge.jpg",
                         "author_lastname": "Knigge",
                         "author_firstname": "Johanna"
                     }
@@ -1481,7 +1708,7 @@
                 "useage": "Konsum",
                 "former_useage": "",
                 "condition": "",
-                "links": "[]"
+                "links": null
             }
         },
         {
@@ -1498,7 +1725,12 @@
                 "category_id": 1,
                 "images": {
                     "image_0": {
-                        "src": "images/placeholder.jpg",
+                        "src": "images/folds/fold_54/54_1_Johanna-Knigge.jpg",
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
+                    },
+                    "image_1": {
+                        "src": "images/folds/fold_54/54_2_Johanna-Knigge.jpg",
                         "author_lastname": "Knigge",
                         "author_firstname": "Johanna"
                     }
@@ -1508,7 +1740,7 @@
                 "useage": "Sporthalle Schule Paundsdorf",
                 "former_useage": "",
                 "condition": "",
-                "links": "[]"
+                "links": null
             }
         },
         {
@@ -1525,7 +1757,7 @@
                 "category_id": 2,
                 "images": {
                     "image_0": {
-                        "src": "images/placeholder.jpg",
+                        "src": "images/folds/fold_55/55_1_Johanna-Knigge.jpg",
                         "author_lastname": "Knigge",
                         "author_firstname": "Johanna"
                     }
@@ -1535,7 +1767,12 @@
                 "useage": "Offener Freizeittreff \"Crazy\"",
                 "former_useage": "",
                 "condition": "Sanierung durch KO/OK Architekten ",
-                "links": "[\"https://www.leipzig.de/detailansicht-adresse/oft-crazy\", \"https://ko-ok.cc/crazy/\"]"
+                "links": {
+                    "link_0": {
+                        "title": "ko-ok",
+                        "url": "https://https://www.leipzig.de/detailansicht-adresse/oft-crazy https://ko-ok.cc/crazy/"
+                    }
+                }
             }
         },
         {
@@ -1552,7 +1789,12 @@
                 "category_id": 1,
                 "images": {
                     "image_0": {
-                        "src": "images/placeholder.jpg",
+                        "src": "images/folds/fold_56/56_1_Johanna-Knigge.jpg",
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
+                    },
+                    "image_1": {
+                        "src": "images/folds/fold_56/56_2_Johanna-Knigge.jpg",
                         "author_lastname": "Knigge",
                         "author_firstname": "Johanna"
                     }
@@ -1562,7 +1804,12 @@
                 "useage": "Turnhalle, Br\u00fcder Grimm Schule",
                 "former_useage": "",
                 "condition": "",
-                "links": "[\"https://www.leipzig.de/freizeit-kultur-und-tourismus/sport/sportstaettenbelegung/detailseite/detailseite/schulsporthalle-brueder-grimm-schule-grundschule\"]"
+                "links": {
+                    "link_0": {
+                        "title": "www",
+                        "url": "https://https://www.leipzig.de/freizeit-kultur-und-tourismus/sport/sportstaettenbelegung/detailseite/detailseite/schulsporthalle-brueder-grimm-schule-grundschule"
+                    }
+                }
             }
         },
         {
@@ -1579,7 +1826,7 @@
                 "category_id": 7,
                 "images": {
                     "image_0": {
-                        "src": "images/placeholder.jpg",
+                        "src": "images/folds/fold_57/57_1_Johanna-Knigge.jpg",
                         "author_lastname": "Knigge",
                         "author_firstname": "Johanna"
                     }
@@ -1589,7 +1836,7 @@
                 "useage": "Senior*innenzentrum",
                 "former_useage": "",
                 "condition": "",
-                "links": "[]"
+                "links": null
             }
         },
         {
@@ -1606,7 +1853,7 @@
                 "category_id": 7,
                 "images": {
                     "image_0": {
-                        "src": "images/placeholder.jpg",
+                        "src": "images/folds/fold_58/58_1_Johanna-Knigge.jpg",
                         "author_lastname": "Knigge",
                         "author_firstname": "Johanna"
                     }
@@ -1616,7 +1863,7 @@
                 "useage": "Elektrotechnik Lehmann GmbH ",
                 "former_useage": "",
                 "condition": "",
-                "links": "[]"
+                "links": null
             }
         },
         {
@@ -1633,7 +1880,22 @@
                 "category_id": 7,
                 "images": {
                     "image_0": {
-                        "src": "images/placeholder.jpg",
+                        "src": "images/folds/fold_59/59_1_Johanna-Knigge.jpg",
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
+                    },
+                    "image_1": {
+                        "src": "images/folds/fold_59/59_2_Johanna-Knigge.jpg",
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
+                    },
+                    "image_2": {
+                        "src": "images/folds/fold_59/59_3_Johanna-Knigge.jpg",
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
+                    },
+                    "image_3": {
+                        "src": "images/folds/fold_59/59_4_Johanna-Knigge.jpg",
                         "author_lastname": "Knigge",
                         "author_firstname": "Johanna"
                     }
@@ -1643,7 +1905,7 @@
                 "useage": "Garage",
                 "former_useage": "",
                 "condition": "",
-                "links": "[]"
+                "links": null
             }
         },
         {
@@ -1660,22 +1922,22 @@
                 "category_id": 6,
                 "images": {
                     "image_0": {
-                        "src": "images/folds/fold_60/60.jpg",
+                        "src": "images/folds/fold_60/60_1_Johanna-Knigge.jpg",
                         "author_lastname": "Knigge",
                         "author_firstname": "Johanna"
                     },
                     "image_1": {
-                        "src": "images/folds/fold_60/60_2.jpg",
+                        "src": "images/folds/fold_60/60_2_Johanna-Knigge.jpg",
                         "author_lastname": "Knigge",
                         "author_firstname": "Johanna"
                     },
                     "image_2": {
-                        "src": "images/folds/fold_60/60_3.jpg",
+                        "src": "images/folds/fold_60/60_3_Johanna-Knigge.jpg",
                         "author_lastname": "Knigge",
                         "author_firstname": "Johanna"
                     },
                     "image_3": {
-                        "src": "images/folds/fold_60/60_4.jpg",
+                        "src": "images/folds/fold_60/60_4_Johanna-Knigge.jpg",
                         "author_lastname": "Knigge",
                         "author_firstname": "Johanna"
                     }
@@ -1685,7 +1947,7 @@
                 "useage": "Leerstand",
                 "former_useage": "Getr\u00e4nkelieferant, Umformerstation",
                 "condition": "Umbau; Neue Fassade/ Fenster",
-                "links": "[]"
+                "links": null
             }
         },
         {
@@ -1702,7 +1964,12 @@
                 "category_id": 7,
                 "images": {
                     "image_0": {
-                        "src": "images/placeholder.jpg",
+                        "src": "images/folds/fold_61/61_1_Johanna-Knigge.jpg",
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
+                    },
+                    "image_1": {
+                        "src": "images/folds/fold_61/61_2_Johanna-Knigge.jpg",
                         "author_lastname": "Knigge",
                         "author_firstname": "Johanna"
                     }
@@ -1712,7 +1979,7 @@
                 "useage": "Gewerbe / Lager",
                 "former_useage": "",
                 "condition": "",
-                "links": "[]"
+                "links": null
             }
         },
         {
@@ -1729,7 +1996,7 @@
                 "category_id": 7,
                 "images": {
                     "image_0": {
-                        "src": "images/placeholder.jpg",
+                        "src": "images/folds/fold_62/62_1_Johanna-Knigge.jpg",
                         "author_lastname": "Knigge",
                         "author_firstname": "Johanna"
                     }
@@ -1739,7 +2006,7 @@
                 "useage": "Gewerbe / Lager",
                 "former_useage": "",
                 "condition": "",
-                "links": "[]"
+                "links": null
             }
         },
         {
@@ -1766,7 +2033,7 @@
                 "useage": "Gewerbe / Lager",
                 "former_useage": "",
                 "condition": "",
-                "links": "[]"
+                "links": null
             }
         },
         {
@@ -1783,7 +2050,7 @@
                 "category_id": 7,
                 "images": {
                     "image_0": {
-                        "src": "images/placeholder.jpg",
+                        "src": "images/folds/fold_64/64_1_Johanna-Knigge.jpg",
                         "author_lastname": "Knigge",
                         "author_firstname": "Johanna"
                     }
@@ -1793,7 +2060,7 @@
                 "useage": "Varile, Baufachhandel",
                 "former_useage": "",
                 "condition": "",
-                "links": "[]"
+                "links": null
             }
         },
         {
@@ -1810,7 +2077,7 @@
                 "category_id": 7,
                 "images": {
                     "image_0": {
-                        "src": "images/placeholder.jpg",
+                        "src": "images/folds/fold_65/65_1_Johanna-Knigge.jpg",
                         "author_lastname": "Knigge",
                         "author_firstname": "Johanna"
                     }
@@ -1820,7 +2087,7 @@
                 "useage": "Rust- Impex Teeladen",
                 "former_useage": "",
                 "condition": "",
-                "links": "[]"
+                "links": null
             }
         },
         {
@@ -1847,7 +2114,7 @@
                 "useage": "Sporthalle Hans Kroch Schule",
                 "former_useage": "",
                 "condition": "",
-                "links": "[]"
+                "links": null
             }
         },
         {
@@ -1874,7 +2141,7 @@
                 "useage": "Konsum Leipzig",
                 "former_useage": "",
                 "condition": "",
-                "links": "[]"
+                "links": null
             }
         },
         {
@@ -1891,7 +2158,7 @@
                 "category_id": 7,
                 "images": {
                     "image_0": {
-                        "src": "images/placeholder.jpg",
+                        "src": "images/folds/fold_68/68_1_Johanna-Knigge.jpg",
                         "author_lastname": "Knigge",
                         "author_firstname": "Johanna"
                     }
@@ -1901,7 +2168,7 @@
                 "useage": "Autoverwertung Richter",
                 "former_useage": "",
                 "condition": "",
-                "links": "[]"
+                "links": null
             }
         },
         {
@@ -1918,7 +2185,7 @@
                 "category_id": 7,
                 "images": {
                     "image_0": {
-                        "src": "images/placeholder.jpg",
+                        "src": "images/folds/fold_69/69_1_Johanna-Knigge.jpg",
                         "author_lastname": "Knigge",
                         "author_firstname": "Johanna"
                     }
@@ -1928,7 +2195,7 @@
                 "useage": "Autoverwertung Richter",
                 "former_useage": "",
                 "condition": "",
-                "links": "[]"
+                "links": null
             }
         },
         {
@@ -1945,7 +2212,7 @@
                 "category_id": 7,
                 "images": {
                     "image_0": {
-                        "src": "images/placeholder.jpg",
+                        "src": "images/folds/fold_70/70_1_Johanna-Knigge.jpg",
                         "author_lastname": "Knigge",
                         "author_firstname": "Johanna"
                     }
@@ -1955,7 +2222,7 @@
                 "useage": "Konkursverwertung Pakendorf,  Lager",
                 "former_useage": "",
                 "condition": "",
-                "links": "[]"
+                "links": null
             }
         },
         {
@@ -1982,7 +2249,12 @@
                 "useage": "Blockheizkraftwerk",
                 "former_useage": "Umformerstation",
                 "condition": "",
-                "links": "[\"https://energiewelten.l.de/bhkw-reudnitz/\"]"
+                "links": {
+                    "link_0": {
+                        "title": "energiewelten",
+                        "url": "https://https://energiewelten.l.de/bhkw-reudnitz/"
+                    }
+                }
             }
         },
         {
@@ -2009,7 +2281,7 @@
                 "useage": "IW-Truckstyling GmbH, Fachgesch\u00e4ft f\u00fcr Lkw-Zubeh\u00f6r",
                 "former_useage": "",
                 "condition": "",
-                "links": "[]"
+                "links": null
             }
         },
         {
@@ -2026,7 +2298,7 @@
                 "category_id": 7,
                 "images": {
                     "image_0": {
-                        "src": "images/folds/fold_73/73.jpg",
+                        "src": "images/folds/fold_73/73_1_Johanna-Knigge.jpg",
                         "author_lastname": "Knigge",
                         "author_firstname": "Johanna"
                     }
@@ -2036,7 +2308,12 @@
                 "useage": "DLRG Bezrik Leipzig e.V.: Wasserrettung Katastrophenschutz",
                 "former_useage": "",
                 "condition": "",
-                "links": "[\"https://www.dlrg-leipzig.de/\"]"
+                "links": {
+                    "link_0": {
+                        "title": "www",
+                        "url": "https://http://www.dlrg-leipzig.de/"
+                    }
+                }
             }
         },
         {
@@ -2053,7 +2330,7 @@
                 "category_id": 7,
                 "images": {
                     "image_0": {
-                        "src": "images/folds/fold_74/74.jpg",
+                        "src": "images/folds/fold_74/74_1_Johanna-Knigge.jpg",
                         "author_lastname": "Knigge",
                         "author_firstname": "Johanna"
                     }
@@ -2063,7 +2340,7 @@
                 "useage": "Lano KFZ Service, Autowerkstatt /Selbsthilfewerkstatt",
                 "former_useage": "Lagerhallenkomplex Kampfgruppenst\u00fctzpunkt",
                 "condition": "",
-                "links": "[]"
+                "links": null
             }
         },
         {
@@ -2080,7 +2357,7 @@
                 "category_id": 7,
                 "images": {
                     "image_0": {
-                        "src": "images/folds/fold_75/75.jpg",
+                        "src": "images/folds/fold_75/75_1_Johanna-Knigge.jpg",
                         "author_lastname": "Knigge",
                         "author_firstname": "Johanna"
                     }
@@ -2090,7 +2367,7 @@
                 "useage": "Lano KFZ Service, Lager",
                 "former_useage": "Lagerhallenkomplex Kampfgruppenst\u00fctzpunkt",
                 "condition": "",
-                "links": "[]"
+                "links": null
             }
         },
         {
@@ -2107,7 +2384,7 @@
                 "category_id": 7,
                 "images": {
                     "image_0": {
-                        "src": "images/placeholder.jpg",
+                        "src": "images/folds/fold_76/76_1_Johanna-Knigge.jpg",
                         "author_lastname": "Knigge",
                         "author_firstname": "Johanna"
                     }
@@ -2117,7 +2394,7 @@
                 "useage": "Lager, LKW Anlieferung",
                 "former_useage": "",
                 "condition": "",
-                "links": "[]"
+                "links": null
             }
         },
         {
@@ -2134,7 +2411,17 @@
                 "category_id": 7,
                 "images": {
                     "image_0": {
-                        "src": "images/folds/fold_77/77.jpg",
+                        "src": "images/folds/fold_77/77_1_Johanna-Knigge.jpg",
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
+                    },
+                    "image_1": {
+                        "src": "images/folds/fold_77/77_2_Johanna-Knigge.jpg",
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
+                    },
+                    "image_2": {
+                        "src": "images/folds/fold_77/77_3_Johanna-Knigge.jpg",
                         "author_lastname": "Knigge",
                         "author_firstname": "Johanna"
                     }
@@ -2144,7 +2431,12 @@
                 "useage": "Albert Schweizer Schule",
                 "former_useage": "",
                 "condition": "",
-                "links": "[\"https://www.albert-schweitzer-schu-le.de/aktu/index.html\"]"
+                "links": {
+                    "link_0": {
+                        "title": "www",
+                        "url": "https://https://www.albert-schweitzer-schu-le.de/aktu/index.html"
+                    }
+                }
             }
         },
         {
@@ -2161,7 +2453,17 @@
                 "category_id": 7,
                 "images": {
                     "image_0": {
-                        "src": "images/folds/fold_78/78.jpg",
+                        "src": "images/folds/fold_78/78_1_Johanna-Knigge.jpg",
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
+                    },
+                    "image_1": {
+                        "src": "images/folds/fold_78/78_2_Johanna-Knigge.jpg",
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
+                    },
+                    "image_2": {
+                        "src": "images/folds/fold_78/78_3_Johanna-Knigge.jpg",
                         "author_lastname": "Knigge",
                         "author_firstname": "Johanna"
                     }
@@ -2171,7 +2473,7 @@
                 "useage": "Wertstoffhof",
                 "former_useage": "",
                 "condition": "",
-                "links": "[]"
+                "links": null
             }
         },
         {
@@ -2188,7 +2490,7 @@
                 "category_id": 7,
                 "images": {
                     "image_0": {
-                        "src": "images/folds/fold_79/79.jpg",
+                        "src": "images/folds/fold_79/79_1_Johanna-Knigge.jpg",
                         "author_lastname": "Knigge",
                         "author_firstname": "Johanna"
                     }
@@ -2198,7 +2500,7 @@
                 "useage": "Haedi-Flor Meisterbetrieb, Blumengesch\u00e4ft",
                 "former_useage": "",
                 "condition": "",
-                "links": "[]"
+                "links": null
             }
         },
         {
@@ -2215,7 +2517,12 @@
                 "category_id": 7,
                 "images": {
                     "image_0": {
-                        "src": "images/folds/fold_80/80.jpg",
+                        "src": "images/folds/fold_80/80_1_Johanna-Knigge.jpg",
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
+                    },
+                    "image_1": {
+                        "src": "images/folds/fold_80/80_2_Johanna-Knigge.jpg",
                         "author_lastname": "Knigge",
                         "author_firstname": "Johanna"
                     }
@@ -2225,7 +2532,7 @@
                 "useage": "Leipziger Tanztheater E.V., Tanzschule",
                 "former_useage": "",
                 "condition": "",
-                "links": "[]"
+                "links": null
             }
         },
         {
@@ -2252,7 +2559,7 @@
                 "useage": "",
                 "former_useage": "",
                 "condition": "",
-                "links": "[]"
+                "links": null
             }
         },
         {
@@ -2269,7 +2576,7 @@
                 "category_id": 5,
                 "images": {
                     "image_0": {
-                        "src": "images/placeholder.jpg",
+                        "src": "images/folds/fold_82/82_1_Johanna-Knigge.jpg",
                         "author_lastname": "Knigge",
                         "author_firstname": "Johanna"
                     }
@@ -2279,7 +2586,7 @@
                 "useage": "",
                 "former_useage": "",
                 "condition": "In Sanierung (Stand 05/24)",
-                "links": "[]"
+                "links": null
             }
         },
         {
@@ -2306,7 +2613,7 @@
                 "useage": "Haus Engelsdorf, DB Netze, Niederlassung Leipzig S\u00fcdost",
                 "former_useage": "",
                 "condition": "",
-                "links": "[]"
+                "links": null
             }
         },
         {
@@ -2323,7 +2630,12 @@
                 "category_id": 1,
                 "images": {
                     "image_0": {
-                        "src": "images/placeholder.jpg",
+                        "src": "images/folds/fold_84/84_1_Johanna-Knigge.jpg",
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
+                    },
+                    "image_1": {
+                        "src": "images/folds/fold_84/84_2_Johanna-Knigge.jpg",
                         "author_lastname": "Knigge",
                         "author_firstname": "Johanna"
                     }
@@ -2333,7 +2645,7 @@
                 "useage": "Sporthalle ",
                 "former_useage": "",
                 "condition": "",
-                "links": "[]"
+                "links": null
             }
         },
         {
@@ -2360,7 +2672,7 @@
                 "useage": "Turnhalle Humboldtschule",
                 "former_useage": "",
                 "condition": "",
-                "links": "[]"
+                "links": null
             }
         },
         {
@@ -2387,7 +2699,7 @@
                 "useage": "Deutscher Wetterdienst, Wettervorhersage",
                 "former_useage": "",
                 "condition": "",
-                "links": "[]"
+                "links": null
             }
         },
         {
@@ -2414,7 +2726,7 @@
                 "useage": "Blockheizkraftwerk",
                 "former_useage": "Umformerstation",
                 "condition": "",
-                "links": "[]"
+                "links": null
             }
         },
         {
@@ -2431,9 +2743,14 @@
                 "category_id": 1,
                 "images": {
                     "image_0": {
-                        "src": "images/placeholder.jpg",
-                        "author_lastname": "Knigge",
-                        "author_firstname": "Johanna"
+                        "src": "images/folds/fold_88/88_1_Florian-Marenbach.jpg",
+                        "author_lastname": "Marenbach",
+                        "author_firstname": "Florian"
+                    },
+                    "image_1": {
+                        "src": "images/folds/fold_88/88_2_Florian-Marenbach.jpg",
+                        "author_lastname": "Marenbach",
+                        "author_firstname": "Florian"
                     }
                 },
                 "address": "Heinrich-Heine-Stra\u00dfe 64, 04178 Leipzig",
@@ -2441,7 +2758,7 @@
                 "useage": "",
                 "former_useage": "",
                 "condition": "",
-                "links": "[]"
+                "links": null
             }
         },
         {
@@ -2468,7 +2785,7 @@
                 "useage": "",
                 "former_useage": "",
                 "condition": "",
-                "links": "[]"
+                "links": null
             }
         },
         {
@@ -2485,7 +2802,7 @@
                 "category_id": 5,
                 "images": {
                     "image_0": {
-                        "src": "images/placeholder.jpg",
+                        "src": "images/folds/fold_90/90_1_Johanna-Knigge.jpg",
                         "author_lastname": "Knigge",
                         "author_firstname": "Johanna"
                     }
@@ -2495,7 +2812,7 @@
                 "useage": "",
                 "former_useage": "",
                 "condition": "",
-                "links": "[]"
+                "links": null
             }
         },
         {
@@ -2522,7 +2839,7 @@
                 "useage": "",
                 "former_useage": "",
                 "condition": "",
-                "links": "[]"
+                "links": null
             }
         },
         {
@@ -2549,7 +2866,7 @@
                 "useage": "",
                 "former_useage": "Umformerstation",
                 "condition": "",
-                "links": "[]"
+                "links": null
             }
         },
         {
@@ -2576,7 +2893,7 @@
                 "useage": "",
                 "former_useage": "",
                 "condition": "",
-                "links": "[]"
+                "links": null
             }
         },
         {
@@ -2603,7 +2920,7 @@
                 "useage": "DRK Alten- und Pflegeheim ",
                 "former_useage": "",
                 "condition": "",
-                "links": "[]"
+                "links": null
             }
         },
         {
@@ -2620,9 +2937,14 @@
                 "category_id": 8,
                 "images": {
                     "image_0": {
-                        "src": "images/placeholder.jpg",
-                        "author_lastname": "Knigge",
-                        "author_firstname": "Johanna"
+                        "src": "images/folds/fold_95/95_1_Stadt-Leipzig.jpg",
+                        "author_lastname": "Leipzig",
+                        "author_firstname": "Stadt"
+                    },
+                    "image_1": {
+                        "src": "images/folds/fold_95/95_2_Stadt-Leipzig.jpg",
+                        "author_lastname": "Leipzig",
+                        "author_firstname": "Stadt"
                     }
                 },
                 "address": "Willi-Bredel-Stra\u00dfe 9, 04279 Leipzig",
@@ -2630,7 +2952,7 @@
                 "useage": "",
                 "former_useage": "",
                 "condition": "ABRISS",
-                "links": "[]"
+                "links": null
             }
         },
         {
@@ -2647,9 +2969,14 @@
                 "category_id": 8,
                 "images": {
                     "image_0": {
-                        "src": "images/placeholder.jpg",
-                        "author_lastname": "Knigge",
-                        "author_firstname": "Johanna"
+                        "src": "images/folds/fold_96/96_1_Stadt-Leipzig.jpg",
+                        "author_lastname": "Leipzig",
+                        "author_firstname": "Stadt"
+                    },
+                    "image_1": {
+                        "src": "images/folds/fold_96/96_2_Stadt-Leipzig.jpg",
+                        "author_lastname": "Leipzig",
+                        "author_firstname": "Stadt"
                     }
                 },
                 "address": "Zwickauer Str. 131A, 04279 Leipzig",
@@ -2657,7 +2984,7 @@
                 "useage": "",
                 "former_useage": "",
                 "condition": "ABRISS",
-                "links": "[]"
+                "links": null
             }
         },
         {
@@ -2674,9 +3001,14 @@
                 "category_id": 8,
                 "images": {
                     "image_0": {
-                        "src": "images/placeholder.jpg",
-                        "author_lastname": "Knigge",
-                        "author_firstname": "Johanna"
+                        "src": "images/folds/fold_97/97_1_Stadt-Leipzig.jpg",
+                        "author_lastname": "Leipzig",
+                        "author_firstname": "Stadt"
+                    },
+                    "image_1": {
+                        "src": "images/folds/fold_97/97_2_Stadt-Leipzig.jpg",
+                        "author_lastname": "Leipzig",
+                        "author_firstname": "Stadt"
                     }
                 },
                 "address": "Kreuzstra\u00dfe 31, 04315 Leipzig",
@@ -2684,7 +3016,7 @@
                 "useage": "",
                 "former_useage": "",
                 "condition": "ABRISS",
-                "links": "[]"
+                "links": null
             }
         },
         {
@@ -2701,9 +3033,14 @@
                 "category_id": 8,
                 "images": {
                     "image_0": {
-                        "src": "images/placeholder.jpg",
-                        "author_lastname": "Knigge",
-                        "author_firstname": "Johanna"
+                        "src": "images/folds/fold_98/98_1_Stadt Leipzig.jpg",
+                        "author_lastname": "Leipzig",
+                        "author_firstname": "Stadt"
+                    },
+                    "image_1": {
+                        "src": "images/folds/fold_98/98_2_Stadt Leipzig.jpg",
+                        "author_lastname": "Leipzig",
+                        "author_firstname": "Stadt"
                     }
                 },
                 "address": "",
@@ -2711,7 +3048,7 @@
                 "useage": "",
                 "former_useage": "",
                 "condition": "ABRISS",
-                "links": "[]"
+                "links": null
             }
         },
         {
@@ -2728,9 +3065,14 @@
                 "category_id": 8,
                 "images": {
                     "image_0": {
-                        "src": "images/placeholder.jpg",
-                        "author_lastname": "Knigge",
-                        "author_firstname": "Johanna"
+                        "src": "images/folds/fold_99/99_1_Stadt-Leipzig.jpg",
+                        "author_lastname": "Leipzig",
+                        "author_firstname": "Stadt"
+                    },
+                    "image_1": {
+                        "src": "images/folds/fold_99/99_2_Stadt-Leipzig.jpg",
+                        "author_lastname": "Leipzig",
+                        "author_firstname": "Stadt"
                     }
                 },
                 "address": "",
@@ -2738,7 +3080,7 @@
                 "useage": "",
                 "former_useage": "",
                 "condition": "ABRISS",
-                "links": "[]"
+                "links": null
             }
         },
         {
@@ -2755,9 +3097,9 @@
                 "category_id": 7,
                 "images": {
                     "image_0": {
-                        "src": "images/placeholder.jpg",
-                        "author_lastname": "Knigge",
-                        "author_firstname": "Johanna"
+                        "src": "images/folds/fold_100/100_1_Stadt-Leipzig.jpg",
+                        "author_lastname": "Leipzig",
+                        "author_firstname": "Stadt"
                     }
                 },
                 "address": "Geithainer Stra\u00dfe, 04328 Leipzig",
@@ -2765,7 +3107,7 @@
                 "useage": "",
                 "former_useage": "",
                 "condition": "Leerstand/ Verwahrlosung",
-                "links": "[]"
+                "links": null
             }
         },
         {
@@ -2782,7 +3124,12 @@
                 "category_id": 8,
                 "images": {
                     "image_0": {
-                        "src": "images/placeholder.jpg",
+                        "src": "images/folds/fold_101/101_1_Stadt-Leipzig.jpg",
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
+                    },
+                    "image_1": {
+                        "src": "images/folds/fold_101/101_2_Stadt-Leipzig.jpg",
                         "author_lastname": "Knigge",
                         "author_firstname": "Johanna"
                     }
@@ -2792,7 +3139,34 @@
                 "useage": "Kaufhalle",
                 "former_useage": "",
                 "condition": "Abriss - Neubau ALDI",
-                "links": "[]"
+                "links": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.435464513920138,
+                    51.32671859146064
+                ]
+            },
+            "properties": {
+                "id": 102,
+                "category_id": 8,
+                "images": {
+                    "image_0": {
+                        "src": "images/folds/fold_102/102_1_Johanna-Knigge.jpg",
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
+                    }
+                },
+                "address": "Sommerfelder Str. 83, 04316 Leipzig",
+                "type": "Mehrzweckhalle",
+                "useage": "CityCourier Sachsen GmbH",
+                "former_useage": "",
+                "condition": "",
+                "links": null
             }
         }
     ]

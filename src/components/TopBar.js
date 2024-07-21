@@ -1,41 +1,44 @@
 import React from 'react';
-import { StyleSheet, View, Text } from 'react-native-web';
+import { View } from 'react-native-web';
 import NavBar from './NavBar';
-import { NavLink } from './NavBarElements';
-import { ArialText } from './Fonts';
+import { NavLink, Text } from './NavBarElements';
 
 const Topbar = () => {
     return (
         <View style={styles.topbar}>
             <View style={styles.titleContainer}>
                 <NavLink to="/info">
-                    <ArialText style={styles.title}>UNFOLD</ArialText>
+                    <Text style={styles.title}>Unfold</Text>
                 </NavLink>
             </View>
             <View style={styles.navContainer}>
                 <NavBar />
             </View>
         </View>
+
     );
 }
-
-
-const styles = StyleSheet.create({
+const styles = {
     topbar: {
         flex: 1,
         flexDirection: 'row',
-        alignItems: 'baseline',
-        justifyContent: 'space-between',
+        alignItems: 'center',
     },
     titleContainer: {
+        flex: 1,
         alignItems: 'flex-start',
     },
     title: {
-        fontSize: 35,
+        fontSize: 22,
+        fontWeight: 'bold',
     },
     navContainer: {
+        flex: 1,
         alignItems: 'flex-end',
+        justifyContent: 'space-between',
     },
-});
+};
 
 export default Topbar;
+
+

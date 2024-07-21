@@ -1,15 +1,12 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
-import { Nav, NavMenu, NavLink } from "./NavBarElements";
-import { StyleSheet, Text } from "react-native-web";
-import { ArialText } from "./Fonts";
+import { Nav, NavMenu, NavLink, Text } from "./NavBarElements";
+import { StyleSheet } from "react-native-web";
 
 const menuItems = [
-    { path: "/info", label: "INFO" },
-    { path: "/atlas", label: "ATLAS" },
-    { path: "/galerie", label: "GALERIE" },
-    { path: "/typen", label: "TYPEN" },
-    { path: "/arbeit", label: "ARBEIT" },
+    { path: "/info", label: "Info" },
+    { path: "/atlas", label: "Atlas" },
+    { path: "/galerie", label: "Galerie" },
 ];
 
 const NavBar = () => {
@@ -23,7 +20,7 @@ const NavBar = () => {
                     to={item.path}
                     style={location.pathname === item.path ? styles.activeText : styles.text}
                 >
-                    <ArialText>{item.label}</ArialText>
+                    <Text style={styles.text}>{item.label}</Text>
                 </NavLink>
 
             );
@@ -41,11 +38,10 @@ const NavBar = () => {
 
 const styles = StyleSheet.create({
     text: {
-        fontSize: 25,
+        fontSize: 22,
     },
     activeText: {
-        borderBottom: "4px solid blue",
-        fontSize: 25,
+        fontSize: 22,
         color: "blue",
     },
 });

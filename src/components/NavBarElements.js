@@ -16,22 +16,20 @@ export const NavMenu = styled.ul`
 
 export const NavLink = styled(Link)`
     display: flex;
-    padding: 0 1rem;
+    padding:  1rem;
     height: 100%;
-    width: 100%;
+    width: auto; // Changed from 100% to auto for proper alignment
     text-decoration: none;
-    color: black;
+    color: black; // Default color
+    font-family: 'Arial';
     flex: 1;
-    &:hover{
-        color: blue;
-        cursor: default;
+    &:hover {
+        color: blue; // Hover color
+        cursor: pointer; // Change cursor to pointer for hover effect
     }
-    color: black;
-    flex: 1;
 `;
 
 export const Text = styled.span`
     transform: scale(1);
     font-size: 2rem;
 `;
-

@@ -1,21 +1,38 @@
 import React, { useState, useEffect, useCallback, useRef } from "react";
-import { View, StyleSheet, Image, Dimensions, ScrollView, Pressable } from "react-native-web";
+import { View, StyleSheet, Image, Dimensions, Pressable, ScrollView } from "react-native-web";
 import InfoPanel from "../components/InfoPanel";
 
 const data = require('../data/data.json');
 
 const Galerie = () => {
+    // Features that should be displayed first
+    const startFeatureIds = [51];
+
+    // Sort features so that the start features are displayed first
+    data.features.sort((a, b) => {
+        if (startFeatureIds.includes(a.properties.id)) {
+            return -1;
+        }
+        if (startFeatureIds.includes(b.properties.id)) {
+            return 1;
+        }
+        return 0;
+    });
+
     const [infoState, setInfoState] = useState({
         showInfo: false,
         selectedFeature: null,
     });
-    const [imageWidth, setImageWidth] = useState(Dimensions.get('window').width / 5.5);
+
+    const [isMobile, setIsMobile] = useState(Dimensions.get('window').width <= 768);
+    const [scrollY, setScrollY] = useState(0); // Track scroll position
 
     const dimensionsRef = useRef();
+    const scrollViewRef = useRef();
 
     useEffect(() => {
         const handleResize = () => {
-            setImageWidth(Dimensions.get('window').width / 5.5);
+            setIsMobile(Dimensions.get('window').width <= 768);
         };
 
         dimensionsRef.current = Dimensions.addEventListener('change', handleResize);
@@ -26,8 +43,16 @@ const Galerie = () => {
         };
     }, []);
 
-    const onImageClick = useCallback((images) => {
-        const selectedFeature = data.features.find(feature => feature.properties.images === images);
+    useEffect(() => {
+        if (scrollViewRef.current) {
+            // Update scroll position when `infoState.showInfo` changes
+            setScrollY(scrollViewRef.current.scrollTop);
+        }
+    }, [infoState.showInfo]);
+
+    const onImageClick = useCallback((id) => {
+        const selectedFeature = data.features.find(feature => feature.properties.id === id);
+        const images = selectedFeature.properties.images;
         setInfoState({
             showInfo: true,
             selectedFeature: {
@@ -55,20 +80,35 @@ const Galerie = () => {
 
     return (
         <View style={styles.container}>
-            {infoState.showInfo && <InfoPanel feature={infoState.selectedFeature} onClose={onClose} />}
-            {infoState.showInfo && <View style={styles.overlay} onClick={onClose} />}
-            <ScrollView>
-                <View style={styles.galerie}>
-                    {data.features.map((feature, index) => (
-                        <Pressable key={index} onPress={() => onImageClick(feature.properties.images)}>
-                            <Image
-                                source={require('../' + feature.properties.images.image_0.src)}
-                                style={[styles.image, { width: imageWidth }]}
-                            />
-                        </Pressable>
-                    ))}
-                </View>
+            <ScrollView
+                contentContainerStyle={isMobile ? styles.mobileGalerie : styles.galerie}
+                ref={scrollViewRef}
+                onScroll={() => setScrollY(scrollViewRef.current.scrollTop)}
+                showsVerticalScrollIndicator={false}
+            >
+                {data.features.map((feature, index) => {
+                    if (feature.properties.images.image_0.src !== 'images/placeholder.jpg') {
+                        return (
+                            <Pressable key={index} onPress={() => onImageClick(feature.properties.id)}>
+                                <Image
+                                    source={require('../' + feature.properties.images.image_0.src)}
+                                    style={styles.image}
+                                />
+                            </Pressable>
+                        );
+                    }
+                    return null;
+                })}
             </ScrollView>
+            {infoState.showInfo && (
+                <InfoPanel
+                    feature={infoState.selectedFeature}
+                    onClose={onClose}
+                    showLink={true}
+                    style={{ top: scrollY }}
+                />
+            )}
+            {infoState.showInfo && <View style={styles.overlay} onClick={onClose} />}
         </View>
     );
 };
@@ -76,26 +116,28 @@ const Galerie = () => {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        flexDirection: 'row',
         height: '100%',
         width: '100%',
         position: 'relative',
-        zIndex: 1,
-        justifyContent: 'center',
     },
     galerie: {
-        flexWrap: 'wrap',
-        flex: 1,
-        flexDirection: 'row',
+        display: 'grid',
+        gridTemplateColumns: 'repeat(4, 1fr)',
+        gap: 20,
+        width: '100%',
         justifyContent: 'center',
-        rowGap: 15,
-        columnGap: 15,
+    },
+    mobileGalerie: {
+        display: 'flex',
+        flexDirection: 'column',
+        width: '100%',
+        gap: 20,
     },
     image: {
+        width: '100%',
+        height: 'auto',
         aspectRatio: 1,
         resizeMode: 'contain',
-        margin: 10,
-        zIndex: 1,
     },
     overlay: {
         position: 'absolute',

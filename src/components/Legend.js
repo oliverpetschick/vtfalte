@@ -6,7 +6,7 @@ export const legendMapping = {
     '2': { color: 'rgb(0, 0, 254)', label: 'Jugendclub' },
     '3': { color: 'rgb(1, 245, 245)', label: 'Senior*innenzentrum' },
     '4': { color: 'rgb(159, 126, 255)', label: 'Kaufhalle' },
-    '5': { color: 'rgb(0, 160, 0)', label: 'Unterwerke' },
+    '5': { color: 'rgb(0, 160, 0)', label: 'Gleichrichterunterwerk' },
     '6': { color: 'rgb(109, 255, 50)', label: 'Umformerstation' },
     '7': { color: 'rgb(255, 13, 33)', label: 'Mehrzweckhalle/Individualbau' },
     '8': { color: 'rgb(106, 75, 0)', label: 'Abriss' },
@@ -15,11 +15,11 @@ export const legendMapping = {
 const Legend = () => {
     return (
         <View style={styles.legendContainer}>
-            <Text style={styles.legendTitle}>Ursprüng. Nutzung</Text>
+            <Text style={styles.legendTitle}>Kategorie</Text>
             {Object.keys(legendMapping).map(key => (
                 <View key={key} style={styles.legendItem}>
                     <svg width="20" height="20">
-                        <circle cx="10" cy="10" r="10" fill={legendMapping[key].color} />
+                        <circle cx="10" cy="10" r="7" fill={legendMapping[key].color} />
                     </svg>
                     <Text style={styles.legendLabel}>{legendMapping[key].label}</Text>
                 </View>
@@ -31,8 +31,8 @@ const Legend = () => {
 const styles = StyleSheet.create({
     legendContainer: {
         position: 'absolute',
-        left: '50px',
-        top: '50px',
+        left: '0px',
+        top: '0px',
         padding: 10,
         zIndex: 3,
     },

@@ -15,7 +15,7 @@ export const legendMapping = {
 const isMobile = Dimensions.get('window').width <= 768;
 
 const Legend = () => {
-    const [showLegend, setShowLegend] = useState(false);
+    const [showLegend, setShowLegend] = useState(!isMobile);
 
     const toggleLegend = () => {
         setShowLegend(!showLegend);

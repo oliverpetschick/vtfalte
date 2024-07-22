@@ -1,14 +1,20 @@
 import React, { useState } from 'react';
-import { View, StyleSheet, Image, Pressable, Text } from 'react-native-web';
+import { View, StyleSheet, Image, Pressable, Text, Dimensions, ScrollView } from 'react-native-web';
 import { Link } from 'react-router-dom';
+
+
 
 const InfoPanel = ({ feature, onClose, showLink }) => {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
     const images = feature.properties.images || {};
     const n_images = Object.keys(images).length - 1;
-    const panelWidth = '70vw';
-    const panelHeight = '100%';
+    const isMobile = Dimensions.get('window').width <= 768;
+    const panelWidth = isMobile ? '100%' : '70%';
+    const panelHeight = isMobile ? '85svh' : '100%';
 
+    if (isMobile) {
+        document.body.style.overflow = 'hidden';
+    }
 
     const handleImageClick = (direction) => {
         if (direction === 'prev') {
@@ -27,55 +33,99 @@ const InfoPanel = ({ feature, onClose, showLink }) => {
     const links = Array.isArray(feature.properties.links) ? feature.properties.links : [];
 
     return (
-        <View style={[styles.container, { width: panelWidth, height: panelHeight }]}>
-            <View style={styles.infoGallery}>
-                {currentImage && (
-                    <Image source={require(`../${currentImage}`)} style={styles.image} />
-                )}
-                <Pressable
-                    style={[styles.leftOverlay, overlayStyle]}
-                    onPress={() => n_images > 0 && handleImageClick('prev')}
-                />
-                <Pressable
-                    style={[styles.rightOverlay, overlayStyle]}
-                    onPress={() => n_images > 0 && handleImageClick('next')}
-                />
-            </View>
-            <View style={styles.infoContent}>
-                <Text style={styles.title}>Adresse</Text>
-                <Text>{feature.properties.address || ' - '}</Text>
-                <Text style={styles.title}>Typ</Text>
-                <Text>{feature.properties.type || ' - '}</Text>
-                <Text style={styles.title}>Nutzung</Text>
-                <Text>{feature.properties.useage || ' - '}</Text>
-                <Text style={styles.title}>Zustand</Text>
-                <Text>{feature.properties.condition || ' - '}</Text>
-                <Text style={styles.title}>Ehemalige Nutzung</Text>
-                <Text>{feature.properties.former_useage || ' - '}</Text>
-                <Text style={styles.title}>Foto</Text>
-                <Text>{currentAuthor || ' - '}</Text>
-                <Text style={styles.title}>Links</Text>
-                {links.length > 0 ? links.map((link, index) => (
-                    <Text key={index}>
-                        <a href={link} target="_blank" rel="noopener noreferrer">{link}</a>
-                    </Text>
-                )) : <Text> - </Text>}
-                {showLink && <Link to={atlasLink} style={{ textDecoration: 'none' }}>Atlas</Link>}
-
-            </View>
+        <View style={[styles.container, { width: panelWidth, height: panelHeight, flexDirection: isMobile ? 'column' : 'row' }]}>
+            {isMobile ? (
+                <ScrollView contentContainerStyle={styles.scrollContainer}>
+                    <View style={styles.infoGalleryMobile}>
+                        {currentImage && (
+                            <Image source={require(`../${currentImage}`)} style={styles.imageMobile} />
+                        )}
+                        <Pressable
+                            style={[styles.leftOverlay, overlayStyle]}
+                            onPress={() => n_images > 0 && handleImageClick('prev')}
+                        />
+                        <Pressable
+                            style={[styles.rightOverlay, overlayStyle]}
+                            onPress={() => n_images > 0 && handleImageClick('next')}
+                        />
+                    </View>
+                    <View style={styles.infoContentMobile}>
+                        <Text style={styles.title}>Adresse</Text>
+                        <Text>{feature.properties.address || ' - '}</Text>
+                        <Text style={styles.title}>Typ</Text>
+                        <Text>{feature.properties.type || ' - '}</Text>
+                        <Text style={styles.title}>Nutzung</Text>
+                        <Text>{feature.properties.useage || ' - '}</Text>
+                        <Text style={styles.title}>Zustand</Text>
+                        <Text>{feature.properties.condition || ' - '}</Text>
+                        <Text style={styles.title}>Ehemalige Nutzung</Text>
+                        <Text>{feature.properties.former_useage || ' - '}</Text>
+                        <Text style={styles.title}>Foto</Text>
+                        <Text>{currentAuthor || ' - '}</Text>
+                        <Text style={styles.title}>Links</Text>
+                        {links.length > 0 ? links.map((link, index) => (
+                            <Text key={index}>
+                                <a href={link} target="_blank" rel="noopener noreferrer">{link}</a>
+                            </Text>
+                        )) : <Text> - </Text>}
+                        {showLink && <Link to={atlasLink} style={{ textDecoration: 'none' }}>Atlas</Link>}
+                    </View>
+                </ScrollView>
+            ) : (
+                <>
+                    <View style={styles.infoGallery}>
+                        {currentImage && (
+                            <Image source={require(`../${currentImage}`)} style={styles.image} />
+                        )}
+                        <Pressable
+                            style={[styles.leftOverlay, overlayStyle]}
+                            onPress={() => n_images > 0 && handleImageClick('prev')}
+                        />
+                        <Pressable
+                            style={[styles.rightOverlay, overlayStyle]}
+                            onPress={() => n_images > 0 && handleImageClick('next')}
+                        />
+                    </View>
+                    <View style={styles.infoContent}>
+                        <Text style={styles.title}>Adresse</Text>
+                        <Text>{feature.properties.address || ' - '}</Text>
+                        <Text style={styles.title}>Typ</Text>
+                        <Text>{feature.properties.type || ' - '}</Text>
+                        <Text style={styles.title}>Nutzung</Text>
+                        <Text>{feature.properties.useage || ' - '}</Text>
+                        <Text style={styles.title}>Zustand</Text>
+                        <Text>{feature.properties.condition || ' - '}</Text>
+                        <Text style={styles.title}>Ehemalige Nutzung</Text>
+                        <Text>{feature.properties.former_useage || ' - '}</Text>
+                        <Text style={styles.title}>Foto</Text>
+                        <Text>{currentAuthor || ' - '}</Text>
+                        <Text style={styles.title}>Links</Text>
+                        {links.length > 0 ? links.map((link, index) => (
+                            <Text key={index}>
+                                <a href={link} target="_blank" rel="noopener noreferrer">{link}</a>
+                            </Text>
+                        )) : <Text> - </Text>}
+                        {showLink && <Link to={atlasLink} style={{ textDecoration: 'none' }}>Atlas</Link>}
+                    </View>
+                </>
+            )}
             <Pressable style={styles.closeButton} onPress={onClose}>
                 <Image source={require('../images/X_close_button.png')} style={styles.closeIcon} />
             </Pressable>
-        </View >
+        </View>
     );
 }
 
 const styles = StyleSheet.create({
     container: {
         position: 'absolute',
-        flexDirection: 'row',
         backgroundColor: 'white',
         zIndex: 1000,
+    },
+    scrollContainer: {
+        flexGrow: 1,
+        justifyContent: 'flex-start',
+        alignItems: 'center',
     },
     infoGallery: {
         position: 'relative',
@@ -83,9 +133,19 @@ const styles = StyleSheet.create({
         height: '100%',
         padding: 20,
     },
+    infoGalleryMobile: {
+        width: '100%',
+        height: 300,
+        position: 'relative',
+    },
     image: {
         width: '100%',
         height: '100%',
+        resizeMode: 'contain',
+    },
+    imageMobile: {
+        width: '100%',
+        height: 300,
         resizeMode: 'contain',
     },
     leftOverlay: {
@@ -115,6 +175,10 @@ const styles = StyleSheet.create({
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
+    },
+    infoContentMobile: {
+        width: '100%',
+        padding: 20,
     },
     title: {
         marginBottom: 5,

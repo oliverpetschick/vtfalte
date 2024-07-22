@@ -14,6 +14,13 @@ const Atlas = () => {
         showLink: false,
     });
 
+    const isMobile = window.innerWidth <= 768;
+
+    // disable scroll for mobile
+    if (isMobile) {
+        document.body.style.overflow = 'hidden';
+    }
+
     const onClose = () => {
         setInfoState({ showInfo: false, selectedFeature: null });
     };
@@ -173,7 +180,6 @@ const styles = StyleSheet.create({
         height: '100%',
         width: '100%',
         zIndex: 2,
-        justifyContent: 'center',
         alignItems: 'center',
     },
 });

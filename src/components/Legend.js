@@ -54,6 +54,7 @@ const styles = StyleSheet.create({
         top: '0px',
         padding: 10,
         zIndex: 3,
+        marginLeft: 35,
     },
     header: {
         flexDirection: 'row',

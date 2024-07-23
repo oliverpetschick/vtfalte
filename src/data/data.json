@@ -80,31 +80,41 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    12.265916455385002,
-                    51.3090967310507
+                    12.402628937691503,
+                    51.377309210872895
                 ]
             },
             "properties": {
                 "id": 3,
-                "category_id": 1,
+                "category_id": 6,
                 "images": {
                     "image_0": {
-                        "src": "images/folds/fold_3/3_1_Johanna-Knigge.jpg",
+                        "src": "images/folds/fold_60/60_1_Johanna-Knigge.jpg",
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
+                    },
+                    "image_1": {
+                        "src": "images/folds/fold_60/60_2_Johanna-Knigge.jpg",
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
+                    },
+                    "image_2": {
+                        "src": "images/folds/fold_60/60_3_Johanna-Knigge.jpg",
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
+                    },
+                    "image_3": {
+                        "src": "images/folds/fold_60/60_4_Johanna-Knigge.jpg",
                         "author_lastname": "Knigge",
                         "author_firstname": "Johanna"
                     }
                 },
-                "address": "An d. Kotsche 39, 04207 Leipzig",
-                "type": "SPH-N-18x36-VT-Falte",
-                "useage": "Sporthalle an der Kotsche",
-                "former_useage": "",
-                "condition": "",
-                "links": {
-                    "link_0": {
-                        "title": "www",
-                        "url": "https://https://www.leipzig.de/freizeit-kultur-und-tourismus/sport/sportstaettenbelegung/detailseite/detailseite/sporthalle-an-der-kotsche"
-                    }
-                }
+                "address": "Rosenowstra\u00dfe 30A, 04357 Leipzig",
+                "type": "Umformerstation",
+                "useage": "Leerstand",
+                "former_useage": "Getr\u00e4nkelieferant, Umformerstation",
+                "condition": "Umbau; Neue Fassade/ Fenster",
+                "links": null
             }
         },
         {
@@ -112,41 +122,41 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    12.268220447764714,
-                    51.31604096943994
+                    12.393062441577529,
+                    51.305529930382974
                 ]
             },
             "properties": {
                 "id": 4,
-                "category_id": 6,
+                "category_id": 7,
                 "images": {
                     "image_0": {
-                        "src": "images/folds/fold_4/4_1_Johanna-Knigge.jpg",
+                        "src": "images/folds/fold_77/77_1_Johanna-Knigge.jpg",
                         "author_lastname": "Knigge",
                         "author_firstname": "Johanna"
                     },
                     "image_1": {
-                        "src": "images/folds/fold_4/4_2_Johanna-Knigge.jpg",
+                        "src": "images/folds/fold_77/77_2_Johanna-Knigge.jpg",
                         "author_lastname": "Knigge",
                         "author_firstname": "Johanna"
                     },
                     "image_2": {
-                        "src": "images/folds/fold_4/4_3_Johanna-Knigge.jpg",
-                        "author_lastname": "Knigge",
-                        "author_firstname": "Johanna"
-                    },
-                    "image_3": {
-                        "src": "images/folds/fold_4/4_4_Johanna-Knigge.jpg",
+                        "src": "images/folds/fold_77/77_3_Johanna-Knigge.jpg",
                         "author_lastname": "Knigge",
                         "author_firstname": "Johanna"
                     }
                 },
-                "address": "L\u00fctzner Str. 540, 04205 Leipzig",
-                "type": "Umformerstation G7- U2",
-                "useage": "",
+                "address": "An d. M\u00e4rchenwiese 3, 04277 Leipzig",
+                "type": "Individualbau",
+                "useage": "Albert Schweizer Schule",
                 "former_useage": "",
                 "condition": "",
-                "links": null
+                "links": {
+                    "link_0": {
+                        "title": "www",
+                        "url": "https://https://www.albert-schweitzer-schu-le.de/aktu/index.html"
+                    }
+                }
             }
         },
         {
@@ -213,34 +223,29 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    12.26691213023168,
-                    51.322085876542126
+                    12.289041451889169,
+                    51.31801839502841
                 ]
             },
             "properties": {
                 "id": 7,
-                "category_id": 1,
+                "category_id": 6,
                 "images": {
                     "image_0": {
-                        "src": "images/folds/fold_7/7_1_Johanna-Knigge.jpg",
+                        "src": "images/folds/fold_10/10_1_Johanna-Knigge.jpg",
                         "author_lastname": "Knigge",
                         "author_firstname": "Johanna"
                     },
                     "image_1": {
-                        "src": "images/folds/fold_7/7_2_Johanna-Knigge.jpg",
-                        "author_lastname": "Knigge",
-                        "author_firstname": "Johanna"
-                    },
-                    "image_2": {
-                        "src": "images/folds/fold_7/7_3_Johanna-Knigge.jpg",
+                        "src": "images/folds/fold_10/10_2_Johanna-Knigge.jpg",
                         "author_lastname": "Knigge",
                         "author_firstname": "Johanna"
                     }
                 },
-                "address": "Miltitzer Weg 2a, 04205 Leipzig",
-                "type": "SPH-N-18x36-VT-Falte ",
-                "useage": "Sporthalle Cormenius Schule",
-                "former_useage": "",
+                "address": "Breisgaustra\u00dfe, 04209 Leipzig",
+                "type": "Umformerstation G4- U2",
+                "useage": "Eiergrosshandel, Vodafone, Garagen- und Hobbyr\u00e4ume",
+                "former_useage": "Umformerstation",
                 "condition": "",
                 "links": null
             }
@@ -309,29 +314,34 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    12.289041451889169,
-                    51.31801839502841
+                    12.26691213023168,
+                    51.322085876542126
                 ]
             },
             "properties": {
                 "id": 10,
-                "category_id": 6,
+                "category_id": 1,
                 "images": {
                     "image_0": {
-                        "src": "images/folds/fold_10/10_1_Johanna-Knigge.jpg",
+                        "src": "images/folds/fold_7/7_1_Johanna-Knigge.jpg",
                         "author_lastname": "Knigge",
                         "author_firstname": "Johanna"
                     },
                     "image_1": {
-                        "src": "images/folds/fold_10/10_2_Johanna-Knigge.jpg",
+                        "src": "images/folds/fold_7/7_2_Johanna-Knigge.jpg",
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
+                    },
+                    "image_2": {
+                        "src": "images/folds/fold_7/7_3_Johanna-Knigge.jpg",
                         "author_lastname": "Knigge",
                         "author_firstname": "Johanna"
                     }
                 },
-                "address": "Breisgaustra\u00dfe, 04209 Leipzig",
-                "type": "Umformerstation G4- U2",
-                "useage": "Eiergrosshandel, Vodafone, Garagen- und Hobbyr\u00e4ume",
-                "former_useage": "Umformerstation",
+                "address": "Miltitzer Weg 2a, 04205 Leipzig",
+                "type": "SPH-N-18x36-VT-Falte ",
+                "useage": "Sporthalle Cormenius Schule",
+                "former_useage": "",
                 "condition": "",
                 "links": null
             }
@@ -356,7 +366,7 @@
                     }
                 },
                 "address": "Ratzelstra\u00dfe 155, 04207 Leipzig",
-                "type": "Unterwerk",
+                "type": "Gleichrichterunterwerk",
                 "useage": "",
                 "former_useage": "",
                 "condition": "",
@@ -686,8 +696,8 @@
                     }
                 },
                 "address": "L\u00fctzner Str. 171, 04179 Leipzig",
-                "type": "Unterwerk",
-                "useage": "Unterwerk",
+                "type": "Gleichrichterunterwerk",
+                "useage": "Gleichrichterunterwerk",
                 "former_useage": "",
                 "condition": "Sanierung",
                 "links": null
@@ -1060,7 +1070,7 @@
                     }
                 },
                 "address": "Lindenauer Markt Aufgang B, 04177 Leipzig",
-                "type": "Unterwerk",
+                "type": "Gleichrichterunterwerk",
                 "useage": "",
                 "former_useage": "",
                 "condition": "",
@@ -1236,7 +1246,7 @@
                     }
                 },
                 "address": "H\u00e4rtelstra\u00dfe 6, 04107 Leipzig",
-                "type": "Unterwerk",
+                "type": "Gleichrichterunterwerk",
                 "useage": "",
                 "former_useage": "",
                 "condition": "Sanierung",
@@ -1443,7 +1453,7 @@
                     }
                 },
                 "address": "D\u00f6rrienstra\u00dfe 3, 04103 Leipzig",
-                "type": "Unterwerk",
+                "type": "Gleichrichterunterwerk",
                 "useage": "",
                 "former_useage": "",
                 "condition": "Sanierung",
@@ -1913,41 +1923,31 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    12.402628937691503,
-                    51.377309210872895
+                    12.265916455385002,
+                    51.3090967310507
                 ]
             },
             "properties": {
                 "id": 60,
-                "category_id": 6,
+                "category_id": 1,
                 "images": {
                     "image_0": {
-                        "src": "images/folds/fold_60/60_1_Johanna-Knigge.jpg",
-                        "author_lastname": "Knigge",
-                        "author_firstname": "Johanna"
-                    },
-                    "image_1": {
-                        "src": "images/folds/fold_60/60_2_Johanna-Knigge.jpg",
-                        "author_lastname": "Knigge",
-                        "author_firstname": "Johanna"
-                    },
-                    "image_2": {
-                        "src": "images/folds/fold_60/60_3_Johanna-Knigge.jpg",
-                        "author_lastname": "Knigge",
-                        "author_firstname": "Johanna"
-                    },
-                    "image_3": {
-                        "src": "images/folds/fold_60/60_4_Johanna-Knigge.jpg",
+                        "src": "images/folds/fold_3/3_1_Johanna-Knigge.jpg",
                         "author_lastname": "Knigge",
                         "author_firstname": "Johanna"
                     }
                 },
-                "address": "Rosenowstra\u00dfe 30A, 04357 Leipzig",
-                "type": "Umformerstation",
-                "useage": "Leerstand",
-                "former_useage": "Getr\u00e4nkelieferant, Umformerstation",
-                "condition": "Umbau; Neue Fassade/ Fenster",
-                "links": null
+                "address": "An d. Kotsche 39, 04207 Leipzig",
+                "type": "SPH-N-18x36-VT-Falte",
+                "useage": "Sporthalle an der Kotsche",
+                "former_useage": "",
+                "condition": "",
+                "links": {
+                    "link_0": {
+                        "title": "www",
+                        "url": "https://https://www.leipzig.de/freizeit-kultur-und-tourismus/sport/sportstaettenbelegung/detailseite/detailseite/sporthalle-an-der-kotsche"
+                    }
+                }
             }
         },
         {
@@ -2402,41 +2402,41 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    12.393062441577529,
-                    51.305529930382974
+                    12.268220447764714,
+                    51.31604096943994
                 ]
             },
             "properties": {
                 "id": 77,
-                "category_id": 7,
+                "category_id": 6,
                 "images": {
                     "image_0": {
-                        "src": "images/folds/fold_77/77_1_Johanna-Knigge.jpg",
+                        "src": "images/folds/fold_4/4_1_Johanna-Knigge.jpg",
                         "author_lastname": "Knigge",
                         "author_firstname": "Johanna"
                     },
                     "image_1": {
-                        "src": "images/folds/fold_77/77_2_Johanna-Knigge.jpg",
+                        "src": "images/folds/fold_4/4_2_Johanna-Knigge.jpg",
                         "author_lastname": "Knigge",
                         "author_firstname": "Johanna"
                     },
                     "image_2": {
-                        "src": "images/folds/fold_77/77_3_Johanna-Knigge.jpg",
+                        "src": "images/folds/fold_4/4_3_Johanna-Knigge.jpg",
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
+                    },
+                    "image_3": {
+                        "src": "images/folds/fold_4/4_4_Johanna-Knigge.jpg",
                         "author_lastname": "Knigge",
                         "author_firstname": "Johanna"
                     }
                 },
-                "address": "An d. M\u00e4rchenwiese 3, 04277 Leipzig",
-                "type": "Individualbau",
-                "useage": "Albert Schweizer Schule",
+                "address": "L\u00fctzner Str. 540, 04205 Leipzig",
+                "type": "Umformerstation G7- U2",
+                "useage": "",
                 "former_useage": "",
                 "condition": "",
-                "links": {
-                    "link_0": {
-                        "title": "www",
-                        "url": "https://https://www.albert-schweitzer-schu-le.de/aktu/index.html"
-                    }
-                }
+                "links": null
             }
         },
         {
@@ -2582,7 +2582,7 @@
                     }
                 },
                 "address": "Kochstra\u00dfe 29a, 04275 Leipzig",
-                "type": "Unterwerk",
+                "type": "Gleichrichterunterwerk",
                 "useage": "",
                 "former_useage": "",
                 "condition": "In Sanierung (Stand 05/24)",
@@ -2808,7 +2808,7 @@
                     }
                 },
                 "address": "Lausener Str. 1, 04207 Leipzig",
-                "type": "Unterwerk",
+                "type": "Gleichrichterunterwerk",
                 "useage": "",
                 "former_useage": "",
                 "condition": "",
@@ -2835,7 +2835,7 @@
                     }
                 },
                 "address": "Titaniaweg 2, 04205 Leipzig",
-                "type": "Unterwerk",
+                "type": "Gleichrichterunterwerk",
                 "useage": "",
                 "former_useage": "",
                 "condition": "",
@@ -2889,7 +2889,7 @@
                     }
                 },
                 "address": "Torgauer Str. 106A, 04318 Leipzig",
-                "type": "Unterwerk",
+                "type": "Gleichrichterunterwerk",
                 "useage": "",
                 "former_useage": "",
                 "condition": "",

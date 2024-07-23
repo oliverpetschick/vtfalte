@@ -52,18 +52,22 @@ const Info = () => {
                     <Text style={styles.text}>
                         <Text style={{ fontWeight: "bold" }}>● Impressum</Text>
                     </Text>
-                    <Text style={{ fontSize: 18, lineHeight: 20 }}>
+                    <Text style={{ fontSize: 16, lineHeight: 20 }}>
                         Johanna Knigge
                     </Text>
-                    <Text style={{ fontSize: 18, lineHeight: 20 }}>
+                    <Text style={{ fontSize: 16, lineHeight: 20 }}>
                         Schillerstraße 14, 99423 Weimar
                     </Text>
-                    <Text style={{ fontSize: 18, lineHeight: 20, marginTop: 20 }}>
-                        Ob aktuelles und historisches Bildmaterial, ein weiterer Standort, Erinnerungen oder Geschichten: Dieser VT-Faltenatlas soll wachsen. Schicke gerne deinen Beitrag an:
+                    <Text style={{ fontSize: 16, lineHeight: 20, marginTop: 20 }}>
+                        Ob aktuelles oder historisches Bildmaterial, ein weiterer Standort, Erinnerungen und Geschichten:
                     </Text>
-                    <Text style={{ fontSize: 18, lineHeight: 20, marginTop: 20 }}>
+                    <Text style={{ fontSize: 16, lineHeight: 20 }}>
+                        Dieser VT-Faltenatlas soll wachsen. Schicke gerne deinen Beitrag an:
+                    </Text>
+                    <Text style={{ fontSize: 16, lineHeight: 20, marginTop: 20 }}>
                         info@vtfalte.de
                     </Text>
+
                     <View style={{ height: 100 }}>
                         {/* Spacer */}
                     </View>
@@ -97,12 +101,15 @@ const Info = () => {
                 </View>
                 <View style={styles.row}>
                     <View style={styles.col2}>
-                        <Image source={require('../images/info/df_hauptkatalog_0475046.jpg')} style={styles.image} />
-                    </View>
-                    <View style={styles.col1}>
                         <Image source={require('../images/info/VT-Falte_Transport_Zuber.jpg')} style={styles.image} />
                     </View>
                 </View>
+                <View style={styles.row}>
+                    <View style={styles.col1}>
+                        <Image source={require('../images/info/df_hauptkatalog_0475046.jpg')} style={styles.image} />
+                    </View>
+                </View>
+
                 <View style={styles.row}>
                     <View style={styles.col3}>
                         <Image source={require('../images/info/240716_Abläufe_breit.jpg')} style={styles.image} />
@@ -117,6 +124,8 @@ const Info = () => {
                     <View style={styles.col2}>
                         <Image source={require('../images/info/240716_Konstruktionszeichnung18-24_mittig.jpg')} style={styles.image} />
                     </View>
+                </View>
+                <View style={styles.row}>
                     <View style={styles.col1}>
                         <Image source={require('../images/info/240703_VT-Falte_Leutzsch_FM_L1005374.jpg')} style={styles.image} />
                     </View>
@@ -127,16 +136,19 @@ const Info = () => {
                             <Text style={styles.text}>
                                 <Text style={{ fontWeight: "bold" }}>● Impressum</Text>
                             </Text>
-                            <Text style={{ fontSize: 18, lineHeight: 20 }}>
+                            <Text style={{ fontSize: 16, lineHeight: 20 }}>
                                 Johanna Knigge
                             </Text>
-                            <Text style={{ fontSize: 18, lineHeight: 20 }}>
+                            <Text style={{ fontSize: 16, lineHeight: 20 }}>
                                 Schillerstraße 14, 99423 Weimar
                             </Text>
-                            <Text style={{ fontSize: 18, lineHeight: 20, marginTop: 20 }}>
-                                Ob aktuelles und historisches Bildmaterial, ein weiterer Standort, Erinnerungen oder Geschichten: Dieser VT-Faltenatlas soll wachsen. Schicke gerne deinen Beitrag an:
+                            <Text style={{ fontSize: 16, lineHeight: 20, marginTop: 20 }}>
+                                Ob aktuelles oder historisches Bildmaterial, ein weiterer Standort, Erinnerungen und Geschichten:
                             </Text>
-                            <Text style={{ fontSize: 18, lineHeight: 20, marginTop: 20 }}>
+                            <Text style={{ fontSize: 16, lineHeight: 20 }}>
+                                Dieser VT-Faltenatlas soll wachsen. Schicke gerne deinen Beitrag an:
+                            </Text>
+                            <Text style={{ fontSize: 16, lineHeight: 20, marginTop: 20 }}>
                                 info@vtfalte.de
                             </Text>
                         </View>
@@ -152,25 +164,28 @@ const styles = StyleSheet.create({
         display: 'flex',
         flex: 3,
         maxWidth: 1200,
-        margin: '0 auto',  // Center the content horizontally
     },
     mobileContainer: {
         display: 'flex',
         maxWidth: '100%',
         height: '100svh',
+        marginLeft: 20,
+        marginRight: 20,
     },
     row: {
         flexDirection: 'row',
         marginBottom: 20,
         justifyContent: 'space-between',
+
+
     },
     col1: {
         flex: 1,
-        marginRight: 20,
+        margin: 22,
     },
     col2: {
         flex: 2,
-        marginRight: 20,
+        margin: 20,
     },
     col3: {
         flex: 3,

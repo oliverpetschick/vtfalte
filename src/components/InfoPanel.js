@@ -10,7 +10,7 @@ const InfoPanel = ({ feature, onClose, showLink }) => {
     const n_images = Object.keys(images).length - 1;
     const isMobile = Dimensions.get('window').width <= 768;
     const panelWidth = isMobile ? '100%' : '70%';
-    const panelHeight = isMobile ? '85svh' : '100%';
+    const panelHeight = isMobile ? '90svh' : '100%';
 
     if (isMobile) {
         document.body.style.overflow = 'hidden';
@@ -121,21 +121,24 @@ const styles = StyleSheet.create({
         position: 'absolute',
         backgroundColor: 'white',
         zIndex: 1000,
+        top: 0,
+        left: 0,
+        padding: 20,
     },
     scrollContainer: {
         flexGrow: 1,
         justifyContent: 'flex-start',
         alignItems: 'center',
+
     },
     infoGallery: {
         position: 'relative',
         width: '70%',
         height: '100%',
-        padding: 20,
     },
     infoGalleryMobile: {
+        flex: 1,
         width: '100%',
-        height: 300,
         position: 'relative',
     },
     image: {
@@ -145,7 +148,7 @@ const styles = StyleSheet.create({
     },
     imageMobile: {
         width: '100%',
-        height: 300,
+        aspectRatio: 1,
         resizeMode: 'contain',
     },
     leftOverlay: {

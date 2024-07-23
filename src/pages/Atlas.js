@@ -105,7 +105,6 @@ const Atlas = () => {
 
         map.current.on('click', 'unclustered-point', (e) => {
             const feature = e.features[0];
-            console.log(feature);
             const selectedFeatureWithArray = {
                 ...feature,
                 properties: {

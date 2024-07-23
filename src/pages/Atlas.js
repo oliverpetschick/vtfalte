@@ -119,9 +119,9 @@ const Atlas = () => {
     }, []);
 
     useEffect(() => {
-        const lng = parseFloat(new URLSearchParams(window.location.search).get('lng')) || 12.3619;
-        const lat = parseFloat(new URLSearchParams(window.location.search).get('lat')) || 51.3142;
-        const zoom = parseFloat(new URLSearchParams(window.location.search).get('zoom')) || 10.8;
+        const lng = parseFloat(new URLSearchParams(window.location.search).get('lng')) || 12.37619;
+        const lat = parseFloat(new URLSearchParams(window.location.search).get('lat')) || 51.34036;
+        const zoom = parseFloat(new URLSearchParams(window.location.search).get('zoom')) || 12;
 
         const mapOptions = {
             lng: lng,

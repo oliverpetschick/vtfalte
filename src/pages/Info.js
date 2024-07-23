@@ -133,22 +133,22 @@ const Info = () => {
                 <View style={styles.row}>
                     <View style={styles.col3}>
                         <View style={styles.textContainer}>
-                            <Text style={styles.text}>
+                            <Text style={{ fontSize: 16, lineHeight: 20, marginBottom: 20, textAlign: 'center' }}>
                                 <Text style={{ fontWeight: "bold" }}>● Impressum</Text>
                             </Text>
-                            <Text style={{ fontSize: 16, lineHeight: 20 }}>
+                            <Text style={{ fontSize: 16, lineHeight: 20, textAlign: 'center' }}>
                                 Johanna Knigge
                             </Text>
-                            <Text style={{ fontSize: 16, lineHeight: 20 }}>
+                            <Text style={{ fontSize: 16, lineHeight: 20, textAlign: 'center' }}>
                                 Schillerstraße 14, 99423 Weimar
                             </Text>
-                            <Text style={{ fontSize: 16, lineHeight: 20, marginTop: 20 }}>
+                            <Text style={{ fontSize: 16, lineHeight: 20, marginTop: 20, textAlign: 'center' }}>
                                 Ob aktuelles oder historisches Bildmaterial, ein weiterer Standort, Erinnerungen und Geschichten:
                             </Text>
-                            <Text style={{ fontSize: 16, lineHeight: 20 }}>
+                            <Text style={{ fontSize: 16, lineHeight: 20, textAlign: 'center' }}>
                                 Dieser VT-Faltenatlas soll wachsen. Schicke gerne deinen Beitrag an:
                             </Text>
-                            <Text style={{ fontSize: 16, lineHeight: 20, marginTop: 20 }}>
+                            <Text style={{ fontSize: 16, lineHeight: 20, marginTop: 20, textAlign: 'center' }}>
                                 info@vtfalte.de
                             </Text>
                         </View>
@@ -203,6 +203,7 @@ const styles = StyleSheet.create({
         fontSize: 16,
         lineHeight: 24,
         marginBottom: 20,
+        textAlign: 'justify',
     },
     image: {
         width: '100%',

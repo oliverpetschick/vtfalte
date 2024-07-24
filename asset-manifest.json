@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/vtfalte/static/css/main.006f4e2d.css",
-    "main.js": "/vtfalte/static/js/main.f241be44.js",
+    "main.js": "/vtfalte/static/js/main.fc54490d.js",
     "static/js/453.48344c37.chunk.js": "/vtfalte/static/js/453.48344c37.chunk.js",
     "static/media/240703_VT-Falte_Leutzsch_FM_L1005435.jpg": "/vtfalte/static/media/240703_VT-Falte_Leutzsch_FM_L1005435.f13c9407c0075c32af78.jpg",
     "static/media/240703_VT-Falte_Leutzsch_FM_L1005374.jpg": "/vtfalte/static/media/240703_VT-Falte_Leutzsch_FM_L1005374.e2679471f7609e0e629f.jpg",
@@ -154,11 +154,11 @@
     "static/media/>_button.png": "/vtfalte/static/media/>_button.1dc6316163d0ad5b22f0.png",
     "index.html": "/vtfalte/index.html",
     "main.006f4e2d.css.map": "/vtfalte/static/css/main.006f4e2d.css.map",
-    "main.f241be44.js.map": "/vtfalte/static/js/main.f241be44.js.map",
+    "main.fc54490d.js.map": "/vtfalte/static/js/main.fc54490d.js.map",
     "453.48344c37.chunk.js.map": "/vtfalte/static/js/453.48344c37.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.006f4e2d.css",
-    "static/js/main.f241be44.js"
+    "static/js/main.fc54490d.js"
   ]
 }

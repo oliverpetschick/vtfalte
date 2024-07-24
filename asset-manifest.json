@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.006f4e2d.css",
-    "main.js": "/static/js/main.69cfe36e.js",
+    "main.js": "/static/js/main.85e02038.js",
     "static/js/453.48344c37.chunk.js": "/static/js/453.48344c37.chunk.js",
     "static/media/240703_VT-Falte_Leutzsch_FM_L1005435.jpg": "/static/media/240703_VT-Falte_Leutzsch_FM_L1005435.f13c9407c0075c32af78.jpg",
     "static/media/240703_VT-Falte_Leutzsch_FM_L1005374.jpg": "/static/media/240703_VT-Falte_Leutzsch_FM_L1005374.e2679471f7609e0e629f.jpg",
@@ -154,11 +154,11 @@
     "static/media/>_button.png": "/static/media/>_button.1dc6316163d0ad5b22f0.png",
     "index.html": "/index.html",
     "main.006f4e2d.css.map": "/static/css/main.006f4e2d.css.map",
-    "main.69cfe36e.js.map": "/static/js/main.69cfe36e.js.map",
+    "main.85e02038.js.map": "/static/js/main.85e02038.js.map",
     "453.48344c37.chunk.js.map": "/static/js/453.48344c37.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.006f4e2d.css",
-    "static/js/main.69cfe36e.js"
+    "static/js/main.85e02038.js"
   ]
 }

@@ -67,6 +67,30 @@ const Info = () => {
                     <Text style={{ fontSize: 16, lineHeight: 20, marginTop: 20 }}>
                         info@vtfalte.de
                     </Text>
+                    <Text style={{ fontSize: 16, lineHeight: 20, marginTop: 20, textAlign: 'left' }}>
+                        Bildnachweise in chronologischer Reihenfolge:
+                    </Text>
+                    <Text style={{ fontSize: 16, lineHeight: 20, textAlign: 'left' }}>
+                        1 ©  Florian Marenbach, 2024.
+                    </Text>
+                    <Text style={{ fontSize: 16, lineHeight: 20, textAlign: 'left' }}>
+                        2 ©  Privatarchiv H.P.Zuber, 2024.
+                    </Text>
+                    <Text style={{ fontSize: 16, lineHeight: 20, textAlign: 'left' }}>
+                        3 ©  Gerhard Döring, 1972.
+                    </Text>
+                    <Text style={{ fontSize: 16, lineHeight: 20, textAlign: 'left' }}>
+                        4 ©  Johanna Knigge, 2024.
+                    </Text>
+                    <Text style={{ fontSize: 16, lineHeight: 20, textAlign: 'left' }}>
+                        5 ©  Florian Marenbach, 2024.
+                    </Text>
+                    <Text style={{ fontSize: 16, lineHeight: 20, textAlign: 'left' }}>
+                        6 ©  Johanna Knigge, 2024.
+                    </Text>
+                    <Text style={{ fontSize: 16, lineHeight: 20, textAlign: 'left' }}>
+                        7 ©  Florian Marenbach, 2024.
+                    </Text>
 
                     <View style={{ height: 100 }}>
                         {/* Spacer */}
@@ -77,81 +101,110 @@ const Info = () => {
         );
     } else {
         return (
-            <ScrollView style={styles.desktopContainer} showsVerticalScrollIndicator={false}>
-                <View style={styles.row}>
-                    <View style={styles.col2}>
-                        <Image source={require('../images/info/240703_VT-Falte_Leutzsch_FM_L1005435.jpg')} style={styles.image} />
-                    </View>
-                    <View style={styles.col1}>
-                        <View style={styles.textContainer}>
-                            <Text style={styles.text}>
-                                Ab Ende der 60er Jahre fand die Typisierung von Bauten und Bauteilen in der DDR ihren Höhepunkt. Neben einigen wenigen bedeutenden Stadtbau-steinen, die speziell für einen bestimmten Ort entworfen worden sind, gab es den Rest von der Katalogstange. <Text style={{ fontStyle: "italic" }}>Schneller, leichter und wirtschaftlicher</Text> war die Devise und so wurden repetitiv die verschiedenen Systeme in der ganzen Republik angewendet.
-                            </Text>
-                            <Text style={styles.text}>
-                                Das Institut für Stahlbeton Dresden entwickelte Ende der 60er Jahre ein einfach und günstig zu produzierendes typisiertes Bauteil: Die sogenannte <Text style={{ fontWeight: "bold" }}> VT-Falte</Text>. Als aneinandergesetzter Träger ermöglicht sie eine stützenfreie Halle von maximal 24 Metern Spannweite und formt ein charakterstarkes Dach. Der trapezförmigen Faltwerkträger sollten nicht nur das Stadtbild verschönern und mit seiner Form auflockern, sondern bestach auch durch seine vielseitigen Einsatzmöglichkeiten im Industrie- Landwirtschafts und Gesellschaftsbereich. Zahlreiche Vorteile führten zu einer raschen Verbreitung.
-                            </Text>
-                            <Text style={styles.text}>
-                                Trotz der markanten Dachs und der schieren Menge, sind die Bauten bisher kaum Bestandteil der Diskussion um baukulturelles Erbe der DDR-Architektur geworden. An zahlreichen Stellen fügen sie sich in die städtische Umgebung ein und finden Anklang durch die Einfachheit ihrer Konstruktion. Dennoch sind sie auch dem Verfall, Leerstand oder Abriss ausgesetzt. Die Arbeit <Text style={{ fontStyle: "italic" }}>Unfold</Text> vermittelt die Bautechnikgeschichte der VT-Falte und stellt ihre Potenziale zur Diskussion. In einem interaktiven Atlas ist hier der aktuelle Gebäudebestand mit VT-Faltendach am Beispiel Leipzigs dargestellt.
-                            </Text>
-                            <Text style={styles.text}>
-                                <Text style={{ fontStyle: "italic" }}>Unfold</Text> ist im Rahmen der Architektur- Masterarbeit von Johanna Knigge an der Bauhaus-Universität-Weimar entstanden.
-                            </Text>
+            <ScrollView style={styles.scrollContainer} showsVerticalScrollIndicator={false}>
+                <View style={styles.outerContainer}>
+                    <View style={styles.contentContainer}>
+                        <View style={styles.row}>
+                            <View style={styles.col2}>
+                                <Image source={require('../images/info/240703_VT-Falte_Leutzsch_FM_L1005435.jpg')} style={styles.image} />
+                            </View>
+                            <View style={styles.col1}>
+                                <View style={styles.textContainer}>
+                                    <Text style={styles.text}>
+                                        Ab Ende der 60er Jahre fand die Typisierung von Bauten und Bauteilen in der DDR ihren Höhepunkt. Neben einigen wenigen bedeutenden Stadtbau-steinen, die speziell für einen bestimmten Ort entworfen worden sind, gab es den Rest von der Katalogstange. <Text style={{ fontStyle: "italic" }}>Schneller, leichter und wirtschaftlicher</Text> war die Devise und so wurden repetitiv die verschiedenen Systeme in der ganzen Republik angewendet.
+                                    </Text>
+                                    <Text style={styles.text}>
+                                        Das Institut für Stahlbeton Dresden entwickelte Ende der 60er Jahre ein einfach und günstig zu produzierendes typisiertes Bauteil: Die sogenannte <Text style={{ fontWeight: "bold" }}> VT-Falte</Text>. Als aneinandergesetzter Träger ermöglicht sie eine stützenfreie Halle von maximal 24 Metern Spannweite und formt ein charakterstarkes Dach. Der trapezförmigen Faltwerkträger sollten nicht nur das Stadtbild verschönern und mit seiner Form auflockern, sondern bestach auch durch seine vielseitigen Einsatzmöglichkeiten im Industrie- Landwirtschafts und Gesellschaftsbereich. Zahlreiche Vorteile führten zu einer raschen Verbreitung.
+                                    </Text>
+                                    <Text style={styles.text}>
+                                        Trotz der markanten Dachs und der schieren Menge, sind die Bauten bisher kaum Bestandteil der Diskussion um baukulturelles Erbe der DDR-Architektur geworden. An zahlreichen Stellen fügen sie sich in die städtische Umgebung ein und finden Anklang durch die Einfachheit ihrer Konstruktion. Dennoch sind sie auch dem Verfall, Leerstand oder Abriss ausgesetzt. Die Arbeit <Text style={{ fontStyle: "italic" }}>Unfold</Text> vermittelt die Bautechnikgeschichte der VT-Falte und stellt ihre Potenziale zur Diskussion. In einem interaktiven Atlas ist hier der aktuelle Gebäudebestand mit VT-Faltendach am Beispiel Leipzigs dargestellt.
+                                    </Text>
+                                    <Text style={styles.text}>
+                                        <Text style={{ fontStyle: "italic" }}>Unfold</Text> ist im Rahmen der Architektur- Masterarbeit von Johanna Knigge an der Bauhaus-Universität-Weimar entstanden.
+                                    </Text>
+                                </View>
+                            </View>
                         </View>
-                    </View>
-                </View>
-                <View style={styles.row}>
-                    <View style={styles.col2}>
-                        <Image source={require('../images/info/VT-Falte_Transport_Zuber.jpg')} style={styles.image} />
-                    </View>
-                </View>
-                <View style={styles.row}>
-                    <View style={styles.col1}>
-                        <Image source={require('../images/info/df_hauptkatalog_0475046.jpg')} style={styles.image} />
-                    </View>
-                </View>
+                        <View style={styles.row}>
+                            <View style={styles.col2}>
+                                <Image source={require('../images/info/VT-Falte_Transport_Zuber.jpg')} style={styles.image} />
+                            </View>
+                        </View>
+                        <View style={styles.row}>
+                            <View style={styles.col1}>
+                                <Image source={require('../images/info/df_hauptkatalog_0475046.jpg')} style={styles.image} />
+                            </View>
+                        </View>
 
-                <View style={styles.row}>
-                    <View style={styles.col3}>
-                        <Image source={require('../images/info/240716_Abläufe_breit.jpg')} style={styles.image} />
-                    </View>
-                </View>
-                <View style={styles.row}>
-                    <View style={styles.col1}>
-                        <Image source={require('../images/info/240703_VT-Falte_Leutzsch_FM_L1005403.jpg')} style={styles.image} />
-                    </View>
-                </View>
-                <View style={styles.row}>
-                    <View style={styles.col2}>
-                        <Image source={require('../images/info/240716_Konstruktionszeichnung18-24_mittig.jpg')} style={styles.image} />
-                    </View>
-                </View>
-                <View style={styles.row}>
-                    <View style={styles.col1}>
-                        <Image source={require('../images/info/240703_VT-Falte_Leutzsch_FM_L1005374.jpg')} style={styles.image} />
-                    </View>
-                </View>
-                <View style={styles.row}>
-                    <View style={styles.col3}>
-                        <View style={styles.textContainer}>
-                            <Text style={{ fontSize: 16, lineHeight: 20, marginBottom: 20, textAlign: 'center' }}>
-                                <Text style={{ fontWeight: "bold" }}>● Impressum</Text>
-                            </Text>
-                            <Text style={{ fontSize: 16, lineHeight: 20, textAlign: 'center' }}>
-                                Johanna Knigge
-                            </Text>
-                            <Text style={{ fontSize: 16, lineHeight: 20, textAlign: 'center' }}>
-                                Schillerstraße 14, 99423 Weimar
-                            </Text>
-                            <Text style={{ fontSize: 16, lineHeight: 20, marginTop: 20, textAlign: 'center' }}>
-                                Ob aktuelles oder historisches Bildmaterial, ein weiterer Standort, Erinnerungen und Geschichten:
-                            </Text>
-                            <Text style={{ fontSize: 16, lineHeight: 20, textAlign: 'center' }}>
-                                Dieser VT-Faltenatlas soll wachsen. Schicke gerne deinen Beitrag an:
-                            </Text>
-                            <Text style={{ fontSize: 16, lineHeight: 20, marginTop: 20, textAlign: 'center' }}>
-                                info@vtfalte.de
-                            </Text>
+                        <View style={styles.row}>
+                            <View style={styles.col3}>
+                                <Image source={require('../images/info/240716_Abläufe_breit.jpg')} style={styles.image} />
+                            </View>
                         </View>
+                        <View style={styles.row}>
+                            <View style={styles.col1}>
+                                <Image source={require('../images/info/240703_VT-Falte_Leutzsch_FM_L1005403.jpg')} style={styles.image} />
+                            </View>
+                        </View>
+                        <View style={styles.row}>
+                            <View style={styles.col2}>
+                                <Image source={require('../images/info/240716_Konstruktionszeichnung18-24_mittig.jpg')} style={styles.image} />
+                            </View>
+                        </View>
+                        <View style={styles.row}>
+                            <View style={styles.col1}>
+                                <Image source={require('../images/info/240703_VT-Falte_Leutzsch_FM_L1005374.jpg')} style={styles.image} />
+                            </View>
+                        </View>
+                        <View style={styles.row}>
+                            <View style={styles.col3}>
+                                <View style={styles.textContainer}>
+                                    <Text style={{ fontSize: 16, lineHeight: 20, marginBottom: 20, textAlign: 'center' }}>
+                                        <Text style={{ fontWeight: "bold" }}>● Impressum</Text>
+                                    </Text>
+                                    <Text style={{ fontSize: 16, lineHeight: 20, textAlign: 'center' }}>
+                                        Johanna Knigge
+                                    </Text>
+                                    <Text style={{ fontSize: 16, lineHeight: 20, textAlign: 'center' }}>
+                                        Schillerstraße 14, 99423 Weimar
+                                    </Text>
+                                    <Text style={{ fontSize: 16, lineHeight: 20, marginTop: 20, textAlign: 'center' }}>
+                                        Ob aktuelles oder historisches Bildmaterial, ein weiterer Standort, Erinnerungen und Geschichten:
+                                    </Text>
+                                    <Text style={{ fontSize: 16, lineHeight: 20, textAlign: 'center' }}>
+                                        Dieser VT-Faltenatlas soll wachsen. Schicke gerne deinen Beitrag an:
+                                    </Text>
+                                    <Text style={{ fontSize: 16, lineHeight: 20, marginTop: 20, textAlign: 'center' }}>
+                                        info@vtfalte.de
+                                    </Text>
+                                    <Text style={{ fontSize: 16, lineHeight: 20, marginTop: 20, textAlign: 'center' }}>
+                                        Bildnachweise in chronologischer Reihenfolge:
+                                    </Text>
+                                    <Text style={{ fontSize: 16, lineHeight: 20, textAlign: 'center' }}>
+                                        1 ©  Florian Marenbach, 2024.
+                                    </Text>
+                                    <Text style={{ fontSize: 16, lineHeight: 20, textAlign: 'center' }}>
+                                        2 ©  Privatarchiv H.P.Zuber, 2024.
+                                    </Text>
+                                    <Text style={{ fontSize: 16, lineHeight: 20, textAlign: 'center' }}>
+                                        3 ©  Gerhard Döring, 1972.
+                                    </Text>
+                                    <Text style={{ fontSize: 16, lineHeight: 20, textAlign: 'center' }}>
+                                        4 ©  Johanna Knigge, 2024.
+                                    </Text>
+                                    <Text style={{ fontSize: 16, lineHeight: 20, textAlign: 'center' }}>
+                                        5 ©  Florian Marenbach, 2024.
+                                    </Text>
+                                    <Text style={{ fontSize: 16, lineHeight: 20, textAlign: 'center' }}>
+                                        6 ©  Johanna Knigge, 2024.
+                                    </Text>
+                                    <Text style={{ fontSize: 16, lineHeight: 20, textAlign: 'center' }}>
+                                        7 ©  Florian Marenbach, 2024.
+                                    </Text>
+                                </View>
+                            </View>
+                        </View>
+
                     </View>
                 </View>
             </ScrollView>
@@ -160,9 +213,17 @@ const Info = () => {
 }
 
 const styles = StyleSheet.create({
-    desktopContainer: {
-        display: 'flex',
-        flex: 3,
+    scrollContainer: {
+        flex: 1,
+        width: '100%',
+    },
+    outerContainer: {
+        flex: 1,
+        flexDirection: 'row',
+        justifyContent: 'center',
+    },
+    contentContainer: {
+        flex: 1,
         maxWidth: 1200,
     },
     mobileContainer: {

@@ -12,6 +12,7 @@ const menuItems = [
 const NavBar = () => {
     const location = useLocation();
 
+
     const renderNavLinks = () => {
         return menuItems.map(item => {
             return (
@@ -39,11 +40,18 @@ const NavBar = () => {
 const styles = StyleSheet.create({
     text: {
         fontSize: 22,
+        '@media (min-width: 768px)': {
+            fontSize: 18,
+        }
     },
     activeText: {
         fontSize: 22,
         color: "blue",
+        '@media (min-width: 768px)': {
+            fontSize: 18,
+        }
     },
+
 });
 
 

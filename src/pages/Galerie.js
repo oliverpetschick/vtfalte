@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from "react";
+import React, { useState, useMemo } from "react";
 import { View, StyleSheet, Image, Pressable, ScrollView, Dimensions } from "react-native-web";
 import InfoPanel from "../components/InfoPanel";
 
@@ -12,14 +12,12 @@ const Galerie = () => {
 
     const isMobile = Dimensions.get('window').width <= 768;
 
-    // disable scroll for mobile
-    if (isMobile) {
-        document.body.style.overflow = 'hidden';
-    }
+    const filteredFeatures = useMemo(() => {
+        return data.features.filter(feature => feature.properties.images.image_0.src !== 'images/placeholder.jpg');
+    }, []);
 
-
-    const onImageClick = useCallback((id) => {
-        const selectedFeature = data.features.find(feature => feature.properties.id === id);
+    const onImageClick = (id) => {
+        const selectedFeature = filteredFeatures.find(feature => feature.properties.id === id);
         if (selectedFeature) {
             setInfoState({
                 showInfo: true,
@@ -32,41 +30,38 @@ const Galerie = () => {
                 },
             });
         }
-    }, []);
+    };
 
-    const onClose = useCallback(() => {
-        setInfoState({
-            showInfo: false,
-            selectedFeature: null,
-        });
-    }, []);
+    const onClose = () => {
+        setInfoState({ showInfo: false, selectedFeature: null });
+    };
 
     return (
-        <View style={styles.container}>
+        <View style={[styles.container, isMobile && styles.mobileContainer]}>
             <ScrollView
                 contentContainerStyle={isMobile ? styles.mobileGalerie : styles.galerie}
                 showsVerticalScrollIndicator={false}
             >
-                {data.features.map((feature, index) => (
-                    feature.properties.images.image_0.src !== 'images/placeholder.jpg' && (
-                        <Pressable key={index} onPress={() => onImageClick(feature.properties.id)}>
-                            <Image
-                                source={require('../' + feature.properties.images.image_0.src)}
-                                style={styles.image}
-                                resizeMode={'contain'}
-                            />
-                        </Pressable>
-                    )
+                {filteredFeatures.map((feature, index) => (
+                    <Pressable key={index} onPress={() => onImageClick(feature.properties.id)}>
+                        <Image
+                            source={require('../' + feature.properties.images.image_0.src)}
+                            style={styles.image}
+                            resizeMode={'contain'}
+                        />
+                    </Pressable>
                 ))}
             </ScrollView>
             {infoState.showInfo && (
-                <InfoPanel
-                    feature={infoState.selectedFeature}
-                    onClose={onClose}
-                    showLink={true}
-                />
+                <>
+                    <InfoPanel
+                        feature={infoState.selectedFeature}
+                        onClose={onClose}
+                        showLink={true}
+                    />
+                    <View style={styles.overlay} onClick={onClose} />
+                </>
             )}
-            {infoState.showInfo && <View style={styles.overlay} onClick={onClose} />}
         </View>
     );
 };
@@ -78,6 +73,9 @@ const styles = StyleSheet.create({
         width: '100%',
         padding: 20,
         paddingBottom: 0,
+    },
+    mobileContainer: {
+        overflow: 'hidden',
     },
     galerie: {
         display: 'grid',

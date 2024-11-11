@@ -2,8 +2,6 @@ import React, { useState } from 'react';
 import { View, StyleSheet, Image, Pressable, Text, Dimensions, ScrollView } from 'react-native-web';
 import { Link } from 'react-router-dom';
 
-
-
 const InfoPanel = ({ feature, onClose, showLink }) => {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
     const images = feature.properties.images || {};
@@ -28,7 +26,7 @@ const InfoPanel = ({ feature, onClose, showLink }) => {
     const currentImage = images[`image_${currentImageIndex}`]?.src;
     const currentAuthor = images[`image_${currentImageIndex}`]?.author_firstname + ' ' + images[`image_${currentImageIndex}`]?.author_lastname;
 
-    const atlasLink = window.location.href.replace('galerie', 'atlas') + '?fold=' + feature.properties.id;
+    const atlasLink = `/atlas?fold=${feature.properties.id}`;
 
     const links = Array.isArray(feature.properties.links) ? feature.properties.links : [];
 
@@ -43,11 +41,15 @@ const InfoPanel = ({ feature, onClose, showLink }) => {
                         <Pressable
                             style={[styles.leftOverlay, overlayStyle]}
                             onPress={() => n_images > 0 && handleImageClick('prev')}
-                        />
+                        >
+                            {n_images > 0}
+                        </Pressable>
                         <Pressable
                             style={[styles.rightOverlay, overlayStyle]}
                             onPress={() => n_images > 0 && handleImageClick('next')}
-                        />
+                        >
+                            {n_images > 0}
+                        </Pressable>
                     </View>
                     <View style={styles.infoContentMobile}>
                         <Text style={styles.title}>Adresse</Text>
@@ -74,17 +76,23 @@ const InfoPanel = ({ feature, onClose, showLink }) => {
             ) : (
                 <>
                     <View style={styles.infoGallery}>
-                        {currentImage && (
-                            <Image source={require(`../${currentImage}`)} style={styles.image} />
-                        )}
+                        <View style={styles.imageContainer}>
+                            {n_images > 0 && <Image source={require('../images/<_button.png')} style={styles.overlayImage} />}
+                            {currentImage && (
+                                <Image source={require(`../${currentImage}`)} style={styles.image} />
+                            )}
+                            {n_images > 0 && <Image source={require('../images/>_button.png')} style={styles.overlayImage} />}
+                        </View>
                         <Pressable
                             style={[styles.leftOverlay, overlayStyle]}
                             onPress={() => n_images > 0 && handleImageClick('prev')}
-                        />
+                        >
+                        </Pressable>
                         <Pressable
                             style={[styles.rightOverlay, overlayStyle]}
                             onPress={() => n_images > 0 && handleImageClick('next')}
-                        />
+                        >
+                        </Pressable>
                     </View>
                     <View style={styles.infoContent}>
                         <Text style={styles.title}>Adresse</Text>
@@ -105,6 +113,7 @@ const InfoPanel = ({ feature, onClose, showLink }) => {
                                 <a href={link} target="_blank" rel="noopener noreferrer">{link}</a>
                             </Text>
                         )) : <Text> - </Text>}
+
                         {showLink && <Link to={atlasLink} style={{ textDecoration: 'none' }}>Atlas</Link>}
                     </View>
                 </>
@@ -125,16 +134,23 @@ const styles = StyleSheet.create({
         left: 0,
         padding: 20,
     },
+    imageContainer: {
+        position: 'relative',
+        width: '100%',
+        height: '100%',
+        flexDirection: 'row',
+        alignItems: 'center',
+    },
     scrollContainer: {
         flexGrow: 1,
         justifyContent: 'flex-start',
         alignItems: 'center',
-
     },
     infoGallery: {
         position: 'relative',
         width: '70%',
         height: '100%',
+        alignItems: 'center',
     },
     infoGalleryMobile: {
         flex: 1,
@@ -142,8 +158,8 @@ const styles = StyleSheet.create({
         position: 'relative',
     },
     image: {
-        width: '100%',
-        height: '100%',
+        width: '95%',
+        height: '95%',
         resizeMode: 'contain',
     },
     imageMobile: {
@@ -157,6 +173,7 @@ const styles = StyleSheet.create({
         left: 0,
         width: '50%',
         height: '100%',
+        justifyContent: 'center',
     },
     rightOverlay: {
         position: 'absolute',
@@ -164,12 +181,18 @@ const styles = StyleSheet.create({
         right: 0,
         width: '50%',
         height: '100%',
+        justifyContent: 'center',
+        alignItems: 'flex-end',
     },
     overlay: {
         cursor: 'default',
     },
     overlayClickable: {
         cursor: 'pointer',
+    },
+    overlayImage: {
+        width: 22,
+        height: 22,
     },
     infoContent: {
         width: '30%',

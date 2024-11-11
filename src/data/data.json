@@ -3097,9 +3097,9 @@
                 "category_id": 7,
                 "images": {
                     "image_0": {
-                        "src": "images/folds/fold_100/100_1_Stadt-Leipzig.jpg",
-                        "author_lastname": "Leipzig",
-                        "author_firstname": "Stadt"
+                        "src": "images/placeholder.jpg",
+                        "author_lastname": "Knigge",
+                        "author_firstname": "Johanna"
                     }
                 },
                 "address": "Geithainer Stra\u00dfe, 04328 Leipzig",

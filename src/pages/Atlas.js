@@ -14,6 +14,19 @@ const Atlas = () => {
         showLink: false,
     });
 
+    const getFoldIdFromHash = () => {
+        const hash = window.location.hash;
+        const queryIndex = hash.indexOf('?');
+        if (queryIndex !== -1) {
+            const queryString = hash.substring(queryIndex + 1);
+            const urlParams = new URLSearchParams(queryString);
+            return urlParams.get('fold') || null;
+        }
+        return null;
+    };
+
+
+
     const isMobile = window.innerWidth <= 768;
 
     // disable scroll for mobile
@@ -148,7 +161,9 @@ const Atlas = () => {
             addMapLayers();
             addMapEvents();
 
-            const foldId = new URLSearchParams(window.location.search).get('fold') || null;
+            const foldId = getFoldIdFromHash();
+
+
             if (foldId) {
                 const feature = map.current.getSource('vt-falten-atlas')._data.features[foldId - 1];
                 map.current.easeTo({ center: feature.geometry.coordinates, zoom: 17 });

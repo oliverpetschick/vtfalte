@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { Nav, NavMenu, NavLink, Text } from "./NavBarElements";
 import { StyleSheet } from "react-native-web";
@@ -14,18 +14,15 @@ const NavBar = () => {
 
 
     const renderNavLinks = () => {
-        return menuItems.map(item => {
-            return (
-                <NavLink
-                    key={item.path}
-                    to={item.path}
-                    style={location.pathname === item.path ? styles.activeText : styles.text}
-                >
-                    <Text style={styles.text}>{item.label}</Text>
-                </NavLink>
-
-            );
-        });
+        return menuItems.map(item => (
+            <NavLink
+                key={item.path}
+                to={item.path}
+                style={location.pathname === item.path ? styles.activeText : styles.text}
+            >
+                <Text style={styles.text}>{item.label}</Text>
+            </NavLink>
+        ));
     };
 
     return (
@@ -40,19 +37,17 @@ const NavBar = () => {
 const styles = StyleSheet.create({
     text: {
         fontSize: 22,
-        '@media (min-width: 768px)': {
+        '@media (minWidth: 768px)': {
             fontSize: 18,
         }
     },
     activeText: {
         fontSize: 22,
         color: "blue",
-        '@media (min-width: 768px)': {
+        '@media (minWidth: 768px)': {
             fontSize: 18,
         }
     },
-
 });
-
 
 export default NavBar;

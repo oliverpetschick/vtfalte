@@ -153,8 +153,7 @@
                 "condition": "",
                 "links": {
                     "link_0": {
-                        "title": "www",
-                        "url": "https://https://www.albert-schweitzer-schu-le.de/aktu/index.html"
+                        "url": "https://www.albert-schweitzer-schu-le.de/aktu/index.html"
                     }
                 }
             }
@@ -212,8 +211,7 @@
                 "condition": "",
                 "links": {
                     "link_0": {
-                        "title": "arena",
-                        "url": "https://https://arena.froebel.info/"
+                        "url": "https://arena.froebel.info/"
                     }
                 }
             }
@@ -488,8 +486,7 @@
                 "condition": "Umbau 2007",
                 "links": {
                     "link_0": {
-                        "title": "\ue80bheizhaus-leipzig",
-                        "url": "https://\ue80bheizhaus-leipzig.de"
+                        "url": "https://heizhaus-leipzig.de"
                     }
                 }
             }
@@ -520,8 +517,7 @@
                 "condition": "",
                 "links": {
                     "link_0": {
-                        "title": "www",
-                        "url": "https://https://www.tuvsud.com/de-de/standorte/europe/germany/leipzig-gruenau/bruenner-str-8d?utm_medium=search&utm_source=google&utm_campaign=a-on_uberall_de_de_mo_aut_pti_ts&utm_content=standortseite-Leipzig_Gr%C3%BCnau_Br%C3%BCnner_Str.8d"
+                        "url": "https://www.tuvsud.com/de-de/standorte/europe/germany/leipzig-gruenau/bruenner-str-8d"
                     }
                 }
             }
@@ -753,8 +749,12 @@
                 "type": "Mehrzweckhalle",
                 "useage": "Feuerwehr / \u00dcbungsplatz Polizei Leipzig",
                 "former_useage": "",
-                "condition": "",
-                "links": null
+                "condition": "Von Abriss bedroht",
+                "links": {
+                    "link_0" : {
+                        "url": "https://lebensmittelport.org"
+                    }
+                }
             }
         },
         {
@@ -780,8 +780,12 @@
                 "type": "Mehrzweckhalle",
                 "useage": "Feuerwehr / \u00dcbungsplatz Polizei Leipzig",
                 "former_useage": "",
-                "condition": "",
-                "links": null
+                "condition": "Von Abriss bedroht",
+                "links": {
+                    "link_0" : {
+                        "url": "https://lebensmittelport.org"
+                    }
+                }
             }
         },
         {
@@ -812,8 +816,15 @@
                 "type": "Mehrzweckhalle",
                 "useage": "Feuerwehr / \u00dcbungsplatz Polizei Leipzig",
                 "former_useage": "",
-                "condition": "",
-                "links": null
+                "condition": "Von Abriss bedroht",
+                "links": {
+                    "link_0" : {
+                        "url": "https://lebensmittelport.org"
+                    }
+                }
+
+
+
             }
         },
         {
@@ -842,8 +853,7 @@
                 "condition": "",
                 "links": {
                     "link_0": {
-                        "title": "www",
-                        "url": "https://https://www.kann-beton.de/"
+                        "url": "https://www.kann-beton.de/"
                     }
                 }
             }
@@ -874,8 +884,7 @@
                 "condition": "",
                 "links": {
                     "link_0": {
-                        "title": "www",
-                        "url": "https://https://www.kann-beton.de/"
+                        "url": "https://www.kann-beton.de/"
                     }
                 }
             }
@@ -1103,12 +1112,10 @@
                 "condition": "Sanierung 2014 - 2019",
                 "links": {
                     "link_0": {
-                        "title": "www",
-                        "url": "https://https://www.leipzig.de/detailansicht-adresse/sprunghalle-der-universitaet-leipzig"
+                        "url": "https://magazin.uni-leipzig.de/das-leipziger-universitaetsmagazin/artikel/oase-fuer-leistungssport-und-forschung-2021-05-18"
                     },
                     "link_1": {
-                        "title": "hartung-ludwig",
-                        "url": "https://https://hartung-ludwig.de/snp/projekte/projekt/schwimm-und-sprunghalle-der-universitaet-leipzig-campus-jahnallee"
+                        "url": "https://hartung-ludwig.de/snp/projekte/projekt/schwimm-und-sprunghalle-der-universitaet-leipzig-campus-jahnallee"
                     }
                 }
             }
@@ -1289,8 +1296,7 @@
                 "condition": "",
                 "links": {
                     "link_0": {
-                        "title": "www",
-                        "url": "https://https://www.tug-leipzig.de/"
+                        "url": "https://www.tug-leipzig.de/"
                     }
                 }
             }
@@ -1518,8 +1524,7 @@
                 "condition": "",
                 "links": {
                     "link_0": {
-                        "title": "www",
-                        "url": "https://https://www.leipzig.de/detailansicht-adresse/oft-rabet"
+                        "url": "https://www.leipzig.de/detailansicht-adresse/oft-rabet"
                     }
                 }
             }
@@ -1550,8 +1555,7 @@
                 "condition": "",
                 "links": {
                     "link_0": {
-                        "title": "energiewelten",
-                        "url": "https://https://energiewelten.l.de/bhkw-volkmarsdorf/"
+                        "url": "https://energiewelten.l.de/bhkw-volkmarsdorf/"
                     }
                 }
             }
@@ -1582,8 +1586,7 @@
                 "condition": "",
                 "links": {
                     "link_0": {
-                        "title": "kv-leipzig",
-                        "url": "https://https://kv-leipzig.de/"
+                        "url": "https://kv-leipzig.de/"
                     }
                 }
             }
@@ -1779,10 +1782,12 @@
                 "condition": "Sanierung durch KO/OK Architekten ",
                 "links": {
                     "link_0": {
-                        "title": "ko-ok",
-                        "url": "https://https://www.leipzig.de/detailansicht-adresse/oft-crazy https://ko-ok.cc/crazy/"
-                    }
+                        "url": "https://www.leipzig.de/detailansicht-adresse/oft-crazy"
+                    },
+                    "link_1": {
+                        "url": "https://ko-ok.cc/crazy/"
                 }
+            }
             }
         },
         {
@@ -1816,8 +1821,7 @@
                 "condition": "",
                 "links": {
                     "link_0": {
-                        "title": "www",
-                        "url": "https://https://www.leipzig.de/freizeit-kultur-und-tourismus/sport/sportstaettenbelegung/detailseite/detailseite/schulsporthalle-brueder-grimm-schule-grundschule"
+                        "url": "https://www.leipzig.de/freizeit-kultur-und-tourismus/sport/sportstaettenbelegung/detailseite/detailseite/schulsporthalle-brueder-grimm-schule-grundschule"
                     }
                 }
             }
@@ -1944,8 +1948,7 @@
                 "condition": "",
                 "links": {
                     "link_0": {
-                        "title": "www",
-                        "url": "https://https://www.leipzig.de/freizeit-kultur-und-tourismus/sport/sportstaettenbelegung/detailseite/detailseite/sporthalle-an-der-kotsche"
+                        "url": "https://www.leipzig.de/freizeit-kultur-und-tourismus/sport/sportstaettenbelegung/detailseite/detailseite/sporthalle-an-der-kotsche"
                     }
                 }
             }
@@ -2251,8 +2254,7 @@
                 "condition": "",
                 "links": {
                     "link_0": {
-                        "title": "energiewelten",
-                        "url": "https://https://energiewelten.l.de/bhkw-reudnitz/"
+                        "url": "https://energiewelten.l.de/bhkw-reudnitz/"
                     }
                 }
             }
@@ -2310,8 +2312,7 @@
                 "condition": "",
                 "links": {
                     "link_0": {
-                        "title": "www",
-                        "url": "https://http://www.dlrg-leipzig.de/"
+                        "url": "https://www.dlrg-leipzig.de/"
                     }
                 }
             }

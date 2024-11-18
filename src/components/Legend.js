@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, Text, StyleSheet, Dimensions } from 'react-native-web';
+import { View, Text, StyleSheet} from 'react-native-web';
 
 export const legendMapping = {
     '1': { color: 'rgb(255, 154, 234)', label: 'Sporthalle' },
@@ -12,10 +12,9 @@ export const legendMapping = {
     '8': { color: 'rgb(106, 75, 0)', label: 'Abriss' },
 };
 
-const isMobile = Dimensions.get('window').width <= 768;
 
 const Legend = () => {
-    const [showLegend, setShowLegend] = useState(!isMobile);
+    const [showLegend, setShowLegend] = useState(false);
 
     const toggleLegend = () => {
         setShowLegend(!showLegend);
@@ -24,12 +23,12 @@ const Legend = () => {
     return (
         <View style={styles.legendContainer}>
             <View style={styles.header}>
-                {isMobile && (
-                    <View style={styles.toggleButton} onClick={toggleLegend}>
+                {
+                    <View style={[styles.toggleButton, styles.pointer]} onClick={toggleLegend} >
                         <Text style={styles.toggleButtonText}>{showLegend ? '-' : '+'}</Text>
                     </View>
-                )}
-                <Text style={styles.legendTitle}>Kategorien</Text>
+                }
+                <Text style={[styles.legendTitle, styles.pointer]} onClick={toggleLegend}>Kategorien</Text>
             </View>
             {showLegend && (
                 <View>
@@ -83,6 +82,9 @@ const styles = StyleSheet.create({
     },
     toggleButtonText: {
         fontWeight: 'bold',
+    },
+    pointer: {
+        cursor: 'pointer',
     },
 });
 

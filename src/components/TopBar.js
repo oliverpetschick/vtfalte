@@ -8,7 +8,7 @@ const Topbar = () => {
         <View style={styles.topbar}>
             <View style={styles.titleContainer}>
                 <NavLink to="/info">
-                    <Text style={styles.title}>Unfold</Text>
+                    <Text style={styles.title}>VT-Falte</Text>
                 </NavLink>
             </View>
             <View style={styles.navContainer}>

@@ -28,7 +28,8 @@ const InfoPanel = ({ feature, onClose, showLink }) => {
 
     const atlasLink = `/atlas?fold=${feature.properties.id}`;
 
-    const links = Array.isArray(feature.properties.links) ? feature.properties.links : [];
+    const links = feature.properties.links ? JSON.parse(feature.properties.links) : [];
+    console.log(links);
 
     return (
         <View style={[styles.container, { width: panelWidth, height: panelHeight, flexDirection: isMobile ? 'column' : 'row' }]}>
@@ -65,11 +66,13 @@ const InfoPanel = ({ feature, onClose, showLink }) => {
                         <Text style={styles.title}>Foto</Text>
                         <Text>{currentAuthor || ' - '}</Text>
                         <Text style={styles.title}>Links</Text>
-                        {links.length > 0 ? links.map((link, index) => (
-                            <Text key={index}>
-                                <a href={link} target="_blank" rel="noopener noreferrer">{link}</a>
-                            </Text>
-                        )) : <Text> - </Text>}
+                        {Object.keys(links).length > 0 ? (
+                            Object.entries(links).map(([key, link]) => (
+                            <Text><a href={link.url}>{link.url}</a></Text>
+                            ))
+                        ) : (
+                            <Text> - </Text>
+                        )}
                         {showLink && <Link to={atlasLink} style={{ textDecoration: 'none' }}>Atlas</Link>}
                     </View>
                 </ScrollView>
@@ -108,11 +111,14 @@ const InfoPanel = ({ feature, onClose, showLink }) => {
                         <Text style={styles.title}>Foto</Text>
                         <Text>{currentAuthor || ' - '}</Text>
                         <Text style={styles.title}>Links</Text>
-                        {links.length > 0 ? links.map((link, index) => (
-                            <Text key={index}>
-                                <a href={link} target="_blank" rel="noopener noreferrer">{link}</a>
-                            </Text>
-                        )) : <Text> - </Text>}
+                        {Object.keys(links).length > 0 ? (
+                            Object.entries(links).map(([key, link]) => (
+                            <Text><a href={link.url}>{link.url}</a></Text>
+                            ))
+                        ) : (
+                            <Text> - </Text>
+                        )}
+
 
                         {showLink && <Link to={atlasLink} style={{ textDecoration: 'none' }}>Atlas</Link>}
                     </View>

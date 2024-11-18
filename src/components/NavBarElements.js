@@ -26,7 +26,7 @@ export const NavMenu = styled.ul`
 
 export const NavLink = styled(Link)`
     display: flex;
-    padding: 1rem;
+    padding: 15px;
     height: 100%;
     width: auto;
     text-decoration: none;

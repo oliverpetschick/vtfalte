@@ -42,6 +42,7 @@ const styles = StyleSheet.create({
     diplay: 'flex',
     height: '3%',
     margin: 30,
+    marginBottom: 20,
   },
   content: {
     display: 'flex',

@@ -1,9 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.006f4e2d.css",
-    "main.js": "/static/js/main.85e02038.js",
+    "main.js": "/static/js/main.c9433b4d.js",
     "static/js/453.48344c37.chunk.js": "/static/js/453.48344c37.chunk.js",
+    "static/media/241112_Unfold_DokuBUW_Unfold_Johanna-Knigge3.jpg": "/static/media/241112_Unfold_DokuBUW_Unfold_Johanna-Knigge3.8183219bc5ac359f95c4.jpg",
+    "static/media/241112_Unfold_DokuBUW_Unfold_Johanna-Knigge2.jpg": "/static/media/241112_Unfold_DokuBUW_Unfold_Johanna-Knigge2.9bc97566fcb1f0ab8cdd.jpg",
     "static/media/240703_VT-Falte_Leutzsch_FM_L1005435.jpg": "/static/media/240703_VT-Falte_Leutzsch_FM_L1005435.f13c9407c0075c32af78.jpg",
+    "static/media/241112_Unfold_DokuBUW_Unfold_Johanna-Knigge9.jpg": "/static/media/241112_Unfold_DokuBUW_Unfold_Johanna-Knigge9.b62562c27c5d50b62b02.jpg",
+    "static/media/241112_Unfold_DokuBUW_Unfold_Johanna-Knigge4.jpg": "/static/media/241112_Unfold_DokuBUW_Unfold_Johanna-Knigge4.a871179f497545ed1d5b.jpg",
+    "static/media/240723_Cover5BUW_Unfold_Johanna-KniggeBUW_Unfold_Johanna-Knigge.jpg": "/static/media/240723_Cover5BUW_Unfold_Johanna-KniggeBUW_Unfold_Johanna-Knigge.0b2885b6e5a2f3adb63a.jpg",
     "static/media/240703_VT-Falte_Leutzsch_FM_L1005374.jpg": "/static/media/240703_VT-Falte_Leutzsch_FM_L1005374.e2679471f7609e0e629f.jpg",
     "static/media/2_4_Johanna-Knigge.jpg": "/static/media/2_4_Johanna-Knigge.a9545039f5964722c63e.jpg",
     "static/media/30_4_Florian-Marenbach.jpg": "/static/media/30_4_Florian-Marenbach.ed54b44bf96d7822732e.jpg",
@@ -15,6 +20,7 @@
     "static/media/1_1_Johanna-Knigge.jpg": "/static/media/1_1_Johanna-Knigge.fff273fe1f3443e6652a.jpg",
     "static/media/44_2_Johanna-Knigge.jpg": "/static/media/44_2_Johanna-Knigge.f169ffb239e3e0da5e62.jpg",
     "static/media/240703_VT-Falte_Leutzsch_FM_L1005403.jpg": "/static/media/240703_VT-Falte_Leutzsch_FM_L1005403.8dbc9687914ef7451a5e.jpg",
+    "static/media/VT-Falte_Transport_Zuber.jpg": "/static/media/VT-Falte_Transport_Zuber.3a52c2ea8555e84d8f8c.jpg",
     "static/media/88_1_Florian-Marenbach.jpg": "/static/media/88_1_Florian-Marenbach.352748c3eb7900a11884.jpg",
     "static/media/30_3_Florian-Marenbach.jpg": "/static/media/30_3_Florian-Marenbach.710e1db135d82bf950af.jpg",
     "static/media/41_2_Johanna-Knigge.jpg": "/static/media/41_2_Johanna-Knigge.71b92de76a447fab58ce.jpg",
@@ -50,7 +56,6 @@
     "static/media/40_3_Johanna-Knigge.jpg": "/static/media/40_3_Johanna-Knigge.5ae6b21a20ecfbfc8563.jpg",
     "static/media/14_2_Johanna-Knigge.jpg": "/static/media/14_2_Johanna-Knigge.aad501b8e687ff085338.jpg",
     "static/media/18_2_Johanna-Knigge.jpg": "/static/media/18_2_Johanna-Knigge.7995399c9eae4dd2ce1c.jpg",
-    "static/media/VT-Falte_Transport_Zuber.jpg": "/static/media/VT-Falte_Transport_Zuber.863ce9881fb5f1918883.jpg",
     "static/media/61_1_Johanna-Knigge.jpg": "/static/media/61_1_Johanna-Knigge.c7d33ecdbc38b574763d.jpg",
     "static/media/2_3_Johanna-Knigge.jpg": "/static/media/2_3_Johanna-Knigge.d1699e17b1a35a8083e0.jpg",
     "static/media/28_3_Florian-Marenbach.jpg": "/static/media/28_3_Florian-Marenbach.7c97b4602d63ce3c0b7e.jpg",
@@ -152,13 +157,14 @@
     "static/media/index.cjs": "/static/media/index.671993152dc0f6e0b17a.cjs",
     "static/media/<_button.png": "/static/media/<_button.de7bfb075729d4629604.png",
     "static/media/>_button.png": "/static/media/>_button.1dc6316163d0ad5b22f0.png",
+    "static/media/Logo_Frauenfoerderfonds_RGB.png": "/static/media/Logo_Frauenfoerderfonds_RGB.6c5675978087dd60a905.png",
     "index.html": "/index.html",
     "main.006f4e2d.css.map": "/static/css/main.006f4e2d.css.map",
-    "main.85e02038.js.map": "/static/js/main.85e02038.js.map",
+    "main.c9433b4d.js.map": "/static/js/main.c9433b4d.js.map",
     "453.48344c37.chunk.js.map": "/static/js/453.48344c37.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.006f4e2d.css",
-    "static/js/main.85e02038.js"
+    "static/js/main.c9433b4d.js"
   ]
 }

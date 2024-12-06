@@ -18,6 +18,7 @@ const Galerie = () => {
 
     const onImageClick = (id) => {
         const selectedFeature = filteredFeatures.find(feature => feature.properties.id === id);
+        console.log(selectedFeature);
         if (selectedFeature) {
             setInfoState({
                 showInfo: true,

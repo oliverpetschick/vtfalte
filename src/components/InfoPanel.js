@@ -27,10 +27,16 @@ const InfoPanel = ({ feature, onClose, showLink }) => {
     const currentAuthor = images[`image_${currentImageIndex}`]?.author_firstname + ' ' + images[`image_${currentImageIndex}`]?.author_lastname;
 
     const atlasLink = `/atlas?fold=${feature.properties.id}`;
+    // convert links to a proper object
 
-    const links = feature.properties.links ? JSON.parse(feature.properties.links) : [];
-    console.log(links);
-
+    let links = [];
+    if (feature.properties.links) {
+        try {
+            links = JSON.parse(feature.properties.links);
+        } catch (e) {
+            links = feature.properties.links;
+        }
+    }
     return (
         <View style={[styles.container, { width: panelWidth, height: panelHeight, flexDirection: isMobile ? 'column' : 'row' }]}>
             {isMobile ? (
@@ -118,9 +124,7 @@ const InfoPanel = ({ feature, onClose, showLink }) => {
                         ) : (
                             <Text> - </Text>
                         )}
-
-
-                        {showLink && <Link to={atlasLink} style={{ textDecoration: 'none' }}>Atlas</Link>}
+                        {showLink && <Link to={atlasLink} style={{ textDecoration: 'none', marginTop:20 }}>Atlas</Link>}
                     </View>
                 </>
             )}

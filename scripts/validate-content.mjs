@@ -95,7 +95,11 @@ for (const { id, location } of locations) {
   }
 }
 
-const uploadFiles = (await walk(path.join(root, 'src/images/uploads'))).filter(file => /\.(jpe?g|png)$/i.test(file));
+const foldsDirectory = path.join(root, 'src/images/folds');
+const uploadFiles = [
+  ...await walk(path.join(root, 'src/images/uploads')),
+  ...(await walk(foldsDirectory)).filter(file => path.basename(file).startsWith('upload-')),
+].filter(file => /\.(jpe?g|png)$/i.test(file));
 for (const file of uploadFiles) {
   const relative = path.relative(path.join(root, 'src'), file).split(path.sep).join('/');
   if (!referencedPhotos(locations).has(file) && process.argv.includes('--strict-media')) {

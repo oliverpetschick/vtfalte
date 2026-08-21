@@ -55,17 +55,7 @@ collections:
       - { name: archived, label: Archiviert, widget: boolean, default: false }
       - label: Kategorie
         name: categoryId
-        widget: select
-        value_type: int
-        options:
-          - { label: Sporthalle, value: 1 }
-          - { label: Jugendclub, value: 2 }
-          - { label: 'Senior*innenzentrum', value: 3 }
-          - { label: Kaufhalle, value: 4 }
-          - { label: Gleichrichterunterwerk, value: 5 }
-          - { label: Umformerstation, value: 6 }
-          - { label: Mehrzweckhalle/Individualbau, value: 7 }
-          - { label: Abriss, value: 8 }
+        widget: vt_category
       - label: Koordinaten
         name: coordinates
         widget: vt_coordinates
@@ -86,6 +76,8 @@ collections:
             name: src
             widget: image
             choose_url: false
+            media_folder: /src/images/folds/fold_{{filename}}
+            public_folder: images/folds/fold_{{filename}}
           - { name: credit, label: Bildquelle, widget: string, default: Johanna Knigge }
       - label: Links
         name: links

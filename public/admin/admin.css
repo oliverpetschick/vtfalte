@@ -1,3 +1,14 @@
+.vt-category-options {
+  display: grid;
+  gap: 8px;
+}
+
+.vt-category-options label {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
 .vt-coordinate-inputs {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -25,6 +36,7 @@
   border: 1px solid #b7b7b7;
   border-radius: 2px;
 }
+
 
 @media (max-width: 700px) {
   .vt-coordinate-inputs {

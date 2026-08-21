@@ -6,6 +6,34 @@
     return typeof value.get === 'function' ? value.get(key) ?? '' : value[key] ?? '';
   };
 
+  const categories = [
+    [1, 'Sporthalle'],
+    [2, 'Jugendclub'],
+    [3, 'Senior*innenzentrum'],
+    [4, 'Kaufhalle'],
+    [5, 'Gleichrichterunterwerk'],
+    [6, 'Umformerstation'],
+    [7, 'Mehrzweckhalle/Individualbau'],
+    [8, 'Abriss'],
+  ];
+
+  const CategoryControl = createClass({
+    render() {
+      const value = Number(this.props.value);
+      return h('div', { className: 'vt-category-options' },
+        categories.map(([id, label]) => h('label', { key: id },
+          h('input', {
+            type: 'radio',
+            name: this.props.forID,
+            checked: value === id,
+            onChange: () => this.props.onChange(id),
+          }),
+          label,
+        )),
+      );
+    },
+  });
+
   const CoordinateControl = createClass({
     getInitialState() {
       return {
@@ -82,6 +110,7 @@
     },
   });
 
+  CMS.registerWidget('vt_category', CategoryControl);
   CMS.registerWidget('vt_coordinates', CoordinateControl);
   CMS.registerEventListener({
     name: 'preSave',
@@ -136,7 +165,7 @@
     });
     const base = file.name.replace(/\.[^.]+$/, '').normalize('NFKD').replace(/[^a-zA-Z0-9_-]+/g, '-').replace(/^-|-$/g, '') || 'foto';
     const suffix = crypto.getRandomValues(new Uint32Array(1))[0].toString(16);
-    return new File([blob], `${Date.now()}-${suffix}-${base}.jpg`, { type: 'image/jpeg' });
+    return new File([blob], `upload-${Date.now()}-${suffix}-${base}.jpg`, { type: 'image/jpeg' });
   };
 
   let redispatching = false;

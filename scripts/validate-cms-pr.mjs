@@ -31,7 +31,8 @@ const locationChanges = changes.filter(({ oldPath, newPath }) =>
 );
 const invalid = changes.filter(({ status, newPath }) => {
   if (/^[AM]$/.test(status) && newPath.startsWith('src/content/locations/')) return false;
-  if (status === 'A' && newPath.startsWith('src/images/uploads/')) return false;
+  const isUploadedPhoto = newPath.startsWith('src/images/folds/fold_') && newPath.split('/').at(-1).startsWith('upload-') && ['.jpg', '.jpeg'].some(extension => newPath.toLowerCase().endsWith(extension));
+  if (status === 'A' && (newPath.startsWith('src/images/uploads/') || isUploadedPhoto)) return false;
   return true;
 });
 

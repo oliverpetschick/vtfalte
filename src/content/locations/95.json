@@ -1,0 +1,26 @@
+{
+  "title": "Willi-Bredel-Straße 9, 04279 Leipzig",
+  "galleryOrder": 95,
+  "archived": false,
+  "categoryId": 8,
+  "coordinates": {
+    "longitude": 12.401915938831147,
+    "latitude": 51.30111102559859
+  },
+  "address": "Willi-Bredel-Straße 9, 04279 Leipzig",
+  "type": "",
+  "usage": "",
+  "formerUsage": "",
+  "condition": "ABRISS",
+  "photos": [
+    {
+      "src": "images/folds/fold_95/95_1_Stadt-Leipzig.jpg",
+      "credit": "Stadt Leipzig"
+    },
+    {
+      "src": "images/folds/fold_95/95_2_Stadt-Leipzig.jpg",
+      "credit": "Stadt Leipzig"
+    }
+  ],
+  "links": []
+}

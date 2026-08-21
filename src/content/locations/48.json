@@ -1,0 +1,21 @@
+{
+  "title": "Hildegardstraße 1, 04315 Leipzig",
+  "galleryOrder": 48,
+  "archived": false,
+  "categoryId": 6,
+  "coordinates": {
+    "longitude": 12.406664758835477,
+    "latitude": 51.34241493488315
+  },
+  "address": "Hildegardstraße 1, 04315 Leipzig",
+  "type": "Umformerstation",
+  "usage": "Blockheizkraftwerk",
+  "formerUsage": "Umformerstation",
+  "condition": "",
+  "photos": [],
+  "links": [
+    {
+      "url": "https://energiewelten.l.de/bhkw-volkmarsdorf/"
+    }
+  ]
+}

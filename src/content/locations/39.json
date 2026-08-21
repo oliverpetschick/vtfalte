@@ -1,0 +1,22 @@
+{
+  "title": "Härtelstraße 6, 04107 Leipzig",
+  "galleryOrder": 39,
+  "archived": false,
+  "categoryId": 5,
+  "coordinates": {
+    "longitude": 12.37636697123183,
+    "latitude": 51.33294303781748
+  },
+  "address": "Härtelstraße 6, 04107 Leipzig",
+  "type": "Gleichrichterunterwerk",
+  "usage": "",
+  "formerUsage": "",
+  "condition": "Sanierung",
+  "photos": [
+    {
+      "src": "images/folds/fold_39/39_1_Johanna-Knigge.jpg",
+      "credit": "Johanna Knigge"
+    }
+  ],
+  "links": []
+}

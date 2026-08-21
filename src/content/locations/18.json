@@ -1,0 +1,30 @@
+{
+  "title": "Diezmannstraße 77, 04207 Leipzig",
+  "galleryOrder": 18,
+  "archived": false,
+  "categoryId": 7,
+  "coordinates": {
+    "longitude": 12.318135739119256,
+    "latitude": 51.31808456570086
+  },
+  "address": "Diezmannstraße 77, 04207 Leipzig",
+  "type": "Rohbau",
+  "usage": "cetrac GmbH - gebrauchte Gerüste und Schalungen, Lager",
+  "formerUsage": "",
+  "condition": "",
+  "photos": [
+    {
+      "src": "images/folds/fold_18/18_1_Johanna-Knigge.jpg",
+      "credit": "Johanna Knigge"
+    },
+    {
+      "src": "images/folds/fold_18/18_2_Johanna-Knigge.jpg",
+      "credit": "Johanna Knigge"
+    },
+    {
+      "src": "images/folds/fold_18/18_3_Johanna-Knigge.jpg",
+      "credit": "Johanna Knigge"
+    }
+  ],
+  "links": []
+}

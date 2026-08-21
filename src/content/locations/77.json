@@ -1,0 +1,34 @@
+{
+  "title": "Lützner Str. 540, 04205 Leipzig",
+  "galleryOrder": 77,
+  "archived": false,
+  "categoryId": 6,
+  "coordinates": {
+    "longitude": 12.268220447764714,
+    "latitude": 51.31604096943994
+  },
+  "address": "Lützner Str. 540, 04205 Leipzig",
+  "type": "Umformerstation G7- U2",
+  "usage": "",
+  "formerUsage": "",
+  "condition": "",
+  "photos": [
+    {
+      "src": "images/folds/fold_4/4_1_Johanna-Knigge.jpg",
+      "credit": "Johanna Knigge"
+    },
+    {
+      "src": "images/folds/fold_4/4_2_Johanna-Knigge.jpg",
+      "credit": "Johanna Knigge"
+    },
+    {
+      "src": "images/folds/fold_4/4_3_Johanna-Knigge.jpg",
+      "credit": "Johanna Knigge"
+    },
+    {
+      "src": "images/folds/fold_4/4_4_Johanna-Knigge.jpg",
+      "credit": "Johanna Knigge"
+    }
+  ],
+  "links": []
+}

@@ -1,0 +1,26 @@
+{
+  "title": "Berkaer Weg 18, 04207 Leipzig",
+  "galleryOrder": 13,
+  "archived": false,
+  "categoryId": 6,
+  "coordinates": {
+    "longitude": 12.295334077079621,
+    "latitude": 51.31220228630109
+  },
+  "address": "Berkaer Weg 18, 04207 Leipzig",
+  "type": "Umformerstation",
+  "usage": "",
+  "formerUsage": "Fernwärmeversorgung",
+  "condition": "Sanierung",
+  "photos": [
+    {
+      "src": "images/folds/fold_13/13_1_Johanna-Knigge.jpg",
+      "credit": "Johanna Knigge"
+    },
+    {
+      "src": "images/folds/fold_13/13_2_Johanna-Knigge.jpg",
+      "credit": "Johanna Knigge"
+    }
+  ],
+  "links": []
+}

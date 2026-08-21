@@ -4,6 +4,7 @@ import maplibregl from 'maplibre-gl';
 import 'maplibre-gl/dist/maplibre-gl.css';
 import InfoPanel from '../components/InfoPanel';
 import Legend, { legendMapping } from '../components/Legend';
+import { data } from '../content';
 
 const Atlas = () => {
     const mapContainer = useRef(null);
@@ -41,7 +42,7 @@ const Atlas = () => {
     const addMapLayers = () => {
         map.current.addSource('vt-falten-atlas', {
             type: 'geojson',
-            data: require('../data/data.json'),
+            data,
             cluster: true,
             clusterMaxZoom: 14,
             clusterRadius: 40,
@@ -165,8 +166,12 @@ const Atlas = () => {
 
 
             if (foldId) {
-                const feature = map.current.getSource('vt-falten-atlas')._data.features[foldId - 1];
-                map.current.easeTo({ center: feature.geometry.coordinates, zoom: 17 });
+                const feature = map.current
+                    .getSource('vt-falten-atlas')
+                    ._data.features.find(candidate => String(candidate.properties.id) === foldId);
+                if (feature) {
+                    map.current.easeTo({ center: feature.geometry.coordinates, zoom: 17 });
+                }
             }
         });
     }, [addMapEvents]);

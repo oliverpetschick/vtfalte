@@ -1,0 +1,26 @@
+{
+  "title": "Johannes-R.-Becher-Straße 22, 04279 Leipzig",
+  "galleryOrder": 80,
+  "archived": false,
+  "categoryId": 7,
+  "coordinates": {
+    "longitude": 12.399958820235998,
+    "latitude": 51.300923531289605
+  },
+  "address": "Johannes-R.-Becher-Straße 22, 04279 Leipzig",
+  "type": "Mehrzweckhalle",
+  "usage": "Leipziger Tanztheater E.V., Tanzschule",
+  "formerUsage": "",
+  "condition": "",
+  "photos": [
+    {
+      "src": "images/folds/fold_80/80_1_Johanna-Knigge.jpg",
+      "credit": "Johanna Knigge"
+    },
+    {
+      "src": "images/folds/fold_80/80_2_Johanna-Knigge.jpg",
+      "credit": "Johanna Knigge"
+    }
+  ],
+  "links": []
+}

@@ -1,0 +1,26 @@
+{
+  "title": "Zschortauer Str 85-79, 04129 Leipzig",
+  "galleryOrder": 61,
+  "archived": false,
+  "categoryId": 7,
+  "coordinates": {
+    "longitude": 12.392403257387663,
+    "latitude": 51.38104268887767
+  },
+  "address": "Zschortauer Str 85-79, 04129 Leipzig",
+  "type": "Mehrzweckhalle",
+  "usage": "Gewerbe / Lager",
+  "formerUsage": "",
+  "condition": "",
+  "photos": [
+    {
+      "src": "images/folds/fold_61/61_1_Johanna-Knigge.jpg",
+      "credit": "Johanna Knigge"
+    },
+    {
+      "src": "images/folds/fold_61/61_2_Johanna-Knigge.jpg",
+      "credit": "Johanna Knigge"
+    }
+  ],
+  "links": []
+}

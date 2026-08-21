@@ -1,0 +1,21 @@
+{
+  "title": "Karl-Siegismund-Straße 2a, 04317 Leipzig",
+  "galleryOrder": 71,
+  "archived": false,
+  "categoryId": 6,
+  "coordinates": {
+    "longitude": 12.397676584918212,
+    "latitude": 51.32905374021099
+  },
+  "address": "Karl-Siegismund-Straße 2a, 04317 Leipzig",
+  "type": "Umformerstation",
+  "usage": "Blockheizkraftwerk",
+  "formerUsage": "Umformerstation",
+  "condition": "",
+  "photos": [],
+  "links": [
+    {
+      "url": "https://energiewelten.l.de/bhkw-reudnitz/"
+    }
+  ]
+}

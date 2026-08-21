@@ -11,7 +11,7 @@
 - Do not edit, commit to, merge into, force-update, or push `gh-pages` without explicit user approval.
 - Do not run `npm run deploy` or otherwise trigger a GitHub Pages deployment without explicit user approval.
 - `master` is the source branch. Perform work on a dedicated branch created from `master`.
-- The working branch for the current cleanup is `chore/non-ui-cleanup`.
+- The CMS implementation branch is `feat/content-cms`.
 
 ## Change boundary
 
@@ -20,6 +20,13 @@
 - Treat changes under `src/` or `public/` as potentially user-facing. Verify necessity and output equivalence before modifying them.
 - Do not include generated `build/` output in source commits.
 - Keep `public/CNAME` set to `www.vtfalte.de` when correcting the release setup; do not change the domain.
+
+## CMS trial boundary
+
+- `npm run dev` is local only; it may edit content files but never pushes or deploys.
+- The new `/admin/` editor is allowed on the working branch. The released public routes must remain visually and behaviorally unchanged.
+- Keep Pages configured for `gh-pages` until the user explicitly approves the CMS and release cutover.
+- Do not create OAuth applications, external accounts, repository collaborators, branch rules, or Cloudflare resources without explicit user approval.
 
 ## Verification and recovery
 

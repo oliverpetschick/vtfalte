@@ -1,0 +1,26 @@
+{
+  "title": "Grünau-Siedlung, 04207 Leipzig",
+  "galleryOrder": 12,
+  "archived": false,
+  "categoryId": 3,
+  "coordinates": {
+    "longitude": 12.29426168886093,
+    "latitude": 51.31249416195688
+  },
+  "address": "Grünau-Siedlung, 04207 Leipzig",
+  "type": "Systembau",
+  "usage": "Senior*innenzentrum",
+  "formerUsage": "",
+  "condition": "",
+  "photos": [
+    {
+      "src": "images/folds/fold_12/12_1_Johanna-Knigge.jpg",
+      "credit": "Johanna Knigge"
+    },
+    {
+      "src": "images/folds/fold_12/12_2_Johanna-Knigge.jpg",
+      "credit": "Johanna Knigge"
+    }
+  ],
+  "links": []
+}

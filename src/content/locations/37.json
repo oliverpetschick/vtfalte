@@ -1,0 +1,22 @@
+{
+  "title": "Reichelstraße 12, 04109 Leipzig",
+  "galleryOrder": 37,
+  "archived": false,
+  "categoryId": 1,
+  "coordinates": {
+    "longitude": 12.366502226018607,
+    "latitude": 51.3368307788784
+  },
+  "address": "Reichelstraße 12, 04109 Leipzig",
+  "type": "SH 15x30, EG 12, WBS 70 / BR 85-VT-Falte",
+  "usage": "Sporthalle Anna-Magdalena-Bach-Grundschule",
+  "formerUsage": "",
+  "condition": "",
+  "photos": [
+    {
+      "src": "images/folds/fold_37/37_1_Johanna-Knigge.jpg",
+      "credit": "Johanna Knigge"
+    }
+  ],
+  "links": []
+}

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { View, StyleSheet, Image, Pressable, Text, Dimensions, ScrollView } from 'react-native-web';
 import { Link } from 'react-router-dom';
+import { getImageAsset } from '../content';
 
 const InfoPanel = ({ feature, onClose, showLink }) => {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -43,7 +44,7 @@ const InfoPanel = ({ feature, onClose, showLink }) => {
                 <ScrollView contentContainerStyle={styles.scrollContainer}>
                     <View style={styles.infoGalleryMobile}>
                         {currentImage && (
-                            <Image source={require(`../${currentImage}`)} style={styles.imageMobile} />
+                            <Image source={getImageAsset(currentImage)} style={styles.imageMobile} />
                         )}
                         <Pressable
                             style={[styles.leftOverlay, overlayStyle]}
@@ -88,7 +89,7 @@ const InfoPanel = ({ feature, onClose, showLink }) => {
                         <View style={styles.imageContainer}>
                             {n_images > 0 && <Image source={require('../images/<_button.png')} style={styles.overlayImage} />}
                             {currentImage && (
-                                <Image source={require(`../${currentImage}`)} style={styles.image} />
+                                <Image source={getImageAsset(currentImage)} style={styles.image} />
                             )}
                             {n_images > 0 && <Image source={require('../images/>_button.png')} style={styles.overlayImage} />}
                         </View>

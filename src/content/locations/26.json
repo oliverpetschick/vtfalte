@@ -1,0 +1,26 @@
+{
+  "title": "Plautstraße 52, 04179 Leipzig",
+  "galleryOrder": 26,
+  "archived": false,
+  "categoryId": 7,
+  "coordinates": {
+    "longitude": 12.296783819034225,
+    "latitude": 51.339940314512745
+  },
+  "address": "Plautstraße 52, 04179 Leipzig",
+  "type": "Mehrzweckhalle",
+  "usage": "Werk Zuber, KANN- Beton",
+  "formerUsage": "Ehemaliger Produktionsstandort der VT-Falte in Leipzig",
+  "condition": "",
+  "photos": [
+    {
+      "src": "images/folds/fold_26/26_1_Johanna-Knigge.jpg",
+      "credit": "Johanna Knigge"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://www.kann-beton.de/"
+    }
+  ]
+}

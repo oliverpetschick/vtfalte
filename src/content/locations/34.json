@@ -1,0 +1,24 @@
+{
+  "title": "Mainzer Str. 4, 04109 Leipzig",
+  "galleryOrder": 34,
+  "archived": false,
+  "categoryId": 7,
+  "coordinates": {
+    "longitude": 12.353674731166663,
+    "latitude": 51.33639973196578
+  },
+  "address": "Mainzer Str. 4, 04109 Leipzig",
+  "type": "Individualbau",
+  "usage": "Schwimmer- Sprunghalle Uni Leipzig",
+  "formerUsage": "",
+  "condition": "Sanierung 2014 - 2019",
+  "photos": [],
+  "links": [
+    {
+      "url": "https://magazin.uni-leipzig.de/das-leipziger-universitaetsmagazin/artikel/oase-fuer-leistungssport-und-forschung-2021-05-18"
+    },
+    {
+      "url": "https://hartung-ludwig.de/snp/projekte/projekt/schwimm-und-sprunghalle-der-universitaet-leipzig-campus-jahnallee"
+    }
+  ]
+}

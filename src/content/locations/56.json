@@ -1,0 +1,30 @@
+{
+  "title": "Goldsternstraße 25, 04329 Leipzig",
+  "galleryOrder": 56,
+  "archived": false,
+  "categoryId": 1,
+  "coordinates": {
+    "longitude": 12.456505774068942,
+    "latitude": 51.355242917445864
+  },
+  "address": "Goldsternstraße 25, 04329 Leipzig",
+  "type": "SPH-N-18x36-VT-Falte",
+  "usage": "Turnhalle, Brüder Grimm Schule",
+  "formerUsage": "",
+  "condition": "",
+  "photos": [
+    {
+      "src": "images/folds/fold_56/56_1_Johanna-Knigge.jpg",
+      "credit": "Johanna Knigge"
+    },
+    {
+      "src": "images/folds/fold_56/56_2_Johanna-Knigge.jpg",
+      "credit": "Johanna Knigge"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://www.leipzig.de/freizeit-kultur-und-tourismus/sport/sportstaettenbelegung/detailseite/detailseite/schulsporthalle-brueder-grimm-schule-grundschule"
+    }
+  ]
+}

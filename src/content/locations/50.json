@@ -1,0 +1,38 @@
+{
+  "title": "Bästleinstraße 2, 04347 Leipzig",
+  "galleryOrder": 50,
+  "archived": false,
+  "categoryId": 6,
+  "coordinates": {
+    "longitude": 12.422607786426966,
+    "latitude": 51.35444386420673
+  },
+  "address": "Bästleinstraße 2, 04347 Leipzig",
+  "type": "Umformerstation",
+  "usage": "Fernwärme",
+  "formerUsage": "Umformerstation",
+  "condition": "",
+  "photos": [
+    {
+      "src": "images/folds/fold_50/50_1_Johanna-Knigge.jpg",
+      "credit": "Johanna Knigge"
+    },
+    {
+      "src": "images/folds/fold_50/50_2_Johanna-Knigge.jpg",
+      "credit": "Johanna Knigge"
+    },
+    {
+      "src": "images/folds/fold_50/50_3_Johanna-Knigge.jpg",
+      "credit": "Johanna Knigge"
+    },
+    {
+      "src": "images/folds/fold_50/50_4_Johanna-Knigge.jpg",
+      "credit": "Johanna Knigge"
+    },
+    {
+      "src": "images/folds/fold_50/50_5_Johanna-Knigge.jpg",
+      "credit": "Johanna Knigge"
+    }
+  ],
+  "links": []
+}

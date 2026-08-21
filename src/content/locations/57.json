@@ -1,0 +1,22 @@
+{
+  "title": "Oelsnitzer Str. 2, 04349 Leipzig",
+  "galleryOrder": 57,
+  "archived": false,
+  "categoryId": 7,
+  "coordinates": {
+    "longitude": 12.435728753081015,
+    "latitude": 51.37345719550073
+  },
+  "address": "Oelsnitzer Str. 2, 04349 Leipzig",
+  "type": "Mehrzweckhalle",
+  "usage": "Senior*innenzentrum",
+  "formerUsage": "",
+  "condition": "",
+  "photos": [
+    {
+      "src": "images/folds/fold_57/57_1_Johanna-Knigge.jpg",
+      "credit": "Johanna Knigge"
+    }
+  ],
+  "links": []
+}

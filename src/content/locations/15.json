@@ -1,0 +1,21 @@
+{
+  "title": "Brünner Str. 8d, 04209 Leipzig",
+  "galleryOrder": 15,
+  "archived": false,
+  "categoryId": 7,
+  "coordinates": {
+    "longitude": 12.308849515279162,
+    "latitude": 51.322970991300984
+  },
+  "address": "Brünner Str. 8d, 04209 Leipzig",
+  "type": "Mehrzweckhalle",
+  "usage": "TÜV Süd",
+  "formerUsage": "",
+  "condition": "",
+  "photos": [],
+  "links": [
+    {
+      "url": "https://www.tuvsud.com/de-de/standorte/europe/germany/leipzig-gruenau/bruenner-str-8d"
+    }
+  ]
+}

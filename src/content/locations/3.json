@@ -1,0 +1,34 @@
+{
+  "title": "Rosenowstraße 30A, 04357 Leipzig",
+  "galleryOrder": 3,
+  "archived": false,
+  "categoryId": 6,
+  "coordinates": {
+    "longitude": 12.402628937691503,
+    "latitude": 51.377309210872895
+  },
+  "address": "Rosenowstraße 30A, 04357 Leipzig",
+  "type": "Umformerstation",
+  "usage": "Leerstand",
+  "formerUsage": "Getränkelieferant, Umformerstation",
+  "condition": "Umbau; Neue Fassade/ Fenster",
+  "photos": [
+    {
+      "src": "images/folds/fold_60/60_1_Johanna-Knigge.jpg",
+      "credit": "Johanna Knigge"
+    },
+    {
+      "src": "images/folds/fold_60/60_2_Johanna-Knigge.jpg",
+      "credit": "Johanna Knigge"
+    },
+    {
+      "src": "images/folds/fold_60/60_3_Johanna-Knigge.jpg",
+      "credit": "Johanna Knigge"
+    },
+    {
+      "src": "images/folds/fold_60/60_4_Johanna-Knigge.jpg",
+      "credit": "Johanna Knigge"
+    }
+  ],
+  "links": []
+}

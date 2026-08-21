@@ -1,0 +1,26 @@
+{
+  "title": "Seeburgstraße 51a, 04103 Leipzig",
+  "galleryOrder": 41,
+  "archived": false,
+  "categoryId": 7,
+  "coordinates": {
+    "longitude": 12.387191341640166,
+    "latitude": 51.33475844883784
+  },
+  "address": "Seeburgstraße 51a, 04103 Leipzig",
+  "type": "Mehrzweckhalle",
+  "usage": "",
+  "formerUsage": "",
+  "condition": "In Sanierung (Stand Jan.2024)",
+  "photos": [
+    {
+      "src": "images/folds/fold_41/41_1_Johanna-Knigge.jpg",
+      "credit": "Johanna Knigge"
+    },
+    {
+      "src": "images/folds/fold_41/41_2_Johanna-Knigge.jpg",
+      "credit": "Johanna Knigge"
+    }
+  ],
+  "links": []
+}

@@ -1,0 +1,26 @@
+{
+  "title": "Zweinaundorfer Str. 99, 04318 Leipzig",
+  "galleryOrder": 73,
+  "archived": false,
+  "categoryId": 7,
+  "coordinates": {
+    "longitude": 12.429418987216975,
+    "latitude": 51.331624670107885
+  },
+  "address": "Zweinaundorfer Str. 99, 04318 Leipzig",
+  "type": "Mehrzweckhalle",
+  "usage": "DLRG Bezrik Leipzig e.V.: Wasserrettung Katastrophenschutz",
+  "formerUsage": "",
+  "condition": "",
+  "photos": [
+    {
+      "src": "images/folds/fold_73/73_1_Johanna-Knigge.jpg",
+      "credit": "Johanna Knigge"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://www.dlrg-leipzig.de/"
+    }
+  ]
+}

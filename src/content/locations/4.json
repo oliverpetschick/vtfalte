@@ -1,0 +1,34 @@
+{
+  "title": "An d. Märchenwiese 3, 04277 Leipzig",
+  "galleryOrder": 4,
+  "archived": false,
+  "categoryId": 7,
+  "coordinates": {
+    "longitude": 12.393062441577529,
+    "latitude": 51.305529930382974
+  },
+  "address": "An d. Märchenwiese 3, 04277 Leipzig",
+  "type": "Individualbau",
+  "usage": "Albert Schweizer Schule",
+  "formerUsage": "",
+  "condition": "",
+  "photos": [
+    {
+      "src": "images/folds/fold_77/77_1_Johanna-Knigge.jpg",
+      "credit": "Johanna Knigge"
+    },
+    {
+      "src": "images/folds/fold_77/77_2_Johanna-Knigge.jpg",
+      "credit": "Johanna Knigge"
+    },
+    {
+      "src": "images/folds/fold_77/77_3_Johanna-Knigge.jpg",
+      "credit": "Johanna Knigge"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://www.albert-schweitzer-schu-le.de/aktu/index.html"
+    }
+  ]
+}

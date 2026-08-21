@@ -1,0 +1,34 @@
+{
+  "title": "Tschernyschewskistraße 36, 04357 Leipzig",
+  "galleryOrder": 59,
+  "archived": false,
+  "categoryId": 7,
+  "coordinates": {
+    "longitude": 12.413609954510195,
+    "latitude": 51.378464438849214
+  },
+  "address": "Tschernyschewskistraße 36, 04357 Leipzig",
+  "type": "Mehrzweckhalle",
+  "usage": "Garage",
+  "formerUsage": "",
+  "condition": "",
+  "photos": [
+    {
+      "src": "images/folds/fold_59/59_1_Johanna-Knigge.jpg",
+      "credit": "Johanna Knigge"
+    },
+    {
+      "src": "images/folds/fold_59/59_2_Johanna-Knigge.jpg",
+      "credit": "Johanna Knigge"
+    },
+    {
+      "src": "images/folds/fold_59/59_3_Johanna-Knigge.jpg",
+      "credit": "Johanna Knigge"
+    },
+    {
+      "src": "images/folds/fold_59/59_4_Johanna-Knigge.jpg",
+      "credit": "Johanna Knigge"
+    }
+  ],
+  "links": []
+}

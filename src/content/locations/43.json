@@ -1,0 +1,30 @@
+{
+  "title": "Klasingstraße 44C, 04315 Leipzig",
+  "galleryOrder": 43,
+  "archived": false,
+  "categoryId": 6,
+  "coordinates": {
+    "longitude": 12.398538071382305,
+    "latitude": 51.341642615108526
+  },
+  "address": "Klasingstraße 44C, 04315 Leipzig",
+  "type": "Umformerstation",
+  "usage": "",
+  "formerUsage": "",
+  "condition": "",
+  "photos": [
+    {
+      "src": "images/folds/fold_43/43_1_Johanna-Knigge.jpg",
+      "credit": "Johanna Knigge"
+    },
+    {
+      "src": "images/folds/fold_43/43_2_Johanna-Knigge.jpg",
+      "credit": "Johanna Knigge"
+    },
+    {
+      "src": "images/folds/fold_43/43_3_Johanna-Knigge.jpg",
+      "credit": "Johanna Knigge"
+    }
+  ],
+  "links": []
+}

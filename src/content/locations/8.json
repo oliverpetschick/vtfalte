@@ -1,0 +1,26 @@
+{
+  "title": "Heidelberger Str. 1, 04209 Leipzig",
+  "galleryOrder": 8,
+  "archived": false,
+  "categoryId": 6,
+  "coordinates": {
+    "longitude": 12.286903035193085,
+    "latitude": 51.321440047257425
+  },
+  "address": "Heidelberger Str. 1, 04209 Leipzig",
+  "type": "Umformerstation",
+  "usage": "Fressnapf Leipzig",
+  "formerUsage": "",
+  "condition": "",
+  "photos": [
+    {
+      "src": "images/folds/fold_8/8_1_Johanna-Knigge.jpg",
+      "credit": "Johanna Knigge"
+    },
+    {
+      "src": "images/folds/fold_8/8_2_Johanna-Knigge.jpg",
+      "credit": "Johanna Knigge"
+    }
+  ],
+  "links": []
+}

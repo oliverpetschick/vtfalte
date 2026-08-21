@@ -1,0 +1,22 @@
+{
+  "title": "Ratzelstraße 155, 04207 Leipzig",
+  "galleryOrder": 11,
+  "archived": false,
+  "categoryId": 5,
+  "coordinates": {
+    "longitude": 12.290320350834309,
+    "latitude": 51.31280095738443
+  },
+  "address": "Ratzelstraße 155, 04207 Leipzig",
+  "type": "Gleichrichterunterwerk",
+  "usage": "",
+  "formerUsage": "",
+  "condition": "",
+  "photos": [
+    {
+      "src": "images/folds/fold_11/11_1_Johanna-Knigge.jpg",
+      "credit": "Johanna Knigge"
+    }
+  ],
+  "links": []
+}

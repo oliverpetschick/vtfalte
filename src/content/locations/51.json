@@ -1,0 +1,22 @@
+{
+  "title": "Lehdenweg 40, 04328 Leipzig",
+  "galleryOrder": 51,
+  "archived": false,
+  "categoryId": 6,
+  "coordinates": {
+    "longitude": 12.459028363170928,
+    "latitude": 51.34993500292091
+  },
+  "address": "Lehdenweg 40, 04328 Leipzig",
+  "type": "Umformerstation",
+  "usage": "Fernwärme",
+  "formerUsage": "Umformerstation",
+  "condition": "Sanierung",
+  "photos": [
+    {
+      "src": "images/folds/fold_51/51_1_Johanna-Knigge.jpg",
+      "credit": "Johanna Knigge"
+    }
+  ],
+  "links": []
+}

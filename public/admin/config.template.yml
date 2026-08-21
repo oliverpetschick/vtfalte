@@ -1,0 +1,97 @@
+backend:
+  name: github
+  repo: oliverpetschick/vtfalte
+  branch: master
+  base_url: __CMS_OAUTH_URL__
+  auth_endpoint: auth
+  auth_scope: public_repo
+  site_domain: www.vtfalte.de
+  squash_merges: true
+  use_graphql: true
+  cms_label_prefix: decap-cms/
+
+local_backend: true
+
+publish_mode: editorial_workflow
+locale: de
+site_url: https://www.vtfalte.de
+display_url: https://www.vtfalte.de
+show_preview_links: false
+editor:
+  preview: false
+slug:
+  encoding: ascii
+  clean_accents: true
+  sanitize_replacement: '-'
+
+media_folder: src/images/uploads
+public_folder: images/uploads
+collections:
+  - name: locations
+    label: Standorte
+    label_singular: Standort
+    description: Standorte, Texte, Fotos und Links des Atlas verwalten.
+    folder: src/content/locations
+    create: true
+    delete: false
+    extension: json
+    format: json
+    identifier_field: title
+    slug: '{{year}}{{month}}{{day}}-{{hour}}{{minute}}{{second}}-{{slug}}'
+    summary: '{{address}} · {{coordinates.longitude}}, {{coordinates.latitude}} · Kategorie {{categoryId}}'
+    sortable_fields: [galleryOrder, address, categoryId]
+    view_filters:
+      - label: Archiviert
+        field: archived
+        pattern: true
+    fields:
+      - { name: title, label: Interner Titel, widget: hidden, default: Standort }
+      - label: Galerie-Position
+        name: galleryOrder
+        widget: number
+        value_type: float
+        required: false
+        hint: Leer lassen, um den Standort automatisch ans Ende zu setzen. Dezimalzahlen erlauben eine Position zwischen zwei Einträgen.
+      - { name: archived, label: Archiviert, widget: boolean, default: false }
+      - label: Kategorie
+        name: categoryId
+        widget: select
+        value_type: int
+        options:
+          - { label: Sporthalle, value: 1 }
+          - { label: Jugendclub, value: 2 }
+          - { label: 'Senior*innenzentrum', value: 3 }
+          - { label: Kaufhalle, value: 4 }
+          - { label: Gleichrichterunterwerk, value: 5 }
+          - { label: Umformerstation, value: 6 }
+          - { label: Mehrzweckhalle/Individualbau, value: 7 }
+          - { label: Abriss, value: 8 }
+      - label: Koordinaten
+        name: coordinates
+        widget: vt_coordinates
+        hint: Koordinaten einfügen oder den Marker auf der Karte verschieben. Es gibt keine regionale Einschränkung.
+      - { name: address, label: Adresse, widget: string, required: false }
+      - { name: type, label: Typ, widget: string, required: false }
+      - { name: usage, label: Nutzung, widget: string, required: false }
+      - { name: formerUsage, label: Ehemalige Nutzung, widget: string, required: false }
+      - { name: condition, label: Zustand, widget: string, required: false }
+      - label: Fotos
+        name: photos
+        widget: list
+        required: false
+        default: []
+        summary: '{{fields.credit}}'
+        fields:
+          - label: Bild
+            name: src
+            widget: image
+            choose_url: false
+          - { name: credit, label: Bildquelle, widget: string, default: Johanna Knigge }
+      - label: Links
+        name: links
+        widget: list
+        required: false
+        default: []
+        summary: '{{fields.url}}'
+        fields:
+          - { name: url, label: Vollständige Webadresse, widget: string, pattern: ['^https?://.+$', 'Bitte eine vollständige http(s)-Adresse eingeben.'] }

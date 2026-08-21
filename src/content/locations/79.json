@@ -1,0 +1,22 @@
+{
+  "title": "Johannes-R.-Becher-Straße 12, 04279 Leipzig",
+  "galleryOrder": 79,
+  "archived": false,
+  "categoryId": 7,
+  "coordinates": {
+    "longitude": 12.398578306343905,
+    "latitude": 51.300925117746715
+  },
+  "address": "Johannes-R.-Becher-Straße 12, 04279 Leipzig",
+  "type": "Mehrzweckhalle",
+  "usage": "Haedi-Flor Meisterbetrieb, Blumengeschäft",
+  "formerUsage": "",
+  "condition": "",
+  "photos": [
+    {
+      "src": "images/folds/fold_79/79_1_Johanna-Knigge.jpg",
+      "credit": "Johanna Knigge"
+    }
+  ],
+  "links": []
+}

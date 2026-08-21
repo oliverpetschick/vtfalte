@@ -1,0 +1,26 @@
+{
+  "title": "Kreuzstraße 31, 04315 Leipzig",
+  "galleryOrder": 97,
+  "archived": false,
+  "categoryId": 8,
+  "coordinates": {
+    "longitude": 12.395819965779541,
+    "latitude": 51.34136172836201
+  },
+  "address": "Kreuzstraße 31, 04315 Leipzig",
+  "type": "",
+  "usage": "",
+  "formerUsage": "",
+  "condition": "ABRISS",
+  "photos": [
+    {
+      "src": "images/folds/fold_97/97_1_Stadt-Leipzig.jpg",
+      "credit": "Stadt Leipzig"
+    },
+    {
+      "src": "images/folds/fold_97/97_2_Stadt-Leipzig.jpg",
+      "credit": "Stadt Leipzig"
+    }
+  ],
+  "links": []
+}

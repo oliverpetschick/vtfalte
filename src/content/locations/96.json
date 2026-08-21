@@ -1,0 +1,26 @@
+{
+  "title": "Zwickauer Str. 131A, 04279 Leipzig",
+  "galleryOrder": 96,
+  "archived": false,
+  "categoryId": 8,
+  "coordinates": {
+    "longitude": 12.397225015935797,
+    "latitude": 51.2986172434427
+  },
+  "address": "Zwickauer Str. 131A, 04279 Leipzig",
+  "type": "",
+  "usage": "",
+  "formerUsage": "",
+  "condition": "ABRISS",
+  "photos": [
+    {
+      "src": "images/folds/fold_96/96_1_Stadt-Leipzig.jpg",
+      "credit": "Stadt Leipzig"
+    },
+    {
+      "src": "images/folds/fold_96/96_2_Stadt-Leipzig.jpg",
+      "credit": "Stadt Leipzig"
+    }
+  ],
+  "links": []
+}

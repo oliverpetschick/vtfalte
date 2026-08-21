@@ -1,0 +1,30 @@
+{
+  "title": "Miltitzer Weg 2a, 04205 Leipzig",
+  "galleryOrder": 10,
+  "archived": false,
+  "categoryId": 1,
+  "coordinates": {
+    "longitude": 12.26691213023168,
+    "latitude": 51.322085876542126
+  },
+  "address": "Miltitzer Weg 2a, 04205 Leipzig",
+  "type": "SPH-N-18x36-VT-Falte ",
+  "usage": "Sporthalle Cormenius Schule",
+  "formerUsage": "",
+  "condition": "",
+  "photos": [
+    {
+      "src": "images/folds/fold_7/7_1_Johanna-Knigge.jpg",
+      "credit": "Johanna Knigge"
+    },
+    {
+      "src": "images/folds/fold_7/7_2_Johanna-Knigge.jpg",
+      "credit": "Johanna Knigge"
+    },
+    {
+      "src": "images/folds/fold_7/7_3_Johanna-Knigge.jpg",
+      "credit": "Johanna Knigge"
+    }
+  ],
+  "links": []
+}

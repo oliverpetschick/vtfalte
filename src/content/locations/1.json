@@ -1,0 +1,22 @@
+{
+  "title": "Pfaffensteinstraße 14, 04207 Leipzig",
+  "galleryOrder": 1,
+  "archived": false,
+  "categoryId": 1,
+  "coordinates": {
+    "longitude": 12.267122877821295,
+    "latitude": 51.30472315339297
+  },
+  "address": "Pfaffensteinstraße 14, 04207 Leipzig",
+  "type": "SPH-N-18x36-VT-Falte",
+  "usage": "Sporthalle 100. Schule",
+  "formerUsage": "",
+  "condition": "Sanierung",
+  "photos": [
+    {
+      "src": "images/folds/fold_1/1_1_Johanna-Knigge.jpg",
+      "credit": "Johanna Knigge"
+    }
+  ],
+  "links": []
+}

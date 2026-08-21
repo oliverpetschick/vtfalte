@@ -1,0 +1,26 @@
+{
+  "title": "Goldsternstraße 58, 04329 Leipzig",
+  "galleryOrder": 101,
+  "archived": false,
+  "categoryId": 8,
+  "coordinates": {
+    "longitude": 12.459002991622182,
+    "latitude": 51.35673099113005
+  },
+  "address": "Goldsternstraße 58, 04329 Leipzig",
+  "type": "",
+  "usage": "Kaufhalle",
+  "formerUsage": "",
+  "condition": "Abriss - Neubau ALDI",
+  "photos": [
+    {
+      "src": "images/folds/fold_101/101_1_Stadt-Leipzig.jpg",
+      "credit": "Johanna Knigge"
+    },
+    {
+      "src": "images/folds/fold_101/101_2_Stadt-Leipzig.jpg",
+      "credit": "Johanna Knigge"
+    }
+  ],
+  "links": []
+}

@@ -1,0 +1,26 @@
+{
+  "title": "Diezmannstraße 22, 04207 Leipzig",
+  "galleryOrder": 16,
+  "archived": false,
+  "categoryId": 7,
+  "coordinates": {
+    "longitude": 12.316022541131321,
+    "latitude": 51.31560638974766
+  },
+  "address": "Diezmannstraße 22, 04207 Leipzig",
+  "type": "Mehrzweckhalle",
+  "usage": "Unterschiedliche Gewerbe",
+  "formerUsage": "",
+  "condition": "",
+  "photos": [
+    {
+      "src": "images/folds/fold_16/16_1_Johanna-Knigge.jpg",
+      "credit": "Johanna Knigge"
+    },
+    {
+      "src": "images/folds/fold_16/16_2_Johanna-Knigge.jpg",
+      "credit": "Johanna Knigge"
+    }
+  ],
+  "links": []
+}

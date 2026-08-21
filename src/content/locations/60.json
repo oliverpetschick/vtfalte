@@ -1,0 +1,26 @@
+{
+  "title": "An d. Kotsche 39, 04207 Leipzig",
+  "galleryOrder": 60,
+  "archived": false,
+  "categoryId": 1,
+  "coordinates": {
+    "longitude": 12.265916455385002,
+    "latitude": 51.3090967310507
+  },
+  "address": "An d. Kotsche 39, 04207 Leipzig",
+  "type": "SPH-N-18x36-VT-Falte",
+  "usage": "Sporthalle an der Kotsche",
+  "formerUsage": "",
+  "condition": "",
+  "photos": [
+    {
+      "src": "images/folds/fold_3/3_1_Johanna-Knigge.jpg",
+      "credit": "Johanna Knigge"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://www.leipzig.de/freizeit-kultur-und-tourismus/sport/sportstaettenbelegung/detailseite/detailseite/sporthalle-an-der-kotsche"
+    }
+  ]
+}

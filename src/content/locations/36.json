@@ -1,0 +1,26 @@
+{
+  "title": "Gustav-Mahler-Straße 1-3, 04109 Leipzig",
+  "galleryOrder": 36,
+  "archived": false,
+  "categoryId": 7,
+  "coordinates": {
+    "longitude": 12.36481766839186,
+    "latitude": 51.33598101751903
+  },
+  "address": "Gustav-Mahler-Straße 1-3, 04109 Leipzig",
+  "type": "Individualbau",
+  "usage": "Kinder und Jugenärztlicher Dienst",
+  "formerUsage": "",
+  "condition": "",
+  "photos": [
+    {
+      "src": "images/folds/fold_36/36_1_Johanna-Knigge.jpg",
+      "credit": "Johanna Knigge"
+    },
+    {
+      "src": "images/folds/fold_36/36_2_Johanna-Knigge.jpg",
+      "credit": "Johanna Knigge"
+    }
+  ],
+  "links": []
+}

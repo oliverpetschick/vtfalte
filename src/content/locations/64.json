@@ -1,0 +1,22 @@
+{
+  "title": "Zschortauer Str 1, 04129 Leipzig",
+  "galleryOrder": 64,
+  "archived": false,
+  "categoryId": 7,
+  "coordinates": {
+    "longitude": 12.396011427904003,
+    "latitude": 51.37182752816865
+  },
+  "address": "Zschortauer Str 1, 04129 Leipzig",
+  "type": "Mehrzweckhalle",
+  "usage": "Varile, Baufachhandel",
+  "formerUsage": "",
+  "condition": "",
+  "photos": [
+    {
+      "src": "images/folds/fold_64/64_1_Johanna-Knigge.jpg",
+      "credit": "Johanna Knigge"
+    }
+  ],
+  "links": []
+}

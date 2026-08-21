@@ -1,0 +1,26 @@
+{
+  "title": "Am Kirschberg 49, 04209 Leipzig",
+  "galleryOrder": 84,
+  "archived": false,
+  "categoryId": 1,
+  "coordinates": {
+    "longitude": 12.27936323399903,
+    "latitude": 51.31772092162771
+  },
+  "address": "Am Kirschberg 49, 04209 Leipzig",
+  "type": "SH 15x30, EG 12, WBS 70 / BR 85-VT-Falte",
+  "usage": "Sporthalle ",
+  "formerUsage": "",
+  "condition": "",
+  "photos": [
+    {
+      "src": "images/folds/fold_84/84_1_Johanna-Knigge.jpg",
+      "credit": "Johanna Knigge"
+    },
+    {
+      "src": "images/folds/fold_84/84_2_Johanna-Knigge.jpg",
+      "credit": "Johanna Knigge"
+    }
+  ],
+  "links": []
+}

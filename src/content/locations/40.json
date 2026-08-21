@@ -1,0 +1,34 @@
+{
+  "title": "Leplaystraße 13, 04103 Leipzig",
+  "galleryOrder": 40,
+  "archived": false,
+  "categoryId": 1,
+  "coordinates": {
+    "longitude": 12.380971180261188,
+    "latitude": 51.33439096069012
+  },
+  "address": "Leplaystraße 13, 04103 Leipzig",
+  "type": "Sporthalle",
+  "usage": "Turn- und Gymnastikclub Leipzig e.V.",
+  "formerUsage": "",
+  "condition": "",
+  "photos": [
+    {
+      "src": "images/folds/fold_40/40_1_Johanna-Knigge.jpg",
+      "credit": "Johanna Knigge"
+    },
+    {
+      "src": "images/folds/fold_40/40_2_Johanna-Knigge.jpg",
+      "credit": "Johanna Knigge"
+    },
+    {
+      "src": "images/folds/fold_40/40_3_Johanna-Knigge.jpg",
+      "credit": "Johanna Knigge"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://www.tug-leipzig.de/"
+    }
+  ]
+}

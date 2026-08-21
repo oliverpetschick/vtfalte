@@ -1,0 +1,22 @@
+{
+  "title": "Diezmannstraße 22, 04207 Leipzig",
+  "galleryOrder": 17,
+  "archived": false,
+  "categoryId": 7,
+  "coordinates": {
+    "longitude": 12.316559759388028,
+    "latitude": 51.316067040937924
+  },
+  "address": "Diezmannstraße 22, 04207 Leipzig",
+  "type": "Individualbau",
+  "usage": "Weltenbummlerhaus, Betonkiste",
+  "formerUsage": "",
+  "condition": "",
+  "photos": [
+    {
+      "src": "images/folds/fold_17/17_1_Johanna-Knigge.jpg",
+      "credit": "Johanna Knigge"
+    }
+  ],
+  "links": []
+}

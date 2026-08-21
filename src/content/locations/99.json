@@ -1,0 +1,26 @@
+{
+  "title": "Standort 99",
+  "galleryOrder": 99,
+  "archived": false,
+  "categoryId": 8,
+  "coordinates": {
+    "longitude": 12.429608576815367,
+    "latitude": 51.35800792777303
+  },
+  "address": "",
+  "type": "",
+  "usage": "",
+  "formerUsage": "",
+  "condition": "ABRISS",
+  "photos": [
+    {
+      "src": "images/folds/fold_99/99_1_Stadt-Leipzig.jpg",
+      "credit": "Stadt Leipzig"
+    },
+    {
+      "src": "images/folds/fold_99/99_2_Stadt-Leipzig.jpg",
+      "credit": "Stadt Leipzig"
+    }
+  ],
+  "links": []
+}

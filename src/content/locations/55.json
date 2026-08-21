@@ -1,0 +1,29 @@
+{
+  "title": "Zum Wäldchen 6, 04329 Leipzig",
+  "galleryOrder": 55,
+  "archived": false,
+  "categoryId": 2,
+  "coordinates": {
+    "longitude": 12.46677879980482,
+    "latitude": 51.353034264815726
+  },
+  "address": "Zum Wäldchen 6, 04329 Leipzig",
+  "type": "Jugendclub",
+  "usage": "Offener Freizeittreff \"Crazy\"",
+  "formerUsage": "",
+  "condition": "Sanierung durch KO/OK Architekten ",
+  "photos": [
+    {
+      "src": "images/folds/fold_55/55_1_Johanna-Knigge.jpg",
+      "credit": "Johanna Knigge"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://www.leipzig.de/detailansicht-adresse/oft-crazy"
+    },
+    {
+      "url": "https://ko-ok.cc/crazy/"
+    }
+  ]
+}

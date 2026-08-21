@@ -1,0 +1,34 @@
+{
+  "title": "Franz-Flemming-Straße 20, 04179 Leipzig",
+  "galleryOrder": 30,
+  "archived": false,
+  "categoryId": 7,
+  "coordinates": {
+    "longitude": 12.309355964787253,
+    "latitude": 51.345769423226
+  },
+  "address": "Franz-Flemming-Straße 20, 04179 Leipzig",
+  "type": "Mehrzweckhalle",
+  "usage": "Trailer Center Koppe",
+  "formerUsage": "",
+  "condition": "",
+  "photos": [
+    {
+      "src": "images/folds/fold_30/30_1_Florian-Marenbach.jpg",
+      "credit": "Florian Marenbach"
+    },
+    {
+      "src": "images/folds/fold_30/30_2_Florian-Marenbach.jpg",
+      "credit": "Florian Marenbach"
+    },
+    {
+      "src": "images/folds/fold_30/30_3_Florian-Marenbach.jpg",
+      "credit": "Florian Marenbach"
+    },
+    {
+      "src": "images/folds/fold_30/30_4_Florian-Marenbach.jpg",
+      "credit": "Florian Marenbach"
+    }
+  ],
+  "links": []
+}

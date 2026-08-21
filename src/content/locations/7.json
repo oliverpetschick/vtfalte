@@ -1,0 +1,26 @@
+{
+  "title": "Breisgaustraße, 04209 Leipzig",
+  "galleryOrder": 7,
+  "archived": false,
+  "categoryId": 6,
+  "coordinates": {
+    "longitude": 12.289041451889169,
+    "latitude": 51.31801839502841
+  },
+  "address": "Breisgaustraße, 04209 Leipzig",
+  "type": "Umformerstation G4- U2",
+  "usage": "Eiergrosshandel, Vodafone, Garagen- und Hobbyräume",
+  "formerUsage": "Umformerstation",
+  "condition": "",
+  "photos": [
+    {
+      "src": "images/folds/fold_10/10_1_Johanna-Knigge.jpg",
+      "credit": "Johanna Knigge"
+    },
+    {
+      "src": "images/folds/fold_10/10_2_Johanna-Knigge.jpg",
+      "credit": "Johanna Knigge"
+    }
+  ],
+  "links": []
+}

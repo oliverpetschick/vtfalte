@@ -1,0 +1,22 @@
+{
+  "title": "Rackwitzer Str. 12, 04347 Leipzig",
+  "galleryOrder": 70,
+  "archived": false,
+  "categoryId": 7,
+  "coordinates": {
+    "longitude": 12.392995759122375,
+    "latitude": 51.352250843543814
+  },
+  "address": "Rackwitzer Str. 12, 04347 Leipzig",
+  "type": "Mehrzweckhalle",
+  "usage": "Konkursverwertung Pakendorf,  Lager",
+  "formerUsage": "",
+  "condition": "",
+  "photos": [
+    {
+      "src": "images/folds/fold_70/70_1_Johanna-Knigge.jpg",
+      "credit": "Johanna Knigge"
+    }
+  ],
+  "links": []
+}

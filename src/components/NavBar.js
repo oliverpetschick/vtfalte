@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { useLocation } from "react-router-dom";
 import { Nav, NavMenu, NavLink, Text } from "./NavBarElements";
 import { StyleSheet } from "react-native-web";

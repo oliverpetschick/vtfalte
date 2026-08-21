@@ -1,0 +1,26 @@
+{
+  "title": "Püchauer Str. 4, 04318 Leipzig",
+  "galleryOrder": 49,
+  "archived": false,
+  "categoryId": 2,
+  "coordinates": {
+    "longitude": 12.42782292945404,
+    "latitude": 51.34525137399716
+  },
+  "address": "Püchauer Str. 4, 04318 Leipzig",
+  "type": "Jugendclub ",
+  "usage": "Offener Jugenclub Sellerhausen (Kindervereinigung e.V.)",
+  "formerUsage": "",
+  "condition": "",
+  "photos": [
+    {
+      "src": "images/folds/fold_49/49_1_Johanna-Knigge.jpg",
+      "credit": "Johanna Knigge"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://kv-leipzig.de/"
+    }
+  ]
+}

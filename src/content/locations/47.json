@@ -1,0 +1,30 @@
+{
+  "title": "Eisenbahnstraße 54, 04315 Leipzig",
+  "galleryOrder": 47,
+  "archived": false,
+  "categoryId": 2,
+  "coordinates": {
+    "longitude": 12.40347299161282,
+    "latitude": 51.34411922494742
+  },
+  "address": "Eisenbahnstraße 54, 04315 Leipzig",
+  "type": "Jugendclub ",
+  "usage": "Offener Freizeittreff \"Rabet\"",
+  "formerUsage": "",
+  "condition": "",
+  "photos": [
+    {
+      "src": "images/folds/fold_47/47_1_Johanna-Knigge.jpg",
+      "credit": "Johanna Knigge"
+    },
+    {
+      "src": "images/folds/fold_47/47_2_Johanna-Knigge.jpg",
+      "credit": "Johanna Knigge"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://www.leipzig.de/detailansicht-adresse/oft-rabet"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "title": "Schönauer Str. 235, 04205 Leipzig",
+  "galleryOrder": 9,
+  "archived": false,
+  "categoryId": 7,
+  "coordinates": {
+    "longitude": 12.291314960393468,
+    "latitude": 51.324880800574256
+  },
+  "address": "Schönauer Str. 235, 04205 Leipzig",
+  "type": "Mehrzweckhalle",
+  "usage": "Freiwillige Feuerwehr Grünau: Notallrettung & Krankentransport",
+  "formerUsage": "",
+  "condition": "",
+  "photos": [
+    {
+      "src": "images/folds/fold_9/9_1_Johanna-Knigge.jpg",
+      "credit": "Johanna Knigge"
+    }
+  ],
+  "links": []
+}

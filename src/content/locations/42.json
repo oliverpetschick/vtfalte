@@ -1,0 +1,30 @@
+{
+  "title": "Perthesstraße 2c, 04317 Leipzig",
+  "galleryOrder": 42,
+  "archived": false,
+  "categoryId": 7,
+  "coordinates": {
+    "longitude": 12.396200865113828,
+    "latitude": 51.33746508683114
+  },
+  "address": "Perthesstraße 2c, 04317 Leipzig",
+  "type": "Mehrzweckhalle",
+  "usage": "",
+  "formerUsage": "",
+  "condition": "Einseitige Sanierung",
+  "photos": [
+    {
+      "src": "images/folds/fold_42/42_1_Johanna-Knigge.jpg",
+      "credit": "Johanna Knigge"
+    },
+    {
+      "src": "images/folds/fold_42/42_2_Johanna-Knigge.jpg",
+      "credit": "Johanna Knigge"
+    },
+    {
+      "src": "images/folds/fold_42/42_3_Johanna-Knigge.jpg",
+      "credit": "Johanna Knigge"
+    }
+  ],
+  "links": []
+}

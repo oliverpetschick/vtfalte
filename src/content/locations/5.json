@@ -1,0 +1,22 @@
+{
+  "title": "Standort 5",
+  "galleryOrder": 5,
+  "archived": false,
+  "categoryId": 4,
+  "coordinates": {
+    "longitude": 12.267105133807352,
+    "latitude": 51.317501719512485
+  },
+  "address": "",
+  "type": "Kaufhalle",
+  "usage": "Netto",
+  "formerUsage": "",
+  "condition": "Umbau, Sanierung",
+  "photos": [
+    {
+      "src": "images/folds/fold_5/5_1_Johanna-Knigge.jpg",
+      "credit": "Johanna Knigge"
+    }
+  ],
+  "links": []
+}

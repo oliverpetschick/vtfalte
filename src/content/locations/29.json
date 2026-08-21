@@ -1,0 +1,30 @@
+{
+  "title": "Franz-Flemming-Straße 27, 04179 Leipzig",
+  "galleryOrder": 29,
+  "archived": false,
+  "categoryId": 7,
+  "coordinates": {
+    "longitude": 12.307435319792862,
+    "latitude": 51.345634817638604
+  },
+  "address": "Franz-Flemming-Straße 27, 04179 Leipzig",
+  "type": "Mehrzweckhalle",
+  "usage": "Cross Fit/ Autoservice",
+  "formerUsage": "",
+  "condition": "",
+  "photos": [
+    {
+      "src": "images/folds/fold_29/29_1_Florian-Marenbach.jpg",
+      "credit": "Florian Marenbach"
+    },
+    {
+      "src": "images/folds/fold_29/29_2_Florian-Marenbach.jpg",
+      "credit": "Florian Marenbach"
+    },
+    {
+      "src": "images/folds/fold_29/29_3_Florian-Marenbach.jpg",
+      "credit": "Florian Marenbach"
+    }
+  ],
+  "links": []
+}

@@ -1,0 +1,22 @@
+{
+  "title": "Zschopauer Str. 2, 04349 Leipzig",
+  "galleryOrder": 58,
+  "archived": false,
+  "categoryId": 7,
+  "coordinates": {
+    "longitude": 12.431221051684002,
+    "latitude": 51.373424205562166
+  },
+  "address": "Zschopauer Str. 2, 04349 Leipzig",
+  "type": "Mehrzweckhalle",
+  "usage": "Elektrotechnik Lehmann GmbH ",
+  "formerUsage": "",
+  "condition": "",
+  "photos": [
+    {
+      "src": "images/folds/fold_58/58_1_Johanna-Knigge.jpg",
+      "credit": "Johanna Knigge"
+    }
+  ],
+  "links": []
+}

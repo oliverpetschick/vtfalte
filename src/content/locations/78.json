@@ -1,0 +1,30 @@
+{
+  "title": "Willi-Bredel-Straße 10, 04279 Leipzig",
+  "galleryOrder": 78,
+  "archived": false,
+  "categoryId": 7,
+  "coordinates": {
+    "longitude": 12.400618662820666,
+    "latitude": 51.301858421409435
+  },
+  "address": "Willi-Bredel-Straße 10, 04279 Leipzig",
+  "type": "Mehrzweckhalle",
+  "usage": "Wertstoffhof",
+  "formerUsage": "",
+  "condition": "",
+  "photos": [
+    {
+      "src": "images/folds/fold_78/78_1_Johanna-Knigge.jpg",
+      "credit": "Johanna Knigge"
+    },
+    {
+      "src": "images/folds/fold_78/78_2_Johanna-Knigge.jpg",
+      "credit": "Johanna Knigge"
+    },
+    {
+      "src": "images/folds/fold_78/78_3_Johanna-Knigge.jpg",
+      "credit": "Johanna Knigge"
+    }
+  ],
+  "links": []
+}

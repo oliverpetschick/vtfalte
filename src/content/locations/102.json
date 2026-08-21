@@ -1,0 +1,22 @@
+{
+  "title": "Sommerfelder Str. 83, 04316 Leipzig",
+  "galleryOrder": 102,
+  "archived": false,
+  "categoryId": 8,
+  "coordinates": {
+    "longitude": 12.435464513920138,
+    "latitude": 51.32671859146064
+  },
+  "address": "Sommerfelder Str. 83, 04316 Leipzig",
+  "type": "Mehrzweckhalle",
+  "usage": "CityCourier Sachsen GmbH",
+  "formerUsage": "",
+  "condition": "",
+  "photos": [
+    {
+      "src": "images/folds/fold_102/102_1_Johanna-Knigge.jpg",
+      "credit": "Johanna Knigge"
+    }
+  ],
+  "links": []
+}

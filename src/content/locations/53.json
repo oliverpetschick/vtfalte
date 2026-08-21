@@ -1,0 +1,22 @@
+{
+  "title": "Waldzieststraße 1, 04329 Leipzig",
+  "galleryOrder": 53,
+  "archived": false,
+  "categoryId": 4,
+  "coordinates": {
+    "longitude": 12.459878758614634,
+    "latitude": 51.35257082787227
+  },
+  "address": "Waldzieststraße 1, 04329 Leipzig",
+  "type": "Kaufhalle",
+  "usage": "Konsum",
+  "formerUsage": "",
+  "condition": "",
+  "photos": [
+    {
+      "src": "images/folds/fold_53/53_1_Johanna-Knigge.jpg",
+      "credit": "Johanna Knigge"
+    }
+  ],
+  "links": []
+}

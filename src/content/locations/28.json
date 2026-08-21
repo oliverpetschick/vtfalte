@@ -1,0 +1,30 @@
+{
+  "title": "Franz-Flemming-Straße 27, 04179 Leipzig",
+  "galleryOrder": 28,
+  "archived": false,
+  "categoryId": 7,
+  "coordinates": {
+    "longitude": 12.306882281844583,
+    "latitude": 51.34572672109371
+  },
+  "address": "Franz-Flemming-Straße 27, 04179 Leipzig",
+  "type": "Mehrzweckhalle",
+  "usage": "Mischnutzung",
+  "formerUsage": "",
+  "condition": "",
+  "photos": [
+    {
+      "src": "images/folds/fold_28/28_1_Florian-Marenbach.jpg",
+      "credit": "Florian Marenbach"
+    },
+    {
+      "src": "images/folds/fold_28/28_2_Florian-Marenbach.jpg",
+      "credit": "Florian Marenbach"
+    },
+    {
+      "src": "images/folds/fold_28/28_3_Florian-Marenbach.jpg",
+      "credit": "Florian Marenbach"
+    }
+  ],
+  "links": []
+}

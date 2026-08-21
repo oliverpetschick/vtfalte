@@ -1,0 +1,22 @@
+{
+  "title": "Zschortauer Str 3, 04129 Leipzig",
+  "galleryOrder": 65,
+  "archived": false,
+  "categoryId": 7,
+  "coordinates": {
+    "longitude": 12.395393730798038,
+    "latitude": 51.37179521481068
+  },
+  "address": "Zschortauer Str 3, 04129 Leipzig",
+  "type": "Mehrzweckhalle",
+  "usage": "Rust- Impex Teeladen",
+  "formerUsage": "",
+  "condition": "",
+  "photos": [
+    {
+      "src": "images/folds/fold_65/65_1_Johanna-Knigge.jpg",
+      "credit": "Johanna Knigge"
+    }
+  ],
+  "links": []
+}

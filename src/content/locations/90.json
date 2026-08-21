@@ -1,0 +1,22 @@
+{
+  "title": "Lausener Str. 1, 04207 Leipzig",
+  "galleryOrder": 90,
+  "archived": false,
+  "categoryId": 5,
+  "coordinates": {
+    "longitude": 12.260433795673524,
+    "latitude": 51.30632430701953
+  },
+  "address": "Lausener Str. 1, 04207 Leipzig",
+  "type": "Gleichrichterunterwerk",
+  "usage": "",
+  "formerUsage": "",
+  "condition": "",
+  "photos": [
+    {
+      "src": "images/folds/fold_90/90_1_Johanna-Knigge.jpg",
+      "credit": "Johanna Knigge"
+    }
+  ],
+  "links": []
+}

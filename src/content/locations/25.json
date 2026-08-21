@@ -1,0 +1,30 @@
+{
+  "title": "Standort 25",
+  "galleryOrder": 25,
+  "archived": false,
+  "categoryId": 7,
+  "coordinates": {
+    "longitude": 12.299251945518668,
+    "latitude": 51.33251225716993
+  },
+  "address": "",
+  "type": "Mehrzweckhalle",
+  "usage": "Feuerwehr / Übungsplatz Polizei Leipzig",
+  "formerUsage": "",
+  "condition": "Von Abriss bedroht",
+  "photos": [
+    {
+      "src": "images/folds/fold_25/25_1_Johanna-Knigge.jpg",
+      "credit": "Johanna Knigge"
+    },
+    {
+      "src": "images/folds/fold_25/25_2_Johanna-Knigge.jpg",
+      "credit": "Johanna Knigge"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://lebensmittelport.org"
+    }
+  ]
+}

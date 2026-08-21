@@ -1,0 +1,66 @@
+name: Quality
+
+on:
+  pull_request:
+    branches: [master]
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - name: CMS-Dateigrenzen prüfen
+        run: npm run validate-cms-pr
+        env:
+          HEAD_REF: ${{ github.head_ref }}
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+      - name: Inhalte prüfen
+        run: npm run validate-content
+      - name: Tests ausführen
+        run: CI=true npm test -- --watchAll=false
+      - name: Produktionsversion bauen
+        run: npm run build
+      - name: CMS-Ergebnis kommentieren
+        if: always() && startsWith(github.head_ref, 'cms/')
+        uses: actions/github-script@v8
+        with:
+          script: |
+            const success = '${{ job.status }}' === 'success';
+            const marker = '<!-- vtfalte-cms-check -->';
+            const body = `${marker}\n${success
+              ? '✅ Der Standort ist gültig und die Vorschau kann veröffentlicht werden.'
+              : '❌ Die Prüfung ist fehlgeschlagen. Bitte den Abschnitt „Checks“ in diesem Pull Request öffnen.'}`;
+            const comments = await github.paginate(github.rest.issues.listComments, {
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+            });
+            const existing = comments.find(comment => comment.body?.includes(marker));
+            const request = {
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body,
+            };
+            if (existing) {
+              await github.rest.issues.updateComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                comment_id: existing.id,
+                body,
+              });
+            } else {
+              await github.rest.issues.createComment(request);
+            }

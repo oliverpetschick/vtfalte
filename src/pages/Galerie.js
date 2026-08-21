@@ -1,8 +1,7 @@
 import React, { useState, useMemo } from "react";
 import { View, StyleSheet, Image, Pressable, ScrollView, Dimensions } from "react-native-web";
 import InfoPanel from "../components/InfoPanel";
-
-const data = require('../data/data.json');
+import { data, getImageAsset } from '../content';
 
 const Galerie = () => {
     const [infoState, setInfoState] = useState({
@@ -18,7 +17,6 @@ const Galerie = () => {
 
     const onImageClick = (id) => {
         const selectedFeature = filteredFeatures.find(feature => feature.properties.id === id);
-        console.log(selectedFeature);
         if (selectedFeature) {
             setInfoState({
                 showInfo: true,
@@ -46,7 +44,7 @@ const Galerie = () => {
                 {filteredFeatures.map((feature, index) => (
                     <Pressable key={index} onPress={() => onImageClick(feature.properties.id)}>
                         <Image
-                            source={require('../' + feature.properties.images.image_0.src)}
+                            source={getImageAsset(feature.properties.images.image_0.src)}
                             style={styles.image}
                             resizeMode={'contain'}
                         />

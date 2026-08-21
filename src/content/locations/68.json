@@ -1,0 +1,22 @@
+{
+  "title": "Rackwitzer Str. 50-52, 04347 Leipzig",
+  "galleryOrder": 68,
+  "archived": false,
+  "categoryId": 7,
+  "coordinates": {
+    "longitude": 12.399431110354397,
+    "latitude": 51.3575752478414
+  },
+  "address": "Rackwitzer Str. 50-52, 04347 Leipzig",
+  "type": "Mehrzweckhalle",
+  "usage": "Autoverwertung Richter",
+  "formerUsage": "",
+  "condition": "",
+  "photos": [
+    {
+      "src": "images/folds/fold_68/68_1_Johanna-Knigge.jpg",
+      "credit": "Johanna Knigge"
+    }
+  ],
+  "links": []
+}

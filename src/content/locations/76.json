@@ -1,0 +1,22 @@
+{
+  "title": "Sommerfelder Str. 73, 04316 Leipzig",
+  "galleryOrder": 76,
+  "archived": false,
+  "categoryId": 7,
+  "coordinates": {
+    "longitude": 12.433704299083193,
+    "latitude": 51.32604998934656
+  },
+  "address": "Sommerfelder Str. 73, 04316 Leipzig",
+  "type": "Mehrzweckhalle",
+  "usage": "Lager, LKW Anlieferung",
+  "formerUsage": "",
+  "condition": "",
+  "photos": [
+    {
+      "src": "images/folds/fold_76/76_1_Johanna-Knigge.jpg",
+      "credit": "Johanna Knigge"
+    }
+  ],
+  "links": []
+}

@@ -1,0 +1,22 @@
+{
+  "title": "Kochstraße 29a, 04275 Leipzig",
+  "galleryOrder": 82,
+  "archived": false,
+  "categoryId": 5,
+  "coordinates": {
+    "longitude": 12.371808425111544,
+    "latitude": 51.32097125615858
+  },
+  "address": "Kochstraße 29a, 04275 Leipzig",
+  "type": "Gleichrichterunterwerk",
+  "usage": "",
+  "formerUsage": "",
+  "condition": "In Sanierung (Stand 05/24)",
+  "photos": [
+    {
+      "src": "images/folds/fold_82/82_1_Johanna-Knigge.jpg",
+      "credit": "Johanna Knigge"
+    }
+  ],
+  "links": []
+}

@@ -1,0 +1,22 @@
+{
+  "title": "Zweinaundorfer Str. 126, 04316 Leipzig",
+  "galleryOrder": 74,
+  "archived": false,
+  "categoryId": 7,
+  "coordinates": {
+    "longitude": 12.434320809397029,
+    "latitude": 51.32849692967025
+  },
+  "address": "Zweinaundorfer Str. 126, 04316 Leipzig",
+  "type": "Mehrzweckhalle",
+  "usage": "Lano KFZ Service, Autowerkstatt /Selbsthilfewerkstatt",
+  "formerUsage": "Lagerhallenkomplex Kampfgruppenstützpunkt",
+  "condition": "",
+  "photos": [
+    {
+      "src": "images/folds/fold_74/74_1_Johanna-Knigge.jpg",
+      "credit": "Johanna Knigge"
+    }
+  ],
+  "links": []
+}

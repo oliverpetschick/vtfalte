@@ -1,0 +1,38 @@
+{
+  "title": "An d. Kotsche 13a, 04207 Leipzig",
+  "galleryOrder": 2,
+  "archived": false,
+  "categoryId": 6,
+  "coordinates": {
+    "longitude": 12.268556142442165,
+    "latitude": 51.30831908256469
+  },
+  "address": "An d. Kotsche 13a, 04207 Leipzig",
+  "type": "Umformerstation",
+  "usage": "Papier und Textilaufkauf, Garagen/ ehemalig. Umformerstation",
+  "formerUsage": "Umformerstation",
+  "condition": "",
+  "photos": [
+    {
+      "src": "images/folds/fold_2/2_1_Johanna-Knigge.jpg",
+      "credit": "Johanna Knigge"
+    },
+    {
+      "src": "images/folds/fold_2/2_2_Johanna-Knigge.jpg",
+      "credit": "Johanna Knigge"
+    },
+    {
+      "src": "images/folds/fold_2/2_3_Johanna-Knigge.jpg",
+      "credit": "Johanna Knigge"
+    },
+    {
+      "src": "images/folds/fold_2/2_4_Johanna-Knigge.jpg",
+      "credit": "Johanna Knigge"
+    },
+    {
+      "src": "images/folds/fold_2/2_5_Johanna-Knigge.jpg",
+      "credit": "Johanna Knigge"
+    }
+  ],
+  "links": []
+}

@@ -25,7 +25,7 @@
 
 - Before any future release, run tests and a production build, inspect the full diff, and verify that no unintended UI change occurred.
 - After any approved release operation, verify https://www.vtfalte.de/ and its deployed assets.
-- The verified live source is commit `fa3a416`.
+- The verified live source is commit `691458f`.
 - The verified live release is commit `f2d60e9` on `gh-pages`.
 - Recovery tags are `backup-master-before-vt2-2026-08-21` and `live-before-cleanup-2026-08-21`.
 - The legacy Jest suite currently requires a `URL.createObjectURL` test-environment mock before it can load MapLibre.

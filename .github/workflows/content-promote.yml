@@ -1,0 +1,70 @@
+name: Content Promote
+
+on:
+  repository_dispatch:
+    types: [publish-stand]
+
+permissions:
+  contents: write
+  pull-requests: write
+  statuses: write
+
+concurrency:
+  group: content-publish
+  cancel-in-progress: false
+
+jobs:
+  promote:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Gesammelten Stand veröffentlichen
+        uses: actions/github-script@v8
+        with:
+          script: |
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+            const runUrl = `${context.serverUrl}/${owner}/${repo}/actions/runs/${context.runId}`;
+            const setStatus = (sha, state, description) => github.rest.repos.createCommitStatus({
+              owner, repo, sha, context: 'vtfalte/content-publish', state, description, target_url: runUrl,
+            });
+
+            // Aktuellen Stand-Head und dessen Prüfstatus (Tor 1) ermitteln.
+            const combined = await github.rest.repos.getCombinedStatus({ owner, repo, ref: 'cms-content' });
+            const head = combined.data.sha;
+            const check = combined.data.statuses.find(status => status.context === 'vtfalte/content-publish');
+            if (!check || check.state !== 'success') {
+              await setStatus(head, 'failure', 'Veröffentlichung abgebrochen: Stand nicht grün');
+              core.setFailed('Der Stand ist nicht grün und darf nicht veröffentlicht werden.');
+              return;
+            }
+
+            await setStatus(head, 'pending', 'Wird veröffentlicht …');
+
+            // Technischen Pull Request finden oder anlegen und als einen Merge-Commit übernehmen.
+            const pulls = await github.rest.pulls.list({
+              owner, repo, state: 'open', head: `${owner}:cms-content`, base: 'master',
+            });
+            const pull = pulls.data[0] ?? (await github.rest.pulls.create({
+              owner, repo, head: 'cms-content', base: 'master',
+              title: 'Stand veröffentlichen',
+              body: 'Gesammelte, geprüfte Inhaltsänderungen aus dem CMS.',
+            })).data;
+
+            let merged;
+            try {
+              const result = await github.rest.pulls.merge({
+                owner, repo, pull_number: pull.number, sha: head, merge_method: 'merge',
+              });
+              if (!result.data.merged) throw new Error(result.data.message);
+              merged = result.data.sha;
+            } catch (error) {
+              await setStatus(head, 'failure', 'Veröffentlichung fehlgeschlagen');
+              core.setFailed(`Übernahme fehlgeschlagen: ${error.message}`);
+              return;
+            }
+
+            // Erfolg auf dem veröffentlichten Commit melden, den Stand darauf zurücksetzen
+            // (cms-content == master, kein offener Diff mehr) und das Deployment anstoßen.
+            await setStatus(merged, 'success', 'Veröffentlicht');
+            await github.rest.git.updateRef({ owner, repo, ref: 'heads/cms-content', sha: merged, force: true });
+            await github.rest.repos.createDispatchEvent({ owner, repo, event_type: 'deploy-pages' });

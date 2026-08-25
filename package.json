@@ -32,7 +32,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "test:admin": "node --test scripts/admin-utils.test.mjs",
+    "test:admin": "node --test scripts/admin-utils.test.mjs scripts/validate-cms-pr.test.mjs",
     "eject": "react-scripts eject",
     "dev": "node scripts/dev.mjs",
     "start:app": "react-scripts start",

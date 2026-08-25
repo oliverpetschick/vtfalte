@@ -129,128 +129,21 @@ jobs:
         run: CI=true npm test -- --watchAll=false
       - name: Produktionsversion bauen
         run: npm run build
-
-  promote:
-    needs: [normalize, content-quality]
-    if: needs.content-quality.result == 'success'
-    runs-on: ubuntu-latest
-    steps:
-      - name: Technischen Pull Request übernehmen
-        id: merge
+      - name: Prüfstatus melden
+        if: always()
         uses: actions/github-script@v8
         env:
           HEAD_SHA: ${{ needs.normalize.outputs.head }}
+          RESULT: ${{ job.status }}
         with:
           script: |
-            const pulls = await github.rest.pulls.list({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              state: 'open',
-              head: `${context.repo.owner}:cms-content`,
-              base: 'master',
-            });
-            const pull = pulls.data[0] ?? (await github.rest.pulls.create({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              head: 'cms-content',
-              base: 'master',
-              title: 'Inhalt veröffentlichen',
-              body: 'Automatisch geprüfte Inhaltsänderung aus dem CMS.',
-            })).data;
-
-            try {
-              const result = await github.rest.pulls.merge({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                pull_number: pull.number,
-                sha: process.env.HEAD_SHA,
-                merge_method: 'merge',
-              });
-              if (!result.data.merged) throw new Error(result.data.message);
-            } catch (error) {
-              await github.rest.repos.createDispatchEvent({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                event_type: 'continue-content-publish',
-              });
-              core.setFailed(`Übernahme wird mit aktuellem master wiederholt: ${error.message}`);
-              return;
-            }
-
+            const ok = process.env.RESULT === 'success';
             await github.rest.repos.createCommitStatus({
               owner: context.repo.owner,
               repo: context.repo.repo,
               sha: process.env.HEAD_SHA,
               context: 'vtfalte/content-publish',
-              state: 'success',
-              description: 'Veröffentlicht',
+              state: ok ? 'success' : 'failure',
+              description: ok ? 'Stand ist veröffentlichbar' : 'Der Stand enthält Fehler',
               target_url: `${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`,
             });
-            await github.rest.repos.createDispatchEvent({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              event_type: 'deploy-pages',
-            });
-
-  restore:
-    needs: [normalize, content-quality]
-    if: always() && needs.normalize.result == 'success' && needs.content-quality.result == 'failure'
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v6
-        with:
-          ref: cms-content
-          fetch-depth: 0
-      - name: Fehlgeschlagenen Stand zurücknehmen
-        id: restore
-        env:
-          CHECKED_SHA: ${{ needs.normalize.outputs.head }}
-        run: |
-          git fetch origin master
-          current=$(git rev-parse HEAD)
-          if [ "$current" != "$CHECKED_SHA" ]; then
-            echo "Aktueller Puffer wurde bereits geändert; spätere Prüfung übernimmt."
-            echo "restored=false" >> "$GITHUB_OUTPUT"
-            exit 0
-          fi
-          git config user.name github-actions[bot]
-          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
-          tree=$(git rev-parse origin/master^{tree})
-          restored=$(printf '%s\n' 'chore: revert invalid CMS change' | git commit-tree "$tree" -p HEAD)
-          git push origin "$restored":cms-content
-          echo "restored=true" >> "$GITHUB_OUTPUT"
-          echo "restored_sha=$restored" >> "$GITHUB_OUTPUT"
-      - name: Rücknahme melden
-        if: steps.restore.outputs.restored == 'true'
-        uses: actions/github-script@v8
-        env:
-          FAILED_SHA: ${{ needs.normalize.outputs.head }}
-          RESTORED_SHA: ${{ steps.restore.outputs.restored_sha }}
-        with:
-          script: |
-            const status = sha => github.rest.repos.createCommitStatus({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              sha,
-              context: 'vtfalte/content-publish',
-              state: 'failure',
-              description: 'Ungültige Änderung wurde zurückgenommen',
-              target_url: `${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`,
-            });
-            await status(process.env.FAILED_SHA);
-            await status(process.env.RESTORED_SHA);
-            const pulls = await github.rest.pulls.list({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              state: 'open',
-              head: `${context.repo.owner}:cms-content`,
-              base: 'master',
-            });
-            for (const pull of pulls.data) {
-              await github.rest.pulls.update({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                pull_number: pull.number,
-                state: 'closed',
-              });
-            }

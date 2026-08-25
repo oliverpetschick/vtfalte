@@ -194,11 +194,30 @@
   const localMode = ['localhost', '127.0.0.1'].includes(window.location.hostname);
   const statusElement = document.getElementById('vt-publish-status');
   const nativeConfirm = window.confirm.bind(window);
-  let publishPending = false;
   let groupedHash = '';
 
+  // Zustand des gesammelten „Stands" auf cms-content:
+  // 'pending'  – Prüfung (Tor 1) läuft
+  // 'ready'    – grün, veröffentlichbar
+  // 'failure'  – Prüfung fehlgeschlagen
+  // 'clean'    – kein offener Stand (nichts zu veröffentlichen)
+  let standStatus = 'clean';
+  let publishing = false;
+
+  const publishStandButton = document.createElement('button');
+  publishStandButton.type = 'button';
+  publishStandButton.className = 'vt-stand-publish';
+  publishStandButton.hidden = true;
+  document.body.appendChild(publishStandButton);
+
+  const updatePublishButton = () => {
+    publishStandButton.hidden = localMode;
+    publishStandButton.textContent = publishing ? 'Stand wird veröffentlicht …' : 'Stand veröffentlichen';
+    publishStandButton.disabled = publishing || standStatus !== 'ready';
+    publishStandButton.setAttribute('aria-disabled', String(publishStandButton.disabled));
+  };
+
   const setPublishStatus = (state, message, url) => {
-    publishPending = state === 'pending';
     statusElement.hidden = !message;
     statusElement.dataset.state = state;
     statusElement.replaceChildren(document.createTextNode(message));
@@ -213,6 +232,49 @@
     }
   };
 
+  // Das OAuth-Token, das Decap für seine Commits nutzt, liegt im localStorage.
+  // Wir verwenden es unverändert, um die Veröffentlichung per repository_dispatch
+  // auszulösen (keine neue Infrastruktur, kein zweites Token).
+  const getDecapToken = () => {
+    for (const key of ['decap-cms-user', 'netlify-cms-user']) {
+      try {
+        const raw = window.localStorage.getItem(key);
+        if (!raw) continue;
+        const user = JSON.parse(raw);
+        if (user && user.token) return user.token;
+      } catch (error) {
+        /* ungültiger Eintrag – nächsten Schlüssel versuchen */
+      }
+    }
+    return null;
+  };
+
+  const applyStandStatus = status => {
+    const description = status?.description ?? '';
+    if (status?.state === 'success') {
+      if (description === 'Veröffentlicht') {
+        publishing = false;
+        standStatus = 'clean';
+        setPublishStatus('success', 'Veröffentlicht.', status.target_url);
+      } else if (description === 'Keine offenen Inhaltsänderungen') {
+        publishing = false;
+        standStatus = 'clean';
+        setPublishStatus('success', 'Kein offener Stand.', status.target_url);
+      } else {
+        standStatus = 'ready';
+        if (!publishing) setPublishStatus('success', 'Stand ist veröffentlichbar.', status.target_url);
+      }
+    } else if (['failure', 'error'].includes(status?.state)) {
+      publishing = false;
+      standStatus = 'failure';
+      setPublishStatus('failure', status.description || 'Der Stand enthält Fehler.', status.target_url);
+    } else {
+      standStatus = 'pending';
+      setPublishStatus('pending', publishing ? 'Stand wird veröffentlicht …' : 'Prüfung läuft …', status?.target_url);
+    }
+    updatePublishButton();
+  };
+
   const pollPublishStatus = async (attempt = 0) => {
     try {
       const response = await fetch('https://api.github.com/repos/oliverpetschick/vtfalte/commits/cms-content/status', {
@@ -222,20 +284,50 @@
       if (!response.ok) throw new Error(`GitHub ${response.status}`);
       const result = await response.json();
       const status = result.statuses.find(item => item.context === 'vtfalte/content-publish');
-      if (status?.state === 'success') {
-        setPublishStatus('success', 'Veröffentlicht.', status.target_url);
-        return;
-      }
-      if (['failure', 'error'].includes(status?.state)) {
-        setPublishStatus('failure', status.description || 'Änderung wurde zurückgenommen.', status.target_url);
-        return;
-      }
-      setPublishStatus('pending', 'Prüfung läuft …', status?.target_url);
+      applyStandStatus(status);
     } catch (error) {
-      if (attempt > 0) setPublishStatus('pending', 'Prüfstatus wird geladen …');
+      /* vorübergehender Fehler – erneut versuchen, Zustand unverändert lassen */
     }
-    if (attempt < 18) setTimeout(() => pollPublishStatus(attempt + 1), 5000);
+    const keepGoing = publishing || standStatus === 'pending';
+    if (keepGoing && attempt < 60) {
+      setTimeout(() => pollPublishStatus(attempt + 1), 5000);
+    } else if (publishing) {
+      publishing = false;
+      updatePublishButton();
+      setPublishStatus('failure', 'Zeitüberschreitung bei der Veröffentlichung – bitte Status prüfen.');
+    }
   };
+
+  const publishStand = async () => {
+    if (localMode || publishing || standStatus !== 'ready') return;
+    const token = getDecapToken();
+    if (!token) {
+      setPublishStatus('failure', 'Kein Zugriffstoken gefunden – bitte neu anmelden.');
+      return;
+    }
+    publishing = true;
+    updatePublishButton();
+    setPublishStatus('pending', 'Stand wird veröffentlicht …');
+    try {
+      const response = await fetch('https://api.github.com/repos/oliverpetschick/vtfalte/dispatches', {
+        method: 'POST',
+        headers: {
+          Authorization: `token ${token}`,
+          Accept: 'application/vnd.github+json',
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ event_type: 'publish-stand' }),
+      });
+      if (!response.ok && response.status !== 204) throw new Error(`GitHub ${response.status}`);
+      pollPublishStatus();
+    } catch (error) {
+      publishing = false;
+      updatePublishButton();
+      setPublishStatus('failure', 'Veröffentlichung konnte nicht gestartet werden.');
+    }
+  };
+
+  publishStandButton.addEventListener('click', publishStand);
 
   const activateCategoryGrouping = () => {
     if (!window.location.hash.includes('/collections/locations') || groupedHash === window.location.hash) return;
@@ -270,13 +362,13 @@
     }
     for (const button of document.querySelectorAll('button, [role="button"]')) {
       const label = button.textContent.trim();
-      if (['Veröffentlichen', 'Lokal speichern'].includes(label)) {
-        const publishLabel = localMode ? 'Lokal speichern' : 'Veröffentlichen';
-        const disabled = !localMode && publishPending;
+      if (['Veröffentlichen', 'Speichern', 'Lokal speichern'].includes(label)) {
+        // Ein Save legt den Eintrag nur im Stand ab (kein sofortiges Veröffentlichen mehr).
+        const publishLabel = localMode ? 'Lokal speichern' : 'Speichern';
         if (button.dataset.vtPublish !== 'true') button.dataset.vtPublish = 'true';
         if (button.textContent !== publishLabel) button.textContent = publishLabel;
-        if (button.disabled !== disabled) button.disabled = disabled;
-        button.setAttribute('aria-disabled', String(disabled));
+        if (button.disabled) button.disabled = false;
+        button.setAttribute('aria-disabled', 'false');
       } else if (localMode && label === 'Login') {
         button.textContent = 'Lokal öffnen';
       } else if (label === 'Überprüfen ob eine Vorschau vorhanden ist') {
@@ -307,11 +399,6 @@
   document.addEventListener('click', event => {
     const button = event.target.closest('[data-vt-publish="true"]');
     if (!button) return;
-    if (!localMode && publishPending) {
-      event.preventDefault();
-      event.stopImmediatePropagation();
-      return;
-    }
     setTimeout(() => {
       const publishNow = Array.from(document.querySelectorAll('button, [role="menuitem"]'))
         .find(item => item.textContent.trim() === 'Jetzt veröffentlichen');
@@ -325,7 +412,9 @@
       if (localMode) {
         setPublishStatus('success', 'Lokal gespeichert – Vorschau wird aktualisiert.');
       } else {
-        setPublishStatus('pending', 'Prüfung läuft …');
+        standStatus = 'pending';
+        updatePublishButton();
+        setPublishStatus('pending', 'Im Stand gespeichert – Prüfung läuft …');
         pollPublishStatus();
       }
     },
@@ -336,6 +425,7 @@
     groupedHash = '';
     adaptAdmin();
   });
+  updatePublishButton();
   if (!localMode) pollPublishStatus();
   CMS.init();
 })();

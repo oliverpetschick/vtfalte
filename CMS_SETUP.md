@@ -38,13 +38,26 @@ No paid CMS, database, image host, Netlify account, or map account is required.
 
 ## Publishing and recovery
 
-"Veröffentlichen" writes one location change to `cms-content`. The pipeline permits only
-that location and its photos, removes unused photos, validates the content, runs tests,
-and builds the production site. On success it merges into `master` and starts Pages.
+The editor works on an accumulating "Stand" (working state): every save writes one or more
+location changes to `cms-content` and they pile up there. Saving no longer publishes anything
+on its own.
 
-On failure it restores `cms-content` to the current `master` tree with a normal commit.
-The public page and `master` remain unchanged.
+Each save triggers `content-publish.yml` (Gate 1). It merges the current `master`, removes
+unused photos, checks that only locations and their photos changed (`validate-cms-pr`, now one
+or more entries), validates the content, runs tests, and builds the production site. The result
+is the commit status `vtfalte/content-publish`: green means the whole Stand is publishable, red
+means it must be fixed first. Nothing is merged into `master` at this point.
 
-The Pages workflow stays disabled until `ENABLE_PAGES_ACTIONS=true` is set. Neither
-workflow modifies or deletes `gh-pages`. To recover, set Pages back to "Deploy from a
-branch", choose `gh-pages` and `/(root)`, then verify https://www.vtfalte.de/.
+When the Stand is green, the editor clicks "Stand veröffentlichen". The button fires a
+`publish-stand` dispatch that runs `content-promote.yml` (Gate 2): it re-checks the green status,
+merges `cms-content` into `master` as one commit, resets `cms-content` onto the published state,
+and starts Pages. If the Stand is red the button stays disabled, so `master` cannot receive a bad
+Stand. There is no auto-rollback: a red Stand simply stays on `cms-content` for the editor to fix.
+
+Gate 3 is the deploy itself: `pages.yml` re-validates and rebuilds before publishing and only
+uploads the built artifact. A failing build does not deploy, so the last good live site stays up —
+CMS content can never break https://www.vtfalte.de/.
+
+The Pages workflow stays disabled until `ENABLE_PAGES_ACTIONS=true` is set. No workflow modifies
+or deletes `gh-pages`. To recover, set Pages back to "Deploy from a branch", choose `gh-pages`
+and `/(root)`, then verify https://www.vtfalte.de/.

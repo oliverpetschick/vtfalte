@@ -1,8 +1,7 @@
 {
   "title": "Geithainer Straße, 04328 Leipzig",
   "galleryOrder": 100,
-  "archived": false,
-  "categoryId": 7,
+  "category": "Mehrzweckhalle/Individualbau",
   "coordinates": {
     "longitude": 12.43811145429035,
     "latitude": 51.341481158639446

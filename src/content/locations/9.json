@@ -1,8 +1,7 @@
 {
   "title": "Schönauer Str. 235, 04205 Leipzig",
   "galleryOrder": 9,
-  "archived": false,
-  "categoryId": 7,
+  "category": "Mehrzweckhalle/Individualbau",
   "coordinates": {
     "longitude": 12.291314960393468,
     "latitude": 51.324880800574256

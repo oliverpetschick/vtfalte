@@ -7,26 +7,26 @@
   };
 
   const categories = [
-    [1, 'Sporthalle'],
-    [2, 'Jugendclub'],
-    [3, 'Senior*innenzentrum'],
-    [4, 'Kaufhalle'],
-    [5, 'Gleichrichterunterwerk'],
-    [6, 'Umformerstation'],
-    [7, 'Mehrzweckhalle/Individualbau'],
-    [8, 'Abriss'],
+    'Sporthalle',
+    'Jugendclub',
+    'Senior*innenzentrum',
+    'Kaufhalle',
+    'Gleichrichterunterwerk',
+    'Umformerstation',
+    'Mehrzweckhalle/Individualbau',
+    'Abriss',
   ];
 
   const CategoryControl = createClass({
     render() {
-      const value = Number(this.props.value);
+      const value = String(this.props.value ?? '');
       return h('div', { className: 'vt-category-options' },
-        categories.map(([id, label]) => h('label', { key: id },
+        categories.map(label => h('label', { key: label },
           h('input', {
             type: 'radio',
             name: this.props.forID,
-            checked: value === id,
-            onChange: () => this.props.onChange(id),
+            checked: value === label,
+            onChange: () => this.props.onChange(label),
           }),
           label,
         )),
@@ -36,9 +36,13 @@
 
   const CoordinateControl = createClass({
     getInitialState() {
+      const longitude = String(fieldValue(this.props.value, 'longitude'));
+      const latitude = String(fieldValue(this.props.value, 'latitude'));
       return {
-        longitude: String(fieldValue(this.props.value, 'longitude')),
-        latitude: String(fieldValue(this.props.value, 'latitude')),
+        paste: longitude && latitude ? latitude + ', ' + longitude : '',
+        error: '',
+        longitude,
+        latitude,
       };
     },
 
@@ -76,34 +80,32 @@
         longitude: Number(longitude).toFixed(7).replace(/0+$/, '').replace(/\.$/, ''),
         latitude: Number(latitude).toFixed(7).replace(/0+$/, '').replace(/\.$/, ''),
       };
-      this.setState(next);
+      this.setState({ ...next, paste: next.latitude + ', ' + next.longitude, error: '' });
       this.setMarker(Number(next.longitude), Number(next.latitude));
       this.props.onChange({ longitude: Number(next.longitude), latitude: Number(next.latitude) });
     },
 
-    handleInput(key, event) {
-      const next = { ...this.state, [key]: event.target.value };
-      this.setState(next);
-      const longitude = Number(next.longitude);
-      const latitude = Number(next.latitude);
-      if (next.longitude !== '' && next.latitude !== '' && Number.isFinite(longitude) && Number.isFinite(latitude)) {
-        this.setMarker(longitude, latitude);
-        this.map.setView([latitude, longitude], Math.max(this.map.getZoom(), 12));
-        this.props.onChange({ longitude, latitude });
+    handlePaste(event) {
+      const paste = event.target.value;
+      const coordinates = window.VTAdminUtils.parseGoogleCoordinates(paste);
+      if (!coordinates) {
+        this.setState({ paste, error: paste ? 'Bitte im Format Breitengrad, Längengrad einfügen.' : '' });
+        return;
       }
+      this.setState({ paste, error: '' });
+      this.setPoint(coordinates.longitude, coordinates.latitude);
+      this.map.setView([coordinates.latitude, coordinates.longitude], Math.max(this.map.getZoom(), 12));
     },
 
     render() {
       return h('div', {},
-        h('div', { className: 'vt-coordinate-inputs' },
-          h('label', {}, 'Längengrad', h('input', {
-            type: 'number', step: 'any', value: this.state.longitude,
-            onChange: event => this.handleInput('longitude', event),
-          })),
-          h('label', {}, 'Breitengrad', h('input', {
-            type: 'number', step: 'any', value: this.state.latitude,
-            onChange: event => this.handleInput('latitude', event),
-          })),
+        h('div', { className: 'vt-coordinate-paste' },
+          h('input', {
+            type: 'text', value: this.state.paste, placeholder: 'Breitengrad, Längengrad',
+            'aria-label': 'Breitengrad, Längengrad',
+            onChange: event => this.handlePaste(event),
+          }),
+          this.state.error && h('span', { className: 'vt-coordinate-error' }, this.state.error),
         ),
         h('div', { className: 'vt-coordinate-map', ref: node => { this.mapNode = node; } }),
       );
@@ -189,5 +191,151 @@
     }
   }, true);
 
+  const localMode = ['localhost', '127.0.0.1'].includes(window.location.hostname);
+  const statusElement = document.getElementById('vt-publish-status');
+  const nativeConfirm = window.confirm.bind(window);
+  let publishPending = false;
+  let groupedHash = '';
+
+  const setPublishStatus = (state, message, url) => {
+    publishPending = state === 'pending';
+    statusElement.hidden = !message;
+    statusElement.dataset.state = state;
+    statusElement.replaceChildren(document.createTextNode(message));
+    queueMicrotask(adaptAdmin);
+    if (url) {
+      const link = document.createElement('a');
+      link.href = url;
+      link.target = '_blank';
+      link.rel = 'noopener noreferrer';
+      link.textContent = ' Details';
+      statusElement.append(link);
+    }
+  };
+
+  const pollPublishStatus = async (attempt = 0) => {
+    try {
+      const response = await fetch('https://api.github.com/repos/oliverpetschick/vtfalte/commits/cms-content/status', {
+        cache: 'no-store',
+        headers: { Accept: 'application/vnd.github+json' },
+      });
+      if (!response.ok) throw new Error(`GitHub ${response.status}`);
+      const result = await response.json();
+      const status = result.statuses.find(item => item.context === 'vtfalte/content-publish');
+      if (status?.state === 'success') {
+        setPublishStatus('success', 'Veröffentlicht.', status.target_url);
+        return;
+      }
+      if (['failure', 'error'].includes(status?.state)) {
+        setPublishStatus('failure', status.description || 'Änderung wurde zurückgenommen.', status.target_url);
+        return;
+      }
+      setPublishStatus('pending', 'Prüfung läuft …', status?.target_url);
+    } catch (error) {
+      if (attempt > 0) setPublishStatus('pending', 'Prüfstatus wird geladen …');
+    }
+    if (attempt < 18) setTimeout(() => pollPublishStatus(attempt + 1), 5000);
+  };
+
+  const activateCategoryGrouping = () => {
+    if (!window.location.hash.includes('/collections/locations') || groupedHash === window.location.hash) return;
+    const groupButton = Array.from(document.querySelectorAll('button, [role="button"]'))
+      .find(button => button.textContent.trim() === 'Gruppieren nach');
+    if (!groupButton) return;
+    groupedHash = window.location.hash;
+    groupButton.click();
+    setTimeout(() => {
+      const categoryButton = Array.from(document.querySelectorAll('button, [role="menuitem"]'))
+        .find(button => button.textContent.trim() === 'Kategorie');
+      categoryButton?.click();
+    }, 0);
+  };
+
+  const orderCategoryGroups = () => {
+    const headings = Array.from(document.querySelectorAll('h2'));
+    const groups = categories.map(category =>
+      headings.find(heading => heading.textContent.trim() === `Kategorie ${category}`)?.parentElement,
+    ).filter(Boolean);
+    const parent = groups[0]?.parentElement;
+    if (!parent) return;
+    const current = Array.from(parent.children).filter(child => groups.includes(child));
+    const alreadyOrdered = current.length === groups.length &&
+      current.every((group, index) => group === groups[index]);
+    if (!alreadyOrdered) groups.forEach(group => parent.append(group));
+  };
+
+  const adaptAdmin = () => {
+    for (const link of document.querySelectorAll('a[href*="/collections/locations/new"]')) {
+      if (link.textContent.trim() !== 'Eintrag hinzufügen') link.textContent = 'Eintrag hinzufügen';
+    }
+    for (const button of document.querySelectorAll('button, [role="button"]')) {
+      const label = button.textContent.trim();
+      if (['Veröffentlichen', 'Lokal speichern'].includes(label)) {
+        const publishLabel = localMode ? 'Lokal speichern' : 'Veröffentlichen';
+        const disabled = !localMode && publishPending;
+        if (button.dataset.vtPublish !== 'true') button.dataset.vtPublish = 'true';
+        if (button.textContent !== publishLabel) button.textContent = publishLabel;
+        if (button.disabled !== disabled) button.disabled = disabled;
+        button.setAttribute('aria-disabled', String(disabled));
+      } else if (localMode && label === 'Login') {
+        button.textContent = 'Lokal öffnen';
+      } else if (label === 'Überprüfen ob eine Vorschau vorhanden ist') {
+        button.classList.add('vt-admin-hidden');
+      } else if (button.tagName === 'BUTTON' && label === 'Veröffentlicht') {
+        button.hidden = true;
+      } else if (/^Lösche (veröffentlichten )?Beitrag$/.test(label)) {
+        button.textContent = 'Eintrag löschen';
+      }
+    }
+    if (window.location.hash.includes('/entries/')) {
+      for (const image of document.querySelectorAll('img[src^="blob:"]')) {
+        image.classList.add('vt-photo-preview');
+        image.parentElement?.classList.add('vt-photo-preview-wrapper');
+      }
+    }
+    activateCategoryGrouping();
+    orderCategoryGroups();
+  };
+
+  window.confirm = message => {
+    if (String(message).includes('Beitrag wirklich gelöscht')) {
+      return nativeConfirm('Eintrag und alle ausschließlich zugehörigen Fotos endgültig löschen?');
+    }
+    return nativeConfirm(message);
+  };
+
+  document.addEventListener('click', event => {
+    const button = event.target.closest('[data-vt-publish="true"]');
+    if (!button) return;
+    if (!localMode && publishPending) {
+      event.preventDefault();
+      event.stopImmediatePropagation();
+      return;
+    }
+    setTimeout(() => {
+      const publishNow = Array.from(document.querySelectorAll('button, [role="menuitem"]'))
+        .find(item => item.textContent.trim() === 'Jetzt veröffentlichen');
+      publishNow?.click();
+    }, 0);
+  }, true);
+
+  CMS.registerEventListener({
+    name: 'postSave',
+    handler: () => {
+      if (localMode) {
+        setPublishStatus('success', 'Lokal gespeichert – Vorschau wird aktualisiert.');
+      } else {
+        setPublishStatus('pending', 'Prüfung läuft …');
+        pollPublishStatus();
+      }
+    },
+  });
+
+  new MutationObserver(adaptAdmin).observe(document.body, { childList: true, subtree: true });
+  window.addEventListener('hashchange', () => {
+    groupedHash = '';
+    adaptAdmin();
+  });
+  if (!localMode) pollPublishStatus();
   CMS.init();
 })();

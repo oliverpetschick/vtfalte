@@ -1,8 +1,7 @@
 {
   "title": "Hildegardstraße 1, 04315 Leipzig",
   "galleryOrder": 48,
-  "archived": false,
-  "categoryId": 6,
+  "category": "Umformerstation",
   "coordinates": {
     "longitude": 12.406664758835477,
     "latitude": 51.34241493488315

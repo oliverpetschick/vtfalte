@@ -1,8 +1,7 @@
 {
   "title": "Kreuzstraße 31, 04315 Leipzig",
   "galleryOrder": 97,
-  "archived": false,
-  "categoryId": 8,
+  "category": "Abriss",
   "coordinates": {
     "longitude": 12.395819965779541,
     "latitude": 51.34136172836201

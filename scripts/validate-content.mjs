@@ -1,14 +1,13 @@
 import { access } from 'node:fs/promises';
 import path from 'node:path';
 import sharp from 'sharp';
-import { legacyPhotoAliases, loadLocations, referencedPhotos, root, walk } from './content-files.mjs';
+import { loadLocations, referencedPhotos, root, walk } from './content-files.mjs';
 
 const allowedKeys = new Set([
   'title',
   'galleryOrder',
   'createdAt',
-  'archived',
-  'categoryId',
+  'category',
   'coordinates',
   'address',
   'type',
@@ -19,6 +18,16 @@ const allowedKeys = new Set([
   'links',
 ]);
 const optionalTextKeys = ['address', 'type', 'usage', 'formerUsage', 'condition'];
+const categories = new Set([
+  'Sporthalle',
+  'Jugendclub',
+  'Senior*innenzentrum',
+  'Kaufhalle',
+  'Gleichrichterunterwerk',
+  'Umformerstation',
+  'Mehrzweckhalle/Individualbau',
+  'Abriss',
+]);
 const errors = [];
 const fail = (id, message) => errors.push(`${id}: ${message}`);
 const locations = await loadLocations();
@@ -40,9 +49,8 @@ for (const { id, location } of locations) {
       orders.set(location.galleryOrder, id);
     }
   }
-  if (typeof location.archived !== 'boolean') fail(id, 'Archivstatus fehlt');
-  if (!Number.isInteger(location.categoryId) || location.categoryId < 1 || location.categoryId > 8) {
-    fail(id, 'Kategorie muss zwischen 1 und 8 liegen');
+  if (!categories.has(location.category)) {
+    fail(id, 'Kategorie ist unbekannt');
   }
 
   const longitude = location.coordinates?.longitude;
@@ -58,11 +66,12 @@ for (const { id, location } of locations) {
       fail(id, `„${key}“ muss Text sein`);
     }
   }
+  const expectedPhotoPrefix = 'images/folds/fold_' + id + '/';
   if (!Array.isArray(location.photos)) {
     fail(id, 'Fotos müssen eine Liste sein');
   } else {
     for (const [index, photo] of location.photos.entries()) {
-      if (typeof photo?.src !== 'string' || !/^images\/(folds|uploads)\/[\w./ ()äöüÄÖÜß-]+\.(jpe?g|png)$/i.test(photo.src)) {
+      if (typeof photo?.src !== 'string' || !photo.src.startsWith(expectedPhotoPrefix) || !/^images\/(folds|uploads)\/[\w./ ()äöüÄÖÜß-]+\.(jpe?g|png)$/i.test(photo.src)) {
         fail(id, `Foto ${index + 1} hat einen ungültigen Pfad`);
         continue;
       }
@@ -72,12 +81,7 @@ for (const { id, location } of locations) {
       try {
         await access(path.join(root, 'src', photo.src));
       } catch {
-        const alias = legacyPhotoAliases.get(photo.src);
-        if (alias) {
-          console.warn(`${id}: bekannte Altlast bleibt unverändert (${photo.src})`);
-        } else {
-          fail(id, `Foto fehlt: ${photo.src}`);
-        }
+        fail(id, 'Foto fehlt: ' + photo.src);
       }
     }
   }

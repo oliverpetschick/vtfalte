@@ -1,8 +1,7 @@
 {
   "title": "Leplaystraße 13, 04103 Leipzig",
   "galleryOrder": 40,
-  "archived": false,
-  "categoryId": 1,
+  "category": "Sporthalle",
   "coordinates": {
     "longitude": 12.380971180261188,
     "latitude": 51.33439096069012

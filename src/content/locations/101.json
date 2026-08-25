@@ -1,8 +1,7 @@
 {
   "title": "Goldsternstraße 58, 04329 Leipzig",
   "galleryOrder": 101,
-  "archived": false,
-  "categoryId": 8,
+  "category": "Abriss",
   "coordinates": {
     "longitude": 12.459002991622182,
     "latitude": 51.35673099113005

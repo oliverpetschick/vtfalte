@@ -1,8 +1,7 @@
 {
   "title": "Kärrnerstraße 68, 04288 Leipzig",
   "galleryOrder": 86,
-  "archived": false,
-  "categoryId": 7,
+  "category": "Mehrzweckhalle/Individualbau",
   "coordinates": {
     "longitude": 12.4458639739796,
     "latitude": 51.31631137360096

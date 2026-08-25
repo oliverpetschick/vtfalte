@@ -1,8 +1,7 @@
 {
   "title": "An d. Märchenwiese 3, 04277 Leipzig",
   "galleryOrder": 4,
-  "archived": false,
-  "categoryId": 7,
+  "category": "Mehrzweckhalle/Individualbau",
   "coordinates": {
     "longitude": 12.393062441577529,
     "latitude": 51.305529930382974
@@ -14,15 +13,15 @@
   "condition": "",
   "photos": [
     {
-      "src": "images/folds/fold_77/77_1_Johanna-Knigge.jpg",
+      "src": "images/folds/fold_4/4_1_Johanna-Knigge.jpg",
       "credit": "Johanna Knigge"
     },
     {
-      "src": "images/folds/fold_77/77_2_Johanna-Knigge.jpg",
+      "src": "images/folds/fold_4/4_2_Johanna-Knigge.jpg",
       "credit": "Johanna Knigge"
     },
     {
-      "src": "images/folds/fold_77/77_3_Johanna-Knigge.jpg",
+      "src": "images/folds/fold_4/4_3_Johanna-Knigge.jpg",
       "credit": "Johanna Knigge"
     }
   ],

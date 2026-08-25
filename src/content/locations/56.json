@@ -1,8 +1,7 @@
 {
   "title": "Goldsternstraße 25, 04329 Leipzig",
   "galleryOrder": 56,
-  "archived": false,
-  "categoryId": 1,
+  "category": "Sporthalle",
   "coordinates": {
     "longitude": 12.456505774068942,
     "latitude": 51.355242917445864

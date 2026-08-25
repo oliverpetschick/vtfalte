@@ -1,8 +1,7 @@
 {
   "title": "Standort 98",
   "galleryOrder": 98,
-  "archived": false,
-  "categoryId": 8,
+  "category": "Abriss",
   "coordinates": {
     "longitude": 12.394294545851071,
     "latitude": 51.34244789899441

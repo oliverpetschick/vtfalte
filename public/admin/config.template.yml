@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: oliverpetschick/vtfalte
-  branch: master
+  branch: cms-content
   base_url: __CMS_OAUTH_URL__
   auth_endpoint: auth
   auth_scope: public_repo
@@ -12,7 +12,7 @@ backend:
 
 local_backend: true
 
-publish_mode: editorial_workflow
+publish_mode: simple
 locale: de
 site_url: https://www.vtfalte.de
 display_url: https://www.vtfalte.de
@@ -29,21 +29,21 @@ public_folder: images/uploads
 collections:
   - name: locations
     label: Standorte
-    label_singular: Standort
-    description: Standorte, Texte, Fotos und Links des Atlas verwalten.
+    label_singular: Eintrag hinzufügen
     folder: src/content/locations
     create: true
-    delete: false
+    delete: true
     extension: json
     format: json
     identifier_field: title
     slug: '{{year}}{{month}}{{day}}-{{hour}}{{minute}}{{second}}-{{slug}}'
-    summary: '{{address}} · {{coordinates.longitude}}, {{coordinates.latitude}} · Kategorie {{categoryId}}'
-    sortable_fields: [galleryOrder, address, categoryId]
-    view_filters:
-      - label: Archiviert
-        field: archived
-        pattern: true
+    summary: '{{address}} · {{usage}} · Galerie {{galleryOrder}}'
+    sortable_fields:
+      - { field: galleryOrder, label: Galerie-Position, default_sort: asc }
+      - { field: address, label: Adresse }
+      - { field: category, label: Kategorie }
+    view_groups:
+      - { label: Kategorie, field: category }
     fields:
       - { name: title, label: Interner Titel, widget: hidden, default: Standort }
       - label: Galerie-Position
@@ -51,15 +51,13 @@ collections:
         widget: number
         value_type: float
         required: false
-        hint: Leer lassen, um den Standort automatisch ans Ende zu setzen. Dezimalzahlen erlauben eine Position zwischen zwei Einträgen.
-      - { name: archived, label: Archiviert, widget: boolean, default: false }
       - label: Kategorie
-        name: categoryId
+        name: category
         widget: vt_category
       - label: Koordinaten
         name: coordinates
         widget: vt_coordinates
-        hint: Koordinaten einfügen oder den Marker auf der Karte verschieben. Es gibt keine regionale Einschränkung.
+        hint: Koordinaten einfügen oder den Marker auf der Karte verschieben.
       - { name: address, label: Adresse, widget: string, required: false }
       - { name: type, label: Typ, widget: string, required: false }
       - { name: usage, label: Nutzung, widget: string, required: false }

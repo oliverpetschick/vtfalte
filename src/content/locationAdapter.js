@@ -1,3 +1,5 @@
+import { categoryIds } from './categories';
+
 const placeholderPhoto = {
   src: 'images/placeholder.jpg',
   credit: 'Johanna Knigge',
@@ -49,7 +51,7 @@ export const locationToFeature = ({ id, location }) => {
     },
     properties: {
       id,
-      category_id: location.categoryId,
+      category_id: categoryIds[location.category],
       images,
       address: location.address ?? '',
       type: location.type ?? '',
@@ -65,7 +67,6 @@ export const buildFeatureCollection = modules => ({
   type: 'FeatureCollection',
   features: modules
     .map(({ filename, location }) => ({ id: getLocationId(filename), location }))
-    .filter(({ location }) => !location.archived)
     .sort(compareLocations)
     .map(locationToFeature),
 });

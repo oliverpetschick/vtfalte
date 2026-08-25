@@ -1,8 +1,7 @@
 {
   "title": "Willi-Bredel-Straße 9, 04279 Leipzig",
   "galleryOrder": 95,
-  "archived": false,
-  "categoryId": 8,
+  "category": "Abriss",
   "coordinates": {
     "longitude": 12.401915938831147,
     "latitude": 51.30111102559859

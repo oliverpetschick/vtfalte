@@ -1,8 +1,7 @@
 {
   "title": "Standort 23",
   "galleryOrder": 23,
-  "archived": false,
-  "categoryId": 7,
+  "category": "Mehrzweckhalle/Individualbau",
   "coordinates": {
     "longitude": 12.29809542264866,
     "latitude": 51.333323521075

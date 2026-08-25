@@ -1,8 +1,7 @@
 {
   "title": "Miltitzer Weg 8, 04205 Leipzig",
   "galleryOrder": 6,
-  "archived": false,
-  "categoryId": 2,
+  "category": "Jugendclub",
   "coordinates": {
     "longitude": 12.263560148866357,
     "latitude": 51.321516597889776

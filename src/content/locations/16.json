@@ -1,8 +1,7 @@
 {
   "title": "Diezmannstraße 22, 04207 Leipzig",
   "galleryOrder": 16,
-  "archived": false,
-  "categoryId": 7,
+  "category": "Mehrzweckhalle/Individualbau",
   "coordinates": {
     "longitude": 12.316022541131321,
     "latitude": 51.31560638974766

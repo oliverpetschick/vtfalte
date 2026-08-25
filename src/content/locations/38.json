@@ -1,8 +1,7 @@
 {
   "title": "Elsterstraße, 04109 Leipzig",
   "galleryOrder": 38,
-  "archived": false,
-  "categoryId": 6,
+  "category": "Umformerstation",
   "coordinates": {
     "longitude": 12.36763158254053,
     "latitude": 51.33890991027192

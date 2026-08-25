@@ -1,8 +1,7 @@
 {
   "title": "Plautstraße 52, 04179 Leipzig",
   "galleryOrder": 26,
-  "archived": false,
-  "categoryId": 7,
+  "category": "Mehrzweckhalle/Individualbau",
   "coordinates": {
     "longitude": 12.296783819034225,
     "latitude": 51.339940314512745

@@ -1,8 +1,7 @@
 {
   "title": "Idastraße 37, 04315 Leipzig",
   "galleryOrder": 89,
-  "archived": false,
-  "categoryId": 7,
+  "category": "Mehrzweckhalle/Individualbau",
   "coordinates": {
     "longitude": 12.410795741655111,
     "latitude": 51.34632919573846

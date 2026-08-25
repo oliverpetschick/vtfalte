@@ -1,8 +1,7 @@
 {
   "title": "Härtelstraße 6, 04107 Leipzig",
   "galleryOrder": 39,
-  "archived": false,
-  "categoryId": 5,
+  "category": "Gleichrichterunterwerk",
   "coordinates": {
     "longitude": 12.37636697123183,
     "latitude": 51.33294303781748

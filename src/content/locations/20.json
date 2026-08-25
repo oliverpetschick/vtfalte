@@ -1,8 +1,7 @@
 {
   "title": "Rippachtalstraße 10, 04249 Leipzig",
   "galleryOrder": 20,
-  "archived": false,
-  "categoryId": 7,
+  "category": "Mehrzweckhalle/Individualbau",
   "coordinates": {
     "longitude": 12.3111816102501,
     "latitude": 51.30450370490118

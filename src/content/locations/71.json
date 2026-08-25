@@ -1,8 +1,7 @@
 {
   "title": "Karl-Siegismund-Straße 2a, 04317 Leipzig",
   "galleryOrder": 71,
-  "archived": false,
-  "categoryId": 6,
+  "category": "Umformerstation",
   "coordinates": {
     "longitude": 12.397676584918212,
     "latitude": 51.32905374021099

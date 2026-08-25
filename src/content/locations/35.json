@@ -1,8 +1,7 @@
 {
   "title": "Marschnerstraße 30, 04109 Leipzig",
   "galleryOrder": 35,
-  "archived": false,
-  "categoryId": 1,
+  "category": "Sporthalle",
   "coordinates": {
     "longitude": 12.355957022227077,
     "latitude": 51.339033086216425

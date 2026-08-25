@@ -1,8 +1,7 @@
 {
   "title": "Miltitzer Weg 2a, 04205 Leipzig",
   "galleryOrder": 10,
-  "archived": false,
-  "categoryId": 1,
+  "category": "Sporthalle",
   "coordinates": {
     "longitude": 12.26691213023168,
     "latitude": 51.322085876542126
@@ -14,15 +13,15 @@
   "condition": "",
   "photos": [
     {
-      "src": "images/folds/fold_7/7_1_Johanna-Knigge.jpg",
+      "src": "images/folds/fold_10/10_1_Johanna-Knigge.jpg",
       "credit": "Johanna Knigge"
     },
     {
-      "src": "images/folds/fold_7/7_2_Johanna-Knigge.jpg",
+      "src": "images/folds/fold_10/10_2_Johanna-Knigge.jpg",
       "credit": "Johanna Knigge"
     },
     {
-      "src": "images/folds/fold_7/7_3_Johanna-Knigge.jpg",
+      "src": "images/folds/fold_10/10_3_Johanna-Knigge.jpg",
       "credit": "Johanna Knigge"
     }
   ],

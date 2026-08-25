@@ -1,8 +1,7 @@
 {
   "title": "Otto-Schmiedt-Straße, 04179 Leipzig",
   "galleryOrder": 31,
-  "archived": false,
-  "categoryId": 7,
+  "category": "Mehrzweckhalle/Individualbau",
   "coordinates": {
     "longitude": 12.324441912687384,
     "latitude": 51.35246950286587

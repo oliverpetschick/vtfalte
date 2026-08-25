@@ -1,8 +1,7 @@
 {
   "title": "An d. Kotsche 13a, 04207 Leipzig",
   "galleryOrder": 2,
-  "archived": false,
-  "categoryId": 6,
+  "category": "Umformerstation",
   "coordinates": {
     "longitude": 12.268556142442165,
     "latitude": 51.30831908256469

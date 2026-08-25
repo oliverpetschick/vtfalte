@@ -1,8 +1,7 @@
 {
   "title": "Gustav-Mahler-Straße 1-3, 04109 Leipzig",
   "galleryOrder": 36,
-  "archived": false,
-  "categoryId": 7,
+  "category": "Mehrzweckhalle/Individualbau",
   "coordinates": {
     "longitude": 12.36481766839186,
     "latitude": 51.33598101751903

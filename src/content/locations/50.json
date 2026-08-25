@@ -1,8 +1,7 @@
 {
   "title": "Bästleinstraße 2, 04347 Leipzig",
   "galleryOrder": 50,
-  "archived": false,
-  "categoryId": 6,
+  "category": "Umformerstation",
   "coordinates": {
     "longitude": 12.422607786426966,
     "latitude": 51.35444386420673

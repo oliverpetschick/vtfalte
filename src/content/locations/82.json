@@ -1,8 +1,7 @@
 {
   "title": "Kochstraße 29a, 04275 Leipzig",
   "galleryOrder": 82,
-  "archived": false,
-  "categoryId": 5,
+  "category": "Gleichrichterunterwerk",
   "coordinates": {
     "longitude": 12.371808425111544,
     "latitude": 51.32097125615858

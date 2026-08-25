@@ -1,8 +1,7 @@
 {
   "title": "Seeburgstraße 51a, 04103 Leipzig",
   "galleryOrder": 41,
-  "archived": false,
-  "categoryId": 7,
+  "category": "Mehrzweckhalle/Individualbau",
   "coordinates": {
     "longitude": 12.387191341640166,
     "latitude": 51.33475844883784

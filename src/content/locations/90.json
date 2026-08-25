@@ -1,8 +1,7 @@
 {
   "title": "Lausener Str. 1, 04207 Leipzig",
   "galleryOrder": 90,
-  "archived": false,
-  "categoryId": 5,
+  "category": "Gleichrichterunterwerk",
   "coordinates": {
     "longitude": 12.260433795673524,
     "latitude": 51.30632430701953

@@ -1,8 +1,7 @@
 {
   "title": "Meusdorfer Str. 38, 04277 Leipzig",
   "galleryOrder": 92,
-  "archived": false,
-  "categoryId": 6,
+  "category": "Umformerstation",
   "coordinates": {
     "longitude": 12.377754991926382,
     "latitude": 51.305153589500705

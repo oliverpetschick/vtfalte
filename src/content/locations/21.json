@@ -1,8 +1,7 @@
 {
   "title": "Lützner Str. 171, 04179 Leipzig",
   "galleryOrder": 21,
-  "archived": false,
-  "categoryId": 5,
+  "category": "Gleichrichterunterwerk",
   "coordinates": {
     "longitude": 12.312176237319703,
     "latitude": 51.32901839407146

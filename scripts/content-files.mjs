@@ -3,13 +3,6 @@ import path from 'node:path';
 
 export const root = process.cwd();
 export const locationsDirectory = path.join(root, 'src/content/locations');
-export const legacyPhotoAliases = new Map([
-  [
-    'images/folds/fold_54/54_2_Johanna-Knigge.jpg',
-    'images/folds/fold_54/54-2_Johanna-Knigge.jpg',
-  ],
-]);
-
 export const walk = async directory => {
   let entries;
   try {
@@ -47,8 +40,6 @@ export const referencedPhotos = locations => {
   for (const { location } of locations) {
     for (const photo of location.photos ?? []) {
       references.add(path.join(root, 'src', photo.src));
-      const alias = legacyPhotoAliases.get(photo.src);
-      if (alias) references.add(path.join(root, 'src', alias));
     }
   }
   return references;

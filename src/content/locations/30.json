@@ -1,8 +1,7 @@
 {
   "title": "Franz-Flemming-Straße 20, 04179 Leipzig",
   "galleryOrder": 30,
-  "archived": false,
-  "categoryId": 7,
+  "category": "Mehrzweckhalle/Individualbau",
   "coordinates": {
     "longitude": 12.309355964787253,
     "latitude": 51.345769423226

@@ -1,8 +1,7 @@
 {
   "title": "Breisgaustraße, 04209 Leipzig",
   "galleryOrder": 7,
-  "archived": false,
-  "categoryId": 6,
+  "category": "Umformerstation",
   "coordinates": {
     "longitude": 12.289041451889169,
     "latitude": 51.31801839502841
@@ -14,11 +13,11 @@
   "condition": "",
   "photos": [
     {
-      "src": "images/folds/fold_10/10_1_Johanna-Knigge.jpg",
+      "src": "images/folds/fold_7/7_1_Johanna-Knigge.jpg",
       "credit": "Johanna Knigge"
     },
     {
-      "src": "images/folds/fold_10/10_2_Johanna-Knigge.jpg",
+      "src": "images/folds/fold_7/7_2_Johanna-Knigge.jpg",
       "credit": "Johanna Knigge"
     }
   ],

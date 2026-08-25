@@ -1,8 +1,7 @@
 {
   "title": "Alte Salzstraße 63, 04209 Leipzig",
   "galleryOrder": 14,
-  "archived": false,
-  "categoryId": 6,
+  "category": "Umformerstation",
   "coordinates": {
     "longitude": 12.29918280829756,
     "latitude": 51.32047906906656

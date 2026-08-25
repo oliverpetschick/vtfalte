@@ -1,8 +1,7 @@
 {
   "title": "Oelsnitzer Str. 2, 04349 Leipzig",
   "galleryOrder": 57,
-  "archived": false,
-  "categoryId": 7,
+  "category": "Mehrzweckhalle/Individualbau",
   "coordinates": {
     "longitude": 12.435728753081015,
     "latitude": 51.37345719550073

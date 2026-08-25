@@ -1,8 +1,7 @@
 {
   "title": "Dörrienstraße 3, 04103 Leipzig",
   "galleryOrder": 45,
-  "archived": false,
-  "categoryId": 5,
+  "category": "Gleichrichterunterwerk",
   "coordinates": {
     "longitude": 12.38611396144499,
     "latitude": 51.341328572412515

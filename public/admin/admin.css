@@ -1,3 +1,63 @@
+.vt-admin-hidden {
+  display: none !important;
+}
+
+#vt-publish-status {
+  position: fixed;
+  z-index: 1000;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 16px;
+  border: 1px solid #8b919a;
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 18%);
+  font: 14px sans-serif;
+}
+
+#vt-publish-status[data-state='success'] {
+  border-color: #198754;
+}
+
+#vt-publish-status[data-state='failure'] {
+  border-color: #c92a2a;
+}
+
+.vt-coordinate-paste {
+  display: grid;
+  gap: 4px;
+  margin-bottom: 12px;
+  font: 14px sans-serif;
+}
+
+.vt-coordinate-paste input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #b7b7b7;
+  border-radius: 2px;
+  font: inherit;
+}
+
+.vt-coordinate-error {
+  color: #c92a2a;
+}
+
+.vt-photo-preview-wrapper {
+  width: 100% !important;
+  height: auto !important;
+}
+
+.vt-photo-preview {
+  display: block;
+  width: auto !important;
+  max-width: 100% !important;
+  height: auto !important;
+  max-height: 520px !important;
+  object-fit: contain;
+}
+
 .vt-category-options {
   display: grid;
   gap: 8px;
@@ -9,37 +69,9 @@
   align-items: center;
 }
 
-.vt-coordinate-inputs {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 12px;
-  margin-bottom: 12px;
-}
-
-.vt-coordinate-inputs label {
-  display: grid;
-  gap: 4px;
-  font: 14px sans-serif;
-}
-
-.vt-coordinate-inputs input {
-  box-sizing: border-box;
-  width: 100%;
-  padding: 10px 12px;
-  border: 1px solid #b7b7b7;
-  border-radius: 2px;
-  font: inherit;
-}
 
 .vt-coordinate-map {
   height: 320px;
   border: 1px solid #b7b7b7;
   border-radius: 2px;
-}
-
-
-@media (max-width: 700px) {
-  .vt-coordinate-inputs {
-    grid-template-columns: 1fr;
-  }
 }

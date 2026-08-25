@@ -1,8 +1,7 @@
 {
   "title": "Jörgen-Schmidtchen-Weg 2, 04157 Leipzig",
   "galleryOrder": 67,
-  "archived": false,
-  "categoryId": 4,
+  "category": "Kaufhalle",
   "coordinates": {
     "longitude": 12.359570766437605,
     "latitude": 51.379650657584364

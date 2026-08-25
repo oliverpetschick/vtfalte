@@ -1,8 +1,7 @@
 {
   "title": "Berkaer Weg 18, 04207 Leipzig",
   "galleryOrder": 13,
-  "archived": false,
-  "categoryId": 6,
+  "category": "Umformerstation",
   "coordinates": {
     "longitude": 12.295334077079621,
     "latitude": 51.31220228630109

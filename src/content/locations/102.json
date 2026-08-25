@@ -1,8 +1,7 @@
 {
   "title": "Sommerfelder Str. 83, 04316 Leipzig",
   "galleryOrder": 102,
-  "archived": false,
-  "categoryId": 8,
+  "category": "Abriss",
   "coordinates": {
     "longitude": 12.435464513920138,
     "latitude": 51.32671859146064

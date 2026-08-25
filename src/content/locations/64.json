@@ -1,8 +1,7 @@
 {
   "title": "Zschortauer Str 1, 04129 Leipzig",
   "galleryOrder": 64,
-  "archived": false,
-  "categoryId": 7,
+  "category": "Mehrzweckhalle/Individualbau",
   "coordinates": {
     "longitude": 12.396011427904003,
     "latitude": 51.37182752816865

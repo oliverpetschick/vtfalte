@@ -1,8 +1,7 @@
 {
   "title": "Klasingstraße 44C, 04315 Leipzig",
   "galleryOrder": 43,
-  "archived": false,
-  "categoryId": 6,
+  "category": "Umformerstation",
   "coordinates": {
     "longitude": 12.398538071382305,
     "latitude": 51.341642615108526

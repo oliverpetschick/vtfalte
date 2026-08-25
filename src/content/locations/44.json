@@ -1,8 +1,7 @@
 {
   "title": "Kohlgartenstraße 36, 04315 Leipzig",
   "galleryOrder": 44,
-  "archived": false,
-  "categoryId": 1,
+  "category": "Sporthalle",
   "coordinates": {
     "longitude": 12.399373271836357,
     "latitude": 51.342077664492614

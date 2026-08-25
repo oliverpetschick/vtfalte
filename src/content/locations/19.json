@@ -1,8 +1,7 @@
 {
   "title": "Diezmannstraße, 04207 Leipzig",
   "galleryOrder": 19,
-  "archived": false,
-  "categoryId": 7,
+  "category": "Mehrzweckhalle/Individualbau",
   "coordinates": {
     "longitude": 12.317871264899711,
     "latitude": 51.31708822680676

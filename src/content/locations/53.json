@@ -1,8 +1,7 @@
 {
   "title": "Waldzieststraße 1, 04329 Leipzig",
   "galleryOrder": 53,
-  "archived": false,
-  "categoryId": 4,
+  "category": "Kaufhalle",
   "coordinates": {
     "longitude": 12.459878758614634,
     "latitude": 51.35257082787227

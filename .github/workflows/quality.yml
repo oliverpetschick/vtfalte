@@ -28,12 +28,14 @@ jobs:
           HEAD_SHA: ${{ github.event.pull_request.head.sha }}
       - name: Inhalte prüfen
         run: npm run validate-content
+      - name: Admin-Hilfen testen
+        run: npm run test:admin
       - name: Tests ausführen
         run: CI=true npm test -- --watchAll=false
       - name: Produktionsversion bauen
         run: npm run build
       - name: CMS-Ergebnis kommentieren
-        if: always() && startsWith(github.head_ref, 'cms/')
+        if: always() && github.head_ref == 'cms-content'
         uses: actions/github-script@v8
         with:
           script: |

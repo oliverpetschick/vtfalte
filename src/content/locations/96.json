@@ -1,8 +1,7 @@
 {
   "title": "Zwickauer Str. 131A, 04279 Leipzig",
   "galleryOrder": 96,
-  "archived": false,
-  "categoryId": 8,
+  "category": "Abriss",
   "coordinates": {
     "longitude": 12.397225015935797,
     "latitude": 51.2986172434427

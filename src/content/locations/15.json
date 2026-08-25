@@ -1,8 +1,7 @@
 {
   "title": "Brünner Str. 8d, 04209 Leipzig",
   "galleryOrder": 15,
-  "archived": false,
-  "categoryId": 7,
+  "category": "Mehrzweckhalle/Individualbau",
   "coordinates": {
     "longitude": 12.308849515279162,
     "latitude": 51.322970991300984

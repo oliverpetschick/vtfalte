@@ -1,8 +1,7 @@
 {
   "title": "Lehdenweg 40, 04328 Leipzig",
   "galleryOrder": 51,
-  "archived": false,
-  "categoryId": 6,
+  "category": "Umformerstation",
   "coordinates": {
     "longitude": 12.459028363170928,
     "latitude": 51.34993500292091

@@ -1,0 +1,57 @@
+name: Pages
+
+on:
+  push:
+    branches: [master]
+  repository_dispatch:
+    types: [deploy-pages]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    if: vars.ENABLE_PAGES_ACTIONS == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: master
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - name: Inhalte prüfen
+        run: npm run validate-content -- --strict-media
+      - name: Admin-Hilfen testen
+        run: npm run test:admin
+      - name: Tests ausführen
+        run: CI=true npm test -- --watchAll=false
+      - name: Produktionsversion bauen
+        run: npm run build
+        env:
+          REQUIRE_CMS_OAUTH_URL: 1
+          CMS_OAUTH_URL: ${{ vars.CMS_OAUTH_URL }}
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: build
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: GitHub Pages veröffentlichen
+        id: deployment
+        uses: actions/deploy-pages@v4

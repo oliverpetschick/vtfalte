@@ -1,8 +1,7 @@
 {
   "title": "Lützner Str. 540, 04205 Leipzig",
   "galleryOrder": 77,
-  "archived": false,
-  "categoryId": 6,
+  "category": "Umformerstation",
   "coordinates": {
     "longitude": 12.268220447764714,
     "latitude": 51.31604096943994
@@ -14,19 +13,19 @@
   "condition": "",
   "photos": [
     {
-      "src": "images/folds/fold_4/4_1_Johanna-Knigge.jpg",
+      "src": "images/folds/fold_77/77_1_Johanna-Knigge.jpg",
       "credit": "Johanna Knigge"
     },
     {
-      "src": "images/folds/fold_4/4_2_Johanna-Knigge.jpg",
+      "src": "images/folds/fold_77/77_2_Johanna-Knigge.jpg",
       "credit": "Johanna Knigge"
     },
     {
-      "src": "images/folds/fold_4/4_3_Johanna-Knigge.jpg",
+      "src": "images/folds/fold_77/77_3_Johanna-Knigge.jpg",
       "credit": "Johanna Knigge"
     },
     {
-      "src": "images/folds/fold_4/4_4_Johanna-Knigge.jpg",
+      "src": "images/folds/fold_77/77_4_Johanna-Knigge.jpg",
       "credit": "Johanna Knigge"
     }
   ],

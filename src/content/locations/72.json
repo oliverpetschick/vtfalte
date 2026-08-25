@@ -1,8 +1,7 @@
 {
   "title": "Oststraße 118, 04299 Leipzig",
   "galleryOrder": 72,
-  "archived": false,
-  "categoryId": 7,
+  "category": "Mehrzweckhalle/Individualbau",
   "coordinates": {
     "longitude": 12.41723840328343,
     "latitude": 51.32865647925259

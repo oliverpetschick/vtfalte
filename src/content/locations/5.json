@@ -1,8 +1,7 @@
 {
   "title": "Standort 5",
   "galleryOrder": 5,
-  "archived": false,
-  "categoryId": 4,
+  "category": "Kaufhalle",
   "coordinates": {
     "longitude": 12.267105133807352,
     "latitude": 51.317501719512485

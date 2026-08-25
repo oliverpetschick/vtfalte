@@ -1,8 +1,7 @@
 {
   "title": "Zum Wäldchen 6, 04329 Leipzig",
   "galleryOrder": 55,
-  "archived": false,
-  "categoryId": 2,
+  "category": "Jugendclub",
   "coordinates": {
     "longitude": 12.46677879980482,
     "latitude": 51.353034264815726

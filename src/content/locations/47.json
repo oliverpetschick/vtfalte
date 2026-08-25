@@ -1,8 +1,7 @@
 {
   "title": "Eisenbahnstraße 54, 04315 Leipzig",
   "galleryOrder": 47,
-  "archived": false,
-  "categoryId": 2,
+  "category": "Jugendclub",
   "coordinates": {
     "longitude": 12.40347299161282,
     "latitude": 51.34411922494742

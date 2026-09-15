@@ -38,7 +38,7 @@ export async function promoteContent({ github, context, core, git = gitCommand()
     const base = git('rev-parse', 'origin/master');
     const head = git('rev-parse', 'origin/cms-content');
     if (head !== requested) throw new Error('Stand wurde geändert. Bitte aktuellen Stand prüfen und erneut veröffentlichen.');
-    const combined = await github.rest.repos.getCombinedStatus({ ...repo, ref: head });
+    const combined = await github.rest.repos.getCombinedStatusForRef({ ...repo, ref: head });
     const check = combined.data.statuses.find(s => s.context === 'vtfalte/content-publish');
     if (check?.state !== 'success' || check.description !== qualityDescription(base)) {
       throw new Error('Stand muss gegen den aktuellen master erneut geprüft werden.');

@@ -191,7 +191,8 @@
     }
   }, true);
 
-  const localMode = ['localhost', '127.0.0.1'].includes(window.location.hostname);
+  const localMode = ['localhost', '127.0.0.1'].includes(window.location.hostname)
+    && !new URLSearchParams(window.location.search).has('online');
   const statusElement = document.getElementById('vt-publish-status');
   const nativeConfirm = window.confirm.bind(window);
   let groupedHash = '';
@@ -224,7 +225,7 @@
     statusElement.dataset.state = state;
     statusElement.replaceChildren(document.createTextNode(message));
     queueMicrotask(adaptAdmin);
-    if (url) {
+    if (url && state === 'failure') {
       const link = document.createElement('a');
       link.href = url;
       link.target = '_blank';
@@ -255,10 +256,10 @@
       if (description === 'Keine offenen Inhaltsänderungen') {
         publishing = false;
         standStatus = 'clean';
-        setPublishStatus('success', 'Kein offener Stand.', status.target_url);
+        setPublishStatus('success', '');
       } else {
         standStatus = 'ready';
-        if (!publishing) setPublishStatus('success', 'Stand ist veröffentlichbar.', status.target_url);
+        if (!publishing) setPublishStatus('success', 'Bereit zur Veröffentlichung');
       }
     } else if (['failure', 'error'].includes(status?.state)) {
       publishing = false;
@@ -266,7 +267,7 @@
       setPublishStatus('failure', status.description || 'Der Stand enthält Fehler.', status.target_url);
     } else {
       standStatus = 'pending';
-      setPublishStatus('pending', publishing ? 'Stand wird veröffentlicht …' : 'Prüfung läuft …', status?.target_url);
+      setPublishStatus('pending', publishing ? 'Stand wird veröffentlicht …' : 'Inhalt wird geprüft …');
     }
     updatePublishButton();
   };
@@ -401,8 +402,8 @@
         button.textContent = 'Lokal öffnen';
       } else if (label === 'Überprüfen ob eine Vorschau vorhanden ist') {
         button.classList.add('vt-admin-hidden');
-      } else if (button.tagName === 'BUTTON' && label === 'Veröffentlicht') {
-        button.hidden = true;
+      } else if (label === 'Veröffentlicht') {
+        button.classList.add('vt-admin-hidden');
       } else if (/^Lösche (veröffentlichten )?Beitrag$/.test(label)) {
         button.textContent = 'Eintrag löschen';
       }
@@ -438,11 +439,11 @@
     name: 'postSave',
     handler: () => {
       if (localMode) {
-        setPublishStatus('success', 'Lokal gespeichert – Vorschau wird aktualisiert.');
+        setPublishStatus('success', '');
       } else {
         standStatus = 'pending';
         updatePublishButton();
-        setPublishStatus('pending', 'Im Stand gespeichert – Prüfung läuft …');
+        setPublishStatus('pending', 'Inhalt wird geprüft …');
         pollPublishStatus();
       }
     },

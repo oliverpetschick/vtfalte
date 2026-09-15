@@ -17,6 +17,9 @@ npm run dev
 Website: http://localhost:3000/ — editor: http://localhost:3000/admin/.
 “Lokal öffnen” and “Lokal speichern” affect local files only. They never push or deploy.
 
+For the GitHub integration trial, start only the app with `CMS_OAUTH_URL` set and open
+`http://localhost:3000/admin/?online=1`. Do not run `decap-server` during this trial.
+
 ## Online setup, after approval
 
 1. Follow [DEPLOY_CHECKLIST.md](DEPLOY_CHECKLIST.md) for verification and release order.

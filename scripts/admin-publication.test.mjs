@@ -36,7 +36,7 @@ test('tracks the requested commit until live deployment succeeds', async () => {
   ui.responses.push({ sha: 'checked-head', statuses: [quality] });
   await ui.pollPublishStatus();
   assert.equal(ui.button.disabled, false);
-  assert.equal(ui.status.text, 'Stand ist veröffentlichbar.');
+  assert.equal(ui.status.text, 'Bereit zur Veröffentlichung');
   ui.responses.push({}, { sha: 'checked-head', statuses: [quality, publication(1, 'pending', 'Übernommen; Live-Veröffentlichung läuft')] });
   await ui.publishStand();
   await new Promise(resolve => setImmediate(resolve));

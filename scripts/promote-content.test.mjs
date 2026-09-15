@@ -68,7 +68,7 @@ function api(head, base, options = {}) {
     core: { setFailed: message => failures.push(message) },
     github: { rest: { repos: {
       createCommitStatus: async value => { statuses.push(value); },
-      getCombinedStatus: async () => ({ data: { statuses: [{
+      getCombinedStatusForRef: async () => ({ data: { statuses: [{
         context: 'vtfalte/content-publish', state: options.state ?? 'success',
         description: qualityDescription(options.checkedBase ?? base),
       }] } }),

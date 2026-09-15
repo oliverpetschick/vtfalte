@@ -94,5 +94,7 @@ The owner deployed the authentication Worker; its root response was verified ove
 The owner confirmed that the login-only probe succeeded: GitHub authentication and
 repository write permission were verified without modifying repository contents.
 The temporary `public/admin/vendor/login-test.html` probe was removed after that test.
-Full Decap save/publish integration still requires the CMS infrastructure on `master`
-and the `cms-content` branch.
+The CMS infrastructure is installed on `master`, `cms-content` exists, and the owner
+completed a real Decap login and save. The first promotion trial stopped safely because
+an Octokit method name was outdated; the corrected method is covered by the local
+promotion tests and still needs an online retry.

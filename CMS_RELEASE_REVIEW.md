@@ -2,10 +2,10 @@
 
 ## Result
 
-The identified code issues are corrected locally on `feat/content-cms`.
-The owner completed the OAuth setup and accepted the local public preview. Full Decap
-save and publish integration testing is still pending.
-No source branch or production branch has been pushed or deployed during this correction pass.
+The identified code issues are corrected on `master` and `feat/content-cms`.
+The owner completed the OAuth setup, accepted the local public preview and completed
+the Decap save, validation and promotion trial.
+The production branch and deployed website remain unchanged.
 
 ## Changes
 
@@ -44,9 +44,8 @@ No source branch or production branch has been pushed or deployed during this co
 - Existing CRA/Browserslist and React Native Web warnings remain. The final full test
   run completed without the intermittent worker-exit warning seen in earlier runs.
 
-These checks use the installed local dependencies. A clean CI installation and real
-GitHub token/branch-rule behavior still need the online trial. Temporary Git remotes
-prove transaction behavior locally; they do not prove the repository's future permissions.
+These checks use the installed local dependencies. GitHub Actions also completed the
+real repository validation and promotion flow with Pages deployment disabled.
 
 ## Baseline and recovery
 
@@ -54,9 +53,11 @@ prove transaction behavior locally; they do not prove the repository's future pe
 - CMS baseline before fixes: `ac0495f77c627ffe120b9b04887a0938e6256e4b`.
 - Frozen release: `f2d60e99d43e1409423fb2c936d4c1a0f2631c5a` on `gh-pages` and tag
   `live-before-cleanup-2026-08-21`.
-- User confirmed `gh-pages` / `/(root)`, `www.vtfalte.de`, HTTPS, sole owner access,
-  and absence of `CMS_OAUTH_URL` and `ENABLE_PAGES_ACTIONS`.
-- `cms-content` and Cloudflare setup remain outstanding.
+- User confirmed `gh-pages` / `/(root)`, `www.vtfalte.de`, HTTPS and sole owner access.
+- `CMS_OAUTH_URL` is configured. `ENABLE_PAGES_ACTIONS` remains absent so CMS promotion
+  cannot deploy the website.
+- `master` and `cms-content` contain the verified content stand from `fbd094a`.
+- `gh-pages` remains at frozen release `f2d60e9`; the live HTML matches that release.
 
 Before these fixes, 137 referenced photos were compared byte for byte against the
 source baseline, with no differences, including 17 renamed paths. Location 54's second
@@ -68,10 +69,7 @@ This existing behavior correction requires explicit visual acceptance.
 
 1. Complete the remaining public mobile checks and accept the location 54 correction
    separately.
-2. Confirm Actions permissions permit atomic fast-forward updates to both source branches.
-   Do not add the obsolete PR-only/required-check recipe from earlier documentation.
-3. Complete the online save, invalid-content and publish trial with live deployment disabled.
-4. Obtain explicit cutover approval and follow [DEPLOY_CHECKLIST.md](DEPLOY_CHECKLIST.md).
+2. Obtain explicit cutover approval and follow [DEPLOY_CHECKLIST.md](DEPLOY_CHECKLIST.md).
 
 The recovery procedure disables new releases, cancels queued/running deployments and
 returns Pages to `gh-pages` / `/(root)`. It preserves the frozen old site, not future CMS
@@ -83,8 +81,7 @@ is not required to serve the fallback website.
 The owner accepted the public local preview, Atlas interactions and the admin
 image-background correction.
 The owner created `vtfalte-cms-auth.oliver-petschick.workers.dev`, registered the GitHub
-OAuth App and confirmed both Worker secrets are stored. The account/login appearance
-and real OAuth flow still need online acceptance.
+OAuth App, stored both Worker secrets and accepted the real OAuth login flow.
 
 The authentication module has five passing tests for state/PKCE, account rejection,
 restricted token delivery and upstream failures. No Worker code was deployed by the
@@ -94,7 +91,8 @@ The owner deployed the authentication Worker; its root response was verified ove
 The owner confirmed that the login-only probe succeeded: GitHub authentication and
 repository write permission were verified without modifying repository contents.
 The temporary `public/admin/vendor/login-test.html` probe was removed after that test.
-The CMS infrastructure is installed on `master`, `cms-content` exists, and the owner
-completed a real Decap login and save. The first promotion trial stopped safely because
-an Octokit method name was outdated; the corrected method is covered by the local
-promotion tests and still needs an online retry.
+The CMS infrastructure is installed on `master` and `cms-content`. The first promotion
+trial stopped safely because an Octokit method name was outdated. After that method was
+corrected, the online retry promoted the valid stand without deploying Pages. A duplicate
+gallery position then failed validation as expected; restoring position 102 validated and
+promoted successfully. The test field was also restored to its original empty value.

@@ -4,7 +4,7 @@ import path from 'node:path';
 import chokidar from 'chokidar';
 import { loadLocations } from './content-files.mjs';
 
-for (const task of ['generate-content', 'prepare-admin']) {
+for (const task of ['generate-content', 'prepare-admin', 'prepare-maplibre']) {
   const result = spawnSync('npm', ['run', task], { stdio: 'inherit' });
   if (result.status !== 0) process.exit(result.status ?? 1);
 }

@@ -1,21 +1,21 @@
 {
-  "title": "Sommerfelder Str. 83, 04316 Leipzig",
-  "galleryOrder": 102,
-  "category": "Abriss",
-  "coordinates": {
-    "longitude": 12.435464513920138,
-    "latitude": 51.32671859146064
-  },
-  "address": "Sommerfelder Str. 83, 04316 Leipzig",
-  "type": "Mehrzweckhalle",
-  "usage": "CityCourier Sachsen GmbH",
-  "formerUsage": "",
-  "condition": "",
   "photos": [
     {
       "src": "images/folds/fold_102/102_1_Johanna-Knigge.jpg",
       "credit": "Johanna Knigge"
     }
   ],
-  "links": []
+  "usage": "CityCourier Sachsen GmbH",
+  "formerUsage": "",
+  "address": "Sommerfelder Str. 83, 04316 Leipzig",
+  "title": "Sommerfelder Str. 83, 04316 Leipzig",
+  "links": [],
+  "type": "Mehrzweckhalle",
+  "condition": "CMS-Test",
+  "coordinates": {
+    "longitude": 12.435464513920138,
+    "latitude": 51.32671859146064
+  },
+  "galleryOrder": 102,
+  "category": "Abriss"
 }

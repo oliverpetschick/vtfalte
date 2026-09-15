@@ -1,6 +1,7 @@
 name: Content Publish
 
 on:
+  workflow_dispatch:
   push:
     branches: [cms-content]
   repository_dispatch:
@@ -27,7 +28,7 @@ jobs:
         with:
           ref: cms-content
           fetch-depth: 0
-      - name: Puffer vorbereiten
+      - name: Normalize content branch
         id: normalize
         shell: bash
         run: |
@@ -73,7 +74,7 @@ jobs:
           else
             echo "no_changes=false" >> "$GITHUB_OUTPUT"
           fi
-      - name: Prüfstatus setzen
+      - name: Set quality status
         uses: actions/github-script@v8
         env:
           HEAD_SHA: ${{ steps.normalize.outputs.head }}
@@ -89,7 +90,7 @@ jobs:
               description: process.env.NO_CHANGES === 'true' ? 'Keine offenen Inhaltsänderungen' : 'Prüfung läuft',
               target_url: `${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`,
             });
-      - name: Normalisierten Stand erneut prüfen
+      - name: Recheck normalized content
         if: steps.normalize.outputs.deferred == 'true'
         uses: actions/github-script@v8
         with:
@@ -109,32 +110,37 @@ jobs:
         with:
           ref: ${{ needs.normalize.outputs.head }}
           fetch-depth: 0
-      - run: git fetch origin master
+      - name: Record checked base
+        id: base
+        run: |
+          git fetch origin master
+          echo "sha=$(git rev-parse origin/master)" >> "$GITHUB_OUTPUT"
       - uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: npm
-      - name: CMS-Dateigrenzen prüfen
+      - name: Validate CMS file boundaries
         run: npm run validate-cms-pr
         env:
           HEAD_REF: cms-content
-          BASE_SHA: origin/master
+          BASE_SHA: ${{ steps.base.outputs.sha }}
           HEAD_SHA: HEAD
       - run: npm ci
-      - name: Inhalte prüfen
+      - name: Validate content
         run: npm run validate-content -- --strict-media
-      - name: Admin-Hilfen testen
+      - name: Test admin helpers
         run: npm run test:admin
-      - name: Tests ausführen
+      - name: Run tests
         run: CI=true npm test -- --watchAll=false
-      - name: Produktionsversion bauen
+      - name: Build production site
         run: npm run build
-      - name: Prüfstatus melden
+      - name: Report quality result
         if: always()
         uses: actions/github-script@v8
         env:
           HEAD_SHA: ${{ needs.normalize.outputs.head }}
           RESULT: ${{ job.status }}
+          BASE_SHA: ${{ steps.base.outputs.sha }}
         with:
           script: |
             const ok = process.env.RESULT === 'success';
@@ -144,6 +150,6 @@ jobs:
               sha: process.env.HEAD_SHA,
               context: 'vtfalte/content-publish',
               state: ok ? 'success' : 'failure',
-              description: ok ? 'Stand ist veröffentlichbar' : 'Der Stand enthält Fehler',
+              description: ok ? `Geprüft gegen master ${process.env.BASE_SHA}` : 'Der Stand enthält Fehler',
               target_url: `${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`,
             });

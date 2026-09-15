@@ -73,7 +73,7 @@ ein kleiner Hinweis:
 1. Warte, bis der Status **grün** ist („Stand ist veröffentlichbar.").
 2. Klicke unten rechts auf **„Stand veröffentlichen"**.
    (Solange der Stand rot ist oder gerade geprüft wird, ist der Knopf **grau** und nicht klickbar.)
-3. Es erscheint **„Stand wird veröffentlicht …"**, kurz darauf **„Veröffentlicht."**.
+3. Es erscheint **„Stand wird veröffentlicht …"**, nach erfolgreichem Deployment **„Live veröffentlicht"**. Bei deaktivierter Live-Veröffentlichung erscheint stattdessen **„Übernommen; Live-Veröffentlichung deaktiviert"**.
 4. Nach wenigen Minuten sind deine Änderungen auf **https://www.vtfalte.de/** sichtbar.
 
 Damit werden **alle** gesammelten Änderungen auf einmal übernommen.

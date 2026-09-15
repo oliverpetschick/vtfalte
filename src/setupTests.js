@@ -5,3 +5,9 @@
 import '@testing-library/jest-dom';
 
 window.URL.createObjectURL = window.URL.createObjectURL || jest.fn();
+
+jest.mock('maplibre-gl', () => ({
+  __esModule: true,
+  Map: jest.fn(),
+  setWorkerUrl: jest.fn(),
+}), { virtual: true });

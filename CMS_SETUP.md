@@ -1,63 +1,82 @@
-# CMS trial and later setup
+# CMS setup
 
-## Sunday: local editor trial
+## Current scope
 
-No account is required:
+Only the owner, `oliverpetschick`, will edit content initially. No collaborator is needed.
+The public website remains on GitHub Pages. Cloudflare hosts only the OAuth proxy.
+The editor's login page is public; GitHub repository permissions control write access.
+`/admin/` has `noindex, nofollow` and is not linked from the public navigation.
+
+## Local trial
 
 ```sh
 npm ci
 npm run dev
 ```
 
-Open the site at http://localhost:3000/ and the editor at http://localhost:3000/admin/.
-Choose "Lokal öffnen". Saving updates only this working tree and refreshes the local site.
-It never pushes, merges, or deploys.
+Website: http://localhost:3000/ — editor: http://localhost:3000/admin/.
+“Lokal öffnen” and “Lokal speichern” affect local files only. They never push or deploy.
 
-After the trial, inspect changes with `git status --short` and `git diff`. Do not reset
-the whole working tree because it also contains the CMS implementation.
+## Online setup, after approval
 
-## Accounts needed after approval
+1. Follow [DEPLOY_CHECKLIST.md](DEPLOY_CHECKLIST.md) for verification and release order.
+2. Create the owner's Cloudflare account, a GitHub OAuth App and the OAuth proxy Worker.
+3. Use `workers/cms-auth.mjs` as the Worker entry point. Its callback URL is
+   `https://vtfalte-cms-auth.oliver-petschick.workers.dev/callback`.
+4. Store credentials as Worker secrets and the HTTPS proxy URL as `CMS_OAUTH_URL`.
+5. Merge the checked CMS infrastructure into `master`, then create `cms-content` from it.
+6. Keep Pages on `gh-pages` and `ENABLE_PAGES_ACTIONS` unset during the online trial.
 
-- One free personal GitHub account for the editor, with write access to this repository.
-- The owner's existing GitHub account with repository admin access.
-- One free Cloudflare account for the OAuth proxy.
+No database or additional editor account is required. Do not create resources or change
+repository rules until the user approves the concrete setup.
 
-No paid CMS, database, image host, Netlify account, or map account is required.
+## Save and publish
 
-## Online setup after approval
+Saving commits content to `cms-content`. Content Publish normalizes that branch against
+`master`, validates its allowed files and media, runs tests, and builds the website.
+Its `vtfalte/content-publish` status records the exact checked `master` commit.
+Adapter unit tests use fixed fixtures, so valid edits do not need to match the old live data.
 
-1. Add the editor's GitHub account as a repository collaborator.
-2. Create `cms-content` from the approved `master` commit.
-3. Create a GitHub OAuth App.
-4. Deploy the open-source `sterlingwes/decap-proxy` as a Cloudflare Worker.
-5. Store the proxy URL in the repository variable `CMS_OAUTH_URL`.
-6. Protect `master` and require `Content Publish / content-quality`.
-7. Test one disposable CMS publication while Pages still uses `gh-pages`.
-8. Switch Pages to GitHub Actions.
-9. Set `ENABLE_PAGES_ACTIONS=true` and manually run the Pages workflow once.
+“Stand veröffentlichen” submits the displayed content commit. Content Promote verifies
+that commit and its checked base, creates one merge commit with the exact checked tree,
+and updates `master` and `cms-content` in one atomic Git push. Both refs must still match
+those verified values. Concurrent changes cause the entire push to fail without losing work.
+There is no unconditional branch reset and no automatic PR merge.
 
-## Publishing and recovery
+The workflow token needs `contents: write` and `statuses: write`. Any branch rules must
+permit this checked, fast-forward workflow update; a blanket PR-only rule blocks it.
+Do not install the former `Content Publish / content-quality` required-check recipe.
 
-The editor works on an accumulating "Stand" (working state): every save writes one or more
-location changes to `cms-content` and they pile up there. Saving no longer publishes anything
-on its own.
+`vtfalte/publication` is separate from content quality. With Pages disabled, the editor
+reports “Übernommen; Live-Veröffentlichung deaktiviert”. With Pages enabled, the dispatch
+pins the exact release commit. Only a successful Pages deployment reports “Live veröffentlicht”.
+The editor tracks the requested commit even when newer content is saved.
 
-Each save triggers `content-publish.yml` (Gate 1). It merges the current `master`, removes
-unused photos, checks that only locations and their photos changed (`validate-cms-pr`, now one
-or more entries), validates the content, runs tests, and builds the production site. The result
-is the commit status `vtfalte/content-publish`: green means the whole Stand is publishable, red
-means it must be fixed first. Nothing is merged into `master` at this point.
+If the base has changed or normalization failed, run **Content Publish → Run workflow**
+on `master`, wait for the new quality result, then publish again. If content was already
+promoted but deployment failed, run **Pages → Run workflow** on `master`; no content reset
+or second promotion is needed. Inspect the linked workflow if a status remains pending.
 
-When the Stand is green, the editor clicks "Stand veröffentlichen". The button fires a
-`publish-stand` dispatch that runs `content-promote.yml` (Gate 2): it re-checks the green status,
-merges `cms-content` into `master` as one commit, resets `cms-content` onto the published state,
-and starts Pages. If the Stand is red the button stays disabled, so `master` cannot receive a bad
-Stand. There is no auto-rollback: a red Stand simply stays on `cms-content` for the editor to fix.
+Production cutover and recovery are described in [DEPLOY_CHECKLIST.md](DEPLOY_CHECKLIST.md).
 
-Gate 3 is the deploy itself: `pages.yml` re-validates and rebuilds before publishing and only
-uploads the built artifact. A failing build does not deploy, so the last good live site stays up —
-CMS content can never break https://www.vtfalte.de/.
+## Authentication Worker
 
-The Pages workflow stays disabled until `ENABLE_PAGES_ACTIONS=true` is set. No workflow modifies
-or deletes `gh-pages`. To recover, set Pages back to "Deploy from a branch", choose `gh-pages`
-and `/(root)`, then verify https://www.vtfalte.de/.
+The standalone module in `workers/cms-auth.mjs` has no package dependencies. Paste its
+contents into the Cloudflare Worker editor, replacing the Hello World code.
+It uses the `GITHUB_OAUTH_ID` and `GITHUB_OAUTH_SECRET` secrets already stored there.
+
+The Worker validates OAuth state and PKCE, checks the returned GitHub identity against
+`oliverpetschick`, and sends the Decap response only to the allowed opener origins:
+`https://www.vtfalte.de` and `http://localhost:3000` for the online login trial.
+Remove the localhost origin after completing that trial. Adding another editor later
+requires updating both the account allowlist in this Worker and repository permissions.
+
+The upstream `sterlingwes/decap-proxy` was reviewed as the initial setup reference.
+Its unchecked callback state and wildcard token response are not used here.
+The implementation follows GitHub's authorization flow:
+https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/authorizing-oauth-apps
+
+The root URL returns `VT-Falte CMS authentication service`. This confirms the code is
+served, not that the complete OAuth flow has passed. Test the login from the CMS popup.
+Keep wildcard redirects, device flow and expiring tokens disabled in this OAuth App;
+this editor setup does not implement token refresh.

@@ -9,6 +9,7 @@ on:
 
 permissions:
   contents: read
+  statuses: write
   pages: write
   id-token: write
 
@@ -20,22 +21,44 @@ jobs:
   build:
     if: vars.ENABLE_PAGES_ACTIONS == 'true'
     runs-on: ubuntu-latest
+    outputs:
+      sha: ${{ steps.revision.outputs.sha }}
+      content: ${{ steps.revision.outputs.content }}
     steps:
       - uses: actions/checkout@v6
         with:
           ref: master
+          fetch-depth: 0
+      - name: Resolve exact release commit
+        id: revision
+        env:
+          REQUESTED_SHA: ${{ github.event.client_payload.sha }}
+          CONTENT_SHA: ${{ github.event.client_payload.content_sha }}
+        run: |
+          sha=${REQUESTED_SHA:-$(git rev-parse HEAD)}
+          [[ "$sha" =~ ^[a-f0-9]{40}$ ]]
+          git merge-base --is-ancestor "$sha" origin/master
+          content=""
+          if [ "$(git show -s --format=%s "$sha")" = 'Publish content stand' ]; then
+            content=$(git rev-parse "$sha^2")
+            test "$(git rev-parse "$sha^{tree}")" = "$(git rev-parse "$content^{tree}")"
+          fi
+          if [ -n "$CONTENT_SHA" ]; then test "$CONTENT_SHA" = "$content"; fi
+          echo "sha=$sha" >> "$GITHUB_OUTPUT"
+          echo "content=$content" >> "$GITHUB_OUTPUT"
+          git checkout --detach "$sha"
       - uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: npm
       - run: npm ci
-      - name: Inhalte prüfen
+      - name: Validate content
         run: npm run validate-content -- --strict-media
-      - name: Admin-Hilfen testen
+      - name: Test admin helpers
         run: npm run test:admin
-      - name: Tests ausführen
+      - name: Run tests
         run: CI=true npm test -- --watchAll=false
-      - name: Produktionsversion bauen
+      - name: Build production site
         run: npm run build
         env:
           REQUIRE_CMS_OAUTH_URL: 1
@@ -47,11 +70,43 @@ jobs:
 
   deploy:
     needs: build
+    if: vars.ENABLE_PAGES_ACTIONS == 'true'
     runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: GitHub Pages veröffentlichen
+      - name: Check release is current
+        uses: actions/github-script@v8
+        env:
+          RELEASE_SHA: ${{ needs.build.outputs.sha }}
+        with:
+          script: |
+            const { data } = await github.rest.git.getRef({ ...context.repo, ref: 'heads/master' });
+            if (data.object.sha !== process.env.RELEASE_SHA) throw new Error('master hat sich geändert. Aktuellen Stand neu veröffentlichen.');
+      - name: Deploy GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+  report:
+    needs: [build, deploy]
+    if: always() && needs.build.outputs.sha != ''
+    runs-on: ubuntu-latest
+    steps:
+      - name: Report deployment result
+        uses: actions/github-script@v8
+        env:
+          RELEASE_SHA: ${{ needs.build.outputs.sha }}
+          CONTENT_SHA: ${{ needs.build.outputs.content }}
+          DEPLOY_RESULT: ${{ needs.deploy.result }}
+        with:
+          script: |
+            const success = process.env.DEPLOY_RESULT === 'success';
+            for (const sha of new Set([process.env.RELEASE_SHA, process.env.CONTENT_SHA].filter(Boolean))) {
+              await github.rest.repos.createCommitStatus({
+                ...context.repo, sha, context: 'vtfalte/publication',
+                state: success ? 'success' : 'failure',
+                description: success ? 'Live veröffentlicht' : 'Live-Veröffentlichung fehlgeschlagen. Pages erneut ausführen.',
+                target_url: `${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`,
+              });
+            }

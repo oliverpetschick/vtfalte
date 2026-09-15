@@ -1,10 +1,12 @@
 import React, { useRef, useEffect, useState, useCallback } from 'react';
 import { StyleSheet, View } from 'react-native-web';
-import maplibregl from 'maplibre-gl';
+import * as maplibregl from 'maplibre-gl';
 import 'maplibre-gl/dist/maplibre-gl.css';
 import InfoPanel from '../components/InfoPanel';
 import Legend, { legendMapping } from '../components/Legend';
 import { data } from '../content';
+
+maplibregl.setWorkerUrl('/maplibre/maplibre-gl-worker.mjs');
 
 const Atlas = () => {
     const mapContainer = useRef(null);
@@ -123,7 +125,7 @@ const Atlas = () => {
                 ...feature,
                 properties: {
                     ...feature.properties,
-                    images: JSON.parse(feature.properties.images),
+                    images: feature.properties.images,
                 },
             };
 

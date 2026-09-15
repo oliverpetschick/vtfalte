@@ -13,6 +13,7 @@
 /src/content/generated
 /public/admin/config.yml
 /public/admin/vendor
+/public/maplibre
 
 # misc
 .DS_Store

@@ -196,13 +196,15 @@
   const nativeConfirm = window.confirm.bind(window);
   let groupedHash = '';
 
-  // Zustand des gesammelten „Stands" auf cms-content:
-  // 'pending'  – Prüfung (Tor 1) läuft
-  // 'ready'    – grün, veröffentlichbar
-  // 'failure'  – Prüfung fehlgeschlagen
-  // 'clean'    – kein offener Stand (nichts zu veröffentlichen)
+  // Quality and deployment status are tracked separately.
   let standStatus = 'clean';
   let publishing = false;
+  let standHead = null;
+  let publicationHead = null;
+  let lastPublicationId = null;
+  let ignoredPublicationId = null;
+  let pollTimer;
+  let polling = false;
 
   const publishStandButton = document.createElement('button');
   publishStandButton.type = 'button';
@@ -232,9 +234,7 @@
     }
   };
 
-  // Das OAuth-Token, das Decap für seine Commits nutzt, liegt im localStorage.
-  // Wir verwenden es unverändert, um die Veröffentlichung per repository_dispatch
-  // auszulösen (keine neue Infrastruktur, kein zweites Token).
+  // Reuse Decap's OAuth token for the publication request.
   const getDecapToken = () => {
     for (const key of ['decap-cms-user', 'netlify-cms-user']) {
       try {
@@ -243,7 +243,7 @@
         const user = JSON.parse(raw);
         if (user && user.token) return user.token;
       } catch (error) {
-        /* ungültiger Eintrag – nächsten Schlüssel versuchen */
+        /* Ignore invalid storage entries. */
       }
     }
     return null;
@@ -252,11 +252,7 @@
   const applyStandStatus = status => {
     const description = status?.description ?? '';
     if (status?.state === 'success') {
-      if (description === 'Veröffentlicht') {
-        publishing = false;
-        standStatus = 'clean';
-        setPublishStatus('success', 'Veröffentlicht.', status.target_url);
-      } else if (description === 'Keine offenen Inhaltsänderungen') {
+      if (description === 'Keine offenen Inhaltsänderungen') {
         publishing = false;
         standStatus = 'clean';
         setPublishStatus('success', 'Kein offener Stand.', status.target_url);
@@ -275,37 +271,68 @@
     updatePublishButton();
   };
 
-  const pollPublishStatus = async (attempt = 0) => {
+  const pollPublishStatus = async () => {
+    if (polling) return;
+    clearTimeout(pollTimer);
+    polling = true;
     try {
-      const response = await fetch('https://api.github.com/repos/oliverpetschick/vtfalte/commits/cms-content/status', {
+      const token = getDecapToken();
+      if (!token) {
+        standHead = null;
+        standStatus = 'clean';
+        publishing = false;
+        publicationHead = null;
+        setPublishStatus('pending', '');
+        return;
+      }
+      const ref = publicationHead || 'cms-content';
+      const response = await fetch(`https://api.github.com/repos/oliverpetschick/vtfalte/commits/${ref}/status`, {
         cache: 'no-store',
-        headers: { Accept: 'application/vnd.github+json' },
+        headers: { Accept: 'application/vnd.github+json', Authorization: `token ${token}` },
       });
       if (!response.ok) throw new Error(`GitHub ${response.status}`);
       const result = await response.json();
-      const status = result.statuses.find(item => item.context === 'vtfalte/content-publish');
-      applyStandStatus(status);
+      if (ref !== (publicationHead || 'cms-content')) return;
+      const publication = result.statuses.find(item => item.context === 'vtfalte/publication');
+      if (publicationHead) {
+        // A retry must not consume the previous attempt's terminal status.
+        if (publication && publication.id !== ignoredPublicationId) {
+          setPublishStatus(publication.state, publication.description, publication.target_url);
+          if (publication.state !== 'pending') {
+            publishing = false;
+            publicationHead = null;
+            standStatus = 'clean';
+          }
+        }
+      } else {
+        standHead = result.sha;
+        lastPublicationId = publication?.id ?? null;
+        const quality = result.statuses.find(item => item.context === 'vtfalte/content-publish');
+        applyStandStatus(quality);
+        if (standStatus === 'clean' && publication) {
+          setPublishStatus(publication.state, publication.description, publication.target_url);
+        }
+      }
     } catch (error) {
-      /* vorübergehender Fehler – erneut versuchen, Zustand unverändert lassen */
-    }
-    const keepGoing = publishing || standStatus === 'pending';
-    if (keepGoing && attempt < 60) {
-      setTimeout(() => pollPublishStatus(attempt + 1), 5000);
-    } else if (publishing) {
-      publishing = false;
+      standStatus = 'pending';
+      setPublishStatus('pending', 'Status derzeit nicht erreichbar – wird erneut geprüft.');
+    } finally {
+      polling = false;
       updatePublishButton();
-      setPublishStatus('failure', 'Zeitüberschreitung bei der Veröffentlichung – bitte Status prüfen.');
+      pollTimer = setTimeout(pollPublishStatus, 10000);
     }
   };
 
   const publishStand = async () => {
-    if (localMode || publishing || standStatus !== 'ready') return;
+    if (localMode || publishing || standStatus !== 'ready' || !standHead) return;
     const token = getDecapToken();
     if (!token) {
       setPublishStatus('failure', 'Kein Zugriffstoken gefunden – bitte neu anmelden.');
       return;
     }
     publishing = true;
+    publicationHead = standHead;
+    ignoredPublicationId = lastPublicationId;
     updatePublishButton();
     setPublishStatus('pending', 'Stand wird veröffentlicht …');
     try {
@@ -316,12 +343,13 @@
           Accept: 'application/vnd.github+json',
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ event_type: 'publish-stand' }),
+        body: JSON.stringify({ event_type: 'publish-stand', client_payload: { head: publicationHead } }),
       });
       if (!response.ok && response.status !== 204) throw new Error(`GitHub ${response.status}`);
       pollPublishStatus();
     } catch (error) {
       publishing = false;
+      publicationHead = null;
       updatePublishButton();
       setPublishStatus('failure', 'Veröffentlichung konnte nicht gestartet werden.');
     }
@@ -363,7 +391,7 @@
     for (const button of document.querySelectorAll('button, [role="button"]')) {
       const label = button.textContent.trim();
       if (['Veröffentlichen', 'Speichern', 'Lokal speichern'].includes(label)) {
-        // Ein Save legt den Eintrag nur im Stand ab (kein sofortiges Veröffentlichen mehr).
+        // Saving updates the content branch; publication is a separate action.
         const publishLabel = localMode ? 'Lokal speichern' : 'Speichern';
         if (button.dataset.vtPublish !== 'true') button.dataset.vtPublish = 'true';
         if (button.textContent !== publishLabel) button.textContent = publishLabel;

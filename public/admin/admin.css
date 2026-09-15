@@ -67,6 +67,7 @@
 .vt-photo-preview-wrapper {
   width: 100% !important;
   height: auto !important;
+  background: #fff !important;
 }
 
 .vt-photo-preview {
